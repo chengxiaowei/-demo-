@@ -1,0 +1,109 @@
+/* common */
+@charset "utf-8";
+@import "../../common";
+@import "../../common/button/button";
+@import "../../common/form/form";
+@import "../../common/slider/slider";
+
+$starDefClr: #9c9c9c;
+
+$starSelClr: #fbe11f;
+
+@mixin star-lv($starLength:0, $starClass:'.lv'){
+    @for $i from 0 to $starLength {
+        #{$starClass}#{$i+1} {
+            color: $starSelClr;
+        }
+    }
+}
+
+html, body {
+	background: #f2f2f2;
+}
+.evaluation {
+	font-size: rem(26);
+	background: #fff;
+	padding: rem(25) rem(20) rem(25) rem(20);
+	margin-top: rem(20);
+	.hd {
+		overflow: hidden;
+		.left {
+			float: left;
+			.iconfont{
+				font-size: rem(30);
+				margin-right: rem(5);
+				color: $starDefClr;
+			}
+			.star-1{
+				@include star-lv(1);
+			}
+			.star-2{
+				@include star-lv(2);
+			}
+			.star-3{
+				@include star-lv(3);
+			}
+			.star-4{
+				@include star-lv(4);
+			}
+			.star-5{
+				@include star-lv(5);
+			}
+		}
+		.right {
+			float: right;
+			font-size: rem(26);
+			color: #a8a8a8;
+		}
+	}
+	.bd {
+		.nr {
+			color: #333;
+			font-size: rem(26);
+			padding: rem(10) 0 rem(10) 0;
+		}
+		.time {
+			color: #999;
+			font-size: rem(28);
+			text-align: right;
+		}
+	}
+}
+.evaluation-pl {
+	font-size: rem(26);
+	overflow: hidden;
+	li{
+		float: left;
+		background: #fff;
+		width: 25%;
+		height: rem(80);
+		line-height: rem(80);
+		text-align: center;
+		a {
+			color: #333;
+            padding: rem(10) rem(10) rem(15) rem(10);
+		}
+		.a4 {
+			border-right: 0;
+		}
+		.hover {
+			color: #f1641f;
+            border-bottom: rem(3) solid #f1641f;
+		}
+	}
+}
+.no-content {
+	font-size: rem(26);
+	text-align: center;
+	padding-top: rem(200);
+	color: #999;
+	.icon {
+		i{
+			font-size: rem(150);
+		}
+		
+	}
+	.content {
+		padding-top: rem(50);
+	}
+}

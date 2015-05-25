@@ -1,0 +1,249 @@
+@import url('../../../pub/css/common.css');
+@import url('../../../pub/css/btn.css'); 
+@import url('../../../pub/font/iconfont.css');
+@import url('../../../pub/css/dialog/ui-dialog.css');
+@import url('../../../pub/css/hd/site-nav.css');
+@import url('../../../pub/css/linkage-tab.css');
+@import url('../../../pub/css/hd/search.css');
+@import url('../../../pub/css/hd/nav.css');
+@import url('../../../pub/css/jquery.minSlide.css');
+@import url('../../../pub/css/ft/ft.css');
+@import url('../../../pub/css/min-bar/min-bar.css');
+@import url('../../../app/style.css'); 
+body{
+	background: #ffd2e2;
+	
+}
+.bn { 
+	width: 100%;
+	height: 585px;
+	overflow:hidden;
+	background-repeat: no-repeat;
+	background-position: center top;
+	min-width: 1024px; 
+}
+.coupon-mod{
+	width: 960px;
+	margin: 0 auto;
+	position: relative;
+}
+.bn-t{
+	height: 585px;
+}
+.gd-mod{
+	width: 992px;
+	margin: 0 auto;
+}
+.gd-bn{
+	width: 1018px;
+	margin: 0 auto;
+	position: relative;
+}
+.gd-bn a{
+	position: absolute;
+	display: block;
+}
+.link-1{
+	width: 430px;
+	height: 325px;
+	left: 490px;
+	top: 20px;
+}
+.link-2{
+	width: 491px;
+	height: 339px;
+	left: 71px;
+	top: 29px;
+}
+.link-3{
+	height: 373px;
+    left: 500px;
+    top: 33px;
+    width: 463px;
+}
+.bn-1{
+	height: 68px;
+}
+.bn-2{
+	height: 373px;
+}
+.bn-3{
+	height: 391px;
+}
+.bn-4{
+	height: 477px;
+}
+.bn-5{
+	height: 279px;
+}
+.bn-b{
+	height: 239px;
+}
+.wrapper{
+	overflow:visible;
+	padding-bottom:60px;
+	margin-top:0;
+	padding-top:0;
+}
+.wrapper h2{
+	border:none;
+	box-shadow: none;
+	text-align: left;
+	height: 64px;
+	font-size: 32px;
+	vertical-align: bottom;
+	margin-top:10px;
+	background: url(//s1.bbgstatic.com/topic/2014/4/bingxi/img/title.jpg) no-repeat center;
+}
+.com-hd-t{
+	padding-top:8px;
+	text-indent: 70px;
+	width:1034px;
+	margin: 0 auto;
+}
+.spec-mod{
+	min-width: 1016px; 
+	background-color: #fdeded; 
+	border:1px solid #f2c4d3;
+	border-top: none;
+	overflow: hidden;
+	padding-bottom: 5px;
+	*padding-bottom:0;
+}
+.com-bd{
+	border:1px solid #d9a8b5;
+	border-top: none;
+	padding-bottom: 10px;
+	box-shadow: 0 4px 3px #8C545A;;
+}
+.wrap-cnt{
+	width: 991px;
+	margin: 0 auto;
+}
+.spec-mod ul,.com-mod ul{
+	margin-left:13px;
+}
+.com-mod ul {
+
+}
+#com5 .com-bd{
+	padding-bottom: 20px;
+}
+.ad-link{
+	width:999px;
+	margin:15px auto 0 auto;
+}
+/*右侧浮层*/
+.right-nav{
+	position:fixed;
+	-position:absolute;
+	width:112px;
+	height:196px;
+	padding-top: 66px;
+	z-index:100;
+	left:55%;
+	margin-bottom: 100px;
+	margin-left:450px;
+	bottom:35px;
+	overflow: hidden;
+	background:url(//s1.bbgstatic.com/topic/2014/4/mothersday/img/nav.png) no-repeat;
+}
+.right-nav a{
+	height: 45px;
+	font: 100 18px/46px 'Microsoft Yahei';
+	color:#fff;
+	text-decoration: none;
+}
+.right-nav a:hover{
+	text-decoration: underline;
+}
+
+.right-nav .go-top{
+	background:none;
+	border:none;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+}
+.help{
+	margin-top: 0;
+}
+#com2 .com-hd-t,#com3 .com-hd-t{
+	text-align: right;
+	padding-right: 60px;
+	width:974px;
+}
+/* 家电商品样式 */
+.com-buy-btn{
+	background:#f00 url(//s1.bbgstatic.com/topic/2014/3/taqing/images/jd-btn.jpg) no-repeat 5px -84px;
+}
+.com-buy-btn:hover{
+	background:#b20000 url(//s1.bbgstatic.com/topic/2014/3/taqing/images/jd-btn.jpg) no-repeat 5px -120px;
+}
+.com-mod .com-buy-btn{
+	margin:0 auto 6px auto;
+	height: 36px;
+}
+.com-mod .com-txt{
+	margin: 0 auto 3px auto;
+}
+.com-mod .com-txt,.com-txt a, .com-mod .com-buy-btn{
+	width: 177px;
+}
+.com-mod .p-normal,.spec-mod .p-normal{
+	float: left;
+}
+.com-mod .p-del,.spec-mod .p-del{
+	float: right;
+	line-height: 24px;
+}
+.spec-mod li,.com-mod li{
+	height: auto;
+}
+.spec-mod .com-txt{
+	width: 228px;
+	margin:5px auto 0 auto;
+}
+.spec-mod .com-txt a{
+	width: 228px;
+}
+.spec-mod .com-buy-btn, .spec-mod .com-disabled-btn{
+	width: 228px;
+	height: 37px;
+	line-height: 37px;
+	margin:6px auto;
+}
+.spec-mod .com-box,.com-box{
+	height: auto;
+	padding: 0 6px;
+}
+.spec-mod .com-buy-btn{
+	height: 42px;
+	background:#f00 url(//s1.bbgstatic.com/topic/2014/3/taqing/images/jd-btn.jpg) no-repeat;
+}
+.spec-mod .com-buy-btn:hover{
+	background:#b20000 url(//s1.bbgstatic.com/topic/2014/3/taqing/images/jd-btn.jpg) no-repeat 0 -42px;
+}
+
+.code {
+    height: 115px;
+    left: 33px;
+    top: 453px;
+    width: 925px;
+    background-repeat: no-repeat;
+}
+.code li {
+    float: left;
+    height: 115px;
+    width: 230px;
+}
+.code li a {
+    display: block;
+    height: 115px;
+    overflow: hidden;
+    text-indent: -9999px;
+    width: 230px;
+}
+#nav a.hid {
+    display: block;
+}

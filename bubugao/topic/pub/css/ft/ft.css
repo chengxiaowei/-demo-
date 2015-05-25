@@ -1,0 +1,254 @@
+/**
+* @des 公共底部
+* @author jiangchaoyi update 2014.8.12
+*/
+/*帮助*/
+.help {
+	background-color: #f2f2f2;
+	margin-top: 20px;
+	padding: 30px 0 0 0;
+	position: relative;
+}
+
+.help .w1190 {
+}
+
+.help .help-list{
+	width: 820px;
+	background-color: #fff;
+	padding: 0 0 0 30px;
+	min-height: 162px;
+	overflow: hidden;
+}
+
+.help dl {
+	float:left;
+	width: 120px;
+	padding: 20px 0;
+	margin-right: 15px;
+}
+
+.help .t14 {
+	height: 22px;
+	line-height: 22px;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.help .t14 .icon{
+	margin-right: 4px;
+	color: #999;
+	font-weight: 400;
+}
+
+.help dd {
+	padding-left: 20px;
+	height: 22px;
+	line-height: 22px;
+	text-overflow: ellipsis;
+	display: block;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.help .first {
+	margin: 6px 0 0 20px;
+	padding: 5px 0 0 0;
+	width: 100px;
+}
+
+.help dl a {
+	color: #999;
+}
+
+.help .contact {
+	width:234px;
+	margin-left: 16px;
+	background-color: #fff;
+	height: 122px;
+	padding: 20px 38px; 
+	overflow: hidden;
+}
+
+.help .contact .contact-item{
+	position: relative;
+	height: 40px;
+	padding: 5px 0 0 30px;
+}
+
+.help .contact .contact-item .icon-txt{
+	display: block;
+	position: absolute;
+	left: 0;
+	top: 0;
+	-webkit-text-stroke-width:0px;
+	color: #999;
+	font-size: 33px;
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+}
+
+.help .contact .contact-item .span-txt{
+	top: 0;
+	left: 38px;
+	position: absolute;
+	display: block;
+	overflow: hidden;
+}
+
+.help .contact .contact-item .span-txt-email{
+	color: #333;
+	height: 18px;
+	line-height: 16px;
+	font-size: 16px;
+}
+
+.help .contact .contact-item .span-txt-info{
+	color: #999;
+	top: 24px;
+	font-size: 12px;
+	height: 14px;
+	line-height: 14px;
+}
+
+.help .contact .tel span{
+	color: #e71f19;
+	font-weight: 700;
+}
+
+.help .contact .attention{
+	padding:10px 0 0 0; 
+}
+
+.help .contact .attention .weixin{
+	/* margin-right: 20px; */	
+	width: 120px;
+}
+
+.help .contact .attention .weixin img{
+	width: 60px;
+	height: 60px;
+}
+
+.help .contact .attention .weixin span{
+	display: block;
+	height: 30px;
+	line-height: 30px;
+	padding: 0 0 0 10px;
+	font-size: 12px;
+}
+.help .contact .attention .weibo
+{
+	margin-left: 2px;
+	/* margin-right: 10px; */
+}
+.help .contact .attention .weibo a{
+	display: block;
+	height: 30px;
+	line-height: 30px;
+}
+
+.help .contact .attention .weibo .icon{
+	display:inline-block;
+	font-size: 19px;
+	margin-right: 8px;
+	background-color: #e35053;
+	width: 28px;
+	height: 28px;
+	text-align: center;
+	line-height: 30px;
+	color: #fff;
+	border-radius:2px; 
+	-webkit-text-stroke-width: 0px;
+}
+
+.help .contact .attention .weibo .qq .icon{
+	background-color: #39b0b8;
+}
+
+/*服务*/
+.service {
+	background-color: #f2f2f2;
+	padding: 24px 0 20px;
+}
+
+.service li {
+	float: left;
+	width: 170px;
+	height: 35px;
+	padding-left: 44px;
+	margin-right: 20px;
+	position: relative;
+}
+
+.service li .icon{
+	position: absolute;
+	height: 35px;
+	line-height: 35px;
+	font-size: 35px;
+	left: 0;
+	top: 0;
+	color: #ccc;
+}
+
+.service .item1{
+	margin-left: 40px;
+}
+
+.service .item5{
+	margin-right: 0;
+}
+
+.service .t18 {
+	height: 20px;
+	line-height: 20px;
+	color: #333;
+	font-weight: 400;
+}
+
+.service span {
+	line-height: 15px;
+	color: #999;
+}
+
+/*版权*/
+.copyright {
+	background-color: #f2f2f2;
+	padding: 20px 0 5px;
+	border-top: 1px solid #f2f2f2;
+}
+
+.copyright p {
+	text-align: center;
+	color: #999;
+	line-height: 20px;
+}
+
+.copyright .cprt-link a {
+	color: #999;
+}
+
+.copyright p span {
+	margin: 0 6px;
+}
+
+/*合作伙伴*/
+.partner{
+	background-color: #f2f2f2;
+	text-align: center;
+	padding: 10px 0 0;
+}
+
+.partner a{
+	margin: 0 12px;
+}
+
+/*背景*/
+.ft-bg{
+	width: 100%;
+	height:46px;
+	background:#f2f2f2 url('../../img/ft.png') 50% 50% no-repeat;
+	overflow: hidden;
+}

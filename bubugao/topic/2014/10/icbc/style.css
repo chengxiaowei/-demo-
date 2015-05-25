@@ -1,0 +1,60 @@
+@import url('../../../pub/css/common.css');
+@import url('../../../pub/css/btn.css'); 
+@import url('../../../pub/font/iconfont.css');
+@import url('../../../pub/css/dialog/ui-dialog.css');
+@import url('../../../pub/css/hd/site-nav.css');
+@import url('../../../pub/css/linkage-tab.css');
+@import url('../../../pub/css/hd/search.css');
+@import url('../../../pub/css/hd/nav.css');
+@import url('../../../pub/css/jquery.minSlide.css');
+@import url('../../../pub/css/ft/ft.css');
+@import url('../../../pub/css/min-bar/min-bar.css');
+@import url('../../../app/style.css'); 
+body{
+	 background:#eeeeee;
+	
+}
+.bn { 
+	width: 100%; 
+	overflow:hidden;
+	background-repeat: no-repeat;
+	background-position: center top;
+	min-width: 1090px;
+}
+ 
+.layout{
+	margin: 0 auto;
+	width: 990px;
+}
+
+.spec-mod{
+	background-color: #de2940;
+	overflow: hidden;
+}
+.spec-mod li{
+	box-shadow: none; 
+	margin:10px 5px 0 0;
+	*margin-right: 3px;
+}
+.com-hd{
+	width: 100%;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	color: #fff;
+	font-size: 30px;
+	font-family: 'Microsoft YaHei';
+	background-color: #f82843;
+}
+.com-bd ul{
+	position: relative;
+	left: 7px;
+	margin:0 auto;
+	padding-bottom: 10px;
+	width: 1000px;
+	overflow: hidden;
+}
+ 
+.help{
+	margin-top:0;
+}

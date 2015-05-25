@@ -1,0 +1,84 @@
+﻿@import "../../common";
+@import "../../../fonts/iconfont.css";
+@import "../../common/button/button";
+@import "../trade/_trade";
+.mod-use-coupon {
+    .hd {
+        overflow: hidden;
+        background: #fff;
+        padding: rem(24);
+        font-size: rem(26);
+        color: #333333;
+    }
+    .bd {
+        .cnt {
+            overflow: hidden;
+            background: #fff;
+            margin: rem(14) 0px;
+            .inner {
+                overflow: hidden;
+                .item {
+                    padding: rem(14) 0px;
+                    overflow: hidden;
+                    border-bottom: 1px solid #dfdfdf;
+                    .text {
+                        padding-top: rem(10);
+                        float: left;
+                        padding-left: rem(24);
+                        font-size: rem(26);
+                        width: rem(180);
+                    }
+                    .input {
+                        float: left;
+                        .input-txt {
+                            padding: rem(10);
+                            border: 1px solid #dfdfdf;
+                            width: rem(300);
+                            font-size: rem(26);
+                        }
+                        .select {
+                            padding: rem(10);
+                            border: 1px solid #dfdfdf;
+                            width: rem(420);
+                            font-size: rem(26);
+                        }
+                    }
+                    .btn-box {
+                        float: left;
+                        margin-left: rem(8);
+                        .ui-button {
+                            padding: 0px rem(20);
+                            font-size: rem(24);
+                            height: rem(56);
+                            line-height: rem(56);
+                            background: #f16320;
+                            border: 1px solid #f16320;
+                        }
+                    }
+                    .msg {
+                        padding-left: rem(202);
+                        clear: both;
+                        font-size: rem(26);
+                        color: red;
+                        padding-top: rem(4);
+                        display: none;
+                    }
+                }
+                .tips {
+                    color: #999999;
+                    padding: rem(24);
+                    font-size: rem(24);
+                }
+            }
+        }
+        .btn {
+            margin: rem(30) rem(24) 0px rem(24);
+            .ui-button {
+                height: rem(80);
+                padding: 0px;
+                font: 400 .75rem/1.6rem 'microsoft yahei';
+                font-size: rem(36);
+            }
+        }
+    }
+}

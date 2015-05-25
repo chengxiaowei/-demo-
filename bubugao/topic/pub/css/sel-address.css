@@ -1,0 +1,80 @@
+@import url('./linkage-tab.css');
+/**
+* @des 地址选择组件
+* @author jiangchaoyi update 2014.8.13		
+*/
+
+.linkage-tab .text {
+    border: 1px solid #e4e4e4;
+    border-radius: 2px;
+}
+
+.linkage-tab-hover .text {
+    border-bottom: 0px;
+}
+
+.linkage-tab .content {
+    border: 1px solid #e4e4e4;
+}
+
+.addr-box {
+    background-color: #fff;
+    width: 530px;
+}
+
+.addr-box .addr-box-top,
+.addr-box .addr-box-btm {
+    min-width: 530px;
+    background: #c00 url(../img/sel-address/sel-address.png) 50% 0 no-repeat;
+    overflow: hidden;
+}
+
+.addr-box .addr-box-top {
+    height: 100px;
+}
+
+.addr-box .addr-box-top .t16 {
+    color: #fff;
+    padding: 30px 0 0 60px;
+    font-size: 24px;
+}
+
+.addr-box .addr-box-top .des {
+    padding: 0 60px;
+    color: #e2dac2;
+    line-height: 25px;
+}
+
+.addr-box .addr-box-btm {
+    height: 35px;
+    background-position: 0 -130px;
+    background-color: #ccc;
+}
+
+.addr-box .addr-box-cnt {
+    padding: 40px 0 30px 70px;
+}
+
+.addr-box .addr-box-cnt .btn-sel-tips {
+    height: 26px;
+    line-height: 26px;
+    font: 12px/26px 'SimSun';
+    color: #666;
+}
+
+.addr-box .addr-box-cnt .btn-sel-addr {
+    width: 260px;
+    display: block;
+}
+
+.addr-box .addr-box-cnt .btn-sel-addr:hover {
+    text-decoration: none;
+    color: #333;
+}
+
+.addr-box .addr-box-cnt .btn {
+    margin: 30px 0 0 108px;
+    font-size: 18px;
+    height: 36px;
+    line-height: 36px;
+}

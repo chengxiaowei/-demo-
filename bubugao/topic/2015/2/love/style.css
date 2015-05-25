@@ -1,0 +1,111 @@
+@import url('../../../pub/css/common.css');
+@import url('../../../pub/css/btn.css'); 
+@import url('../../../pub/font/iconfont.css');
+@import url('../../../pub/css/dialog/ui-dialog.css');
+@import url('../../../pub/css/hd/site-nav.css');
+@import url('../../../pub/css/linkage-tab.css');
+@import url('../../../pub/css/hd/search.css');
+@import url('../../../pub/css/hd/nav.css');
+@import url('../../../pub/css/jquery.minSlide.css');
+@import url('../../../pub/css/ft/ft.css');
+@import url('../../../pub/css/min-bar/min-bar.css');
+@import url('../../../app/style.css'); 
+body{
+	background:#153484;
+	padding-bottom: 100px;
+}
+.layout{
+	margin: 0 auto;
+	width: 990px;
+}
+.cnt-box{
+	position: relative;
+	margin-bottom: 40px;
+	z-index: 3;
+}
+.com-mod{
+	margin: 0 auto; 
+	overflow: hidden;
+}
+.com-hd{  
+	font-size: 38px;
+	line-height: 90px;
+	font-family: 'Microsoft Yahei';
+	height: 90px;
+	text-align: center; 
+	text-indent: -9999px;
+	background-position: center top; 
+} 
+.com-hd h2{
+	font-weight: 400;
+}
+.com-bd{
+	position: relative;
+	padding-top: 20px;
+	padding-bottom: 15px;
+	margin: 0 auto;
+	width: 1089px;
+}
+.com-bd ul{
+	position: relative;
+	left: 50px;
+	*margin-bottom: 10px;
+}
+.layout1090{
+	margin: 0 auto 40px;
+	width: 1090px;
+}
+.layout1090 a,.layout1090 img{
+	display: block;
+	width: 100%;
+	height: auto;
+}
+.com-ft{
+	background-position: center top; 
+}
+.bg1{
+	background: #851111;
+}
+.bg2{
+	background: #fc465f;
+}
+.bg3{
+	background: #153484;
+}
+.bg4{
+	background: #3b64ce;
+}
+.bg5{
+	background: #6342b7;
+}
+
+/*nav*/ 
+.right-nav{
+	position:fixed; 
+	padding-top: 70px;
+	width: 120px;
+	height: auto;
+	overflow:hidden; 
+	z-index:100; 
+	left:55%; 
+	margin-left:430px;
+	margin-bottom: 40px;
+	bottom:25px;
+	background:url(img/nav.png) no-repeat; 
+	
+}	
+.right-nav a{  
+	height: 40px; 
+	font: 400 18px/40px 'Microsoft Yahei';
+	color:#ff9cac;
+	text-indent: -99999px;
+	text-align: center;
+	background:none; 
+} 
+.right-nav .go-top{ 
+	height: 40px;
+	line-height: 40px;
+	border:none;
+	text-indent: -999999px; 
+	background:none; 
+}

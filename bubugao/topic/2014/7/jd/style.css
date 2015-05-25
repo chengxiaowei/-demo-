@@ -1,0 +1,134 @@
+@import url('../../../pub/css/common.css');
+@import url('../../../pub/css/btn.css'); 
+@import url('../../../pub/font/iconfont.css');
+@import url('../../../pub/css/dialog/ui-dialog.css');
+@import url('../../../pub/css/hd/site-nav.css');
+@import url('../../../pub/css/linkage-tab.css');
+@import url('../../../pub/css/hd/search.css');
+@import url('../../../pub/css/hd/nav.css');
+@import url('../../../pub/css/jquery.minSlide.css');
+@import url('../../../pub/css/ft/ft.css');
+@import url('../../../pub/css/min-bar/min-bar.css');
+@import url('../../../app/style.css'); 
+body{
+	background: #013d81;
+	
+}
+.bn { 
+	width: 100%;
+	height: 442px;
+	overflow:hidden;
+	background-repeat: no-repeat;
+	background-position: center top;
+	min-width: 1220px;
+}
+ 
+.wrapper{
+	overflow:visible;
+	padding-bottom:0;
+	margin-top:0;
+	padding-top:0;
+	min-width: 1220px;
+}
+.layout{
+	margin:0 auto;
+	width: 990px;
+}
+.wrapper h2{
+	border:none;
+	box-shadow: none;
+	text-align: left;
+	height: 52px;
+	font-size: 32px;
+	vertical-align: bottom; 
+	+margin-top:0px; 
+}
+.wrap-cnt{
+	padding:30px 0 60px 0;
+	margin-top:0;
+	position: relative; 
+	min-width: 1220px;
+	background: url(img/bg.jpg) no-repeat;
+	background-attachment: fixed;
+	z-index: 2;
+}
+.com-coupon{
+	margin:30px auto;
+}
+.com-coupon li.coupon-box{
+	float: left;
+	margin-bottom: 10px;
+	width: 245px;
+	height: 125px;
+	background-position: center center;
+	overflow: hidden;
+}
+.com-coupon li.coupon-box a{
+	display: block;
+	width: 245px;
+	height: 125px;
+	text-indent:-99999em;
+	overflow: hidden;
+}
+.com-mod{
+	margin: 30px auto 0;
+	padding-bottom: 20px;
+	width: 1000px;
+	background:url(img/com-ft.png) no-repeat bottom center;
+}
+.com-mod li{
+	margin:0 5px 10px 0;
+	*margin:0 3px 10px 0;
+}
+.com-hd{
+	height: 82px;
+	background:url(img/com-hd.png) no-repeat;
+}
+.com-bd{
+	padding-top:30px;
+	background:url(img/com-bd.png) repeat;
+}
+.com-bd ul{
+	position: relative;
+	left: 15px;
+}
+#com2 .com-hd{
+	background-position: 0 -82px;
+}
+#com3 .com-hd{
+	background-position: 0 -164px;
+} 
+/*右侧浮层*/
+.right-nav{ 
+	position:fixed;
+	-position:absolute;
+	width: 160px;
+	height: 251px;
+	padding-top: 205px;
+	margin-bottom: 40px;
+	z-index:100;
+	left:53%; 
+	margin-left:450px;
+	bottom:40px;
+	overflow: hidden;
+	background:url(img/nav.png) no-repeat;
+}
+.right-nav a{
+	margin-bottom: 5px;
+	height: 50px;
+	font: 100 18px/50px 'Microsoft Yahei';
+	color:#fff;
+	text-decoration: none;
+	display: block;
+}
+.right-nav a:hover{
+	text-decoration: underline;
+}
+
+.right-nav .go-top{
+	background:none;
+	border:none;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+}

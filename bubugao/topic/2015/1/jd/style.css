@@ -1,0 +1,73 @@
+@import url('../../../pub/css/common.css');
+@import url('../../../pub/css/btn.css'); 
+@import url('../../../pub/font/iconfont.css');
+@import url('../../../pub/css/dialog/ui-dialog.css');
+@import url('../../../pub/css/hd/site-nav.css');
+@import url('../../../pub/css/linkage-tab.css');
+@import url('../../../pub/css/hd/search.css');
+@import url('../../../pub/css/hd/nav.css');
+@import url('../../../pub/css/jquery.minSlide.css');
+@import url('../../../pub/css/ft/ft.css');
+@import url('../../../pub/css/min-bar/min-bar.css');
+@import url('../../../app/style.css'); 
+body{
+	background-color: #ed0e26;
+}
+.cnt-box{
+	margin-bottom: 100px;
+}
+.com-mod{
+	margin: 0 auto 40px;
+	width: 988px;
+	background-color: #ffd800;
+	overflow: hidden;
+}
+.com-hd{
+	margin-bottom: 10px;
+	height: 60px;
+	background-position: center center;
+}
+.com-bd ul{
+	position: relative;
+	left: 10px;
+	*margin-bottom: 10px;
+}
+.com-bd li{
+	margin: 0 5px 10px 0;
+}
+
+/*nav*/ 
+.right-nav{
+	position:fixed; 
+	-position:absolute;
+	padding-top: 72px;
+	width: 108px;
+	height: auto;
+	overflow:hidden; 
+	z-index:100; 
+	left:55%; 
+	margin-left:450px;
+	margin-bottom: 40px;
+	bottom:25px; 
+	background:url(img/nav.png) no-repeat;
+}
+.right-nav .nav-cnt{
+	width: 78px;
+	margin: 0 auto;
+	background-color: #ffd800;
+}
+.right-nav a{
+	margin: 0 5px;
+	height: 40px; 
+	font: 700 16px/40px 'Simsun';
+	color:#f2620b;
+	text-align: center;
+	border-bottom: 1px solid #f2620b;
+	
+} 
+.right-nav .go-top{ 
+	height: 40px;
+	line-height: 40px;
+	border:none;  
+	background: none; 
+}	

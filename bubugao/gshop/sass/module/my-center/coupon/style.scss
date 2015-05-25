@@ -1,0 +1,23 @@
+/* common */
+@import "../../../common";
+@import "../../../common/slider/slider";
+@import "../../../common/form/form";
+@import "../../../common/button/button";
+@import "../../../common/scroll-load/scroll-load";
+
+/* modules */
+@import "../common/base";
+@import "../common/none";
+@import "./source/coupon";
+
+html{
+    background: #F2F2F2;
+    padding: 0 0 rem(20);
+}
+.float-left{
+    float:left;
+}
+.float-right{
+    float:right;
+}
+

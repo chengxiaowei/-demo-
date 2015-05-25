@@ -1,0 +1,173 @@
+@import url('../../../pub/css/common.css');
+@import url('../../../pub/css/btn.css'); 
+@import url('../../../pub/font/iconfont.css');
+@import url('../../../pub/css/dialog/ui-dialog.css');
+@import url('../../../pub/css/hd/site-nav.css');
+@import url('../../../pub/css/linkage-tab.css');
+@import url('../../../pub/css/hd/search.css');
+@import url('../../../pub/css/hd/nav.css');
+@import url('../../../pub/css/jquery.minSlide.css');
+@import url('../../../pub/css/ft/ft.css');
+@import url('../../../pub/css/min-bar/min-bar.css');
+@import url('../../../app/style.css'); 
+body{
+	background: #4ecc91;
+	
+}
+.bn { 
+	width: 100%;
+	height:654px;
+	overflow:hidden;
+	background-repeat: no-repeat;
+	background-position: center top;
+	min-width: 1024px; 
+}
+.wrapper{
+	overflow:visible;
+	padding-bottom:30px;
+	margin-top:0;
+	padding-top:0;
+}
+.wrapper h2{
+	border:none;
+	box-shadow: none;
+	height: 78px;
+	text-indent: -9999px;
+}
+.spec-mod,.com-mod{
+	background-repeat: no-repeat;
+	background-position: center top;
+	min-width: 1024px; 
+}
+#com1 .com-hd{
+	background:url(images/title1.jpg) no-repeat center top ;
+}
+#com1 .com-bd{
+	background:#0080df url(images/com-bd1.jpg) repeat-x left bottom ; 
+}
+#com2 .com-hd{
+	background:url(images/title2.jpg) no-repeat center top ;
+}
+#com2 .com-bd{
+	background:#e68a1f url(images/com-bd2.jpg) repeat-x left bottom; 
+}
+#com3 .com-hd{
+	background:url(images/title3.jpg) no-repeat center top ;
+}
+#com3 .com-bd{
+	background:#d74c48 url(images/com-bd3.jpg) repeat-x left bottom; 
+}
+#com4 .com-hd{
+	background:url(images/title4.jpg) no-repeat center top ;
+}
+#com4 .com-bd{
+	background:#c230d9 url(images/com-bd4.jpg) repeat-x left bottom; 
+}
+#com5 .com-hd{
+	background:url(images/title5.jpg) no-repeat center top ;
+}
+#com5 .com-bd{
+	background:#1671b7 url(images/com-bd5.jpg) repeat-x left bottom; 
+}
+#com6 .com-hd{
+	background:url(images/title6.jpg) no-repeat center top ;
+}
+#com6 .com-bd{
+	background:#3d7e15 url(images/com-bd6.jpg) repeat-x left bottom; 
+}
+.wrap-cnt{
+	margin-top:0;
+	position: relative;
+	z-index: 2;
+}
+.spec-mod ul,.com-mod ul{
+	margin-left:13px;
+}
+.com-mod ul {
+
+}
+.com-bd{
+	width:1018px;
+	margin: 0 auto;
+	overflow: hidden;
+	padding-bottom:20px;
+}
+
+
+.com-mod, .spec-mod{
+	margin-bottom: 30px;
+}
+
+.hid{
+	display:block;
+	text-indent:-9999em;
+	overflow:hidden;
+}
+/*底部浮层*/
+.ft-nav{
+	background: #de9f05;
+	height: 62px;
+	position: fixed;
+	-position:absolute;
+	bottom:0;
+	width: 100%;
+	z-index: 10;
+	box-shadow: 0 -1px 1px #333;
+}
+.ft-nav-bd{
+	width: 1050px;
+	margin: 0 auto;
+}
+.ft-nav-bd a{
+	display: block;
+	float: left;
+	width:190px;
+	height:62px;
+	text-align: center;
+	font: 100 25px/62px 'Microsoft Yahei';
+	color:#000;
+}
+.ft-link0{
+	width: 202px;
+	background: url(//s1.bbgstatic.com/topic/2014/3/wash/images/ft-nav.jpg) no-repeat;
+	text-indent: -9999px;
+}
+/*右侧浮层*/
+.right-nav{
+	position:fixed;
+	-position:absolute;
+	display: none;
+	width:190px;
+	height:252px;
+	padding-top: 108px;
+	overflow:hidden;
+	z-index:100;
+	left:55%;
+	margin-bottom: 100px;
+	margin-left:450px;
+	bottom:35px;
+	background:url(images/nav.png) no-repeat;
+}
+
+.right-nav a{
+	height:36px;
+	font: 700 14px/45px 'Microsoft Yahei';
+	text-indent: -20px;
+	color:#1b5b7f;
+	text-decoration: none;
+}
+.right-nav a:hover{
+	text-decoration: underline;
+}
+
+.right-nav .go-top{
+	background:none;
+	border:none;
+	height: 36px;
+	line-height: 36px;
+	color:#fff;
+	text-align: center;
+}
+.help{
+	margin-top: 0;
+}

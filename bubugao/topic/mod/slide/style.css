@@ -1,0 +1,94 @@
+@import url('../../pub/css/common.css');
+@import url('../../pub/css/btn.css'); 
+@import url('../../app/style.css');
+@import url('../../app/mod/toplist.css');
+@import url('../../app/mod/slide.css');
+.layout{
+	margin: 0 auto 40px;
+	width: 990px;
+}
+.slide1 {
+    height: 330px;
+    position: relative;
+    z-index: 49;
+}
+.slide1 .slide-list {
+    height: 330px;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    z-index: 1;
+}
+.slide1 .slide-list li {
+    background: none no-repeat scroll 50% 0 #fff;
+    display: block;
+    height: 360px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+}
+.slide1 .slide-list .slid-click {
+    display: block;
+    height: 330px;
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    width: 990px;
+    z-index: 2;
+}
+.slide1 .slide-num {
+    top: 6px;
+    height: 318px;
+    right: 10px;
+    position: absolute;
+    text-align: center;
+    width: 104px;
+    z-index: 2;
+}
+.slide1 .slide-num a {
+    background: none repeat scroll 0 0 #b5b5b5;
+    cursor: pointer;
+    display: block;
+    height: 100px;
+    margin-bottom: 5px;
+    overflow: hidden;
+    width: 100px;
+    border:1px solid #8c4701;
+}
+.slide1 .slide-num a.hover {
+    border:1px solid #ff5d29;
+}
+
+.slide2{
+   position: relative;
+}
+
+.slide2,.slide2 .slide-list,.slide2 .slide-list li,.slide2 .slide-list .slid-click a,.slide2 .slide-list .slid-click{
+    width: 990px;
+    height: 420px;
+}
+
+.slide2 .slide-list .slid-click{
+    display: block;
+}
+
+.slide2 .w1190{
+   width: 990px;
+}
+
+.slide2 .slide-list .slid-click a{
+    width: 100%;
+    left:0;
+}
+
+.slide2 .slide-num{
+    bottom: 30px;
+}
+
+.slide2 .slide-num a{
+    width: 12px;
+    height: 12px;
+    margin: 0 3px;
+}

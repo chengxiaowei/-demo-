@@ -1,0 +1,150 @@
+@import url('../../../pub/css/common.css');
+@import url('../../../pub/css/btn.css'); 
+@import url('../../../pub/font/iconfont.css');
+@import url('../../../pub/css/dialog/ui-dialog.css');
+@import url('../../../pub/css/hd/site-nav.css');
+@import url('../../../pub/css/linkage-tab.css');
+@import url('../../../pub/css/hd/search.css');
+@import url('../../../pub/css/hd/nav.css');
+@import url('../../../pub/css/jquery.minSlide.css');
+@import url('../../../pub/css/ft/ft.css');
+@import url('../../../pub/css/min-bar/min-bar.css');
+@import url('../../../app/style.css'); 
+.bn-share{
+	background: url(img/bn-title.jpg) no-repeat center top;
+	height: 0;
+}
+.bn{
+	height: 558px;
+}
+body{
+	min-width: 1024px;
+}
+.bn-mod{
+	display: block;
+	margin: 0 auto;
+	width: 690px; 
+	position: relative;
+}
+.bn-txt{
+	line-height: 25px;
+	font-size: 16px;
+	color: #fff;
+	font-size: 14px;
+	font-family: '黑体';
+}
+.see-link{
+	position: absolute;
+	width: 95px;
+	height: 22px;
+	top: 290px;
+	left: 251px;
+	text-align: center;
+}
+.see-link:hover{
+	border-bottom: 1px solid #ffecbb;
+}
+.see-details{
+	width: 666px;
+	height: 200px;
+	background: url(img/details.png) no-repeat center top;
+	position: absolute;
+	top: 27px;
+	left: -260px;
+	visibility: hidden;
+	opacity: 0;
+	_filter：alpha(opacity=0);
+}
+.wrapper{
+	padding-bottom: 0;
+}
+.wrapper h2{
+	color: #000;
+	border-top: 1px solid #fff;
+	box-shadow:none;
+}
+.spec-mod{
+	margin-bottom: 0;
+	padding: 10px 0 50px;
+	position:relative; 
+	zoom:1;
+}
+.com1{
+	background-color: #18b48a;
+}
+.com2{
+	background-color: #acda7b
+}
+.com-bd{
+	width: 990px;
+	margin: 0 auto;
+}
+.spec-title{
+	width: 800px;
+	margin: 20px auto 0;
+	*margin-top: 35px;
+	color: #fff;
+}
+.spec-title .cute{
+	margin-top: -10px;
+}
+.spec-title h2{
+	margin: 0 10px;
+	width: 765px;
+	_width: 760px;
+	height: 25px;
+	position: relative;
+}
+.spec-title h2 span{
+	position: relative;
+	display: block;
+	padding: 0 10px;
+	margin: -28px auto 0;
+	width: 234px;
+	text-align: center;
+	font-size: 28px;
+	color:#fff;
+}
+.com1 .spec-title h2 span{
+	background-color: #18b48a;
+}
+.com2 .spec-title h2 span{
+	background-color: #acda7b;
+}
+/* 商品内容 */
+
+/*右侧浮层*/
+.right-nav{
+	display:none;
+	background:url(img/nav.png?1) no-repeat;
+	width:129px;
+	height:340px;
+	padding-top:60px;
+	_padding-top:78px;
+	position:fixed;
+	-position:absolute;
+	z-index:100;
+	left:55%;
+	margin-left:450px;
+	margin-bottom:30px;
+}
+.right-nav a{
+	height: 20px;
+	font: 100 14px/17px '黑体';
+	color:#fff;
+	margin-top: 17px;
+}
+.right-nav a:hover{
+	text-decoration: underline;
+}
+
+.right-nav .go-top{
+	background:none;
+	border:none;
+	height: 38px;
+	line-height: 38px;
+	text-align: center;
+}
+.help{
+	margin-top: 0;
+}

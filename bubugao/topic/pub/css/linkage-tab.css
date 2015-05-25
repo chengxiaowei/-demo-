@@ -1,0 +1,300 @@
+.linkage-tab {
+    position: relative;
+    font-size: 12px;
+    height: 26px;
+}
+
+.linkage-tab .text,
+.linkage-tab .content {
+    /* #a3a3a3 */
+    
+    border: 1px solid #e4e4e4;
+}
+
+.linkage-tab .linkage-tab-input {
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    width: 1px;
+    height: 1px;
+}
+
+.linkage-tab .text {
+    padding-left: 5px;
+    padding-right: 20px;
+    position: relative;
+    background: #fff;
+    height: 26px;
+    line-height: 26px;
+    color: #666;
+    cursor: pointer;
+}
+
+.linkage-tab .clr {
+    width: 17px;
+    height: 17px;
+    background: url(../img/close/close.png) no-repeat;
+    cursor: pointer;
+    position: absolute;
+    right: -9px;
+    top: -9px;
+}
+
+.linkage-tab .clr:hover {
+    background: url(../img/close/close-hover.png) no-repeat;
+}
+
+.linkage-tab .limit {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: inline-block;
+    _zoom: 1;
+    _display: inline;
+    width: 70px;
+}
+
+.linkage-tab .text .text-div {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    zoom: 1;
+}
+
+.linkage-tab .text .text-div i {
+    padding-left: 10px;
+}
+
+.linkage-tab .text .text-div i {
+    padding-left: 10px;
+}
+
+.linkage-tab .text b,
+.linkage-tab .content .mt .tab li i,
+.linkage-tab .content .mt .tab li a:hover i {
+    display: block;
+    -webkit-backface-visibility: hidden;
+    position: absolute;
+    right: 8px;
+    top: 10px;
+    width: 0;
+    height: 0;
+    border-width: 5px;
+    border-style: solid dashed dashed;
+    border-color: #333132 transparent transparent;
+    font-size: 0;
+    line-height: 0;
+    -webkit-transition: -webkit-transform .2s ease-in;
+    -moz-transition: -moz-transform .2s ease-in;
+    -o-transition: -o-transform .2s ease-in;
+    transition: transform .2s ease-in;
+    -moz-transform: rotate(0deg);
+    -moz-transform-origin: 50% 30%;
+    -webkit-transform: rotate(0deg);
+    -webkit-transform-origin: 50% 30%;
+    -o-transform: rotate(0deg);
+    -o-transform-origin: 50% 30%;
+    transform: rotate(0deg);
+    transform-origin: 50% 30%;
+}
+
+.linkage-tab .text .hover-arrow {
+    border-color: #333132 transparent transparent;
+    -webkit-transition: -webkit-transform .2s ease-in;
+    -moz-transition: -moz-transform .2s ease-in;
+    -o-transition: -o-transform .2s ease-in;
+    transition: transform .2s ease-in;
+    -moz-transform: rotate(180deg);
+    -moz-transform-origin: 50% 30%;
+    -webkit-transform: rotate(180deg);
+    -webkit-transform-origin: 50% 30%;
+    -o-transform: rotate(180deg);
+    -o-transform-origin: 50% 30%;
+    transform: rotate(180deg);
+    transform-origin: 50% 30%;
+}
+
+.linkage-tab .content .mt .tab li a em {
+    font-style: normal;
+}
+
+.linkage-tab .content .mt .tab li a i {
+    border-color: #ccc transparent transparent;
+}
+
+.linkage-tab .content .mt .tab li a:hover i {
+    border-color: #999999 transparent transparent;
+}
+
+.linkage-tab .content {
+    position: absolute;
+    width: 390px;
+    background: #fff;
+    z-index: 0;
+    top: 26px;
+    left: 0px;
+    padding: 15px;
+    display: none;
+}
+
+.linkage-tab .content .mc {
+    /* min-height: 60px; */
+}
+
+.linkage-tab .content .mt .tab {
+    height: 25px;
+    border-bottom: 2px solid #edd28b;
+}
+
+.linkage-tab .content .mt .tab li {
+    display: inline-block;
+    float: left;
+    cursor: pointer;
+    margin-top: 0px !important;
+    min-width: 50px !important;
+}
+
+.linkage-tab .content .mt .tab li a {
+    position: relative;
+    float: left;
+    height: 25px;
+    line-height: 23px;
+    padding: 0 21px 1px 11px;
+    margin-right: 3px;
+    border: 1px solid #ddd;
+    border-bottom: 0;
+    color: #ccc !important;
+    text-align: center;
+    cursor: pointer;
+    z-index: -1;
+    min-width: 50px;
+    background: none;
+    font-weight: normal;
+    vertical-align: top;
+}
+
+.linkage-tab .content .mt .tab li a:hover {
+    text-decoration: none;
+}
+
+.linkage-tab .content .mt .tab li a em {
+    color: #959595 !important;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: inline-block;
+    _zoom: 1;
+    _display: inline;
+    width: 45px;
+}
+
+.linkage-tab .content .mt .tab li a.hover {
+    height: 25px;
+    background-color: #fff;
+    border: 2px solid #edd28b;
+    border-bottom: 0;
+    padding: 0 20px 0 10px;
+    line-height: 22px;
+    text-decoration: none;
+    color: #000;
+    z-index: 1;
+}
+
+.linkage-tab .content .mt .tab li a.hover em {
+    color: #333;
+}
+
+.linkage-tab .content .mt .tab li i {}
+
+.linkage-tab .content .mc .load-txt-box {
+    text-align: center;
+    padding: 20px 0px;
+}
+
+.linkage-tab .content .mc .area-list {
+    padding-top: 5px;
+    margin-top: 0px !important;
+}
+
+.linkage-tab .content .mc .area-list li {
+    display: inline-block;
+    float: left;
+    /* width: 80px; */
+    
+    height: auto !important;
+    min-height: 0 !important;
+    padding: 2px 0 2px 15px;
+    margin-top: 0px !important;
+}
+
+.linkage-tab .content .mc .area-list li a {
+    float: left;
+    padding: 2px 4px;
+    color: #333 !important;
+    line-height: 18px;
+}
+
+.linkage-tab .content .mc .area-list li a:hover {
+    background: #eee;
+    /* color: #fff; */
+    
+    text-decoration: none;
+}
+
+.linkage-tab .content .mc .area-list li a.a-hover:hover,
+.linkage-tab .content .mc .area-list li .a-hover {
+    background: #005ea7;
+    color: #fff !important;
+    text-decoration: none;
+}
+/* show or hide */
+
+.linkage-tab-hover {
+    position: relative;
+    z-index: 2;
+}
+
+.linkage-tab-hover .text {
+    border-bottom: 0px;
+    z-index: 1;
+}
+
+.linkage-tab-hover .content {
+    display: block;
+    /* min-height: 145px; */
+}
+/* reset */
+
+body {
+    margin: 0px;
+    padding: 0px;
+    /*min-width : 970px;*/
+    /*direction: rtl;*/
+}
+
+ul,
+li,
+p,
+div {
+    margin: 0px;
+    padding: 0px;
+}
+
+ul,
+li {
+    list-style: none outside none;
+}
+
+img {
+    border: 0px;
+}
+/* reset */
+/* 验证样式 */
+
+.linkage-tab label.error {
+    position: absolute !important;
+    left: 372px !important;
+    color: red !important;
+    text-align: left !important;
+    width: 300px !important;
+}

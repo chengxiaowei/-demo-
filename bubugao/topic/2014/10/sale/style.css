@@ -1,0 +1,232 @@
+@import url('../../../pub/css/common.css');
+@import url('../../../pub/css/btn.css'); 
+@import url('../../../pub/font/iconfont.css');
+@import url('../../../pub/css/dialog/ui-dialog.css');
+@import url('../../../pub/css/hd/site-nav.css');
+@import url('../../../pub/css/linkage-tab.css');
+@import url('../../../pub/css/hd/search.css');
+@import url('../../../pub/css/hd/nav.css');
+@import url('../../../pub/css/jquery.minSlide.css');
+@import url('../../../pub/css/ft/ft.css');
+@import url('../../../pub/css/min-bar/min-bar.css');
+@import url('../../../app/style.css'); 
+body{
+	 background:url(img/bg.jpg) repeat center top;	
+}
+.bn { 
+	width: 100%;
+	height:359px;
+	overflow:hidden;
+	background:url(img/banner.jpg?111) no-repeat center center;
+	min-width: 1088px;
+
+}
+.wrapper{
+	padding-bottom:0;
+	margin-top:0;
+	padding-top:20px;
+	background:url(img/bg.jpg) repeat center top;
+}
+.wrapper h2{ 
+	border:none;
+	box-shadow: none;
+}
+.com-mod,.spec-mod{
+	margin-bottom:15px;
+}
+.com-hd{
+	position: relative;
+	left:20px;
+	margin:0 auto 6px;
+	min-width: 1068px;
+	height:60px;
+	background:url(img/com-hd.png?111) no-repeat center top;
+	overflow: hidden;
+}
+#com2 .com-hd{
+	background-position:center -60px;
+}
+#com3 .com-hd{
+	background-position:center -120px;
+}
+#com4 .com-hd{
+	background-position:center -180px;
+}
+#com5 .com-hd{
+	height: 33px;
+	margin-bottom: 0;
+	background-position:center -240px;
+}
+.spec-bd{
+	height: 325px;
+	background-repeat: no-repeat;
+	background-position: center top;
+	min-width: 1024px;
+}
+.spec-bd .spec-bd-link{
+	display: block;
+	width:920px;
+	margin:0 auto;
+	text-indent: -9999px;
+	height:100%;
+}
+.wrap-cnt{
+	margin-top:0;
+	position: relative;
+	z-index: 2;
+	min-height:1240px; 
+} 
+.com-bd{
+	width:1010px;
+	margin: 0 auto;
+	overflow: hidden;
+	padding:10px 10px 20px 10px ;
+	background: #FF6A6A;
+}
+#com2 .com-bd{
+	background:#FFB973;
+}
+#com3 .com-bd{
+	background:#61C5B6;
+}
+#com4 .com-bd{
+	background:#6DBFD7;
+}
+#com5 .com-bd{
+	background: #FEEF62;
+}
+#com5 .jImg{
+	height: 277px;
+	width: 992px;
+	left: 10px;
+	position: relative;
+	background-image: url(http:img/com-img.jpg);
+	opacity: 1;
+	background-position: 50% 0%;
+}
+.com-ft{
+	margin:0 auto;
+	width:1030px;
+	height:40px;
+	background:url(img/com-ft.png) no-repeat;	
+}
+#com2 .com-ft{
+	background-position:0 -40px;
+}
+#com3 .com-ft{
+	background-position:0 -80px;
+}
+#com4 .com-ft{
+	background-position:0 -120px;
+}
+#com5 .com-ft{
+	background-position:0 -160px;
+}
+.com-mod li{
+	box-shadow: none; 
+	margin:10px 8px 0 0;
+	-margin-right: 6px;
+}
+.com-mod li{
+	width:188px;
+}
+.com-box{
+	height: 50px;
+}
+.com-mod .com-txt{
+	width:126px;
+}
+.com-bd ul{
+	position: relative;
+	left: 10px;
+	margin:0 auto;
+	width: 990px;
+}
+.spec-mod .com-bd ul{
+	width:1000px;
+	left:5px;
+}
+.hid{
+	display:block;
+	text-indent:-9999em;
+	overflow:hidden;
+} 
+
+/*右侧浮层*/
+.right-nav{
+	position:fixed;
+	-position:absolute;
+	width: 145px;
+height: 275px;
+padding-top: 309px;
+	overflow:hidden; 
+	z-index:100;
+	left:55%;
+	margin-left:450px;
+	margin-bottom: 40px;
+	bottom:25px;
+	background:url(img/nav.png) no-repeat;
+}
+
+.right-nav a{
+	margin-bottom:10px;
+	height:40px;
+	font:400 18px/40px 'Microsoft Yahei';
+	color: #fff;
+}
+.right-nav a.hot{
+	text-indent:-30px;
+	height:50px;
+}
+
+.right-nav .go-top{
+	margin-top:-10px;
+	background:none;
+	border:none;
+	height: 51px;
+	line-height: 40px;
+	text-indent:-9999em; 
+}
+.help{
+	margin-top:0;
+}
+.laz-img a:hover{
+	background:url(img/com-img.jpg) no-repeat;
+	overflow: hidden;
+}
+.laz-img .com-img1,.laz-img .com-img5{
+	top:0;
+	left: 0;
+	width: 277px;
+	height: 277px;
+}
+.laz-img .com-img2,.laz-img .com-img3{
+	top:0;
+	left: 284px;
+	width: 208px;
+	height: 129px;
+}
+.laz-img .com-img3{
+	left:501px;
+}
+.laz-img .com-img4{
+	top:139px;
+	left: 282px;
+	width: 426px;
+	height: 139px;
+}
+.laz-img .com-img5{
+	left:715px;
+}
+.laz-img .com-img2:hover{
+	background-position: -284px 0;
+}
+.laz-img .com-img3:hover{
+	background-position: -501px 0;
+}
+.laz-img .com-img4:hover{
+	background-position: -282px -139px;
+}
+.laz-img .com-img5:hover{
+	background-position: -715px 0;
+}

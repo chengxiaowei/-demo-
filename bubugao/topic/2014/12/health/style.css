@@ -1,0 +1,129 @@
+@import url('../../../pub/css/common.css');
+@import url('../../../pub/css/btn.css'); 
+@import url('../../../pub/font/iconfont.css');
+@import url('../../../pub/css/dialog/ui-dialog.css');
+@import url('../../../pub/css/hd/site-nav.css');
+@import url('../../../pub/css/linkage-tab.css');
+@import url('../../../pub/css/hd/search.css');
+@import url('../../../pub/css/hd/nav.css');
+@import url('../../../pub/css/jquery.minSlide.css');
+@import url('../../../pub/css/ft/ft.css');
+@import url('../../../pub/css/min-bar/min-bar.css');
+@import url('../../../app/style.css'); 
+.com-bd ul{
+    min-height: 100px;
+}
+.layout{
+	margin: 0 auto;
+	width: 990px;
+}
+.gd-box a,.gd-box img{
+	display: block;
+	width: 100%;
+	height:100%;
+}
+.cnt-box{
+    padding-top: 20px;
+	padding-bottom: 100px;
+}
+.com-mod,.com-hd,.com-bd,.com-ft{
+	margin: 0 auto;
+	width: 1000px;
+}
+.com-hd{
+	padding: 15px 0 10px 0;
+	width: 870px;
+}
+.com-hd .hd-box{
+	top: 20px;
+	right:60px; 
+	width: 290px;
+	height: 145px;
+}
+.com-hd a{
+	display: block;
+    text-align: center;
+	overflow: hidden;
+    color: #fff;
+    text-decoration: none;
+    font:700 46px/50px 'microsoft yahei';
+    font-family: Tahoma,Arial,Roboto,'microsoft yahei',"Droid Sans","Helvetica Neue","Droid Sans Fallback","Heiti SC","Hiragino Sans GB",Simsun,sans-self;
+}
+.com-mod .com-bd{ 
+	padding-top: 20px;
+	padding-bottom: 10px;
+	width: 998px;
+	border: 0;
+	border-top: none;
+}
+.com-bd ul{
+	padding-left: 13px;
+}
+.com-bd li{
+	margin: 0 6px 10px 0;
+}
+
+
+/*nav*/ 
+
+.right-nav{
+	position:fixed; 
+	-position:absolute;
+	padding-top: 84px;
+	width: 110px;
+	height: auto; 
+	overflow:hidden; 
+	z-index:100; 
+	left:55%; 
+	margin-left:450px;
+	margin-bottom: 40px;
+	bottom:25px;
+	background:url(img/nav-1.png) no-repeat;
+}
+.right-nav a{ 
+	height: 33px;
+	font: 400 18px/44px 'Microsoft Yahei';
+	color:#fb4d00;
+    width: 105px;
+    text-indent:0;
+}
+.right-nav a:hover{
+    text-decoration: none;
+};
+.right-nav a.lh{
+	height: 53px;
+	padding-top: 10px;
+	line-height: 21px;
+
+}
+.right-nav .go-top{ 
+	border:none; 
+	margin-top: -1px;
+	height: 95px;
+	line-height: 95px;
+	text-indent: -9999px;  
+	background: none;
+}
+
+
+
+
+.hover-bg{
+	width: 100%;
+	height: 100%;
+	filter:Alpha(opacity=40);
+	background-color:#730014;
+	background: rgba(115,0,20,.4);
+
+}
+
+.mt20{
+	margin-bottom: 20px;
+}
+
+.anniversary-title-bg{
+    height:78px;width:299px;left:50%;margin-left:-173px;top:0;
+}
+.com-hd a.com-more-link{
+    height: 40px; font: 500 26px/40px Tahoma,Arial,Roboto,"microsoft yahei","Droid Sans","Helvetica Neue","Droid Sans Fallback","Heiti SC","Hiragino Sans GB",Simsun,sans-self; top: 30px; right: -54px; width: 117px; text-align: right;
+}

@@ -1,0 +1,252 @@
+@import url('../../../pub/css/common.css');
+@import url('../../../pub/css/btn.css'); 
+@import url('../../../pub/font/iconfont.css');
+@import url('../../../pub/css/dialog/ui-dialog.css');
+@import url('../../../pub/css/hd/site-nav.css');
+@import url('../../../pub/css/linkage-tab.css');
+@import url('../../../pub/css/hd/search.css');
+@import url('../../../pub/css/hd/nav.css');
+@import url('../../../pub/css/jquery.minSlide.css');
+@import url('../../../pub/css/ft/ft.css');
+@import url('../../../pub/css/min-bar/min-bar.css');
+@import url('../../../app/style.css'); 
+.body1{
+	background: #ffc926;
+}
+.body2{
+	background: #88ce42;
+}
+.body3{
+	background: #ff73ff;
+}
+.wrapper{
+	padding: 0;
+	width: 990px;
+	overflow: hidden;
+	margin: -32px auto 0;
+}
+.wrapper h2{
+	height: 70px;
+	background-position: center top;
+	background-repeat: no-repeat;
+	box-shadow: none;
+	position: relative; 
+}
+.bn{
+	min-width: 1080px;
+	height: 215px;
+	background-position: center top;
+	background-repeat: no-repeat;
+	position: static;
+}
+.bn1{
+	height: 79px;
+}
+.bn2{
+	height: 240px;
+}
+.bn3{
+	height: 389px;
+}
+.body2 .bn3, .body3 .bn3{
+	height: 315px;
+}
+.bn4{
+	height: 0;
+	overflow: hidden;
+}
+.wrapper{
+	margin-top: 6px;
+	padding-bottom: 40px;
+}
+.com-mod{
+	position: relative;
+}
+.com-bd{
+	padding: 10px 10px 5px;
+	*padding: 10px 10px 15px;
+}
+.com-bd li{
+	margin-right: 5px;
+}
+.tab-title{
+	position: absolute;
+	left: 366px;
+	top: 30px;
+	width: 655px;
+	height: 200px;
+}
+.tab-title li{
+	float: left;
+	width: 205px;
+	height: 200px;
+}
+.tab-title li a{
+	display: block;
+	width: 205px;
+	height: 200px;
+}
+
+.body1 .title-box1 .tab-item-bg1{
+	background-color: #ff6633;
+}
+.body1 .title-box1 .tab-item-bg2{
+	background-color: #58bdbe;
+}
+.body1 .title-box1 .tab-item-bg3{
+	background-color: #cb7058;
+}
+.body1 .title-box2 .tab-item-bg1{
+	background-color: #003f7d;
+}
+.body1 .title-box2 .tab-item-bg2{
+	background-color: #661a00;
+}
+.body1 .title-box2 .tab-item-bg3{
+	background-color: #b20000;
+}
+.body1 .title-box3 .tab-item-bg1{
+	background-color: #ff8000;
+}
+.body1 .title-box3 .tab-item-bg2{
+	background-color: #ff9326;
+}
+.body1 .title-box3 .tab-item-bg3{
+	background-color: #b20000;
+}
+
+.body2 .title-box1 .tab-item-bg1{
+	background-color: #58bdbe;
+}
+.body2 .title-box1 .tab-item-bg2{
+	background-color: #ff46ff;
+}
+.body2 .title-box1 .tab-item-bg3{
+	background-color: #639d28;
+}
+.body2 .title-box2 .tab-item-bg1{
+	background-color: #0063c6;
+}
+.body2 .title-box2 .tab-item-bg2{
+	background-color: #9326ff;
+}
+.body2 .title-box2 .tab-item-bg3{
+	background-color: #ff4d4d;
+}
+.body2 .title-box3 .tab-item-bg1{
+	background-color: #00bfff;
+}
+.body2 .title-box3 .tab-item-bg2{
+	background-color: #dc73ff;
+}
+.body2 .title-box3 .tab-item-bg3{
+	background-color: #00d9a3;
+}
+
+.title-box1 .tab-item-bg1{
+	background-color: #ff850b;
+}
+.title-box1 .tab-item-bg2{
+	background-color: #b20000;
+}
+.title-box1 .tab-item-bg3{
+	background-color: #00bfff;
+}
+.title-box2 .tab-item-bg1{
+	background-color: #18d1c8;
+}
+.title-box2 .tab-item-bg2{
+	background-color: #4da6ff;
+}
+.title-box2 .tab-item-bg3{
+	background-color: #a64dff;
+}
+.title-box3 .tab-item-bg1{
+	background-color: #8eed38;
+}
+.title-box3 .tab-item-bg2{
+	background-color: #d146ff;
+}
+.title-box3 .tab-item-bg3{
+	background-color: #0ccd8e;
+}
+.show-mod{
+	width: 990px;
+	margin: 0 auto;
+	position: relative;
+}
+.show-mod .show{
+	position: absolute;
+	right: 165px;
+	top: 6px;
+	display: block;
+	width: 63px;
+	height: 63px;
+}
+.show-mod .show-box{
+	position: absolute;
+	right: 247px;
+	top: 216px;
+	display: block;
+	width: 60px;
+	height: 60px;
+}
+.show-mod ul{
+	width: 1100px;
+	position: absolute;
+	top: 74px;
+	left: 0;
+}
+.body2 .show-mod ul, .body3 .show-mod ul{
+	top:0;
+}
+.show-mod ul li{
+	float: left;
+	width: 330px;
+	height: 308px;
+}
+.show-mod ul li a{
+	display: block;
+	width: 330px;
+	height: 308px;
+}
+.help{
+	margin-top:0;
+}
+.item-bg{
+	background-repeat:  no-repeat;
+	background-position: center top;
+	margin-top: 20px;
+	padding-top: 34px;
+	padding-top: 250px;
+}
+
+.ad-list-ft{
+	margin: 0 auto; 
+	background-repeat:  no-repeat;
+	background-position: center center;
+	background-color: #ff73ff;
+	overflow: hidden;
+}
+
+.ad-list-ft .layout{
+	margin: 0 auto;
+	padding-top: 40px;
+	width: 990px;
+}
+.ad-list-ft li{
+	float: left;
+	margin-left: 12px;
+	margin-top: 7px;
+	display: block;
+	width: 230px;
+	height: 140px;
+}
+.ad-list-ft li.ad-list-first{
+	width: 240px;
+	height: 290px;
+}
+.ad-list-ft,.body1,.body2,.body3{
+	min-width: 1080px;
+	overflow: hidden;
+}

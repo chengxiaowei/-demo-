@@ -1,0 +1,25 @@
+.mod-price {
+    margin: rem(20) 0px rem(120) 0px;
+    font-size: rem(28);
+    overflow: hidden;
+    background: #fff;
+    border-top: 1px solid #cccccc;
+    border-bottom: 1px solid #cccccc;
+    .bd {
+        margin: rem(20);
+        .item {
+            margin-bottom: rem(10);
+        }
+        .b-l {
+            float: left;
+            color: #666666;
+            padding-right: 10px;
+        }
+        .b-r {
+            float: right;
+        }
+        .discount {
+            color: #f59f11;
+        }
+    }
+}

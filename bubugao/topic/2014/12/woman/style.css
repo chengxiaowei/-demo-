@@ -1,0 +1,118 @@
+@import url('../../../pub/css/common.css');
+@import url('../../../pub/css/btn.css'); 
+@import url('../../../pub/font/iconfont.css');
+@import url('../../../pub/css/dialog/ui-dialog.css');
+@import url('../../../pub/css/hd/site-nav.css');
+@import url('../../../pub/css/linkage-tab.css');
+@import url('../../../pub/css/hd/search.css');
+@import url('../../../pub/css/hd/nav.css');
+@import url('../../../pub/css/jquery.minSlide.css');
+@import url('../../../pub/css/ft/ft.css');
+@import url('../../../pub/css/min-bar/min-bar.css');
+@import url('../../../app/style.css'); 
+body{
+	background-color: #f35d5e;
+}
+.layout{
+	margin: 0 auto;
+	width: 990px;
+}
+.cnt-box{
+	padding-top: 304px;
+}
+.spec-mod,.cnt-box,.img-mod{
+	background-position: center top;
+	background-repeat: no-repeat;
+}
+.com-hd{
+	margin: 0 auto;
+	width: 990px;
+	height: 70px;
+}
+.com-hd .more{
+	top: 16px;
+	right: 108px;
+	width: 100px;
+	height: 30px;
+}
+.com-bd{
+	position: relative;
+	margin: 0 auto;
+	left: -1px;
+	width: 1002px;
+	border-left: 1px solid #333;
+	border-right: 1px solid #333;
+	background-color: #d34646;
+}
+.com-bd ul{
+	position: relative;
+	left: 14px;
+}
+.com-bd li{
+	margin: 0 5px 10px 0;
+}
+.bg1{
+	padding-top: 85px;
+	background-color: #56b9b7;
+}
+.bg1 .com-bd{
+	background-color: #2b8987;
+}
+.bg2{
+	padding-top: 89px;
+	background-color: #2a5a80;
+}
+.bg2 .com-bd{
+	background-color: #28a0de;
+}
+.bg3{
+	padding-top: 88px;
+	background-color: #ffa184;
+}
+.bg3 .com-bd{
+	background-color: #ff7f57;
+}
+.bg4{
+	padding-top: 89px; 
+	background-color: #de3059;
+}
+.bg4 .com-bd{
+	background-color: #ff6186;
+}
+.img-mod{
+	padding-bottom: 150px;
+	padding-top: 130px;
+	height: 210px;
+}
+.img-mod .hid{
+	width: 310px;
+	height: 200px;
+}
+
+/*nav*/ 
+.right-nav{
+	position:fixed; 
+	-position:absolute;
+	padding-top: 54px;
+	width: 128px;
+	height: 280px;
+	overflow:hidden; 
+	z-index:100; 
+	left:55%; 
+	margin-left:450px;
+	margin-bottom: 40px;
+	bottom:25px; 
+	background:url(img/nav.png) no-repeat;
+}	
+.right-nav a{ 
+	height: 48px; 
+	font: 400 14px/48px 'Microsoft Yahei';
+	color:#fff;
+	text-align: center; 
+	text-indent: -9999px;
+} 
+.right-nav .go-top{ 
+	height: 40px;
+	border:none;  
+	background: none; 
+}	

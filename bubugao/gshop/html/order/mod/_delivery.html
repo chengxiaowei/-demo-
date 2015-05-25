@@ -1,0 +1,30 @@
+<script id="jDeliveryTmpl" type="text/html">
+    <%
+        var sList = shopList['deliveries'];
+        var slen = sList?sList.length:0;
+        var isStd = false;
+        if(sList && slen!=0 && !_isBuyNow){  
+           for(var s=0;s<sList.length;s++){ 
+            if(sList[s]['selected']){
+    %>
+    <tr>
+        <td colspan="2" class="info-box">
+            <div class="mod-delivery jWrapBox" 
+                onclick="javascript:location.href='modify-delivery.html?shopId=<%=sList[s]['shopId']%>'">
+                <div class="bd">
+                    <div class="inner-box jClickInner">
+                        <div class="i-l txt-els "><em class="delType">配送方式：</em><span class="delTxt"><%=sList[s]['title']%></span></div>
+                        <% if(sList.length>1){ %>
+                        <div class="i-r icon iconfont arrow">&#xe60e;</div>
+                        <% } %>
+                        <div class="i-r txt-red">￥<%=sList[s]['totalFreight']%></div>
+                    </div>
+                </div>
+            </div>
+        </td>
+    </tr>
+    <% 
+        isStd = true;
+        break; 
+     }} } %>
+</script>

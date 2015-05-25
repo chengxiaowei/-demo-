@@ -1,0 +1,145 @@
+@import url('../../../pub/css/common.css');
+@import url('../../../pub/css/btn.css'); 
+@import url('../../../pub/font/iconfont.css');
+@import url('../../../pub/css/dialog/ui-dialog.css');
+@import url('../../../pub/css/hd/site-nav.css');
+@import url('../../../pub/css/linkage-tab.css');
+@import url('../../../pub/css/hd/search.css');
+@import url('../../../pub/css/hd/nav.css');
+@import url('../../../pub/css/jquery.minSlide.css');
+@import url('../../../pub/css/ft/ft.css');
+@import url('../../../pub/css/min-bar/min-bar.css');
+@import url('../../../app/style.css'); 
+body{
+	background-color: #2f0101;
+}
+.cnt-box{
+	position: relative;
+	left:1px;
+	margin: 0 auto;
+	padding-bottom: 60px;
+	width: 1155px;
+	background-color: #d9090e;
+}
+
+.cnt-mod{
+	padding: 0 92px;
+	width: 970px;
+	font-family: 'Microsoft Yahei';
+	font-size: 18px;
+	color: #fdde81;
+	background-position: center top;
+	background-repeat: no-repeat;
+}
+.cnt-mod p{
+	margin-bottom: 15px;
+}
+.cnt-mod strong{
+	font-weight: 400;
+	font-size: 30px;
+	line-height: 40px;
+} 
+.cnt-form{
+	margin: 40px auto;
+	width: 1155px;
+	padding: 22px 0 0;
+}
+.cnt-form-bd{
+	background-color: #ffbf3f;
+	padding: 20px 30px 30px;
+	width: 959px; 
+	margin: 0 auto;
+	position: relative;
+	left: -1px;
+}
+.cnt-form-m{
+	font-size: 24px;
+	font-weight: 700;
+	font-family: 'Simsun';
+	color: #333;
+}
+.cnt-title{
+	font:700 24px/40px 'Simsun';
+	color: #333;
+}
+.cnt-txt-box{
+	margin: 50px auto;
+    display: none;
+}
+.cnt-txt-box input,.cnt-txt-box a{
+	display: inline-block;
+	margin-left: 100px;
+	width: 400px;
+	height: 61px;
+	line-height: 70px;
+	border-radius: 5px;
+	color:#c50b00;
+	background: #fff; 
+	vertical-align: middle;
+}
+.cnt-txt-box .sub-btn{
+	margin-left: 5px;
+	width: 211px; 
+	height: 70px;
+	text-indent: -9999px;
+	background: url(img/btn.jpg) no-repeat;
+	overflow: hidden;
+}
+
+.placeholder {font-size:24px;color:#c50b00 !important;} 
+:-moz-placeholder {font-size:24px;color:#c50b00 !important;}
+::-webkit-input-placeholder {font-size:24px;color:#c50b00 !important;}
+.cnt-app dt,.cnt-app dd{
+	float: left;
+	margin:40px 0 40px 132px;
+}
+.jAppImg{
+	position: absolute;
+	width: 123px;
+	height: 123px;
+	top: 202px;
+	left: 250px;
+	
+}
+.cnt-app-btn{
+	margin-bottom: 40px;
+}
+.cnt-info{
+	position: relative;
+	margin:  40px auto;
+	padding-top: 73px;
+} 
+.cnt-info .cnt-info-num{
+	font-size: 28px;
+}
+.cnt-info dd{
+	vertical-align: top;
+	width: 680px;
+	word-break: break-all;
+	word-wrap: normal;
+}
+.cnt-info-num span{
+	font-size: 35px;
+}
+.cnt-mod p.mb20{
+	margin-bottom: 20px;
+}
+.cnt-mod p.cl-r,.cnt-mod .cl-r{
+	color: #c50b00;
+}
+.cnt-mod .cl-w{
+	color: #fff;
+}
+/*nav*/ 
+.left-nav{
+	position:fixed; 
+	-position:absolute;
+	padding-top: 112px;
+	width: 113px;
+	height:208px;
+	overflow:hidden; 
+	z-index:100; 
+	left:0; 
+	bottom:25px; 
+	background:url(img/nav.png) no-repeat;
+}

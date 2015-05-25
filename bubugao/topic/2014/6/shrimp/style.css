@@ -1,0 +1,86 @@
+@import url('../../../pub/css/common.css');
+@import url('../../../pub/css/btn.css'); 
+@import url('../../../pub/font/iconfont.css');
+@import url('../../../pub/css/dialog/ui-dialog.css');
+@import url('../../../pub/css/hd/site-nav.css');
+@import url('../../../pub/css/linkage-tab.css');
+@import url('../../../pub/css/hd/search.css');
+@import url('../../../pub/css/hd/nav.css');
+@import url('../../../pub/css/jquery.minSlide.css');
+@import url('../../../pub/css/ft/ft.css');
+@import url('../../../pub/css/min-bar/min-bar.css');
+@import url('../../../app/style.css'); 
+body{
+	background: #8abed8;
+	
+}
+.bn { 
+	width: 100%;
+	overflow:hidden;
+	background-repeat: no-repeat;
+	background-position: center top; 
+	height: 413px;
+	min-width: 1024px; 
+} 
+.wrapper{
+	padding-top:0;
+	padding-bottom: 20px;
+	margin:0 auto;
+	min-height: 1000px;
+	min-width: 1100px;
+}
+ 
+
+.layout {
+	width:1010px;
+	overflow: hidden;
+ }
+
+ .bn a.hid{
+ 	width: 500px;
+ 	height: 210px;
+ } 
+
+.help{
+	margin-top: 0;
+}
+.img-bg{
+	background-repeat: no-repeat;
+	background-position: center top;
+}
+.bn{
+	background-position: center top;
+	min-width: 1030px;
+}
+.three-mod .com-bd li{
+	width: 330px;
+	height: 390px;
+	margin-right: 8px;
+	*margin-right: 5px;
+}
+.three-mod .com-bd .com-img,.three-mod  .com-bd .com-img img{
+	width: 310px;
+	height:300px;
+}
+/*右侧浮层*/
+.right-nav{
+	position:fixed;
+	-position:absolute;
+	width: 120px;
+height: 230px;
+padding-top: 82px;
+	overflow:hidden; 
+	z-index:100;
+	left:55%;
+	margin-left:450px;
+	margin-bottom: 40px;
+	bottom:25px;
+	background:url(img/nav.jpg) no-repeat;
+}
+
+.right-nav a{ 
+	height:60px;
+	font:400 18px/60px 'Microsoft Yahei';
+	color: #fff;
+	text-indent: -9999px;
+}

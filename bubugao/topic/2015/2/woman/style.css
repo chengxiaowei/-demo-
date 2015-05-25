@@ -1,0 +1,131 @@
+@import url('../../../pub/css/common.css');
+@import url('../../../pub/css/btn.css'); 
+@import url('../../../pub/font/iconfont.css');
+@import url('../../../pub/css/dialog/ui-dialog.css');
+@import url('../../../pub/css/hd/site-nav.css');
+@import url('../../../pub/css/linkage-tab.css');
+@import url('../../../pub/css/hd/search.css');
+@import url('../../../pub/css/hd/nav.css');
+@import url('../../../pub/css/jquery.minSlide.css');
+@import url('../../../pub/css/ft/ft.css');
+@import url('../../../pub/css/min-bar/min-bar.css');
+@import url('../../../app/style.css');  
+body{
+	background:#900012;
+}
+.layout{
+	margin: 0 auto;
+	width: 990px;
+}
+.cnt-box{
+	position: relative;
+	padding-bottom: 60px;
+	z-index: 3;
+	background: #69287a;
+}
+.spec-mod,.com-mod{
+	margin: 0 auto;  
+}
+.com-hd,.com-ft{
+	position: relative; 
+	background-position: center center;
+	background-repeat: no-repeat;
+} 
+.com-hd h2{
+	font-weight: 400;
+}
+.com-bd{
+	position: relative; 
+	padding-bottom: 15px;
+	margin: 0 auto;
+	width: 1039px;
+	left: -4px;
+	background: #d80127;
+}
+.com-hd .more{
+	position: absolute;
+	width: 100px;
+	height: 40px;
+	display: block;
+	text-indent: -99999px;
+	overflow: hidden;
+}
+.com-bd ul{
+	position: relative;
+	left:24px;
+	*margin-bottom: 10px;
+}
+ 
+ 
+.img-list ul{
+	*width: 977px;
+} 
+.spec-mod .img-list-big li,.spec-mod .img-list-big a,.spec-mod .img-list-big img{
+	display: block;
+	margin: 0 10px;
+	width: 375px;
+	height: 545px;
+}
+.spec-mod .img-list-big li{
+	float: left;
+}
+.img-list li,.img-list a,.img-list img{
+	display: block;
+	width: auto;
+	height: auto;
+}
+.img-list li.sm{
+	margin-right: 3px;
+}
+
+.spec-mod  .img-list-mod li,.spec-mod  .img-list-mod a,.spec-mod .img-list-mod img{
+	display: block;
+	width: 240px;
+	height: 310px;
+}
+.bg1{
+	background: #900012;
+}
+.bg1 .com-bd{
+	background: #a21b2c;
+}
+.bg2{
+	background: #69287a;
+}
+ 
+.bg2 .com-bd{ 
+	width: 995px;
+	background: #853a99;
+}
+.bg2 .com-bd ul{
+	left:10px;
+}
+.bg2 .com-bd li{
+	margin:0 5px 10px 0;
+}
+
+/*nav*/ 
+.right-nav{
+	position:fixed; 
+	padding-top: 100px;
+	width: 127px;
+	height: 454px;
+	overflow:hidden; 
+	z-index:100; 
+	left:55%; 
+	margin-left:430px;
+	margin-bottom: 40px;
+	bottom:25px;
+	background:url(img/nav.png) no-repeat; 
+	
+}	
+.right-nav a{  
+	height: 47px; 
+	font: 400 18px/40px 'Microsoft Yahei';
+	text-indent: -9999px;
+	text-align: center; 
+} 
+.right-nav .go-top{  
+	border:none;
+	background: none;
+}

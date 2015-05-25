@@ -1,0 +1,39 @@
+@import url('../../../pub/css/common.css');
+@import url('../../../pub/css/btn.css'); 
+@import url('../../../pub/font/iconfont.css');
+@import url('../../../pub/css/dialog/ui-dialog.css');
+@import url('../../../pub/css/hd/site-nav.css');
+@import url('../../../pub/css/linkage-tab.css');
+@import url('../../../pub/css/hd/search.css');
+@import url('../../../pub/css/hd/nav.css');
+@import url('../../../pub/css/jquery.minSlide.css');
+@import url('../../../pub/css/ft/ft.css');
+@import url('../../../pub/css/min-bar/min-bar.css');
+@import url('../../../app/style.css'); 
+body{ 
+	background:#9DDEF9;
+}
+.layout{
+	min-width:1140px;
+	margin:0 auto;
+	height:600px;
+	width:auto;
+	background-position:center top;
+}
+.rel{
+	width:1000px;
+	margin:0 auto;
+}
+.abs{
+	width: 980px;
+	height:330px;
+}
+.help{
+	margin-top:0;
+}
+.baby-box a{
+	float:left;
+	margin:20px 8px 0 0;
+	width:192px;
+	height:238px;
+}

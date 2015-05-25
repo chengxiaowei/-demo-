@@ -1,0 +1,270 @@
+﻿/**
+* @des 商品详情页面和订单快照的公共部分（1、图片预览；2、商品属性；3、商家信息；4、tab之商品详情的属性）
+* @author jiangchaoyi update 2014.7.27		
+*/
+.search {
+	position: relative;
+	height: 60px;
+	background-color: #fff;
+	width: 100%;
+	z-index: 80;
+	padding: 18px 0;
+}
+
+.search .w1190 {
+	position: relative;
+	z-index: 70;
+}
+
+.search .logo {
+	width: 355px;
+	height: 60px;
+	position: absolute;
+	left: 0;
+	overflow: hidden;
+}
+
+/*logo 广告*/
+.search .go-home img{
+	width: 329px;
+	height: 54px; 
+}
+
+/*logo 广告*/
+.search .logo-ads {
+	position: absolute;
+	top:0;
+	left: 205px;
+	width: 150px;
+	height: 54px;
+	background-color: #fff;
+	overflow: hidden;
+}
+.search .logo-ads img
+{
+	height: 54px;
+}
+
+/* 搜索栏目- 列表页底部搜索栏 */
+.search.search-list-footer .s-box {
+	position: absolute;
+	left: 260px;
+	top: 20px;
+	height: 60px;
+}
+/* 搜索栏目- 店铺列表页底部搜索栏 */
+.search.search-shop-list-footer .s-box {
+	position: absolute;
+	left: 450px;
+	top: 20px;
+	height: 60px;
+}
+/*搜索栏目-搜索框*/
+.search .s-box {
+	position: absolute;
+	left: 460px;
+	top: 0;
+	height: 60px;
+}
+
+.search .s-box .s-main {
+	position: relative;
+	width: 495px;
+	height: 34px;
+	background-color: #eb6200;
+	margin: 0;
+	border-radius: 2px;
+}
+
+.search .s-box .s-main .lbl-key {
+	color: #ccc;
+	position: absolute;
+	height: 24px;
+	line-height: 24px;
+	left: 8px;
+	top: 5px;
+	z-index: 3;
+	cursor: text;
+	background-color: #fff;
+}
+
+.search .s-box .s-main .ipt-key {
+	position: absolute;
+	padding: 7px 5px;
+	width: 425px;
+	height: 16px;
+	line-height: 16px;
+	left: 2px;
+	top: 2px;
+	background-color: #fff;
+	border: 0;
+}
+
+.search .s-box .s-main .btn-search {
+	display: block;
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 57px;
+	height: 34px;
+	text-align: center;
+	background-color: #eb6200;
+	border: 0;
+	color: #fff;
+	font: 400 14px/34px 'microsoft yahei';
+	border-radius:2px; 
+}
+
+.search .s-box .s-main .btn-search:hover {
+	color: #fcc;
+	text-decoration: none;
+}
+
+.search .s-box .kw-suggest {
+	margin-top: 8px;
+	width: 450px;
+	height: 14px;
+	overflow: hidden;
+	font: 400 12px/14px '宋体';
+}
+
+.search .s-box .kw-suggest a {
+	color: #7d7d7d;
+	margin-right: 10px;
+}
+
+.search .s-box .kw-suggest a:hover {
+	text-decoration: none;
+	color: #a44402;
+}
+
+
+/*搜索栏目-小广告*/
+.search-ads{
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 150px;
+	height: 54px;
+}
+
+/*搜索历史记录*/
+.k-history {
+	position: absolute;
+	width: 400px;
+	background-color: #fff;
+	border: 1px solid #d2d2d2;
+	display: none;
+	left: 796px;
+	top: 98px;
+	z-index: 90;
+	box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+	overflow: hidden;
+}
+.k-history .kh-list{
+	width: 100%;
+}
+.k-history .kh-list li {
+	position: relative;
+	width: 100%;
+	display: block;
+	font-size: 12px;
+	height: 20px;
+	line-height: 20px;
+	padding: 1px 0 2px;
+	overflow: hidden;
+	cursor: pointer;
+}
+.k-history .kh-list .kh-key {
+	padding: 0 5px;
+	text-align: left;
+	color: #333;
+	position: relative;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	display: block;
+	width: 85%;
+}
+.k-history .kh-list .kh-item-cat .kh-key {
+	text-indent: 1em;
+	color: #333;
+}
+
+.k-history .kh-list .s-item-cat-last {
+	border-bottom: 1px solid #f2f2f2;
+}
+/*搜索推荐分类列表*/
+.k-history .kh-list .kh-key em {
+	color: #f16320;
+	font-weight: bolder;
+}
+
+.k-history .kh-list .kh-key b {
+    font-weight: bold;
+}
+.k-history .kh-list .kh-key span{
+	display: block;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+.k-history .kh-list .kh-count {
+	position: absolute;
+	right: 0;
+	top:0;
+	width: auto;
+	padding: 2px 5px 0 0;
+	text-align: right;
+	float: right;
+	color: #999;
+}
+.k-history .kh-list .kh-button {
+	position: absolute;
+	right: 0;
+	top:0;
+	margin: 0 5px;
+	padding: 2px 0 2px;
+	height: 20px;
+	line-height: 20px;
+	width: 30px;
+	text-align: right;
+	float: right;
+	color: #fff;
+	display: none;
+}
+.k-history .kh-list .kh-hover {
+	background-color: #ffe9de;
+}
+.k-history .kh-list .kh-hover .kh-button{
+	display: block;
+	color: #666;
+}
+.k-history .kh-list .kh-hover .kh-button:hover{
+	text-decoration: underline;
+}
+.k-history .kh-infos {
+	border-top: 1px solid #f2f2f2;
+	color:#999;
+}
+.k-history .kh-infos span,.k-history .kh-infos a{
+    float: left;
+    line-height: 20px;
+    padding: 5px;
+	display: inline;
+    color: #999;
+}
+.k-history .kh-infos .kh-clear, .k-history .kh-infos .kh-close{
+	float: right;
+	cursor: pointer;
+}
+.k-history .kh-infos .kh-clear:hover, .k-history .kh-infos .kh-close:hover{
+	text-decoration: underline;
+}
+.k-history .kh-none{
+	text-align: center;
+	padding: 5px 0;
+	margin: 0;
+	line-height: 20px;
+	color:#666;
+}

@@ -1,0 +1,401 @@
+@import url('./common.css');
+@import url('../font/iconfont.css');
+@import url('./dialog/ui-dialog.css');
+@import url('./tab.css');
+@import url('./jquery.uploadify.css');
+@import url('./pager.css');
+/**
+* @des 图片上传组件
+* @author jiangchaoyi update 2014.7.1		
+*/
+
+.upload-cnt {
+    width: 605px;
+    margin: 0 auto;
+    font-size: 12px;
+    position: relative;
+}
+
+.upload-cnt .no-data {
+    line-height: 26px;
+    padding: 60px 0;
+    font-size: 14px;
+    color: #999;
+    text-align: center;
+}
+
+.upload-cnt .cnt-inner {
+    width: 595px;
+    margin: 5px;
+}
+
+.upload-cnt .tab {
+    height: 24px;
+}
+
+.upload-cnt .tab a {
+    height: 24px;
+    line-height: 24px;
+    min-width: 60px;
+    margin-right: 5px;
+    padding: 0 5px;
+}
+
+.upload-cnt .com-title {
+    height: 40px;
+    line-height: 40px;
+    padding: 0 10px;
+    border-bottom: 1px solid #e4e4e4;
+}
+
+.upload-cnt .com-title select {
+    max-width: 160px;
+}
+
+.upload-cnt .com-title .op-refresh {
+    color: #06c;
+}
+
+.upload-cnt .img-box {
+    width: 466px;
+    height: 334px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.upload-cnt .tab-cnt {
+    border-bottom: 1px solid #e4e4e4;
+    border-left: 1px solid #e4e4e4;
+    border-right: 1px solid #e4e4e4;
+    height: 415px;
+    overflow: hidden;
+}
+
+.upload-cnt .tab-cnt .cnt-loading {
+    text-align: center;
+    font-size: 14px;
+    color: #999;
+    padding: 30px 0;
+}
+/*左侧-从相册选择*/
+
+.upload-cnt .l-upload {
+    width: 468px;
+    float: left;
+    margin-right: 5px;
+}
+
+.upload-cnt .from-album {
+    position: relative;
+    height: 415px;
+}
+
+.upload-cnt .from-album .img-list li {
+    float: left;
+    position: relative;
+    border: 1px solid #e4e4e4;
+    height: 100px;
+    width: 100px;
+    margin: 10px 0 0 8px;
+    border-radius: 2px;
+}
+
+.upload-cnt .from-album .img-list .hover,
+.from-album .img-list .hover:hover {
+    border: 1px solid #e4e4e4;
+}
+
+.upload-cnt .from-album .img-list li:hover {
+    border: 1px solid #f60;
+}
+
+.upload-cnt .from-album .img-list li a {
+    display: block;
+    height: 100px;
+    width: 100px;
+    overflow: hidden;
+}
+
+.upload-cnt .from-album .img-list .op-box {
+    display: none;
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    cursor: pointer;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    filter: progid: DXImageTransform.Microsoft.gradient ( startColorstr=#33000000, endColorstr=#33000000);
+}
+
+.upload-cnt .from-album .img-list .op-box .icon {
+    font-size: 64px;
+    color: #f60;
+}
+
+.upload-cnt .from-album .img-list .hover .op-box {
+    display: block;
+}
+
+.upload-cnt .from-album .com-pager {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 466px;
+    overflow: hidden;
+    z-index: 2;
+}
+
+.upload-cnt .from-album .com-pager .pager {
+    height: 26px;
+    padding: 2px 0;
+    text-align: center;
+}
+
+.upload-cnt .from-album .com-pager .pager input {
+    height: 12px;
+    line-height: 12px;
+    padding: 5px 0;
+    width: 40px;
+}
+/*左侧-从网络选择*/
+
+.upload-cnt .net-box {
+    padding: 160px 30px;
+}
+
+.upload-cnt .net-box .txt-box {
+    position: relative;
+    height: 24px;
+}
+
+.upload-cnt .net-box .txt-title {
+    height: 30px;
+    line-height: 30px;
+    color: #333;
+}
+
+.upload-cnt .net-box .txt-box .txt {
+    width: 325px;
+    height: 12px;
+    line-height: 12px;
+    padding: 5px 24px 5px 5px;
+    border: 1px solid #e4e4e4;
+    border-radius: 2px;
+}
+
+.upload-cnt .net-box .txt-box .op-del {
+    position: absolute;
+    display: block;
+    width: 16px;
+    height: 16px;
+    line-height: 16px;
+    right: 55px;
+    top: 3px;
+    z-index: 2;
+    color: #f2f2f2;
+}
+
+.upload-cnt .net-box .txt-box .op-del:hover {
+    text-decoration: none;
+    color: #999;
+}
+
+.upload-cnt .net-box .txt-box label {
+    position: absolute;
+    height: 12px;
+    line-height: 12px;
+    padding: 5px 7px;
+    left: 0;
+    top: 0;
+    color: #999;
+    cursor: text;
+}
+
+.upload-cnt .net-box .txt-box .lbl-opacity {
+    color: #ccc;
+}
+
+.upload-cnt .net-box .txt-box .btn {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+/*左侧-本地上传*/
+
+.upload-cnt .from-local .local-tips {
+    font-size: 16px;
+    text-align: center;
+    padding: 140px 0 10px 0;
+}
+
+.upload-cnt .from-local .local-btn {
+    text-align: center;
+}
+
+.upload-cnt .from-local .op-cancel {
+    text-align: right;
+    font-size: 12px;
+}
+
+.upload-cnt .from-local .op-cancel b {
+    margin-right: 5px;
+}
+
+.upload-cnt .from-local .op-cancel span {
+    margin-right: 10px;
+}
+
+.upload-cnt .local-box .local-init {
+    display: block;
+}
+
+.upload-cnt .local-box .img-box,
+.from-local .op-cancel {
+    display: none;
+}
+
+.upload-cnt .local-box-loading .local-init {
+    height: 0;
+    width: 0;
+    font-size: 0;
+    overflow: hidden;
+}
+
+.upload-cnt .local-box-loading .img-box,
+.local-box-loading .op-cancel {
+    display: block;
+}
+/*右侧*/
+
+.upload-cnt .r-selected {
+    width: 120px;
+    float: left;
+    border: 1px solid #e4e4e4;
+    overflow: hidden;
+}
+
+.upload-cnt .r-selected .sel-total {
+    height: 33px;
+    line-height: 33px;
+    border-bottom: 1px solid #e4e4e4;
+    text-align: center;
+    color: #333;
+}
+
+.upload-cnt .r-selected .sel-op {
+    height: 30px;
+    line-height: 30px;
+    border-bottom: 1px solid #e4e4e4;
+    text-align: center;
+}
+
+.upload-cnt .r-selected .sel-op a {
+    color: #06c;
+}
+
+.upload-cnt .r-selected .sel-box {
+    width: 100px;
+    height: 374px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    padding: 0 10px;
+}
+
+.upload-cnt .r-selected .sel-box .sel-list li {
+    width: 80px;
+    height: 80px;
+    border: 2px solid #e4e4e4;
+    margin: 8px 0 0 0;
+    border-radius: 2px;
+    position: relative;
+    overflow: hidden;
+}
+
+.upload-cnt .r-selected .sel-box .sel-list li img {
+    text-align: center;
+}
+
+.upload-cnt .r-selected .sel-box .sel-list .op-box {
+    position: absolute;
+    height: 20px;
+    width: 80px;
+    bottom: -20px;
+    left: 0;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.5);
+    filter: progid: DXImageTransform.Microsoft.gradient ( startColorstr=#33000000, endColorstr=#33000000);
+    webkit-transition: bottom .3s ease-out;
+    -webkit-transition: bottom .3s ease-out;
+}
+
+.upload-cnt .r-selected .sel-box .sel-list .op-box .icon {
+    color: #fff;
+}
+
+.upload-cnt .r-selected .sel-box .sel-list .op-box a {
+    display: block;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    float: right;
+    position: relative;
+    color: #fff;
+    z-index: 2;
+}
+
+.upload-cnt .r-selected .sel-box .sel-list .op-box a:hover {
+    text-decoration: none;
+    background-color: #000;
+}
+
+.upload-cnt .r-selected .sel-box .sel-list .selected {
+    border: 2px solid #f60;
+}
+
+.upload-cnt .r-selected .sel-box .sel-list li:hover .op-box {
+    bottom: 0;
+}
+/*底部按钮区域*/
+
+.upload-cnt .btm-bn {
+    margin-top: 5px;
+    height: 26px;
+    line-height: 26px;
+    padding: 8px 5px;
+    background-color: #f2f2f2;
+}
+
+.upload-cnt .btm-bn .btn {
+    height: 26px;
+    line-height: 26px;
+    font-size: 14px;
+    margin-left: 6px;
+    padding: 0 12px;
+}
+
+.upload-cnt .btm-bn .btm-tips {
+    width: 400px;
+    height: 26px;
+    line-height: 26px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #999;
+}
+
+.upload-cnt .btm-bn .btm-tips label input {
+    margin: 0 2px 0 0;
+    vertical-align: middle;
+}
+
+.upload-cnt .uploadify-button {}
+/*按钮*/
+
+.upload-cnt .uploadify {
+    margin-left: 150px;
+}

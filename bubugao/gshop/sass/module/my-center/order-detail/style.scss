@@ -1,0 +1,19 @@
+/* common */
+@import "../../../common";
+@import "../../../common/slider/slider";
+@import "../../../common/form/form";
+@import "../../../common/button/button";
+@import "../../../common/dialog/dialog";
+@import "../../../common/scroll-load/scroll-load";
+@import "../../../common/go-top/go-top";
+
+/* modules */
+@import "../common/base";
+@import "../common/pros";
+@import "../common/button";
+@import "./source/order-detail";
+
+html{
+    background: #F2F2F2;
+    padding: 0 0 rem(20);
+}

@@ -1,0 +1,17 @@
+.mod-demo {
+    border: 1px solid #008000;
+    padding: 4px;
+    @include border-radius(4px);
+    .hd {
+        color: #23697E;
+        font-weight: bold;
+    }
+    .bd {
+        .img {
+            line-height: 0;
+            img {
+                width: 100%;
+            }
+        }
+    }
+}

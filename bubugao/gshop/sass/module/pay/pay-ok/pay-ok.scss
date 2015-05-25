@@ -1,0 +1,52 @@
+/* common */
+@import "../../../common";
+@import "../../../common/slider/slider";
+@import "../../../common/form/form";
+@import "../../../common/button/button";
+@import "../../../common/scroll-load/scroll-load";
+
+/* modules */
+html,body{
+	background: #f2f2f2;
+}
+.hd {
+	width: rem(280);
+	margin: 0 auto;
+	font-size: rem(24);
+	padding-top: rem(220);
+	.bg-img {
+		font-size: rem(30);
+		color: #ff0000;
+		overflow: hidden;
+		line-height: rem(122);
+		width: rem(350);
+		img {
+			float: left;
+			width: rem(127);
+			height: rem(122);
+		}
+		span {
+			
+		}
+	}
+	.text {
+		color: #999;
+		padding: rem(20) 0 0 rem(30);
+	}
+}
+.bd {
+	text-align: center;
+	font-size: rem(24);
+	padding-top: rem(50);
+	.shop-ben {
+		padding: rem(15) rem(20) rem(15) rem(20);
+		background: #db0000;
+		color: #fff;
+		margin-right: rem(25);
+	}
+	.ord-ben {
+		padding: rem(15) rem(20) rem(15) rem(20);
+		background: #fff;
+		color: #333;
+	}
+}

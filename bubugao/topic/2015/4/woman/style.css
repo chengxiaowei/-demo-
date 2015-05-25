@@ -1,0 +1,107 @@
+﻿@import url('../../../pub/css/common.css');
+@import url('../../../pub/css/btn.css'); 
+@import url('../../../pub/font/iconfont.css');
+@import url('../../../pub/css/dialog/ui-dialog.css');
+@import url('../../../pub/css/hd/site-nav.css');
+@import url('../../../pub/css/linkage-tab.css');
+@import url('../../../pub/css/hd/search.css');
+@import url('../../../pub/css/hd/nav.css');
+@import url('../../../pub/css/jquery.minSlide.css');
+@import url('../../../pub/css/ft/ft.css');
+@import url('../../../pub/css/min-bar/min-bar.css');
+@import url('../../../app/style.css'); 
+body{
+	background: #533ebd;
+}
+.up{
+     height: 1352px;
+     margin-top: -900px;
+     z-index: 2;
+     position: relative;
+}
+.up-btn{
+	 height: 335px;
+	 width: 900px;
+	 margin: 0 auto; 
+}
+.up-btn a{}
+.goods-ad{
+ position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 244px;
+  height: 281px;
+}
+.cnt-box{
+	margin: 0 auto;
+	padding-bottom: 60px;
+	background: url(img/bottomBg.jpg) no-repeat center bottom;
+}
+.com-hd{
+	position: relative; 
+	height: 70px;
+	font: 400 40px/60px '黑体';
+	color: #fff;
+	text-indent: 0;
+	text-align: center;
+	background: url(img/bn-5.jpg) no-repeat center center;
+	z-index: 9;
+}
+.com-bd,.com-ft,.layout{
+	margin: 0 auto; 
+	width: 990px; 
+}
+.com-bd{
+	position: relative;
+	padding-top: 10px;
+	padding-bottom: 20px; 
+}
+.com-bd ul{
+	position: relative;
+	left: 10px;
+}
+.com-bd li{
+	margin: 0 5px 10px 0;
+}
+.com-ft a,.com-ft img{
+	display: block;
+}
+
+/*nav*/ 
+.right-nav{
+	position:fixed;
+	padding-top: 91px;
+	width: 199px;
+	height: auto;
+	overflow:hidden; 
+	z-index:100; 
+	left:53%; 
+	margin-left:430px;
+	margin-bottom: 40px;
+	bottom:25px; 
+	background:url(img/nav1.png) no-repeat 3px 0; 
+}	
+
+.right-nav a{
+	margin: 0 auto;
+	width: 199px;
+	height: 69px;
+	background:url(img/nav-bg1.png) no-repeat center center;	
+}
+.right-nav a:hover{
+	background-image:url(img/nav-bg2.png);
+}
+.right-nav a img{
+	display: block;
+	margin: 0 auto; 
+}
+.right-nav .go-top{ 
+	height: 37px;
+	line-height: 37px;
+	text-indent: -999999px;
+	border:none;  
+	background:url(img/nav8.png) no-repeat; 
+	background-position: 50%;
+}
+.right-nav .go-top:hover{background:url(img/nav8.png) no-repeat;
+ background-position: 50%;}

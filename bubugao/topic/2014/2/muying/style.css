@@ -1,0 +1,113 @@
+@import url('../../../pub/css/common.css');
+@import url('../../../pub/css/btn.css'); 
+@import url('../../../pub/font/iconfont.css');
+@import url('../../../pub/css/dialog/ui-dialog.css');
+@import url('../../../pub/css/hd/site-nav.css');
+@import url('../../../pub/css/linkage-tab.css');
+@import url('../../../pub/css/hd/search.css');
+@import url('../../../pub/css/hd/nav.css');
+@import url('../../../pub/css/jquery.minSlide.css');
+@import url('../../../pub/css/ft/ft.css');
+@import url('../../../pub/css/min-bar/min-bar.css');
+@import url('../../../app/style.css'); 
+body{
+	background:url(images/bj.jpg);
+}
+.bn { 
+	width: 100%;
+	height:538px;
+	overflow:hidden;
+	background:url(images/bn.jpg) no-repeat center top;
+	
+}
+.wrapper{
+	overflow:visible;
+	background: url(images/ft-bj.png) no-repeat bottom center;
+	padding-bottom:20px;
+}
+.wrapper h2{
+	border:none;
+	box-shadow: none;
+	margin:0;
+	text-indent: -9999px;
+}
+.wrap-cnt{
+	margin-top:-120px;
+}
+.spec-mod{
+	margin-bottom: 0;
+}
+/*调整com-mod li 上下间距适应背景大小*/
+.com-mod li{
+	margin-top:7px;
+}
+#com1{
+	background:url(images/fl-1.png) no-repeat;
+	height:383px;
+	padding:45px 0 0 100px;
+	zoom: 1
+}
+#com2{
+	background:url(images/fl-2.jpg) no-repeat;
+	height:644px;
+	padding:120px 0 0 100px;
+}
+#com3{
+	background:url(images/fl-3.jpg) no-repeat;
+	height:888px;
+	padding:45px 0 0 100px;
+}
+#com4{
+	background:url(images/fl-4.jpg) no-repeat;
+	height:868px;
+	padding:60px 0 0 100px;
+}
+/*这一张背景使用png不会遮盖底图的背景,房子的边缘也不会错位*/
+#com5{
+	background:url(images/fl-5.png) no-repeat;
+	height:876px;
+	padding:70px 0 0 100px;
+}
+
+/*
+
+*/
+
+/*右侧浮层*/
+.right-nav {
+	position: fixed;
+	width:107px;
+	height:278px;
+	padding-top:20px;
+	_position:absolute;
+	overflow: hidden;
+	z-index: 100;
+	left: 50%;
+	margin-left: 500px;
+	bottom: 35px;
+	background:url(images/right-nav.png) no-repeat;
+}
+.right-nav a {
+	height: 38px;
+	color:#cc6600;
+	font:100 18px/45px  Microsoft YaHei;
+	font-weight:400;
+}
+.right-nav .go-top{
+	background: none;
+	border: none;
+	margin-top: 0;
+	height: 38px;
+	line-height: 58px;
+	font-family: Simsun;
+	font-size: 14px;
+	color: #fff;
+}
+
+.indent{
+	text-indent:-9999;
+}
+
+.help{
+	margin-top:0;
+}

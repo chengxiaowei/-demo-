@@ -1,0 +1,48 @@
+<script id="jIdInfoTmpl" type="text/html">
+<% 
+            if(needIdCheck){
+            var varList = idCards;
+            var isSelected = (submitTag!=3);//实名认证是否有选中的;
+            var isStd = false;
+            var url = '//m.yunhou.com/member/idcard_add?source=order';
+            //判断是否选中
+            if(varList && varList.length!=0){ 
+                for(var a=0;a<varList.length;a++){ 
+                    if(varList[a]['selected']){
+                        isStd = true;
+                        url = '//m.yunhou.com/member/idcard_list?source=order';
+                        break;
+                    }
+                }
+            }
+        %>
+    <div class="mod-ID" onclick="javascript:location.href='<%=url%>'">
+        <div class="inner">
+        <div class="hd"><i class="icon iconfont">&#xe61a;</i><span class="txt-span">身份证信息</span><span class="txt-tips">(海关商品过关需验证实名身份)</span></div>
+            <div class="bd">
+                <% if(varList && varList.length!=0){ 
+                %>
+                    <% for(var c=0;c<varList.length;c++){ 
+                        if(varList[c]['selected']){
+                    %>
+                        <!-- 非disabled 或者 选中的,就默认展示 -->
+                        <div class="item" >
+                            <div class="jIdInfoItem" data-card-id="<%=varList[c]['id']%>">
+                                <div class="i-l jInfoLeft">
+                                    <span class="name jNameListItem txt-els" data-card-id="<%=varList[c]['id']%>"><%=varList[c]['realName']%></span><span class="phone"><%=varList[c]['idCard']%></span>
+                                </div>
+                            </div>
+                        </div>
+                    <% 
+                        break;
+                    }} %>
+                <% } %>
+                <% if(!isStd){ %>
+                <div class="item addr txt-els jNoData">还未填写身份证信息，立即去填写</div>
+                <% } %>
+            </div>
+            <i class="icon iconfont arrow">&#xe60e;</i>
+        </div>
+    </div>
+<% } %>
+</script>

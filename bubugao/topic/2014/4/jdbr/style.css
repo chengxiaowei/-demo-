@@ -1,0 +1,437 @@
+@import url('../../../pub/css/common.css');
+@import url('../../../pub/css/btn.css'); 
+@import url('../../../pub/font/iconfont.css');
+@import url('../../../pub/css/dialog/ui-dialog.css');
+@import url('../../../pub/css/hd/site-nav.css');
+@import url('../../../pub/css/linkage-tab.css');
+@import url('../../../pub/css/hd/search.css');
+@import url('../../../pub/css/hd/nav.css');
+@import url('../../../pub/css/jquery.minSlide.css');
+@import url('../../../pub/css/ft/ft.css');
+@import url('../../../pub/css/min-bar/min-bar.css');
+@import url('../../../app/style.css'); 
+.bn { 
+	width: 100%;
+	overflow:hidden;
+	background-repeat: no-repeat;
+	background-position: center top;
+	min-width: 1024px;
+	height:870px;
+	background: url(//s1.bbgstatic.com/topic/2014/4/jdbr/img/banner.jpg) no-repeat center;
+}
+.bn-t{
+	height: 513px;
+}
+.bn-b{
+	height: 239px;
+}
+.wrapper{
+	overflow:visible;
+	padding-bottom:60px;
+	margin-top:0;
+	padding-top:0;
+}
+.wrapper h2{
+	border:none;
+	box-shadow: none;
+	text-align: left;
+	height: 64px;
+	font-size: 32px;
+	vertical-align: bottom;
+	margin-top:10px; 
+}
+.com-hd-t{
+	padding-top:8px;
+	text-indent: 70px;
+	width:1034px;
+	margin: 0 auto;
+}
+.spec-mod{ 
+	min-width: 1070px; 
+	margin-bottom: 0;
+	min-height:775px;
+	left:12px;
+	_left:0;
+	_margin-bottom:20px;
+}
+.spec-mod ul {
+	margin:0 auto;
+	width:980px;
+	_position:relative;
+	_left:4px;
+}
+.bg1{
+	background:url(//s1.bbgstatic.com/topic/2014/4/jdbr/img/com-bd1.jpg) no-repeat center; 
+}
+.bg2{
+	background:url(//s1.bbgstatic.com/topic/2014/4/jdbr/img/com-bd2.jpg) no-repeat center; 
+}
+.wrap-cnt{
+	margin-top:0;
+	position: relative;
+	z-index: 2;
+} 
+.ad-link{
+	width:999px;
+	margin:15px auto 0 auto;
+}
+/*右侧浮层*/
+.right-nav{
+	display:none;
+	position:fixed;
+	-position:absolute;
+	width:200px;
+	height:auto;
+	padding-top: 115px;
+	z-index:100;
+	left:55%;
+	margin-left:430px;
+	bottom:35px;
+	overflow: hidden;
+	background:url(//s1.bbgstatic.com/topic/2014/4/jdbr/img/nav.png) no-repeat;
+}
+.right-nav a{
+	padding-top:25px;
+	height: 40px;
+	font: 100 24px/40px 'Microsoft Yahei';
+	color:#0a0a0a;
+	text-decoration: none;
+	background:url(//s1.bbgstatic.com/topic/2014/4/jdbr/img/nav-bd.png) no-repeat center center;
+}
+.right-nav a:hover{
+	text-decoration: underline;
+}
+
+.right-nav .go-top{
+	height:40px;
+	line-height:40px;
+	background:url(//s1.bbgstatic.com/topic/2014/4/jdbr/img/nav-bd.png) no-repeat center center;
+	border:none;
+	text-align: center;
+}
+.help{
+	margin-top: 0;
+}
+.com-div,.com-hd{
+	margin:0 auto;
+	padding:0 10px;
+	width:970px; 
+}
+.com-div{
+	_margin-bottom:20px;
+}
+.com-div h2{
+	font:400 36px/65px "Microsoft Yahei";
+	color:#fff;
+}
+.com-hd{
+	height:60px;
+	overflow:hidden;
+}
+.com-hd h2,.com-hd a{
+	float:left;
+	display:block; 
+	padding:3px;
+	margin:30px 10px 0 0;
+	font-size:12px;
+	color:#fff;	
+	font-family:"Microsoft Yahei";
+	vertical-align: middle;
+	background:#9D071F;
+}
+.com-hd h2{
+	margin:0 20px 0 0;
+	font-size:28px;
+	color:#f3fc06;
+	line-height:60px;
+	background:none;
+}
+.com-bd{
+	clear:both;
+}
+/* 家电商品样式 */
+.com-buy-btn{
+	background:#f00 url(//s1.bbgstatic.com/topic/2014/3/taqing/images/jd-btn.jpg) no-repeat 5px -84px;
+}
+.com-buy-btn:hover{
+	background:#b20000 url(//s1.bbgstatic.com/topic/2014/3/taqing/images/jd-btn.jpg) no-repeat 5px -120px;
+}
+.com-mod .com-buy-btn{
+	margin:0 auto 6px auto;
+	height: 36px;
+}
+.com-mod .com-txt{
+	margin: 0 auto 3px auto;
+}
+.com-mod .com-txt,.com-txt a, .com-mod .com-buy-btn{
+	width: 177px;
+}
+.com-mod .p-normal,.spec-mod .p-normal{
+	float: left;
+}
+.com-mod .p-del,.spec-mod .p-del{
+	float: right;
+	line-height: 24px;
+}
+.spec-mod li,.com-mod li{
+	width:240px;
+	height: 340px;
+	margin:5px 5px 0 0;
+	overflow:hidden;
+}
+.spec-mod .com-txt{
+	width: 228px;
+	margin:5px auto 0 auto;
+}
+.spec-mod .com-txt a{
+	width: 228px;
+}
+.spec-mod .com-buy-btn, .spec-mod .com-disabled-btn{
+	width: 228px;
+	height: 37px;
+	line-height: 37px;
+	margin:6px auto;
+}
+.spec-mod .com-box,.com-box{
+	height: auto;
+	padding: 0 6px;
+}
+.spec-mod .com-buy-btn{
+	height: 35px;
+	background:#f00 url(//s1.bbgstatic.com/topic/2014/3/taqing/images/jd-btn.jpg) no-repeat  0 -4px;
+}
+.spec-mod .com-buy-btn:hover{
+	background:#b20000 url(//s1.bbgstatic.com/topic/2014/3/taqing/images/jd-btn.jpg) no-repeat 0 -46px;
+};
+@CHARSET "UTF-8";
+
+/* 商品内容 */
+body,p,ul,li,h1,h2{
+	margin:0;
+	padding:0;
+}
+ul,li{
+	list-type:none;
+}
+body{
+	background: #9D071F;
+	
+}
+.bn { 
+	width: 100%;
+	overflow:hidden;
+	background-repeat: no-repeat;
+	background-position: center top;
+	min-width: 1024px;
+	height:870px;
+	background: url(//s1.bbgstatic.com/topic/2014/4/jdbr/img/banner.jpg) no-repeat center;
+}
+.bn-t{
+	height: 513px;
+}
+.bn-b{
+	height: 239px;
+}
+.wrapper{
+	overflow:visible;
+	padding-bottom:60px;
+	margin-top:0;
+	padding-top:0;
+}
+.wrapper h2{
+	border:none;
+	box-shadow: none;
+	text-align: left;
+	height: 64px;
+	font-size: 32px;
+	vertical-align: bottom;
+	margin-top:10px; 
+}
+.com-hd-t{
+	padding-top:8px;
+	text-indent: 70px;
+	width:1034px;
+	margin: 0 auto;
+}
+.spec-mod{ 
+	min-width: 1070px; 
+	margin-bottom: 0;
+	min-height:775px;
+	left:12px;
+	_left:0;
+	_margin-bottom:20px;
+}
+.spec-mod ul {
+	margin:0 auto;
+	width:980px;
+	_position:relative;
+	_left:4px;
+}
+.bg1{
+	background:url(//s1.bbgstatic.com/topic/2014/4/jdbr/img/com-bd1.jpg) no-repeat center; 
+}
+.bg2{
+	background:url(//s1.bbgstatic.com/topic/2014/4/jdbr/img/com-bd2.jpg) no-repeat center; 
+}
+.wrap-cnt{
+	margin-top:0;
+	position: relative;
+	z-index: 2;
+} 
+.ad-link{
+	width:999px;
+	margin:15px auto 0 auto;
+}
+/*右侧浮层*/
+.right-nav{
+	display:none;
+	position:fixed;
+	-position:absolute;
+	width:200px;
+	height:auto;
+	padding-top: 115px;
+	z-index:100;
+	left:55%;
+	margin-bottom: 100px;
+	margin-left:450px;
+	bottom:35px;
+	overflow: hidden;
+	background:url(//s1.bbgstatic.com/topic/2014/4/jdbr/img/nav.png) no-repeat;
+}
+.right-nav a{
+	padding-top:25px;
+	height: 40px;
+	font: 100 24px/40px 'Microsoft Yahei';
+	color:#0a0a0a;
+	text-decoration: none;
+	background:url(//s1.bbgstatic.com/topic/2014/4/jdbr/img/nav-bd.png) no-repeat center center;
+}
+.right-nav a:hover{
+	text-decoration: underline;
+}
+
+.right-nav .go-top{
+	height:40px;
+	line-height:40px;
+	background:url(//s1.bbgstatic.com/topic/2014/4/jdbr/img/nav-bd.png) no-repeat center center;
+	border:none;
+	text-align: center;
+}
+.help{
+	margin-top: 0;
+}
+.com-div,.com-hd{
+	margin:0 auto;
+	padding:0 10px;
+	width:970px; 
+}
+.com-div{
+	_margin-bottom:20px;
+}
+.com-div h2{
+	font:400 36px/65px "Microsoft Yahei";
+	color:#fff;
+}
+.com-hd{
+	height:60px;
+	overflow:hidden;
+}
+.com-hd h2,.com-hd a{
+	float:left;
+	display:block; 
+	padding:3px;
+	margin:30px 10px 0 0;
+	font-size:12px;
+	color:#fff;	
+	font-family:"Microsoft Yahei";
+	vertical-align: middle;
+	background:#9D071F;
+}
+.com-hd h2{
+	margin:0 20px 0 0;
+	font-size:28px;
+	color:#f3fc06;
+	line-height:60px;
+	background:none;
+}
+.com-bd{
+	clear:both;
+}
+/* 家电商品样式 */
+.com-buy-btn{
+	background:#f00 url(//s1.bbgstatic.com/topic/2014/3/taqing/images/jd-btn.jpg) no-repeat 5px -84px;
+}
+.com-buy-btn:hover{
+	background:#b20000 url(//s1.bbgstatic.com/topic/2014/3/taqing/images/jd-btn.jpg) no-repeat 5px -120px;
+}
+.com-mod .com-buy-btn{
+	margin:0 auto 6px auto;
+	height: 36px;
+}
+.com-mod .com-txt{
+	margin: 0 auto 3px auto;
+}
+.com-mod .com-txt,.com-txt a, .com-mod .com-buy-btn{
+	width: 177px;
+}
+.com-mod .p-normal,.spec-mod .p-normal{
+	float: left;
+}
+.com-mod .p-del,.spec-mod .p-del{
+	float: right;
+	line-height: 24px;
+}
+.spec-mod li,.com-mod li{
+	width:240px;
+	height: 340px;
+	margin:5px 5px 0 0;
+	overflow:hidden;
+}
+.spec-mod .com-txt{
+	width: 228px;
+	margin:5px auto 0 auto;
+}
+.spec-mod .com-txt a{
+	width: 228px;
+}
+.spec-mod .com-buy-btn, .spec-mod .com-disabled-btn{
+	width: 228px;
+	height: 37px;
+	line-height: 37px;
+	margin:6px auto;
+}
+.spec-mod .com-box,.com-box{
+	height: auto;
+	padding: 0 6px;
+}
+.spec-mod .com-buy-btn{
+	height: 35px;
+	background:#f00 url(//s1.bbgstatic.com/topic/2014/3/taqing/images/jd-btn.jpg) no-repeat  0 -4px;
+}
+.spec-mod .com-buy-btn:hover{
+	background:#b20000 url(//s1.bbgstatic.com/topic/2014/3/taqing/images/jd-btn.jpg) no-repeat 0 -46px;
+}
+.spec-mod .com-txt{
+	width: 228px;
+	margin:5px auto 0 auto;
+}
+.spec-mod .com-txt a{
+	width: 228px;
+}
+.spec-mod .com-buy-btn, .spec-mod .com-disabled-btn{
+	width: 228px;
+	height: 37px;
+	line-height: 37px;
+	margin:6px auto;
+}
+.spec-mod .com-box,.com-box{
+	height: auto;
+	padding: 0 6px;
+}
+.spec-mod .com-buy-btn{
+	height: 35px;
+	background:#f00 url(//s1.bbgstatic.com/topic/2014/3/taqing/images/jd-btn.jpg) no-repeat  0 -4px;
+}
+.spec-mod .com-buy-btn:hover{
+	background:#b20000 url(//s1.bbgstatic.com/topic/2014/3/taqing/images/jd-btn.jpg) no-repeat 0 -46px;
+};

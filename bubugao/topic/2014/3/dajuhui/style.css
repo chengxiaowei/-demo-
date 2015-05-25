@@ -1,0 +1,141 @@
+@import url('../../../pub/css/common.css');
+@import url('../../../pub/css/btn.css'); 
+@import url('../../../pub/font/iconfont.css');
+@import url('../../../pub/css/dialog/ui-dialog.css');
+@import url('../../../pub/css/hd/site-nav.css');
+@import url('../../../pub/css/linkage-tab.css');
+@import url('../../../pub/css/hd/search.css');
+@import url('../../../pub/css/hd/nav.css');
+@import url('../../../pub/css/jquery.minSlide.css');
+@import url('../../../pub/css/ft/ft.css');
+@import url('../../../pub/css/min-bar/min-bar.css');
+@import url('../../../app/style.css'); 
+body{
+	background: url(images/bg.jpg);
+	
+}
+.bn { 
+	width: 100%;
+	height:710px;
+	overflow:hidden;
+	background:url(images/banner.jpg) no-repeat center center;
+	min-width:1024px;
+
+}
+.wrapper{
+	overflow:visible;
+	padding-bottom:0;
+	margin-top:0;
+	padding-top:0;
+}
+.wrapper h2{
+	border:none;
+	box-shadow: none;
+	height: 0;
+	line-height: 0;
+}
+.wrap-cnt{
+	margin-top:-111px;
+	position: relative;
+	z-index: 2;
+}
+.com-mod ul {
+	width:956px;
+	padding:40px 0;
+}
+.com-bd img{
+	display: block;
+	height: auto;
+
+}
+.com-mod .tab-hd{
+	padding:0;
+}
+.com-mod .tab-hd li{
+	float: left;
+	width:319px;
+	height:43px;
+	margin:0;
+	box-shadow: none;
+	background: url(images/tab1.png) no-repeat;
+	text-indent: -9999px;
+	cursor: pointer;
+}
+.com-mod .tab-hd .tab-item2{
+	background: url(images/tab2.png) no-repeat;
+}
+.com-mod .tab-hd .tab-item3{
+	width:318px;
+	background: url(images/tab3.png) no-repeat;
+}
+.com-mod, .spec-mod{
+	width:956px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.tab-com:after{
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+.tab-com {
+	display: none;
+	padding: 10px 5px 5px 0;
+	width:956px;
+	-height: 1440px;
+}
+.tab-com a,.tab-com img{
+	width: 470px;
+	height: 283px;
+}
+.tab-com a{
+	float: left;
+	margin:0 0 5px 5px; 
+	overflow: hidden;
+}
+.tab-com1{
+	background: #c4eb28;
+}
+.tab-com2{
+	background: #6ee194;
+}
+.tab-com3{
+	background: #e9d30d;
+}
+.selected{
+	display: inline-block;
+}
+.hid{
+	display:block;
+	text-indent:-9999em;
+	overflow:hidden;
+}
+/*右侧浮层*/
+.right-nav{
+	position:fixed;
+	-position:absolute;
+	width:133px;
+	height:206px;
+	padding-top: 8px;
+	overflow:hidden;
+	z-index:100;
+	left:55%;
+	margin-left:420px;
+	bottom:35px;
+	background:url(images/nav.png) no-repeat;
+}
+
+.right-nav a{
+	height:103px;
+	text-indent: -9999px;
+}
+
+.right-nav .go-top{
+	background:none;
+	border:none;
+	margin-top:0;
+	font-size:16px;
+	display: none;
+}

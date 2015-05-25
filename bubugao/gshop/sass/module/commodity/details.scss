@@ -1,0 +1,26 @@
+/* common */
+@charset "utf-8";
+@import "../../common";
+@import "../../common/nav/_nav";
+@import "../../common/nav/shop-nav";
+html,body{
+	background: #f2f2f2;
+}
+
+.details {
+	background-color: #fff;
+	.detail-content{
+		width: 100%;
+		overflow: hidden;
+		img{
+			display: block;
+			width: 100%;
+		}
+	}
+	.loading{
+		text-align: center;
+		color: #999;
+		margin-top: rem(40);
+		font-size: rem(26);
+	}
+}

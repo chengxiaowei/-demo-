@@ -1,0 +1,181 @@
+html._search {
+    height: 100%;
+    body {
+        position: relative;
+        height: 100%;
+        .page-view {
+            overflow: auto;
+            height: 100%;
+        }
+    }
+}
+
+body {
+    $search-header: rem(60);
+    $header-padding: rem(14);
+
+    ._search-popup-animate {
+        display: block !important;
+        visibility: visible !important;
+        overflow: auto;
+        ._wrap-search-cnt {
+            opacity: 1;
+        }
+    }
+    ._wrap-search-cnt {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        overflow: auto;
+        opacity: 0;
+        -webkit-transition: opacity 0s  3s linear;
+        -webkit-transition: display 0s  3s linear;
+        transition: opacity 0s  3s linear;
+        transition: display 0s  3s linear;
+    }
+
+    #_search-popup {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 10;
+        visibility: hidden;
+        overflow: auto;
+        width: 100%;
+        background-color: #fff;
+
+        #_search-header {
+            overflow: hidden;
+            padding: $header-padding 0;
+            height: $search-header;
+            background-color: #e5e5e5;
+
+            #_search-form {
+                overflow: hidden;
+                margin-left: rem(96);
+                margin-right: rem(176);
+                background-color: #fff;
+                border-radius: rem(8);
+                height: auto;
+            }
+
+            ._input-cnt {
+                float: left;
+                padding: rem(14) rem(20) rem(14) rem(20);
+                // width: rem(410);
+                width: 80%;
+                height: 100%;
+                border: none;
+                background-color: #fff;
+                color: #666666;
+                font-size: rem(30);
+                // line-height: rem(30);
+            }
+            ._btn-serch {
+                position: absolute;
+                width: rem(140);
+                right: 0;
+                height: rem(60);
+                border: none;
+                border-radius: rem(8);
+                color: #fff;
+                background-color:#f16320;
+                text-align: center;
+                font-size: rem(30);
+                line-height: rem(60);
+                margin-right: rem(18);
+            }
+        }
+    }
+    #_search-cnt-default {
+        position: absolute;
+        top: 2.8rem;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        overflow: auto;
+        text-align: center;
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+    ._search-cnt {
+        position: absolute;
+        top: $search-header + $header-padding*2;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 10;
+        display: none;
+        background-color: #F5F5F5;
+        ul {
+            padding: rem(24) 0 0 0;
+            color: #666;
+            font-size: rem(28);
+            background-color: #F5F5F5;
+            li {
+                height: rem(72);
+                line-height: rem(72);
+                padding:0 0 0 rem(48);
+                border-bottom:rem(2) solid #ECECEC;
+                a {
+                    display: block;
+                    color: #666;
+                    overflow:hidden;
+                    white-space:nowrap;
+                    text-overflow:ellipsis;
+                }
+            }
+        }
+        .clear-history-btn{
+            background-color:#F5F5F5;
+            padding: rem(40) 0;
+            text-align: center;
+            display: none;
+            a{
+                display: inline-block;
+                width: auto;
+                height: rem(60);
+                font-size: rem(28);
+                line-height: rem(60);
+                padding: 0 rem(18);
+                border:rem(2) solid #CCC;
+                background-color:#fff;
+                color: #666;
+                border-radius:rem(8);
+            }
+        }
+    }
+    ._search-close-btn {
+        position: absolute;
+        left: 0;
+        width: rem(92);
+        border: none;
+        color: #B7B7B7;
+        text-align: center;
+        font-size: rem(48);
+        line-height: rem(60);
+    }
+    .clear-input{
+        position: absolute;
+        right: rem(158);
+        top: 0;
+        width: rem(66);
+        height: rem(88);
+        line-height: rem(90);
+        font-size: rem(36);
+        color:#CECECE;
+    }
+    .ui-button {
+        width: 30%;
+        border:1px solid #999;
+        background-color: #fdfdfd;
+        color: #666;
+        line-height: rem(60);
+    }
+}

@@ -1,0 +1,131 @@
+.spec-mod .com-bd .mod-miaosha  li{
+	height: 340px;
+}
+.spec-mod .com-bd .mod-miaosha .com-box, .third-mod .com-bd .mod-miaosha .com-txt{
+	height: 95px;
+}
+.mod-miaosha .miaoshajia{
+	color: #ff0000;
+	font-size: 14px;
+	line-height: 16px;
+	font-weight: 900;
+	display: block;
+	padding-top: 6px;
+}
+.mod-miaosha .miaoshajia .miaoshajia-pri{
+	display: inline-block;
+	line-height: 16px;
+	font-size: 16px;
+	padding-top: 6px;
+}
+.mod-miaosha .miaoshajia .miaoshajia-pri em{
+	font-weight: normal;
+	font-style: normal;
+	font:16px/16px Arial,Verdana;
+}
+.mod-miaosha .shichangjia{
+	font-size: 12px;
+	color:#999;
+	text-decoration: line-through;
+	display: block;
+}
+.mod-miaosha .shichangjia .shichangjia-pri{
+	font-size: 12px;
+	font-weight: normal;
+	color:#999;
+	display: inline-block;
+	line-height: 16px;
+	text-decoration: line-through;
+	padding-top:6px;
+}
+.mod-miaosha .shichangjia .shichangjia-pri em{
+	font-weight: normal;
+	font-style: normal;
+	font:12px/16px Arial,Verdana;
+}
+.mod-miaosha .buy-btn-mod .to-buy-btn{
+	border:1px solid #ff0000;
+	background: #fff;
+	color:#ff0000;
+}
+
+.mod-miaosha .buy-btn-mod .to-buy-btn:hover{
+	border:1px solid #ff0000;
+	background: #fff;
+	color:#ff0000;
+}
+.mod-miaosha .buy-btn-mod .no-buy-btn{
+	background: #afafaf;
+	border: 1px solid #afafaf;
+	color:#fff;
+}
+.mod-miaosha .buy-btn-mod .no-buy-btn:hover{
+	background: #afafaf;
+	border: 1px solid #afafaf;
+	color:#fff;
+}
+.mod-miaosha .over-part{
+	display: none;
+	position: absolute;
+	height: 140px;
+	width: 100%;
+	top:0;
+	left:0;
+	color:#fff;
+	font-weight: 700;
+	font-size: 14px;
+	background:rgba(0,0,0,0.5);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000,endColorstr=#99000000);
+	padding-top: 100px;
+}
+
+.mod-miaosha .show-over-part .over-part{
+	display: block;
+}
+.mod-miaosha .over-part span{
+	display: block;
+	text-align: center;
+}
+.mod-miaosha .over-part a{
+	display: inline;
+	color:#ffed51;
+}
+
+.mod-miaosha .miaosha-tag{
+	position: absolute;
+	right: 0;
+	top:0;
+	width: 52px;
+	height: 72px;	
+	color:#fff;
+	font-size: 14px;
+	line-height: 16px;
+	font-weight: normal;
+	overflow: hidden;
+}
+.mod-miaosha .miaosha-tag-bg{
+	width: 52px;
+	height: 52px;
+	background: #22baec
+}
+.mod-miaosha .miaosha-tag-bg span{
+	text-decoration: none;
+}
+.mod-miaosha .miaosha-tag-bg span:hover{
+	text-decoration: none;
+}
+.mod-miaosha .miaosha-tag span{
+	text-align: center;
+	padding:8px 0 0;
+	display: block;
+}
+.mod-miaosha .miaosha-tag span.bdr{
+	padding: 0;
+	width: 0;
+	height: 0;
+	line-height: 0;
+    border-width:20px 0 0 52px;
+    border-style:solid;
+    border-color:#22baec transparent transparent transparent;
+    position:relative;
+}

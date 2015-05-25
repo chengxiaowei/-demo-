@@ -1,0 +1,128 @@
+@import url('../../../pub/css/common.css');
+@import url('../../../pub/css/btn.css'); 
+@import url('../../../pub/font/iconfont.css');
+@import url('../../../pub/css/dialog/ui-dialog.css');
+@import url('../../../pub/css/hd/site-nav.css');
+@import url('../../../pub/css/linkage-tab.css');
+@import url('../../../pub/css/hd/search.css');
+@import url('../../../pub/css/hd/nav.css');
+@import url('../../../pub/css/jquery.minSlide.css');
+@import url('../../../pub/css/ft/ft.css');
+@import url('../../../pub/css/min-bar/min-bar.css');
+@import url('../../../app/style.css'); 
+body{
+	background-color:rgb(137,199,40);
+}
+.bn{
+	margin: 0 auto;
+	min-width: 1190px;
+	height: auto;
+}
+.layout{
+	width: 990px;
+}
+.nav-list{
+	right: 60px;
+	bottom: 21px;
+}
+.nav-list li,.nav-list a{
+	display: block;
+	width: 170px;
+	height: 85px;
+}
+.nav-list a{ 
+	text-indent: -9999px;
+	background: url(img/nav-bg.jpg) no-repeat;
+}
+.nav-list li{
+	float: left;
+}
+.nav-list .n1{
+	background-position: 0 -85px;
+}
+.nav-list .n2{
+	background-position: 0 -255px;
+}
+.nav-list .n3{
+	background-position: 0 -425px;
+}
+.nav-list .active .n1{
+	background-position: 0 0;
+}
+.nav-list .active  .n2{
+	background-position: 0 -170px;
+}
+.nav-list .active .n3{
+	background-position: 0 -340px;
+}
+.cnt-box{
+	background:url(img/bg-1.jpg) repeat center center;
+}
+.tab-cnt{
+	display: none;
+	padding: 20px 50px 40px 60px;
+	font: 400 14px/24px 'Microsoft Yahei';
+	color: #333;
+}
+.active{
+	display: block;
+}
+.tab-cnt h2,.tab-cnt strong{ 
+	font-size: 24px;
+	line-height: 30px;
+	font-weight: 400;
+}
+.tab-cnt h2{
+	text-align: center;
+}
+.tab-cnt .mt20{
+	margin-top: 20px;
+}
+.cl-red{
+	color:red;
+}
+.fw700{
+	font-weight: 700;
+}
+.tab-box{
+	margin: 10px 0;
+	width: 400px;
+	border: 1px solid #666;
+}
+.tab-box td,.tab-box th{
+	border: 1px solid #666;
+	text-indent: 10px;
+}
+.tab-box th,.tab-box td.center{
+	text-align: center;
+	text-indent: 0;
+}
+
+
+ /*nav*/ 
+.right-nav{
+	position:fixed; 
+	-position:absolute;
+	padding-top: 116px;
+	width: 134px;
+	height: 368px;
+	overflow:hidden; 
+	z-index:100; 
+	left:55%; 
+	margin-left:450px;
+	margin-bottom: 40px;
+	bottom:25px; 
+	background:url(img/nav.png) no-repeat;
+}	
+.right-nav a{ 
+	height: 67px; 
+	font: 400 14px/67px 'Microsoft Yahei';
+	color:#fff;
+	text-align: center; 
+	text-indent: -9999px;
+} 
+.right-nav .go-top{ 
+	height: 40px;
+	border:none;  
+	background: none; 
+}	

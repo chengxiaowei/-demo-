@@ -1,0 +1,73 @@
+@import url('../../../pub/css/common.css');
+@import url('../../../pub/css/btn.css'); 
+@import url('../../../pub/font/iconfont.css');
+@import url('../../../pub/css/dialog/ui-dialog.css');
+@import url('../../../pub/css/hd/site-nav.css');
+@import url('../../../pub/css/linkage-tab.css');
+@import url('../../../pub/css/hd/search.css');
+@import url('../../../pub/css/hd/nav.css');
+@import url('../../../pub/css/jquery.minSlide.css');
+@import url('../../../pub/css/ft/ft.css');
+@import url('../../../pub/css/min-bar/min-bar.css');
+@import url('../../../app/style.css'); 
+body{
+	background:#e29c40;
+}
+.bn { 
+	width: 100%;
+	height:709px;
+	overflow:hidden;
+	background:url(images/bn.jpg) no-repeat center center;
+	
+}
+
+.wrapper{
+	overflow:visible;
+	background-color:#d85021;
+	width: 1035px;
+	_width:1034px;
+	padding-bottom:0;
+}
+
+.layout{
+	width:990px;
+	background-color:#d85021;
+	padding:0 30px;
+	position:relative;
+	float:left;
+	padding-bottom:60px;
+	margin-left: -15px;
+	box-shadow: inset 2px -2px 3px #c33e14;
+}
+
+.wrap-cnt{
+	margin-top:-120px;
+}
+
+.f1{
+	background:url(images/fl-1.jpg) no-repeat;
+	height:50px;
+}
+
+.f2{
+	background:url(images/fl-2.jpg) no-repeat;
+	height:50px;
+}
+
+.f3{
+	background:url(images/fl-3.jpg) no-repeat;
+	height:50px;
+}
+
+.wrapper h2{
+	border:none;
+	box-shadow:none;
+	margin:10px 0 0;
+}
+
+.ft{
+	background:url(images/footer.jpg) no-repeat;
+	height:35px;
+	margin:0 auto 20px;
+	width:1104px;
+}

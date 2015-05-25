@@ -1,0 +1,64 @@
+.mod-id-list{
+    .id-item{
+        color:#666;
+        margin: rem(20) rem(20) 0;
+        background: #fff;
+        border-radius:0.1rem;
+        font-size: rem(28);
+        .hd{
+            padding: rem(20);
+            line-height:rem(88);
+            .id-number{
+                padding-left:rem(20);
+            }
+            &:active {
+                background: #ddd;
+            }
+        }
+        .bd{
+            border-top:1px solid #ccc;
+            padding: rem(20);
+            .id-img{
+                float: left;
+                margin-left:rem(20);
+                width:rem(240);
+                height:rem(148);
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+        .ft{
+            padding: rem(20);
+            border-top:1px solid #ccc;
+            line-height: rem(80);
+            text-align:right;
+            .ui-button{
+                display: inline-block;
+            }
+        }
+    }
+}
+.address_btn_bot {
+    width: 100%;
+    height: rem(90);
+    background: #fff;
+    margin: 0 auto;
+    text-align: center;
+    font-size: rem(24);
+    position: fixed;
+    bottom: 0;
+    border-top: solid #ccc 1px;
+    a {
+        display: block;
+        color: #fff;
+        width: rem(200);
+        height: rem(55);
+        background: #f16320;
+        line-height: rem(55);
+        margin: 0 auto;
+        margin-top: rem(18);
+        border-radius: 2px;
+    }
+}

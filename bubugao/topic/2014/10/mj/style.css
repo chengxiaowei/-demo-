@@ -1,0 +1,108 @@
+@import url('../../../pub/css/common.css');
+@import url('../../../pub/css/btn.css'); 
+@import url('../../../pub/font/iconfont.css');
+@import url('../../../pub/css/dialog/ui-dialog.css');
+@import url('../../../pub/css/hd/site-nav.css');
+@import url('../../../pub/css/linkage-tab.css');
+@import url('../../../pub/css/hd/search.css');
+@import url('../../../pub/css/hd/nav.css');
+@import url('../../../pub/css/jquery.minSlide.css');
+@import url('../../../pub/css/ft/ft.css');
+@import url('../../../pub/css/min-bar/min-bar.css');
+@import url('../../../app/style.css'); 
+body{
+	min-width: 1270px;
+	background-color:  #f70039;
+} 
+.bn,.layout{
+	background-position:center top; 	
+}
+
+.layout{
+	margin: 0 auto;
+	width: 990px;
+	background-repeat: no-repeat;
+}
+ 
+.wrapper{
+	position: relative;    
+	margin-top:0; 
+	padding-top:0; 
+	margin-bottom:0; 
+	padding-bottom: 40px;
+}	
+.wrapper h2{
+	border:none; 
+	box-shadow: none;
+	height: 55px;
+	line-height: 55px;
+	color: #fff;
+	font-family: 'Microsoft Yahei';
+}	 
+
+.wrap-cnt{ 
+	position: relative; 
+	z-index: 2; 
+	padding-bottom: 0; 
+}
+.spec-mod{
+	background-position:center top; 
+}
+.com-hd{
+	position: relative; 
+	left:0; 
+	margin:0 auto;  
+	width: 1190px; 
+	height: 82px; 
+	overflow: hidden;
+}
+.com-hd a.more{
+	position: absolute;
+	top: 38px;
+	right: 70px;
+	width: 130px;
+	height: 45px;
+}
+.com-bd{
+	position: relative; 
+	width:1020px; 
+	margin: 0 auto;
+	background-color: #ff2525;
+	overflow: hidden;  
+}	
+.com-bd ul{
+	margin:0 auto;
+	width: 1000px; 
+	padding:10px 0px 0px 21px; 
+	*padding-bottom: 10px;
+}
+ 
+.com-bd li{
+	box-shadow: none;  
+	margin:0px 6px 10px 0; 
+	*margin-right: 3px;
+} 	
+.help{
+	margin-top:0;
+}
+ 
+.right-nav{
+	position:fixed; 
+	-position:absolute; 
+	width: 154px;
+	height: 280px; 
+	overflow:hidden; 
+	z-index:100; 
+	left:55%; 
+	margin-left:450px; 
+	margin-bottom: 40px; 
+	bottom:25px; 
+	background:url(img/nav.png) no-repeat;
+}	
+.right-nav a{ 
+	height: 55px;
+	font: 700 16px/55px 'Microsoft Yahei';
+	color:#fff;
+	text-indent: -999999px;
+}	
+ 

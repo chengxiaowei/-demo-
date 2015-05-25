@@ -1,0 +1,13 @@
+/* common */
+@import "../../common";
+@import "../../common/form/form";
+@import "../../common/button/button";
+@import "../../common/scroll-load/scroll-load";
+
+/* modules */
+@import "./source/test";
+@import "./source/list";
+@import "./source/message";
+@import "./source/button";
+
+.v-demo { margin: .3rem; }

@@ -1,0 +1,63 @@
+/* common */
+@import "../../../common";
+@import "../../../common/slider/slider";
+@import "../../../common/form/form";
+@import "../../../common/button/button";
+@import "../../../common/dialog/dialog";
+@import "../../../common/scroll-load/scroll-load";
+@import "../../../common/go-top/go-top";
+
+/* modules */
+@import "../common/base";
+@import "../common/pros";
+@import "../common/none";
+@import "../common/button";
+@import "./source/orders";
+.mod-orders-head {
+    height: rem(60);
+    background: #fff;
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    text-align: left;
+    position: relative;
+    display: block;
+    .hd{
+        clear: both;
+        a{
+            width: 25%;
+            max-width: rem(160);
+            line-height: rem(56);
+            float: left;
+            text-align: center;
+            font-size: rem(26);
+            color: #666;
+            text-decoration: none;
+            span{
+                display: inline-block;
+                -webkit-box-sizing:border-box;
+                height: 100%;
+                padding: 0 rem(8);
+                .count{
+                    font-weight: bold;
+                    padding-left:rem(8);
+                    color:#f16320;
+                    display: inline;
+                    font-size: rem(24)
+                }
+            }
+        }
+        a.active{
+            span{
+                border-bottom: rem(4) solid #f16320;
+                color: #f16320;
+            }
+        }
+    }
+
+}
+
+html{
+    background: #F2F2F2;
+    padding: 0 0 rem(20);
+}

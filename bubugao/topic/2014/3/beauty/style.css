@@ -1,0 +1,94 @@
+@import url('../../../pub/css/common.css');
+@import url('../../../pub/css/btn.css'); 
+@import url('../../../pub/font/iconfont.css');
+@import url('../../../pub/css/dialog/ui-dialog.css');
+@import url('../../../pub/css/hd/site-nav.css');
+@import url('../../../pub/css/linkage-tab.css');
+@import url('../../../pub/css/hd/search.css');
+@import url('../../../pub/css/hd/nav.css');
+@import url('../../../pub/css/jquery.minSlide.css');
+@import url('../../../pub/css/ft/ft.css');
+@import url('../../../pub/css/min-bar/min-bar.css');
+@import url('../../../app/style.css'); 
+body{
+	background:#ff7f8c;
+}
+.bn { 
+	width: 100%;
+	height:476px;
+	overflow:hidden;
+	background:url(images/banner.jpg) no-repeat center center;
+	min-width:1024px;
+	
+}
+.wrapper{
+	overflow:visible;
+	
+	padding-bottom:20px;
+	margin-top:0;
+	padding-top:0;
+}
+.wrapper h2{
+	background: url(images/com-title.jpg) no-repeat center top;
+	height:75px;
+	line-height: 75px;
+	border:none;
+	box-shadow: none;
+	margin:0;
+}
+.wrap-cnt{
+	margin-top: -18px;
+}
+.spec-mod h2{
+	background: url(images/spec-title.jpg) no-repeat center top;
+}
+
+/*右侧浮层*/
+.right-nav {
+	position: fixed;
+	-position:absolute;
+	width:81px;
+	height:340px;
+	overflow: hidden;
+	z-index: 100;
+	left: 55%;
+	margin-left: 500px;
+	bottom: 35px;
+	background:url(images/nav.png) no-repeat;
+}
+.right-nav a {
+	height: 85px;
+	font-family:'microsoft yahei';
+	text-indent: -9999px;
+}
+.right-nav .go-top{
+	background: none;
+	border: none;
+	margin-top: 0;
+	font-family: Simsun;
+	font-size: 14px;
+	color: #fff;
+}
+
+.indent{
+	text-indent:-9999;
+}
+
+.help{
+	margin-top:0;
+}
+
+
+
+.com-bd{
+	width:1000px;
+	margin:0 auto ;
+	overflow: hidden;
+	background:  url(images/com-bottom.jpg) no-repeat center bottom #f35d5e;
+	-background:  url(images/com-bottom.jpg) no-repeat -22px bottom #f35d5e;
+	padding:0 26px 100px 23px;
+	
+}
+.com-mod ul{
+	width:1000px;
+}

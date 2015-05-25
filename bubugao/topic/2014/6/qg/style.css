@@ -1,0 +1,52 @@
+@import url('../../../pub/css/common.css');
+@import url('../../../pub/css/btn.css'); 
+@import url('../../../pub/font/iconfont.css');
+@import url('../../../pub/css/dialog/ui-dialog.css');
+@import url('../../../pub/css/hd/site-nav.css');
+@import url('../../../pub/css/linkage-tab.css');
+@import url('../../../pub/css/hd/search.css');
+@import url('../../../pub/css/hd/nav.css');
+@import url('../../../pub/css/jquery.minSlide.css');
+@import url('../../../pub/css/ft/ft.css');
+@import url('../../../pub/css/min-bar/min-bar.css');
+@import url('../../../app/style.css'); 
+body{
+	background: #8abed8;
+	
+}
+.bn { 
+	width: 100%;
+	overflow:hidden;
+	background-repeat: no-repeat;
+	background-position: center top; 
+	height: 413px;
+	min-width: 1024px; 
+} 
+.wrapper{
+	padding-top:0;
+	padding-bottom: 20px;
+	margin:0 auto;
+	min-height: 1000px;
+	min-width: 1100px;
+}
+ 
+
+.layout {
+	width:990px;
+	overflow: hidden;
+ }
+ .jImg{
+ 	background-position: center center;
+ }
+ .jImg a{
+ 	width: 500px;
+ 	height: 210px;
+ } 
+
+.help{
+	margin-top: 0;
+}
+.img-bg{
+	background-repeat: no-repeat;
+	background-position: center top;
+}

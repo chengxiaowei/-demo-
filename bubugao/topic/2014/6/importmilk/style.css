@@ -1,0 +1,257 @@
+@import url('../../../pub/css/common.css');
+@import url('../../../pub/css/btn.css'); 
+@import url('../../../pub/font/iconfont.css');
+@import url('../../../pub/css/dialog/ui-dialog.css');
+@import url('../../../pub/css/hd/site-nav.css');
+@import url('../../../pub/css/linkage-tab.css');
+@import url('../../../pub/css/hd/search.css');
+@import url('../../../pub/css/hd/nav.css');
+@import url('../../../pub/css/jquery.minSlide.css');
+@import url('../../../pub/css/ft/ft.css');
+@import url('../../../pub/css/min-bar/min-bar.css');
+@import url('../../../app/style.css'); 
+body{
+	background:#fff;
+	
+}
+.bn { 
+	width: 100%;
+	height:252px;
+	overflow:hidden;
+	min-width:1024px;
+	background-repeat: no-repeat;
+	background-position: center top;
+}
+.bn-mod{
+	width: 100%;
+	height: 441px;
+	background-repeat: no-repeat;
+	background-position: center top;
+}
+.bn-mod a{
+	display: block;
+	width: 990px;
+	height: 441px;
+	margin: 0 auto;
+}
+.bn-0{
+	height: 195px;
+}
+.bn-1{
+	height: 216px;
+}
+.wrapper{
+	overflow:visible;
+	padding-bottom:0;
+	margin-top:0;
+	padding-top:0;
+}
+.wrapper h2.hd{
+	position: relative;
+	width: 990px;
+	height: 60px;
+	margin: 0 auto;
+	box-shadow: none;
+	background-repeat: no-repeat;
+	background-position: center top;
+}
+.com-mod{
+	width: 100%;
+	margin: 0 auto;
+	position: relative;
+}
+.com-mod-1{
+	background-color: #ffff73;
+	padding-bottom: 45px;
+}
+.com-mod-2{
+	background-color: #ffd351;
+	padding: 28px 0;
+}
+.com-mod-3{
+	background-color: #ffb551;
+	padding: 28px 0;
+}
+.com-mod-4{
+	background-color: #fe9752;
+	padding: 28px 0;
+}
+.com-cnt{
+	width: 991px;
+	margin: 0 auto;
+}
+.com-cnt-mod{
+	width: 985px;
+	background-color: #ee3c3c;
+	padding: 12px 0 0 5px;
+	overflow: hidden;
+}
+.com-ad ul li{
+	width: 190px;
+	height: 190px;
+	margin:0 7px 14px 0;
+	float: left;
+}
+.com-ft{
+	height: 23px;
+	width: 100%;
+	background-repeat: no-repeat;
+	background-position: center top;
+}
+.ad, .ad a, .ad a img{
+	display: block;
+	width: 990px;
+	height: 300px;
+	margin: 0 auto;
+}
+.mb{
+	margin-bottom: 12px;
+}
+.com-bd{
+	width: 984px;
+	margin: 0 auto;
+	padding: 10px 0 5px 7px;
+}
+.com-bd li{
+	margin-right: 7px;
+}
+.com-mod-3 .com-bd{
+	background-color: #fe9752;
+}
+.com-mod-4 .com-bd{
+	background-color: #fe7d27;
+}
+.spec-mod .com-bd{
+	width: 980px;
+	margin: 0 auto;
+	background-color: #ccef7a;
+	padding: 10px 0 5px 10px;
+}
+.spec-mod .com-bd li{
+	margin-right: 4px;
+}
+.nav-mod{
+	width: 100%;
+	background-color: #ffff73;
+	padding: 40px 0 60px;
+}
+.nav-mod .nav-cnt{
+	width: 975px;
+	margin: 0 auto;
+	padding: 10px;
+	background-color: #ffd351;
+}
+.nav-mod .nav-cnt ul{
+	width: 1010px;
+}
+.nav-mod .nav-cnt-1{
+	margin-bottom: 20px;
+}
+.nav-mod .nav-cnt-1 ul li{
+	float: left;
+	margin-right: 5px;
+	width: 240px;
+	height: 240px;
+}
+.nav-mod .nav-cnt-1 li a, .nav-mod .nav-cnt-1 li a img{
+	display: block;
+	width: 240px;
+	height: 240px;
+}
+.nav-mod .nav-cnt-2 ul li{
+	float: left;
+	margin-right: 7px;
+	width: 320px;
+	height: 280px;
+}
+.nav-mod .nav-cnt-2 li a, .nav-mod .nav-cnt-2 li a img{
+	display: block;
+	width: 320px;
+	height: 280px;
+}
+.spec-mod{
+	margin-bottom: 0;
+}
+.more{
+	position: absolute;
+	display: block;
+	width: 92px;
+	height: 22px;
+	right: 13px;
+	top: 26px;
+}
+
+/*右侧浮层*/
+.right-nav{
+	position:fixed;
+	-position:absolute;
+	width:169px;
+	height:169px;
+	overflow:hidden; 
+	z-index:30;
+	left:55%;
+	margin-left:430px;
+	margin-bottom: 40px;
+	bottom:25px;
+	background:url(img/nav.png) no-repeat;
+}
+
+.right-nav a{
+	display: block;
+	width: 83px;
+	height:85px;
+	float: left;
+	font:400 22px/53px 'Microsoft Yahei';
+	color: #040404;
+}
+.help{
+	margin-top:0;
+}
+.a-mod{
+	width: 990px;
+	margin:0 auto;
+	position: relative;
+}
+.a-link1{
+	position: absolute;
+	width: 108px;
+	height: 42px;
+	right: 0;
+	top: 58px;
+}
+.see-act{
+	position: absolute;
+	width: 108px;
+	height: 22px;
+	right: 0;
+	top: 21px;
+}
+
+
+/*右侧悬浮*/
+.anim-nav {
+    overflow:hidden;
+
+    -webkit-transform:rotate(0) scale(0.01,0.01);
+    -moz-transform:rotate(0) scale(0.01,0.01);
+    -o-transform:rotate(0) scale(0.01,0.01);
+    -ms-transform:rotate(0) scale(0.01,0.01);
+    transform:rotate(0) scale(0.01,0.01);
+
+    -webkit-transition:all 400ms linear 0;
+    -moz-transition:all 400ms linear 0;
+    -o-transition:all 400ms linear 0;
+    -ms-transition:all 400ms linear 0;
+    transition:all 400ms linear 0;
+    visibility: hidden;
+    z-index:50;
+}
+.anim-nav-show{
+    visibility: visible;
+    _display:block;
+    -webkit-transform:rotate(720deg) scale(1);
+    -moz-transform:rotate(720deg) scale(1);
+    -o-transform:rotate(720deg) scale(1));
+    -ms-transform:rotate(720deg) scale(1);
+    transform:rotate(720deg) scale(1);
+}

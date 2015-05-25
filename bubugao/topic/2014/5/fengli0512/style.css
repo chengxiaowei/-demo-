@@ -1,0 +1,60 @@
+@import url('../../../pub/css/common.css');
+@import url('../../../pub/css/btn.css'); 
+@import url('../../../pub/font/iconfont.css');
+@import url('../../../pub/css/dialog/ui-dialog.css');
+@import url('../../../pub/css/hd/site-nav.css');
+@import url('../../../pub/css/linkage-tab.css');
+@import url('../../../pub/css/hd/search.css');
+@import url('../../../pub/css/hd/nav.css');
+@import url('../../../pub/css/jquery.minSlide.css');
+@import url('../../../pub/css/ft/ft.css');
+@import url('../../../pub/css/min-bar/min-bar.css');
+@import url('../../../app/style.css'); 
+.bn{
+	height: 500px;
+	background-position: center top;
+	background-repeat: no-repeat;
+	min-width: 1000px;
+}
+.bn-1{
+	height: 616px;
+}
+.bn-2{
+	height: 707px;
+}
+.link-mod{
+	width: 1000px;
+	margin: 0 auto;
+	position: relative;
+}
+.link-mod a{
+	position: absolute;
+	display: block;
+}
+.link-1{
+	width: 221px;
+	height: 107px;
+	top: 348px;
+	left: 616px;
+}
+.link-2{
+	width: 100%;
+	height: 377px;
+	top: 100px;
+	left: 0;
+}
+.link-3{
+	width: 350px;
+	height: 311px;
+	top: 293px;
+	left: 50px;
+}
+.link-4{
+	width: 382px;
+	height: 211px;
+	top: 474px;
+	left: 643px;
+}
+.help{
+	margin-top: 0;
+}

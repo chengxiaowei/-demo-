@@ -1,0 +1,248 @@
+@import url('../../../pub/css/common.css');
+@import url('../../../pub/css/btn.css'); 
+@import url('../../../pub/font/iconfont.css');
+@import url('../../../pub/css/dialog/ui-dialog.css');
+@import url('../../../pub/css/hd/site-nav.css');
+@import url('../../../pub/css/linkage-tab.css');
+@import url('../../../pub/css/hd/search.css');
+@import url('../../../pub/css/hd/nav.css');
+@import url('../../../pub/css/jquery.minSlide.css');
+@import url('../../../pub/css/ft/ft.css');
+@import url('../../../pub/css/min-bar/min-bar.css');
+@import url('../../../app/style.css'); 
+body{
+	background: #494466;
+	
+}
+.bn { 
+	width: 100%;
+	height: 462px;
+	overflow:hidden;
+	background-repeat: no-repeat;
+	background-position: center top;
+	min-width: 1024px; 
+}
+.wrapper{
+	overflow:visible;
+	padding-bottom:0;
+	margin-top:0;
+	padding-top:0;
+}
+.wrapper h2{
+	width: 1010px;
+	margin: 0 auto;
+	height: 59px;
+	border:none;
+	box-shadow: none;
+	background: url(img/title.png) no-repeat center top;
+}
+.wrapper h2.hd1{
+	background-position: 0 0;
+}
+.wrapper h2.hd2{
+	background-position: 0 -61px;
+}
+.wrapper h2.hd3{
+	background-position: 0 -121px;
+}
+.hd-txt{
+	width: 214px;
+	text-align: right;
+	font-size: 24px;
+	color: #916c0d;
+	line-height: 30px;
+	margin: 20px 30px 0 0;
+}
+.com-hd-t{
+	padding-top:8px;
+	text-indent: 70px;
+	width:1034px;
+	margin: 0 auto;
+}
+.com-bn, .com-bn2{
+	width: 990px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.com-bn img{
+	width: 990px;
+	height: 330px;
+}
+.com-bn2 .com-bn-mod{
+	width: 1000px;
+}
+.com-bn2 img{
+	width: 490px;
+	height: 330px;
+	margin-right: 10px;
+}
+.spec-mod,.com-mod{
+	background-repeat: no-repeat;
+	background-position: center top;
+	min-width: 998px; 
+	background-color: #fff;
+    padding: 5px 6px 15px;
+}
+.spec-mod ul li{
+	margin-right: 5px;
+	width: 320px;
+	height: 381px;
+}
+.wrap-cnt{
+	width: 1010px;
+	margin:0 auto;
+	position: relative;
+	z-index: 2;
+}
+
+.com-bd{
+	width:974px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.txt-mod{
+	width: 990px;
+	height: 668px;
+	margin-top: -15px;
+}
+.ft-mod{
+	width: 1010px;
+	height: 305px;
+	background: url(img/ft-bj.jpg) repeat-x;
+}
+.goods-mod{
+	padding: 10px;
+}
+.goods-mod ul{
+	width: 1000px;
+}
+.goods-mod ul li{
+	float: left;
+	width: 240px;
+	height: 280px;
+	margin-right: 10px;
+	position: relative;
+}
+.goods-mod ul li img{
+	width: 240px;
+	height: 280px;
+}
+.goods-mod .bot-txt{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 240px;
+	height: 40px;
+	background-color: #000;
+	opacity: 0.5;
+	filter:alpha(opacity=50);
+	z-index: 2;
+}
+.goods-mod p{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	z-index: 3;
+	display: block;
+	width: 240px;
+	height: 40px;
+	color: #fff;
+	text-align: center;
+	font: 100 24px/36px 'Microsoft yahei';
+}
+.bj-mod{
+	position: absolute;
+	width: 100%;
+	top: 462px;
+	left: 0;
+}
+.bj-mod .bj{
+	width: 100%;
+	height: 300px;
+	background-repeat: no-repeat;
+	background-position: center top;
+}
+.bj-mod .bj1{
+	height: 229px;
+}
+/*右侧浮层*/
+.right-nav{
+	position:fixed;
+	-position:absolute;
+	width:105px;
+	height:166px;
+	padding-top: 38px;
+	z-index:100;
+	left:55%;
+	margin-bottom: 100px;
+	margin-left:450px;
+	bottom:35px;
+	overflow: hidden;
+	background:url(//s1.bbgstatic.com/topic/2014/5/jd61/img/nav.png) no-repeat;
+}
+.right-nav a{
+	height: 40px;
+	font: 100 18px/42px 'Microsoft Yahei';
+	color:#fff;
+	text-decoration: none;
+}
+.right-nav a:hover{
+	text-decoration: underline;
+}
+
+.right-nav .go-top{
+	background:none;
+	border:none;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+}
+.help{
+	margin-top: 0;
+}
+#com2 .com-hd-t,#com3 .com-hd-t{
+	text-align: right;
+	padding-right: 60px;
+	width:974px;
+}
+/* 家电商品样式 */
+.spec-mod .com-img{
+	width: 320px;
+	height: 320px;
+	padding: 0;
+}
+.spec-mod .com-img img{
+	width: 320px;
+	height: 320px;
+}
+/*.spec-mod .com-buy-btn, .spec-mod .com-disabled-btn{
+	background:red;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	width: 47px;
+	height: 47px;
+}
+
+.spec-mod .com-box{
+	position: relative;
+	height: 75px;
+}
+.spec-mod .com-img{
+	width: 320px;
+	height: 320px;
+	padding: 0;
+}
+.spec-mod .com-img img{
+	width: 320px;
+	height: 317px;
+}
+.com-txt span{
+	display: block;
+}
+.spec-mod .com-txt{
+	margin-top: 5px;
+}
+.spec-mod .com-txt a{
+	width: 305px;
+}*/

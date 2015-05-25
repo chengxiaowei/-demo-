@@ -1,0 +1,60 @@
+@import url('../../../pub/css/common.css');
+@import url('../../../pub/css/btn.css'); 
+@import url('../../../pub/font/iconfont.css');
+@import url('../../../pub/css/dialog/ui-dialog.css');
+@import url('../../../pub/css/hd/site-nav.css');
+@import url('../../../pub/css/linkage-tab.css');
+@import url('../../../pub/css/hd/search.css');
+@import url('../../../pub/css/hd/nav.css');
+@import url('../../../pub/css/jquery.minSlide.css');
+@import url('../../../pub/css/ft/ft.css');
+@import url('../../../pub/css/min-bar/min-bar.css');
+@import url('../../../app/style.css'); 
+body{
+	background-color:#bfd42f;
+}
+.wrapper{
+	overflow:visible;
+	padding-bottom:0;
+	margin-top:0;
+	padding-top:0;
+}
+
+.layout{
+	width:auto;
+}
+/*调整com-mod li 上下间距适应背景大小*/
+.com-mod{
+	height:500px;
+	background-position:center;
+	position:relative;
+}
+
+.com-foot{
+	height:665px;
+}
+
+.buy-link{
+	float:right;
+	display:block;
+	width:50%;
+	height:270px;
+}
+
+.buy-link1{
+	float:right;
+	margin-top:115px;
+	display:block;
+	width:50%;
+	height:270px;
+}
+
+.p-indent{
+	text-indent: -9999px;
+}
+
+.help{
+	margin-top:0;
+}
+
+

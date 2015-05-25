@@ -1,0 +1,126 @@
+@import url('../../../pub/css/common.css');
+@import url('../../../pub/css/btn.css'); 
+@import url('../../../pub/font/iconfont.css');
+@import url('../../../pub/css/dialog/ui-dialog.css');
+@import url('../../../pub/css/hd/site-nav.css');
+@import url('../../../pub/css/linkage-tab.css');
+@import url('../../../pub/css/hd/search.css');
+@import url('../../../pub/css/hd/nav.css');
+@import url('../../../pub/css/jquery.minSlide.css');
+@import url('../../../pub/css/ft/ft.css');
+@import url('../../../pub/css/min-bar/min-bar.css');
+@import url('../../../app/style.css'); 
+body{
+	background: url(img/body-bj.jpg) repeat;
+	
+}
+.bn { 
+	width: 100%;
+	overflow:hidden;
+	background-repeat: no-repeat;
+	background-position: center top;
+	min-width: 1024px;
+	height:484px;
+	margin-bottom:30px;
+}
+.wrapper{
+	overflow:visible;
+	padding-bottom:60px;
+	margin-top:0;
+	padding-top:0;
+}
+.wrapper h2{
+	border:none;
+	box-shadow: none;
+	text-align: left;
+	width:960px;
+	height: 64px;
+	margin: 0 auto;
+	font-size: 32px;
+	vertical-align: bottom;
+	padding:10px 0 0 70px;
+}
+.com-hd span{
+	float:left;
+}
+.com-hd-t{
+	padding-top:5px;
+	margin: 0 auto;
+	font-style: italic;
+	font-weight:700;
+	font-family:"黑体";
+	font-size:44px;
+}
+.com-hd-msg{
+	margin:10px 0 0 90px;
+	_display:inline;
+	font-size:20px;
+	color:#650b0f;
+}
+.spec-mod,.com-mod{
+	background-repeat: no-repeat;
+	background-position: center top;
+	min-width: 1024px; 
+	margin-bottom: 30px;
+}
+.wrap-cnt{
+	margin-top:0;
+	position: relative;
+	z-index: 2;
+}
+.com-mod ul {
+
+}
+.com-bd{
+	width:1030px;
+	margin: 25px auto 0;
+	overflow: hidden;
+	background-color:#d54450;
+	box-shadow:0px 4px 3px #971b27;
+}
+.ad-link{
+	width:999px;
+	margin:15px auto 0 auto;
+}
+
+.com-area{
+	background-color:#a92230;
+	margin:10px;
+	padding:0 10px 10px 10px;
+	width:990px;
+	overflow:hidden;
+}
+/*右侧浮层*/
+.right-nav{
+	display: none;
+	position:fixed;
+	-position:absolute;
+	width:105px;
+	height:140px;
+	z-index:50;
+	left:55%;
+	margin-bottom: 100px;
+	margin-left:450px;
+	bottom:35px;
+	overflow: hidden;
+}
+
+.right-nav .go-top{
+	background:url(img/nav-bj.png) no-repeat;	
+	border:none;
+	width:105px;
+	height:140px;
+	line-height: 50px;
+	text-align: center;
+}
+
+.right-nav .go-top:active{
+	background:url(img/nav-bj.png) no-repeat -116px 0;	
+}
+.help{
+	margin-top: 0;
+}
+
+.com-txt a{
+	font-family:"microsoft yahei";
+}

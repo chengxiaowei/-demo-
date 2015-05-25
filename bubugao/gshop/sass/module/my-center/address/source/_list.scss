@@ -1,0 +1,87 @@
+.address_hd {
+    height: rem(60);
+    font-size: rem(20);
+    background: #fff;
+    line-height: rem(60);
+    padding-left: rem(15);
+}
+.mod-address-list{
+    .address-item{
+        color:#333;
+        margin: rem(20) 0 0 0;
+        background: #fff;
+        border-radius:0.1rem;
+        &.default{
+            .bd{
+                .address-text{
+                    .default-text{
+                        display: block;
+                    }
+                }
+            }
+            .ft{
+                .set-default-btn{
+                    display: none;
+                }
+            }
+        }
+        .bd{
+            padding: rem(20) rem(20) rem(20) rem(30);
+            font-size: rem(28);
+            .address-text{
+                position: relative;
+                padding: 0 rem(92) 0 0 ;
+                .default-text{
+                    display: none;
+                    position: absolute;
+                    right: 0;
+                    top:40%;
+                    color:#FF4352;
+                }
+                .iconfont{
+                    font-size: rem(36);
+                }
+            }
+            .man{
+                padding:rem(12) 0 0;
+            }
+            &:active {
+                background: #eee;
+            }
+        }
+        .ft{
+            margin: 0 rem(20) 0 rem(20);
+            border-top:1px solid #ccc;
+            line-height: rem(80);
+            padding: 0 rem(20) rem(20) rem(20);
+            .buttons{
+                text-align:right;
+                .ui-button{
+                    display: inline-block;
+                }
+            }
+        }
+    }
+}
+.address_btn_bot {
+    width: 100%;
+    height: rem(90);
+    background: #fff;
+    margin: 0 auto;
+    text-align: center;
+    font-size: rem(24);
+    position: fixed;
+    bottom: 0;
+    border-top: solid #ccc 1px;
+    a {
+        display: block;
+        color: #fff;
+        width: rem(200);
+        height: rem(55);
+        background: #f16320;
+        line-height: rem(55);
+        margin: 0 auto;
+        margin-top: rem(18);
+        border-radius: 2px;
+    }
+}

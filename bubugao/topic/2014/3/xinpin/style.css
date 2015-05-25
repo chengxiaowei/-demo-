@@ -1,0 +1,220 @@
+@import url('../../../pub/css/common.css');
+@import url('../../../pub/css/btn.css'); 
+@import url('../../../pub/font/iconfont.css');
+@import url('../../../pub/css/dialog/ui-dialog.css');
+@import url('../../../pub/css/hd/site-nav.css');
+@import url('../../../pub/css/linkage-tab.css');
+@import url('../../../pub/css/hd/search.css');
+@import url('../../../pub/css/hd/nav.css');
+@import url('../../../pub/css/jquery.minSlide.css');
+@import url('../../../pub/css/ft/ft.css');
+@import url('../../../pub/css/min-bar/min-bar.css');
+@import url('../../../app/style.css'); 
+body{
+	background:#fff;
+}
+.bn { 
+	width: 100%;
+	height:300px;
+	overflow:hidden;
+	background:url(images/banner.jpg) no-repeat center center;
+	min-width:1024px;
+	
+}
+.wrapper{
+	overflow:visible;
+	background:#fff;
+	padding-bottom:0;
+	margin-top:0;
+	padding-top:0;
+}
+.wrapper .com-hd{
+	width:1000px;
+	margin:0 auto ;
+	text-align: left;
+	font-size: 18px;
+	height:90px;
+	padding-top:77px;
+	border:none;
+	box-shadow: none;
+}
+.wrapper .com-hd img{
+	float:left;
+}
+.wrapper h2{
+	float: left;
+	height: auto;
+	line-height: 30px;
+	font-size: 18px;
+	padding-top:10px;
+	border:none;
+	text-align: left;
+	padding-left: 30px;
+	box-shadow: none;
+}
+
+#com1{
+	height: 740px;
+}
+#com2{
+	height: 711px;
+}
+#com3{
+	height: 760px;
+}
+#com4{
+	height: 858px;
+}
+.com-mod{
+	background-repeat:no-repeat;
+	background-position:center;
+	min-width:1024px;
+	position: relative;
+}
+.com-mod ul{
+	width:100%;
+}
+.com-mod li{
+	height: 239px;
+	margin:4px 4px 0 0;
+}
+.com-bd{
+	width:1010px;
+	margin:0 auto ;
+	overflow: hidden;
+}
+.com-mod .com-bd{
+
+	background-repeat:no-repeat;
+	background-position:center;
+	min-width:1024px;
+}
+.com-bd .f-r{
+	margin-right: -200px;
+}
+.com-box{
+	border-top:0;
+	height:auto;
+	padding-left: 0;
+}
+.com-mod .com-txt{
+	width: 100%;
+	text-indent: 8px;
+}
+
+.com-box .f-r{
+	display: none;
+}
+.com-txt a{
+	width:100%;
+}
+.com-txt span.p-normal{
+	display: block;
+	width:100%;
+	color:#fff;
+	font-size: 16px;
+	font-weight: 400;
+	text-indent: 45px;
+	margin-right: 0;
+}
+#com1 .p-normal{
+	background:url(images/com-txt1.jpg) no-repeat 5px 0 #ff9900;
+}
+#com1 li{
+	border-top:1px solid #ff9900;
+	border-left:1px solid #ff9900;
+	border-right: 4px solid #cd6a06;
+	border-bottom: 4px solid #cd6a06;
+}
+#com2 .p-normal{
+	background:url(images/com-txt2.jpg) no-repeat 5px 0 #339933;
+}
+#com2 li{
+	border-top:1px solid #339933;
+	border-left:1px solid #339933;
+	border-right: 4px solid #125f18;
+	border-bottom: 4px solid #125f18;
+}
+#com3 .p-normal{
+	background:url(images/com-txt3.jpg) no-repeat 5px 0 #d24646;
+}
+#com3 li{
+	border-top:1px solid #d24646;
+	border-left:1px solid #d24646;
+	border-right: 4px solid #8d0000;
+	border-bottom: 4px solid #8d0000;
+}
+#com4 .p-normal{
+	background:url(images/com-txt4.jpg) no-repeat 5px 0 #328ed6;
+}
+#com4 li{
+	border-top:1px solid #328ed6;
+	border-left:1px solid #328ed6;
+	border-right: 4px solid #237abf;
+	border-bottom: 4px solid #237abf;
+}
+#com1 h2{
+	text-indent: 5px;
+}
+#com1 .com-hd img{
+	margin-top: 15px;
+}
+#com2 h2{
+	width: 200px;
+}
+
+#com3 h2{
+	padding-top:35px;
+	text-indent: 330px;
+}
+#com4 h2{
+	width: 170px;
+}
+.com-txt .p-del{
+	display: none;
+}
+/*右侧浮层*/
+.right-nav {
+	position: fixed;
+	-position: absolute;
+	width:100px;
+	z-index: 100;
+	bottom: 35px;
+
+}
+.right-nav a {
+	height: 35px;
+	line-height: 26px;
+	background: url(images/nav.png) no-repeat 0 -36px ;
+	font-family:'microsoft yahei';
+	color:#fff;
+	font-size: 18px;
+	margin-bottom:0;
+	text-indent: -9999px;
+	text-decoration: none;
+}	
+.right-nav a:hover{
+	background: url(images/nav.png) no-repeat 0 0 ;
+	height:35px;
+	text-indent: -10px;
+	text-decoration: none;
+}
+.right-nav .go-top{
+	height: 46px;
+	background: url(images/nav.png) no-repeat 10px -72px ;
+	border: none;
+}
+.right-nav a.go-top:hover{
+	height: 46px;
+	background: url(images/nav.png) no-repeat 10px -72px ;
+	text-indent: -9999px;
+}
+.indent{
+	text-indent:-9999;
+}
+
+.help{
+	margin-top:0;
+}
+
+

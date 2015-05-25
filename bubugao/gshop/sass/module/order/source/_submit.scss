@@ -1,0 +1,38 @@
+.mod-sub {
+    background: #fff;
+    position: fixed;
+    width: 100%;
+    bottom: 0px;
+    left: 0px;
+    border-top: 1px solid #cccccc;
+    border-bottom: 1px solid #cccccc;
+    .inner {
+        margin: rem(20);
+        overflow: hidden;
+        .b-l {
+            float: left;
+            padding-top: rem(20);
+            font-size: rem(32);
+            .txt-span {
+                color: #666666;
+                padding-right: 10px;
+            }
+            .money {
+                font-weight: bold;
+            }
+        }
+        .b-r {
+            float: right;
+            .ui-button {
+                width:auto;
+                min-width: rem(200);
+                height: rem(80);
+                padding: 0px;
+                font: 400 .75rem/1.6rem 'microsoft yahei';
+                font-size: rem(36);
+                background: #f16320;
+                border: 1px solid #f16320;
+            }
+        }
+    }
+}

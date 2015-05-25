@@ -1,0 +1,96 @@
+@import url('site-nav.css');
+@import url('../linkage-tab.css');
+@import url('search.css');
+@import url('dialog-shop-info.css');
+/**
+* @des 搜索栏通用-店铺头部
+* @author jiangchaoyi update 2014.7.27		
+*/
+
+
+.search .s-box {
+	left: 656px;
+}
+
+.search .s-box .s-main {
+	width: 460px;
+}
+
+.search .logo-ad,.search .search-ad {
+	display: none;
+}
+
+.search .s-box .s-main .btn-search{
+	width: 60px;
+}
+
+.search .s-box .s-main .btn-search-shop {
+	right: -70px;
+	height: 34px;
+	line-height: 34px;
+	border-radius: 2px;
+	background-color: #f66;
+}
+
+.search .s-shop-info {
+	position: absolute;
+	background-color: #fff;
+	left: 200px;
+	height: 60px;
+	width: 450px;
+}
+
+.search .s-shop-info .s-shop-info-cnt {
+	height: 40px;
+	border-left: 1px solid #e4e4e4;
+	margin: 10px 20px;
+	padding: 0 0 0 20px;
+}
+
+.search .s-shop-info .s-shop-info-cnt .shop-contact{
+	height: 16px;
+	line-height: 16px;
+}
+
+.search .s-shop-info .shop-name,.search .s-shop-info .shop-contact a {
+	display: block;
+	height: 16px;
+	line-height: 16px;
+}
+
+.search .s-shop-info .shop-name {
+	color: #666;
+	padding: 0 0 5px 0;
+	text-decoration: none;
+	display: inline-block;
+}
+
+.search .s-shop-info .shop-name:hover,.search .s-shop-info .shop-name:hover .icon {
+	color: #333;
+}
+
+.search .s-shop-info .shop-contact a{
+	color: #f90;
+	padding: 0 20px 0 0;
+	float: left;
+}
+
+.search .s-shop-info .shop-name .icon {
+	margin: 1px 0 0 5px;
+	float: left;
+	line-height: 16px;
+}
+
+.search .s-shop-info .shop-name span{
+	float: left;
+	max-width: 350px;
+	font-weight: 700;
+}
+
+.search .s-shop-info .shop-contact a .icon {
+	margin-right: 5px;
+}
+
+.search .s-shop-info .shop-contact a:hover {
+	text-decoration: none;
+}

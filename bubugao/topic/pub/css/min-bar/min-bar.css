@@ -1,0 +1,278 @@
+/**
+* @des 右侧导航
+* @author jiangchaoyi update 2014.8.11	
+*/
+.min-bar {
+	display:none;
+	position: fixed;
+	right: 0;
+	top: 0;
+	width: 34px;
+	z-index: 100;
+/*	border-left: 1px solid #e4e4e4;*/
+	background-color: #fff;
+}
+
+/*共高度*/
+.min-bar,.min-bar .bar-fast,.min-bar .bar-plug{
+	height: 600px;
+}
+
+.bar-plug .plug-cart .cart-cnt{
+	height: 510px;
+	position: relative;
+}
+
+/*共宽度*/
+.min-bar .bar-fast,.min-bar .tab-item{
+	width: 34px;
+}
+
+/*快捷导航*/
+.min-bar .bar-fast{
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index:9;
+	background-color: #2a0b0b;
+	filter: alpha(opacity = 90); /*IE滤镜，透明度50%*/
+	opacity: 0.9; /*其他，透明度50%*/
+}
+
+.min-bar .tab-item{
+	color: #fff;
+	text-align: center;
+	display: block;
+	padding: 10px 0;
+	position: relative;
+}
+
+.min-bar .tab-item:hover{
+	text-decoration: none;
+	color: #f16320;
+}
+
+.min-bar .tab-item .tab-item-icon{
+	height: 20px;
+	line-height: 20px;
+}
+.min-bar .tab-item .tab-item-icon .icon
+{
+	font-weight: normal;
+	-webkit-text-stroke-width :0;
+}
+.min-bar .tab-item .tab-item-txt{
+	line-height: 14px;	
+}
+
+.min-bar .tab-item-to-top{
+	display: none;	
+}
+
+/*购物车*/
+.min-bar .tab-cart,.min-bar .tab-cart:hover{
+	background-color: #f16320;
+	color: #fff;
+}
+
+.min-bar .tab-cart .tab-item-txt{
+	width: 14px;
+	margin: 0 auto;
+}
+
+.min-bar .tab-cart .cart-count{
+	position: absolute;
+	background-color: #fff;
+	height: 10px;
+	line-height: 10px;
+	border-radius: 2px;
+	right: 3px;
+	top:6px;
+	font-size: 10px;
+	color: #f40;
+	padding: 1px 2px;
+}
+
+/*快捷操作-垂直居中部分*/
+.min-bar .bar-tab-mid{
+	position: absolute;
+	top: 10px;
+	left: 0;
+}
+
+/*返回底部*/
+.min-bar .bar-tab-btm{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+
+/*插件*/
+.min-bar .bar-plug{
+	position:absolute;
+	right: -280px;
+	top : 0;
+	width: 270px;
+	background-color: #f2f2f2;
+	padding:0 5px 5px 5px;
+	overflow: hidden;
+	border-left: 2px solid #e4e4e4;
+}
+
+/*插件-顶部-关闭操作*/
+.min-bar .bar-plug .bar-plug-top{
+	height: 20px;
+	line-height: 20px;
+	overflow: hidden;
+	z-index:2;
+}
+
+.min-bar .bar-plug .bar-plug-close{
+	position: absolute;
+	right: 6px;
+	top : -2px;
+	color: #999;
+}
+
+.min-bar .bar-plug .bar-plug-close .icon{
+	font-size: 20px;
+}
+
+.min-bar .bar-plug .bar-plug-close:hover{
+	text-decoration: none;
+	color: #333;
+}
+
+/*插件-购物车*/
+.bar-plug .plug-cart{
+	width: 270px;
+}
+
+.bar-plug .plug-cart .cart-cnt{
+	overflow-y:auto;
+}
+
+.bar-plug .plug-cart .cart-empty{
+	text-align: center;
+	line-height: 60px;
+	font-size: 14px;
+}
+
+.bar-plug .plug-cart .cart-empty:hover{
+	background-color: #fff;
+}
+
+.bar-plug .plug-cart li{
+	width: 230px;
+	padding: 10px;
+	background-color: #fff;
+	margin: 0 auto 10px auto;
+	position: relative;
+	cursor: pointer;
+}
+
+.bar-plug .plug-cart .goods-img{
+	position: absolute;
+	left: 10px;
+	top: 10px;
+	width: 60px;
+	height: 60px;
+	overflow: hidden;
+	text-align: center;
+}
+
+.bar-plug .plug-cart .goods-img img{
+	height: 60px;
+	text-align: center;
+}
+
+.bar-plug .plug-cart .goods-name,.bar-plug .plug-cart .goods-des{
+	display:block;
+	margin-left: 70px;
+}
+
+.bar-plug .plug-cart .goods-name{
+	height: 40px;
+	line-height:19px;
+	overflow: hidden;
+}
+
+.bar-plug .plug-cart .goods-name:hover{
+	text-decoration: none;
+}
+
+.bar-plug .plug-cart .goods-des{
+	height: 20px;
+	line-height: 20px;
+}
+
+.bar-plug .plug-cart .goods-price{
+	color: #f40;
+}
+
+.bar-plug .plug-cart .goods-num{
+	display:block;
+	color: #fff;
+	background-color: #fc9;
+	padding: 0 5px;
+	border-radius:2px;
+	margin-right: 20px;
+}
+
+.bar-plug .plug-cart .op-del{
+	position: absolute;
+	right: 10px;
+	bottom: 11px;
+	display:none;
+	width: 16px;
+	height: 18px;
+	line-height: 18px;
+}
+
+.bar-plug .plug-cart .op-del:hover{
+	text-decoration: none;
+	color: #063;
+}
+
+.bar-plug .plug-cart .btn-disabled{
+	border: 0;
+	background-color: none;
+}
+
+.bar-plug .plug-cart li:hover{
+	background-color: #f8f8f8;
+}
+
+.bar-plug .plug-cart li:hover .op-del{
+	display: block;
+}
+
+.bar-plug .plug-cart .cart-op{
+	padding: 10px;
+	height: 90px;
+	background-color: #fff;
+}
+
+.bar-plug .plug-cart .cart-op .cart-total{
+	color: #999;
+}
+
+.bar-plug .plug-cart .cart-op .cart-total b{
+	color: #333;
+	margin: 0 5px;
+}
+
+.bar-plug .plug-cart .cart-op .cart-total .p-normal em{
+	font-size: 12px;
+}
+
+.bar-plug .plug-cart .cart-op .btn{
+	padding: 0;
+	display: block;
+	margin:7px 0 0 0;
+	height: 40px;
+	line-height: 40px;
+	font-size: 18px;
+	font-family: 'microsoft yahei';
+    width: 100%;
+}

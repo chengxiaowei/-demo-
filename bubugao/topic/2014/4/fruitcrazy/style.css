@@ -1,0 +1,220 @@
+@import url('../../../pub/css/common.css');
+@import url('../../../pub/css/btn.css'); 
+@import url('../../../pub/font/iconfont.css');
+@import url('../../../pub/css/dialog/ui-dialog.css');
+@import url('../../../pub/css/hd/site-nav.css');
+@import url('../../../pub/css/linkage-tab.css');
+@import url('../../../pub/css/hd/search.css');
+@import url('../../../pub/css/hd/nav.css');
+@import url('../../../pub/css/jquery.minSlide.css');
+@import url('../../../pub/css/ft/ft.css');
+@import url('../../../pub/css/min-bar/min-bar.css');
+@import url('../../../app/style.css'); 
+.link-cnt a {outline: none;}
+.link-cnt a{blr:expression(this.onFocus=this.blur());}
+.link-cnt a:focus{outline:none;}
+ul,li{
+	list-type:none;
+}
+body{
+	background: #8cdeff;
+}
+.bn { 
+	display: block;
+	width: 100%;
+	height: 300px;
+	overflow:hidden;
+	background-repeat: no-repeat;
+	background-position: center top;
+	min-width: 1006px; 
+}
+.img-gif{
+	position:absolute;
+	top:190px;
+	left:11px;
+}
+.fruit-img{
+	position:absolute;
+	top:185px;
+	left:20px;
+}
+.bn-1{
+	height: 400px;
+}
+.bn-2{
+	height: 262px;
+}
+.bn-6{
+	height: 378px;
+}
+.bn-7{
+	height: 392px;
+}
+.bn-6{
+	height: 378px;
+}
+.bn-ft{
+	height:285px;
+}
+.wrapper{
+	overflow:visible;
+	padding-bottom:0;
+	margin-top:0;
+	padding-top:0;
+}
+.wrap-cnt{
+	width: 1064px;
+	margin: 0 auto;
+}
+.wrapper h2{
+	border:none;
+	box-shadow: none;
+	text-align: center;
+	font-size: 28px;
+	color:#000;
+}
+.link-cnt{
+	width:1000px;
+	margin: 0 auto;
+	height: 100%;
+	position: relative;
+}
+.link-cnt a{
+	display: block;
+	position:absolute;
+}
+.link0{
+	width:105px;
+	height: 35px;
+	bottom:0px;
+	left: 136px;
+}
+.link1{
+	width:105px;
+	height: 50px;
+	top:0px;
+	left: 136px;
+}
+.link2{
+	width:588px;
+	height: 165px;
+	top:47px;
+	left: 258px;
+}
+.link3-1{
+	width:324px;
+	height: 100px;
+	bottom:0;
+	left: -69px;
+}
+.link3{
+	width:412px;
+	height: 215px;
+	top:0;
+	left: -69px;
+}
+.link4{
+	height: 229px;
+    right: 21px;
+    top: 0;
+    width: 337px;
+}
+.link4-1{
+	height: 84px;
+    right: 21px;
+    bottom: 0;
+    width: 337px;
+}
+.link5{
+	height: 298px;
+    left: -23px;
+    top: 0;
+    width: 350px;
+}
+.link6{
+	height: 298px;
+    right: -23px;
+    top: 0;
+    width: 350px;
+}
+.link7{
+	height: 298px;
+    left: -23px;
+    top: 56px;
+    width: 360px;
+}
+.link8{
+	height: 298px;
+    right: -23px;
+    top: 56px;
+    width: 375px;
+}
+.link9{
+	height: 298px;
+    left: -23px;
+    top: 56px;
+    width: 360px;
+}
+.link10{
+	height: 298px;
+    right: -23px;
+    top: 56px;
+    width: 375px;
+}
+.spec-mod{
+	background-color: #c1edff;
+	margin: 0;
+	width: 1050px;
+}
+.wrap-cnt .com-title1{
+	height: 79px;
+	line-height: 97px;
+	background: url(//s1.bbgstatic.com/topic/2014/4/fruitcrazy/img/title-1.jpg) no-repeat;
+}
+.wrap-cnt .com-title2{
+	height: 161px;
+	line-height: 265px;
+	background: url(//s1.bbgstatic.com/topic/2014/4/fruitcrazy/img/title-2.jpg) no-repeat;
+}
+.com-bd{
+	width:998px;
+	margin: 0 auto;
+	overflow: hidden;
+	padding-bottom:20px;
+}
+/*右侧浮层*/
+.right-nav{
+	background:url(//s1.bbgstatic.com/topic/2014/4/fruitcrazy/img/nav.png?1) no-repeat;
+	width:129px;
+	height:230px;
+	padding-top:40px;
+	position:fixed;
+	-position:absolute;
+	z-index:100;
+	left:55%;
+	margin-left:450px;
+	margin-bottom:30px;
+}
+.right-nav a{
+	height: 45px;
+	font: 700 20px/38px '黑体';
+	color:#fff;
+}
+.right-nav a.fl-link{
+	height:40px;
+	line-height: 40px;
+}
+.right-nav a:hover{
+	text-decoration: underline;
+}
+
+.right-nav .go-top{
+	background:none;
+	border:none;
+	height: 38px;
+	line-height: 38px;
+	text-align: center;
+}
+.help{
+	margin-top: 0;
+}

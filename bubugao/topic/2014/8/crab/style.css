@@ -1,0 +1,139 @@
+@import url('../../../pub/css/common.css');
+@import url('../../../pub/css/btn.css'); 
+@import url('../../../pub/font/iconfont.css');
+@import url('../../../pub/css/dialog/ui-dialog.css');
+@import url('../../../pub/css/hd/site-nav.css');
+@import url('../../../pub/css/linkage-tab.css');
+@import url('../../../pub/css/hd/search.css');
+@import url('../../../pub/css/hd/nav.css');
+@import url('../../../pub/css/jquery.minSlide.css');
+@import url('../../../pub/css/ft/ft.css');
+@import url('../../../pub/css/min-bar/min-bar.css');
+@import url('../../../app/style.css'); 
+body{
+	background:url(img/bg.jpg) repeat;
+}
+.bn {
+	width: 100%; 
+	height: 530px; 
+	overflow:hidden; 
+	background-position:center top; 
+	min-width: 1050px;
+}
+.layout{
+	width: 1050px;
+}
+.bn .layout{
+	height:636px;
+}
+.wrapper{
+	position: relative; 
+	left: -1px; 
+	min-width: 1088px; 
+	padding-bottom:0; 
+	margin-top:0; 
+	padding-top:0; 
+	margin-bottom:0;  
+}	
+.wrapper h2{
+	border:none; 
+	box-shadow: none;
+	height: 63px;
+	line-height: 63px;
+	color:#ffd02a;
+	font-family: 'Microsoft Yahei';
+}	
+.spec-mod,.com-hd{
+	position: relative; 
+	width: 1050px; 
+	margin: 0 auto 10px;
+}	
+.com-hd{
+	position: relative; 
+	left:0; 
+	margin:0 auto; 
+	width: 990px; 
+	height:74px;   
+	overflow: hidden;
+}	
+ 
+.wrap-cnt{
+	margin-top:0; 
+	position: relative; 
+	z-index: 2; 
+	padding-bottom: 40px; 
+}	
+.com-bd{
+	width:990px;  
+	margin: 0 auto; 
+	overflow: hidden;  
+}	
+.com-bd ul{
+	margin:0 auto 10px; 
+	width: 1000px; 
+	*width: 1010px; 
+	padding:10px 0px 10px 8px; 
+	background: #b30b01;
+}
+.spec-mod .com-bd li{
+	box-shadow: none;  
+	margin:0px 5px 10px 0; 
+	*margin-right: 3px;
+}
+.com-mod .com-hd{
+	background: url(img/com-hd.jpg) no-repeat;
+}	
+.hid{
+	display:block; 
+	text-indent:-9999em; 
+	overflow:hidden;
+}	
+.com-list{
+	margin: 20px auto;
+	width: 990px;
+}
+.com-list ul {
+	margin-right: -6px;
+}
+.com-list li{
+	float: left;
+	margin:0 5px 0 0;
+}
+.com-list a,.com-list img{
+	display: block;
+	width: 244px;
+	height: 209px;
+}
+.right-nav{
+	position:fixed; 
+	-position:absolute; 
+	width: 142px;
+	height: 412px;
+	padding-top: 100px; 
+	overflow:hidden; 
+	z-index:100; 
+	left:55%; 
+	margin-left:450px; 
+	margin-bottom: 40px; 
+	bottom:25px; 
+	background:url(img/nav.png?v=111) no-repeat;
+}	
+.right-nav a{ 
+	height: 42px; 
+	font: 400 18px/42px 'Microsoft Yahei';
+	color:#333;
+}
+.right-nav a.fw,.right-nav a.fw:hover{
+	height:60px;
+	line-height: 28px;
+}
+.right-nav .go-top{
+	background:none; 
+	border:none; 
+	height: 51px; 
+	line-height: 40px; 
+	text-indent: -99999px;
+}	
+.help{
+	margin-top:0;
+}	

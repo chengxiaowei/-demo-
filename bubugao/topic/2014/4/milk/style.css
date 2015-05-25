@@ -1,0 +1,151 @@
+@import url('../../../pub/css/common.css');
+@import url('../../../pub/css/btn.css'); 
+@import url('../../../pub/font/iconfont.css');
+@import url('../../../pub/css/dialog/ui-dialog.css');
+@import url('../../../pub/css/hd/site-nav.css');
+@import url('../../../pub/css/linkage-tab.css');
+@import url('../../../pub/css/hd/search.css');
+@import url('../../../pub/css/hd/nav.css');
+@import url('../../../pub/css/jquery.minSlide.css');
+@import url('../../../pub/css/ft/ft.css');
+@import url('../../../pub/css/min-bar/min-bar.css');
+@import url('../../../app/style.css'); 
+body{
+	background: #97da59;
+}
+.bn { 
+	width: 100%;
+	overflow:hidden;
+	background-repeat: no-repeat;
+	background-position: center top;
+	min-width: 1024px; 
+}
+.bn-t{
+	height: 337px;
+}
+.bn-b{
+	height: 340px;
+}
+.wrapper{
+	overflow:visible;
+	padding-bottom:30px;
+	margin-top:0;
+	padding-top:0;
+}
+.wrapper h2{
+	border:none;
+	box-shadow: none;
+	text-align: left;
+	text-indent: -9999px;
+	height:38px;
+}
+.com-hd-t{
+	margin: 0 auto;
+	width: 1039px; 
+	height:42px; 
+}
+.spec-mod,.com-mod{
+	margin-bottom: 0;
+}
+.wrap-cnt{
+	position: relative;
+	margin-top:-80px;
+	z-index: 2;
+	min-width: 1024px; 
+	left:-2px;
+}
+.spec-mod ul,.com-mod ul{
+	margin:0 auto;
+}
+.spec-mod .com-bd,.com-mod .com-bd{
+	background:#fff;
+	width:1039px;
+	margin:0 auto;
+}
+.spec-mod .com-bd{
+	padding:20px 0 30px 0;
+}
+.com-mod .com-bd{
+	padding:20px 0 30px;
+}
+.spec-mod ul, .com-mod ul{
+	margin-left:26px;
+}
+.spec-mod ul{
+	margin-left: 20px;
+	width: 1020px;
+}
+/* 广告图链接 */
+.link-box{
+	position:relative;
+	height:301px;
+	border-bottom:1px solid #ccc;
+}
+.link-box img {
+	float:left;
+}
+.link-btn{
+	position:absolute;
+	background:url(//s1.bbgstatic.com/topic/2014/4/milk/img/link-btn.jpg) no-repeat;
+	width:136px;
+	height:45px;	
+	z-index:2;
+	top:214px;
+	left:330px;
+	text-indent:-9999px;
+}
+.link-btn:hover{
+	background:url(//s1.bbgstatic.com/topic/2014/4/milk/img/link-btn.jpg) no-repeat -136px 0 ;	
+}
+.link-btn-over{
+	background:url(//s1.bbgstatic.com/topic/2014/4/milk/img/link-btn.jpg) no-repeat -272px 0 ;	
+}
+.link-btn-over:hover{
+	background:url(//s1.bbgstatic.com/topic/2014/4/milk/img/link-btn.jpg) no-repeat -272px 0 ;
+}
+.com-t1{
+	background:#fff url(//s1.bbgstatic.com/topic/2014/4/milk/img/t1.jpg) no-repeat;
+}
+.com-t2{
+	background:#fff url(//s1.bbgstatic.com/topic/2014/4/milk/img/t2.jpg) no-repeat;
+}
+.com-bd li{
+	border:1px solid #e5e5e5;
+	box-shadow: 0 1px 1px rgba(0, 0, 0, .3);
+}
+#com1 .com-ft{
+	padding-top:20px;
+	margin:0 auto;
+	width: 1039px;
+	border-top:1px solid #E2E2E2;
+	background: #fff;
+} 
+/*右侧浮层*/
+.right-nav{
+	display:none;
+	position:fixed;
+	-position:absolute;
+	width:105px;
+	height:140px;
+	z-index:50;
+	left:55%;
+	margin-left:450px;
+	margin-bottom:30px;
+	overflow: hidden;
+}
+
+.right-nav .go-top{
+	background:url(//s1.bbgstatic.com/topic/2014/4/milk/img/nav.png) no-repeat 0 5px;	
+	border:none;
+	width:105px;
+	height:140px;
+	line-height: 50px;
+	text-align: center;
+}
+
+.right-nav .go-top:active{
+	background:url(//s1.bbgstatic.com/topic/2014/4/milk/img/nav.png) no-repeat -104px 5px;	
+}
+.help{
+	margin-top: 0;
+}

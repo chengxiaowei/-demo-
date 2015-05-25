@@ -1,0 +1,67 @@
+﻿//优惠券
+.mod-coupon {
+    overflow: hidden;
+    .bd {
+        .wrap-a {
+            display: block;
+        }
+        .inner-box {
+            margin: rem(20);
+            overflow: hidden;
+            .i-l {
+                float: left;
+                .delType {
+                    color: #333333;
+                    vertical-align: middle;
+                    display: inline-block;
+                }
+                .delTxt {
+                    vertical-align: middle;
+                    display: inline-block;
+                    color: #666;
+                }
+            }
+            .i-r {
+                float: right;
+                color: #f59f11;
+            }
+            .arrow {
+                font-size: rem(30);
+                margin-left: rem(20);
+                color: #666;
+            }
+       } 
+        .cnt {
+            background: #fff;
+            .row {
+                margin-left: 0px;
+                .text-input {
+                    width: rem(280);
+                }
+                .select {
+                    width: rem(300);
+                }
+                .ui-button-red {
+                    margin-left: rem(10);
+                    padding-left: rem(5);
+                    padding-right: rem(5); 
+                    vertical-align: middle;
+                }
+            }
+            .tips {
+                color: #adadad;
+                padding-left: rem(170);
+                padding-right: rem(20);
+                font-size: rem(24);
+                margin-top: rem(10);
+                text-align: left;
+            }
+            .coupons-tips {
+                padding-left: rem(170);
+                font-size: rem(24);
+                color: red;
+                text-align: left;
+            }
+        }
+    }
+}

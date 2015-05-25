@@ -1,0 +1,255 @@
+@import url('../../../pub/css/common.css');
+@import url('../../../pub/css/btn.css'); 
+@import url('../../../pub/font/iconfont.css');
+@import url('../../../pub/css/dialog/ui-dialog.css');
+@import url('../../../pub/css/hd/site-nav.css');
+@import url('../../../pub/css/linkage-tab.css');
+@import url('../../../pub/css/hd/search.css');
+@import url('../../../pub/css/hd/nav.css');
+@import url('../../../pub/css/jquery.minSlide.css');
+@import url('../../../pub/css/ft/ft.css');
+@import url('../../../pub/css/min-bar/min-bar.css');
+@import url('../../../app/style.css'); 
+body{
+	background:#F996A0;
+	
+}
+.bn { 
+	width: 100%;
+	height:440px;
+	overflow:hidden;
+	background:url(img/banner.jpg) no-repeat center center;
+	min-width:1024px;
+
+}
+.wrapper{
+	overflow:visible;
+	padding-bottom:0;
+	margin-top:0;
+	padding-top:0;
+}
+.wrapper h2{
+	padding-left:100px;
+	margin-bottom:10px;
+	border:none;
+	box-shadow: none; 
+	color:#fff;
+	height:103px;
+	line-height:103px;
+	text-align:left; 
+	font-family:'Microsoft Yahei';
+	background:url(img/icon.jpg) no-repeat;
+}
+.mod-t{
+	background:url(img/mod-t.jpg) no-repeat;
+	height: 86px;
+}
+.mod-b{
+	background:url(img/mod-b.jpg) no-repeat;
+	height: 70px;
+}
+.bg1{
+	background-color: #eb8793;
+}
+.bg2{
+	background-color: #eb8793;
+}
+#com2 h2{
+	background-position:0 -103px;
+}
+#com3 h2{
+	background-position:0 -206px;
+}
+#com4 h2{
+	background-position:0 -309px;
+}
+.com-div{
+	margin:0;
+}
+.com-div .btn{ 
+	width:195px;
+	height:63px; 
+	
+}
+.com-div .btn{
+	background:url(img/btn.png) no-repeat 0 -63px; 
+}
+.com-div .btn:hover{
+	background:url(img/btn.png) no-repeat; 
+}
+.btn1{
+	left: 477px;
+    top: 203px;
+}
+.btn2{
+	left: 497px;
+    top: 556px;
+}
+.btn3{
+	left: 658px;
+    top: 394px;
+}
+.btn4{
+	top: 191px;
+	left: 458px;
+}
+.com-1{
+	height:670px;
+	background:url(img/com-div1.jpg) no-repeat center center;
+}
+.com-2{
+	height:540px;
+	background:url(img/com-div2.jpg) no-repeat center center;
+}
+.com-3{
+	height:420px;
+	background:url(img/com-div3.jpg) no-repeat center center;
+} 
+.com-hd{
+	background-repeat: no-repeat;
+	background-position: center top;
+	min-width: 1024px;
+	height:130px;
+}
+.spec-bd{
+	height: 325px;
+	background-repeat: no-repeat;
+	background-position: center top;
+	min-width: 1024px;
+}
+.spec-bd .spec-bd-link{
+	display: block;
+	width:920px;
+	margin:0 auto;
+	text-indent: -9999px;
+	height:100%;
+
+}
+.wrap-cnt{
+	margin-top:0;
+	position: relative;
+	z-index: 2;
+	min-height:1240px; 
+} 
+.com-hd,.com-bd,.com-mod ul {
+	margin:0 auto;
+	width:990px;
+}
+.com-hd .icon{
+	*float:left;
+	display:inline-block;
+	width:86px;
+	height:103px;
+	background:url(img/icon.jpg) no-repeat;
+	overflow:hidden;
+}
+.com-hd .more{
+	width:86px;
+	height:26px;
+	top:40px;
+	right:32px;
+	background:url(img/icon.jpg) no-repeat 0 -412px;
+	z-index:99;
+}
+.com-bd{
+	width:1020px;
+	margin: 0 auto;
+	overflow: hidden;
+	padding-bottom:40px;  
+	
+}
+
+.com-mod li{
+	box-shadow: none; 
+	margin:10px 8px 0 0;
+	-margin-right: 6px;
+}
+
+.com-mod li{
+	width:188px;
+}
+.com-box{
+	height: 50px;
+}
+.com-mod .com-txt{
+	width:126px;
+}
+
+.com-mod, .spec-mod{
+	margin-bottom: 0;
+}
+.hid{
+	display:block;
+	text-indent:-9999em;
+	overflow:hidden;
+}
+#com6{
+	padding-bottom:40px;
+	margin-bottom:60px;
+}
+/*底部浮层*/
+.ft-nav{
+	background: #FFC451;
+	height: 62px;
+	position: fixed;
+	-position:absolute;
+	bottom:0;
+	width: 100%;
+	z-index: 10;
+}
+.ft-nav-bd{
+	width: 1050px;
+	margin: 0 auto;
+}
+.ft-nav-bd a{
+	display: block;
+	float: left;
+	width:190px;
+	height:62px;
+	text-align: center;
+	font: 100 25px/62px 'Microsoft Yahei';
+	color:#000;
+}
+.ft-link0{
+	width: 202px;
+	background: url(//s1.bbgstatic.com/topic/2014/3/wash/images/ft-nav.jpg) no-repeat;
+	text-indent: -9999px;
+}
+/*右侧浮层*/
+.right-nav{
+	position:fixed;
+	-position:absolute;
+	width:164px;
+	height:240px;
+	padding-top: 43px;
+	overflow:hidden; 
+	z-index:100;
+	left:55%;
+	margin-left:450px;
+	margin-bottom: 40px;
+	bottom:25px;
+	background:url(img/nav.png) no-repeat;
+}
+
+.right-nav a{
+	margin-bottom:10px;
+	height:40px;
+	font:400 18px/40px 'Microsoft Yahei';
+	color: #fff;
+}
+.right-nav a.hot{
+	text-indent:-30px;
+	height:50px;
+}
+
+.right-nav .go-top{
+	margin-top:-10px;
+	background:none;
+	border:none;
+	height: 51px;
+	line-height: 40px;
+	text-indent:-9999em; 
+}
+.help{
+	margin-top:0;
+}

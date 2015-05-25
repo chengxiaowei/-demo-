@@ -1,0 +1,30 @@
+﻿.mod-addr {
+    // display: none;
+    font-size: rem(26);
+    padding: rem(20) rem(16);
+    background: #ffd5b7;
+    color: #ef7c3a;
+    overflow: hidden;
+    .b-l {
+        float: left;
+    }
+    .b-r {
+        float: right;
+    }
+    .adr {
+        font-size: rem(36);
+        margin-right: rem(16);
+    }
+    .small {
+        font-size: rem(28);
+        color: #f16320;
+        margin-left:rem(10); 
+    }
+    .icon, .text, .cont, .txt-ctn {
+        display: inline-block;
+        vertical-align: middle;
+    }
+    .txt-ctn {
+        width: rem(430);
+    }
+}

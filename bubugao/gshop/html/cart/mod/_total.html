@@ -1,0 +1,30 @@
+<script id="jtotalTmpl" type="text/html">
+    <% if(groups && groups.length > 0){ %>
+    <div class="list bottom">
+        <table class="box">
+            <hbody>
+                <tr>
+                    <th class="chk">
+                        <input type="checkbox" class="checkbox jChkAll"/>
+                    </th>
+                    <th class="info-th">
+                        <p>
+                            <span class="txt-666 total-txt">总价:</span><i class="txt-red ui-pri">￥<%=totalProductPrice%></i><em class="txt-666 tottal-tips"> (不含运费)</em>
+                        </p>
+                        <p>
+                            共<%=totalType%>件,总重量:<i><%=totalWeight%>kg</i>
+                        </p>
+                        <!-- <p>
+                            总优惠：
+                            <i class="total-price">￥<%=totalPmt%></i>
+                        </p> -->
+                    </th>
+                    <th class="oper">
+                        <button class="ui-button ui-button-red" id="jSubmit">去结算</button>
+                    </th>
+                </tr>
+            </hbody>
+        </table>
+    </div>
+    <% } %>
+</script>

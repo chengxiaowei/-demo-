@@ -1,0 +1,53 @@
+@import url('../../../pub/css/common.css');
+@import url('../../../pub/css/btn.css'); 
+@import url('../../../pub/font/iconfont.css');
+@import url('../../../pub/css/dialog/ui-dialog.css');
+@import url('../../../pub/css/hd/site-nav.css');
+@import url('../../../pub/css/linkage-tab.css');
+@import url('../../../pub/css/hd/search.css');
+@import url('../../../pub/css/hd/nav.css');
+@import url('../../../pub/css/jquery.minSlide.css');
+@import url('../../../pub/css/ft/ft.css');
+@import url('../../../pub/css/min-bar/min-bar.css');
+@import url('../../../app/style.css'); 
+body{
+	background:#fff;	
+}
+.bn { 
+	width: 100%;
+	height:581px;
+	overflow:hidden;
+	min-width:1024px;
+	background-repeat: no-repeat;
+	background-position: center top;
+}
+.bn-1{
+	height: 303px;
+}
+.bn-2{
+	height: 146px;
+}
+.bn-3{
+	height: 607px;
+}
+.bn-4{
+	height: 151px;
+}
+.bn-5{
+	height: 983px;
+}
+.a-mod{
+	width: 960px;
+	margin: 0 auto;
+}
+.a-mod a{
+	display: block;
+	overflow: hidden;
+	width: 238px;
+	height: 299px;
+	margin: 0 10px 5px 0;
+	float: left;
+}
+.a-mod .a-cnt{
+	width: 1010px;
+}

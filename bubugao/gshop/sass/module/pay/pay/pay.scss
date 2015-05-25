@@ -1,0 +1,239 @@
+/* common */
+@import "../../../common";
+@import "../../../common/slider/slider";
+@import "../../../common/form/form";
+@import "../../../common/button/button";
+@import "../../../common/scroll-load/scroll-load";
+@import "../../../common/dialog/dialog";
+
+/* modules */
+html,body{
+	background: #f2f2f2;
+}
+.pay {
+	font-size: rem(26);
+	.hd {
+		padding: rem(40) rem(20) rem(20) rem(20);
+		.writer {
+			overflow: hidden;
+			.text {
+				height: rem(122);
+				padding: rem(30) 0 0 rem(30);
+				span {
+					color: #ff0000;
+				}
+				em {
+					font-style: normal;
+				}
+			}
+			.bg-img {
+				width: rem(127);
+				height: rem(122);
+				margin: 0 auto;
+				img {
+					width: rem(127);
+					height: rem(122);
+				}
+			}
+		}
+		.orderinfo {
+			background: #fff;
+			padding: rem(20);
+			border: solid #ccc 1px;
+			div {
+				line-height: rem(50);
+				overflow: hidden;
+				span {
+					float: left;
+				}
+				label {
+					float: right;
+					max-width: 100%;
+                    word-wrap: break-word;
+                    word-break: break-all;
+				}
+			}
+		}
+	}
+	.bd {
+		margin: 0 rem(20) rem(20) rem(20);
+		border: solid #ccc 1px;
+		border-bottom: 0px;
+		.title {
+			height: rem(68);
+			line-height: rem(68);
+			padding-left: rem(20);
+			border-bottom: solid #ccc 1px;
+		}
+        li {
+            height: rem(68);
+            line-height: rem(68);
+            border-bottom: solid #ccc 1px;
+            background: #fff;
+            overflow: hidden;
+            position: relative;
+            span {
+                float: left;
+                margin-left: rem(20);
+            }
+            .bank-name{
+
+                img {
+                    width: rem(32);
+                    height: rem(32);
+                    margin-top: rem(20);
+                }
+            }
+            .pay-icon {
+                img {
+                    width: rem(42);
+                    height: rem(42);
+                    margin-top: rem(13);
+                }
+            }
+            .favorable{
+                display: inline-block;
+                float: right;
+                max-width: rem(270);
+                color:#ff4352;
+                margin-right: rem(30);
+                height: 100%;
+                overflow: hidden;
+                position: absolute;
+                right: 0px;
+                .favorable-val{
+                    height: 100%;
+                    width: 100%;
+                    display:inline-block;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-align: right;
+                    text-overflow: ellipsis;
+                    margin-left: 0px;
+                }
+            }
+            .favorable-ico{
+                display: inline-block;
+                position: absolute;
+                height: 100%;
+                width: rem(60);
+                top: rem(0);
+                right: rem(0);
+                background-image: url("../../../../images/pay/pay-over.png");
+                background-size:rem(60) rem(60);
+                background-repeat: no-repeat;
+            }
+		}
+	}
+	.pay-btn {
+			margin: rem(30) rem(20);
+		a {
+			display: block;
+			height: rem(80);
+			background: #f16320;
+			font-size: rem(30);
+			color: #fff;
+			text-align: center;
+			line-height: rem(80);
+		}
+	}
+	.ui-button-disabled{
+		margin: rem(30) rem(20);
+		border: none;
+		a {
+			display: block;
+			height: rem(80);
+			background: #999;
+			font-size: rem(30);
+			color: #fff;
+			text-align: center;
+			line-height: rem(80);
+		}
+	}
+}
+
+.error-pay {
+	position: relative;
+	margin-top: rem(100);
+	display: none;
+	.error-img{
+		position: absolute;
+		left: 50%;
+		margin-left: rem(-80);
+		top: 0;
+		width: rem(160);
+		height: rem(160);
+		/*animation: 9.5s linear 0s normal none infinite rotate;
+		-webkit-animation:9.5s linear 0s normal none infinite rotate;*/
+		/*animation: mymove 5s infinite;
+		-webkit-animation: mymove 5s infinite;*/
+		.error-img-bj {
+			position: absolute;
+			left: 0;
+			top: 0;
+			z-index: 1;
+			width: rem(160);
+			height: rem(160);
+			background-size: 100%;
+			background-repeat: no-repeat;
+			background-image: url(//s1.bbgstatic.com/gshop/images/404/404-bj.png);
+			/*animation: 9.5s linear 0s normal none infinite rotate;
+			-webkit-animation:9.5s linear 0s normal none infinite rotate;*/
+			-webkit-animation-name: rotate;
+			-webkit-animation-duration: 10s;
+			-webkit-animation-iteration-count: infinite;
+			-webkit-animation-timing-function: linear;
+		}
+		.error-monkey {
+			position: absolute;
+			left: 0;
+			top: 0;
+			z-index: 2;
+			width: rem(160);
+			height: rem(160);
+			background-size: 100%;
+			background-repeat: no-repeat;
+			background-image: url(//s1.bbgstatic.com/gshop/images/404/monkey.png);
+		}
+		.error-tear {
+			position: absolute;
+			left: rem(56);
+			top: rem(74);
+			z-index: 3;
+			width: rem(68);
+			height: rem(58);
+			background-size: 100%;
+			background-repeat: no-repeat;
+			background-image: url(//s1.bbgstatic.com/gshop/images/404/tear.png);
+			animation: mymove 3s infinite;
+			-webkit-animation: mymove 3s infinite;
+		}
+	}
+	.erro-text {
+		font-size: rem(24);
+		text-align: center;
+		padding-top: rem(180);
+	}
+}
+
+@keyframes mymove
+{
+	from {height:0px;}
+	to {height:rem(58);}
+}
+
+@-webkit-keyframes mymove 
+{
+	from {height:0px;}
+	to {height:rem(58);}
+}
+
+
+@-webkit-keyframes rotate{
+	from{-webkit-transform:rotate(0deg)}
+	to{-webkit-transform:rotate(360deg)}
+}
+@keyframes rotate{
+	from{transform:rotate(0deg)}
+	to{transform:rotate(360deg)}
+}

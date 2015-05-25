@@ -1,0 +1,377 @@
+<script id="jListTmpl" type="text/html">
+    <%
+        if(groups && groups.length > 0){
+    %>
+        <%
+            for(var i=0;i<groups.length;i++){
+                var group = groups[i];
+                var isSelf = (group.shopType == 3);//是否自营;
+                var isSmartMonkey = (group.shopTag && group.shopTag.length!=0)?group.shopTag:false;//是否云猴全球购
+                var maxWidth = '13.5rem';//最大宽度
+                if(isSmartMonkey){
+                    maxWidth = '8.5rem';
+                }
+        %>
+        <div class="list">
+            <table class="box">
+                <hbody>
+                    <%
+                        var unusedPr = group.unusedPromotions;//未享受优惠
+                        var enjoiedPr = group.promotions;//已享受优惠
+                        var isHasPromotion = (enjoiedPr && enjoiedPr.length > 0)||(unusedPr && unusedPr.length > 0);
+                        var borderClass = '';
+                        if(enjoiedPr && enjoiedPr.length!=0){
+                            borderClass = 'border-0';   
+                        }
+                    %>
+                    <tr class="title-box">
+                        <th class="chk">
+                            <input type="checkbox" class="checkbox jChkCat"/>
+                        </th>
+                        <th colspan="2">
+                        <p>
+                            <a href="<%=group.twoDomain%>"  class="h1 txt-els" style="max-width:<%=maxWidth%>;"><% if(group.shopType==2){ %>步步高超市 — <% } %><%=group.shopName%></a> 
+                            <% if(isSmartMonkey){ %>
+                                <em class="smart-monkey txt-els ico-clr-<%=group.shopType%>"><%=isSmartMonkey%></em>
+                            <% } %>
+                        </p>
+                        </th>
+                    </tr>
+
+                        
+
+                        <!--<th class="shop-icon"> <% if(group.shopType==2){ %>门店发货<% }else{ %>全球购<% } %> </th>-->
+
+                        <!-- 提示信息 begin -->
+                        <% if(group['tipStatus'] && group['tipStatus']==1){ %>
+                        <!--<tr>
+                        
+                             <th colspan="2" class="market-tips">
+                                <div><b class="tit-b">温馨提示：</b><%=group['switchTips']%></div>
+                            </th> 
+                        </tr>-->
+                        <% } %>
+                        <!-- 提示信息 end -->
+                </hbody>
+                <%
+                    if(group.products && group.products.length!=0){
+                    for(var j=0;j<group.products.length;j++){
+                        var pro = group.products[j];
+                        var checked = '',disabled = '',classDisabled='',styleDisabled = '';
+                        var disableStr = '';//数字增减样式;
+                        var isDelivery = false;//是否配送;
+                        //
+                        if(pro.productStatus && pro.productStatus==4){
+                            isDelivery = true;
+                        }
+                        if(pro.canSelected && pro.selected){
+                            checked = 'checked = "checked"';                
+                        }
+                        if(!pro.canSelected){
+                            disabled = 'disabled = "disabled"';
+                            styleDisabled = ' list-disabled';
+                            disableStr = 'jNumDisabled';
+                        }
+                        var strSpec = '';
+                        if(pro.specList && pro.specList.length!=0){
+                            for(var k=0;k<pro.specList.length;k++){
+                                if(k == 0){
+                                    strSpec=pro.specList[k].name + ':' + pro.specList[k].value;
+                                }else{
+                                    strSpec+=','+pro.specList[k].name + ':' + pro.specList[k].value;
+                                }           
+                            }
+                        }
+                        var strFavorite = '<button class="ui-button jCol" data-bpm="3.1.1.1.4.'+pro.goodsId+'">收藏</button>';
+                        var qtyTips = '';
+                        if(pro.qtyTips.length > 0){
+                            qtyTips = '<div class="tight-inventory txt-red">'+pro.qtyTips+'</div>';
+                        }
+                        if(pro.favorite){
+                            strFavorite = '<button class="jCol btn-disabled ui-button jColBtn" href="javascript:;">已收藏</button>'
+                        }
+                        //显示促销信息
+                        var proP = pro.promotions;
+                %>
+                <tbody class="jTable<%=styleDisabled%>" data-id="<%=pro.productId%>" data-goods-id="<%=pro.goodsId%>">
+                    <tr class="jTableTr">
+                        <td class="chk jChkBox jOther">
+                            <input type="checkbox" class="checkbox jChkItem" <%=checked%> <%=disabled%> />
+
+                        </td>
+                        <td colspan="2">
+                            <% if(isDelivery){ %>
+                                <div class="box-wrap"><div class="no-dis"></div></div>
+                            <% } %>
+                            <div class="detail">
+                                <ul class="box">
+                                    <li class="tit">
+                                        <div class="img">
+                                            <a  href="//m.yunhou.com/item/<%=pro.productId%>.html" class="pro-img">
+                                                <img class="jImg img-error" data-src="<%=getImgByType(pro.productImage,'m1')%>" src="//s1.bbgstatic.com/gshop/images/public/blank.gif"/>
+                                            </a>
+                                        </div>
+                                        <div class="info">
+                                            <div class="info-box clearfix">
+                                                <div>
+                                                    <a  href="//m.yunhou.com/item/<%=pro.productId%>.html" class="des"><%=pro.productName%></a>
+                                                    <span class="pri txt-black"><i>￥</i>
+                                                    <%=pro.subtotal%></span>
+                                                </div>
+                                                <!-- 满减信息 begin -->
+                                                   <!-- <% if(proP && proP.length!=0){ 
+                                                        for(var p=0;p<proP.length;p++){
+                                                            var proUrl = proP[p]['url'];
+                                                            var tgStr = (!proUrl || proUrl.length==0)?'span':'a';
+                                                    %>
+                                                     <div class="pre-info txt-els"><span class="txt-red">[<%=proP[p]['toolName']%>]</span><<%=tgStr%> href="<%=proUrl%>"  class="text"><%=proP[p]['ad']%></<%=tgStr%>></div> 
+                                                    <% }} %> -->
+                                                <!-- 满减信息 end -->
+                                            </div>
+                                            <p class="specification"><%=strSpec%></p>
+                                            <!-- 数量增减 begin -->
+                                            <div class="opr-box jOther clearfix">
+                                                <div class="b-l">
+                                                    <div class="add-box jQty <%=disableStr%>">
+                                                        <div class="img-mask-l jQtyMin" data-q-flag=<%=(pro.quantity_disable?'1':'0')%>></div>
+                                                        <div class="box-l jQtyMin" data-q-flag=<%=(pro.quantity_disable?'1':'0')%>> <i class="icon iconfont">&#xe617;</i>
+                                                        </div>
+                                                        <div class="box-m">
+                                                            <input class="jQtyTxt"  data-max="<%=pro.limit%>" value="<%=pro.quantity%>" <%=disabled%>/>
+                                                        </div>
+                                                        <div class="box-r jQtyAdd">
+                                                            <i class="icon iconfont">&#xe618;</i>
+                                                        </div>
+                                                        <div class="img-mask-r jQtyAdd"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="b-r jDel jOther">
+                                                    <a class="icon iconfont ico-del ">&#xe629;</a>
+                                                </div>
+                                            </div>
+                                            <!-- 数量增减 begin -->
+
+                                            <!-- 库存信息提示 begin -->
+                                            <div class="stock-txt clearfix"><%==qtyTips%></div>
+                                            <!-- 库存信息提示 end -->
+                                        </div>
+                                        <!-- <div class="clear pro">
+                                            <span class="pri txt-red"> <i>￥</i>
+                                                <%=pro.subtotal%>
+                                            </span>
+                                            <span class="prefer">优惠：￥<%=pro.totalPmt%></span>
+                                        </div> -->
+                                    </li>
+                                </ul>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+                <% }} %>
+
+                <!-- 可送赠品 begin -->
+                <%
+                    if(group.gifts && group.gifts.length!=0){
+                    for(var j=0;j<group.gifts.length;j++){
+                        var pro = group.gifts[j];
+                        var strSpec = '';
+                        if(pro.specList && pro.specList.length!=0){
+                            for(var k=0;k<pro.specList.length;k++){
+                                if(k == 0){
+                                    strSpec=pro.specList[k].name + ':' + pro.specList[k].value;
+                                }else{
+                                    strSpec+=','+pro.specList[k].name + ':' + pro.specList[k].value;
+                                }           
+                            }
+                        }
+                    //显示促销信息
+                    var proP = pro.promotions;
+                %>
+                <tbody class="tb-gifts" data-id="<%=pro.productId%>">
+                    <tr class="jTableTr">
+                        <td class="chk">
+                            <i class="prem">赠</i>
+                        </td>
+                        <td colspan="2">
+                            <div class="detail">
+                                <ul class="box">
+                                    <li class="tit">
+                                        <div class="img">
+                                            <a  href="//m.yunhou.com/item/<%=pro.productId%>.html" class="pro-img"><img class="jImg img-error" data-src="<%=getImgByType(pro.productImage,'m1')%>" src="//s1.bbgstatic.com/gshop/images/public/blank.gif"/></a>
+                                        </div>
+                                        <div class="info">
+                                            <div class="info-box clearfix">
+                                                <div>
+                                                <a  href="//m.yunhou.com/item/<%=pro.productId%>.html" class="des"><%=pro.productName%></a>
+                                                <span class="pri txt-999 txt-de-th"></span>
+                                                </div>
+                                                <!-- 满减信息 begin -->
+                                                <!--  <% if(proP && proP.length!=0){ 
+                                                    for(var p=0;p<proP.length;p++){
+                                                        var proUrl = proP[p]['url'];
+                                                        var tgStr = (!proUrl || proUrl.length==0)?'span':'a';
+                                                %>
+                                                <div class="pre-info txt-els"><span class="txt-red">[<%=proP[p]['toolName']%>]</span><<%=tgStr%> href="<%=proUrl%>"  class="text"><%=proP[p]['ad']%></<%=tgStr%>></div>
+                                                <% }} %>  -->
+                                                <!-- 满减信息 end -->
+                                            </div>
+
+                                            <p class="specification"><%=strSpec%></p>
+                                            <div class="opr-box">
+                                                <div class="b-l">
+                                                    <div class="tight-inventory txt-999">数量：<%=pro.quantity%></div>
+                                                </div>
+                                                <div class="b-r">
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+                <% }} %>
+                <!-- 可送赠品 end -->
+
+                <!-- 不可送赠品 begin -->
+                <%
+                    if(group.unableGifts && group.unableGifts.length!=0){
+                    for(var j=0;j<group.unableGifts.length;j++){
+                        var pro = group.unableGifts[j];
+                        var strSpec = '';
+                        if(pro.specList && pro.specList.length!=0){
+                            for(var k=0;k<pro.specList.length;k++){
+                                if(k == 0){
+                                    strSpec=pro.specList[k].name + ':' + pro.specList[k].value;
+                                }else{
+                                    strSpec+=','+pro.specList[k].name + ':' + pro.specList[k].value;
+                                }           
+                            }
+                        }
+                    //显示促销信息
+                    var proP = pro.promotions;
+                %>
+                <tbody class="tb-gifts" data-id="<%=pro.productId%>">
+                    <tr class="jTableTr">
+                        <td class="chk">
+                            <i class="prem flag-gray">赠</i>
+                        </td>
+                        <td colspan="2">
+                            <div class="detail">
+                                <ul class="box">
+                                    <li class="tit">
+                                        <div class="img">
+                                            <a  href="//m.yunhou.com/item/<%=pro.productId%>.html" class="pro-img"><img class="jImg img-error" data-src="<%=getImgByType(pro.productImage,'m1')%>" src="//s1.bbgstatic.com/gshop/images/public/blank.gif"/></a>
+                                        </div>
+                                        <div class="info">
+                                            <div class="info-box clearfix">
+                                                <div>
+                                                <a  href="//m.yunhou.com/item/<%=pro.productId%>.html" class="des"><%=pro.productName%></a>
+                                                <span class="pri txt-999 txt-de-th"></span>
+                                                </div>
+                                                <!-- 满减信息 begin -->
+                                                <!--  <% if(proP && proP.length!=0){ 
+                                                    for(var p=0;p<proP.length;p++){
+                                                        var proUrl = proP[p]['url'];
+                                                        var tgStr = (!proUrl || proUrl.length==0)?'span':'a';
+                                                %>
+                                                <div class="pre-info txt-els"><span class="txt-red">[<%=proP[p]['toolName']%>]</span><<%=tgStr%> href="<%=proUrl%>"  class="text"><%=proP[p]['ad']%></<%=tgStr%>></div>
+                                                <% }} %>  -->
+                                                <!-- 满减信息 end -->
+                                            </div>
+                                            <p class="specification"><%=strSpec%></p>
+                                            <div class="opr-box">
+                                                <div class="b-l">
+                                                    <div class="tight-inventory txt-999 txt-red">无法配送</div>
+                                                </div>
+                                                <div class="b-r">
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+                <% }} %>
+                <!-- 不可送赠品 end -->
+
+                </table>
+                <!-- 优惠 begin -->
+                <% if(isHasPromotion){ %>
+                    <div class="prefer-box">
+                        <!-- 已享受优惠begin -->
+                        <div class="prefer jPrefer">
+                            <%
+                                if(enjoiedPr && enjoiedPr.length > 0){
+                                    var totalDis = group['totalDiscount'];//已享受优惠直减总额;
+                            %>
+                                
+                                <div class="prefer-tit jCtit">
+                                    <span class="lft">
+                                    已享受：<%=enjoiedPr.length%>项优惠
+                                    </span>
+                                    <span class="rit">
+                                        <!-- 已享受直减总额 begin -->
+                                        <% if( totalDis && totalDis!='' ){ %>
+                                            <span class="txt-red">共优惠￥<%=totalDis%></span>
+                                        <% } %>
+                                        <!-- 已享受直减总额 end -->
+                                        <i class="icon iconfont jPreferIcon">&#xe60c;</i>
+                                        <i class="icon iconfont jPreferIcon display-n">&#xe60b;</i>
+                                    </span>
+                                </div>
+                            <%
+                            for(var l=0;l<enjoiedPr.length;l++){
+                                var isSendCoupons = enjoiedPr[l]['toolCode'];//是否送券;
+                                    isSendCoupons = (isSendCoupons && isSendCoupons=='ump-order-coupon')||false;
+                                var classStr = (isSendCoupons?'send-coupons':'straight-cut');
+                                var enjoiedUrl = enjoiedPr[l]['url'];//url
+                                var isUrlEm = (!enjoiedUrl || enjoiedUrl.length == 0)?true:false;//判断url是否为空;
+                                //var tagStr = (isUrlEm?'span':'a');
+                                var tagStr = 'span';//暂时屏蔽掉a标签;
+                                var hrefStr = (tagStr=='a')?('href='+ enjoiedUrl):'';
+                                var enjoiedTips = enjoiedPr[l]['tips'];
+                            %>
+                                <div class="pr-ctn-box jCnt" style="display:none;">
+                                    <div class="pr-ctn txt-els" >
+                                            <i class="txt-i">[<%=enjoiedPr[l].toolName%>]</i><<%=tagStr%> class="i-txt" <%=hrefStr%> ><%=enjoiedPr[l].ad%></<%=tagStr%>>
+                                        <% if(!(!enjoiedTips || enjoiedTips.length==0)){ %>
+                                            <div class="money-info <%=classStr%>"><em class="txt-info"><i class="arrow-l"></i><%=enjoiedTips%></em></div>
+                                        <% } %>
+                                    </div>
+                                </div>    
+                            <% } %>  
+
+                        <% } %>
+                        </div>
+                        <!-- 已享受优惠end -->
+                    </div>
+                <% } %>
+                <!-- 优惠 end -->
+            <div class="cnt">
+                <span class="lft">
+                    商品重量：
+                    <i><%=group.totalWeight%>kg</i>
+                </span>
+                <span class="rit">
+                    本店合计：
+                    <i class="txt-red-2">￥<%=group.totalProductPrice%></i>
+                </span>
+            </div>
+        </div>
+        <% } %>
+    <% }else{ %>
+        <div class="page-view">
+            <div class="empty">
+                <i class="icon iconfont">&#xe605;</i>
+                <p class="emt-txt">购物车快饿瘪了T_T</p>
+                <a href="#" class="ui-button-white" id="goToIndex">去逛逛</a>
+            </div>
+        </div>
+    <% } %>
+</script>

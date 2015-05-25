@@ -1,0 +1,204 @@
+@import url('../../../pub/css/common.css');
+@import url('../../../pub/css/btn.css'); 
+@import url('../../../pub/font/iconfont.css');
+@import url('../../../pub/css/dialog/ui-dialog.css');
+@import url('../../../pub/css/hd/site-nav.css');
+@import url('../../../pub/css/linkage-tab.css');
+@import url('../../../pub/css/hd/search.css');
+@import url('../../../pub/css/hd/nav.css');
+@import url('../../../pub/css/jquery.minSlide.css');
+@import url('../../../pub/css/ft/ft.css');
+@import url('../../../pub/css/min-bar/min-bar.css');
+@import url('../../../app/style.css'); 
+body{
+	background-color:#65aa43;
+}
+.bn { 
+	width: 100%;
+	overflow:hidden;
+	background-repeat: no-repeat;
+	background-position: center top;
+	min-width: 1024px; 
+}
+.bn-t{
+	height: 321px;
+}
+.bn-b{
+	height: 401px;
+}
+.wrapper{
+	overflow:visible;
+	padding-bottom:60px;
+	margin-top:0;
+	padding-top:0;
+}
+.wrapper h2{
+	border:none;
+	box-shadow: none;
+	text-align: left;
+	height: 48px;
+	line-height: 48px;
+	font-size: 24px;
+	padding:15px 0;
+	text-align: center;
+	
+}
+
+#com1{
+	height:194px;
+	background-color: #65aa43;
+	background-repeat: no-repeat;
+	background-position:center top;
+	padding-bottom:16px;
+	position: relative;
+	left:2px;
+}
+#com2{
+	padding-bottom:16px;
+}
+#com3,#com4,#com5{
+	background-color:#b3d484;
+	background-position:center 16px;
+	padding:26px 0 16px 0;
+}
+#com2,#com4{
+	background-color: #65aa43;
+}
+#com6{
+	height: auto;
+}
+.com-hd{
+	background: url(img/title.jpg) no-repeat center;
+	height: 109px;
+	margin:10px 0;
+}
+.spec-mod{
+	background-repeat: no-repeat;
+	background-position: center top; 
+	margin-bottom: 0;
+	height:712px;
+	padding-top: 10px;
+}
+.spec-mod ul{
+	margin:0 0 3px 13px;
+}
+.spec-mod ul.right{
+	width: 742px;
+	padding-left:245px;
+}
+.wrap-cnt{
+	margin-top:0;
+	position: relative;
+	z-index: 2;
+}
+#com5 .com-bd{
+	padding-bottom: 20px;
+}
+.com-bd{
+	width:1000px;
+	margin: 0 auto;
+	overflow: hidden;
+	padding-bottom:15px;
+
+}
+.ad-link{
+	width:990px;
+	margin:0 auto;
+	border-radius: 2px;
+	overflow: hidden;
+}
+.ad-link a,.ad-link img{
+	float: left;
+	display: block;
+	margin:0;
+	padding:0;
+	border:0;
+}
+/*右侧浮层*/
+.right-nav{
+	display: none;
+	position:fixed;
+	-position:absolute;
+	width:107px;
+	height:223px;
+	padding-top: 40px;
+	z-index:100;
+	left:55%;
+	margin-bottom: 100px;
+	margin-left:450px;
+	bottom:35px;
+	overflow: hidden;
+	background:url(img/nav.png) no-repeat;
+}
+.right-nav a{
+	height: 38px;
+	text-indent: -9999px;
+}
+.right-nav a:hover{
+	text-decoration: underline;
+}
+
+.right-nav .go-top{
+	height: 38px;
+	background:none;
+	border:none;
+	text-align: center;
+}
+.help{
+	margin-top: 0;
+}
+
+/* 家电商品样式 */
+.com-buy-btn{
+	background:#f00 url(//s1.bbgstatic.com/topic/2014/3/taqing/images/jd-btn.jpg) no-repeat 5px -84px;
+}
+.com-buy-btn:hover{
+	background:#b20000 url(//s1.bbgstatic.com/topic/2014/3/taqing/images/jd-btn.jpg) no-repeat 5px -120px;
+}
+.com-mod .com-buy-btn{
+	margin:0 auto 6px auto;
+	height: 36px;
+}
+.com-mod .com-txt{
+	margin: 0 auto 3px auto;
+}
+.com-mod .com-txt,.com-txt a, .com-mod .com-buy-btn{
+	width: 177px;
+}
+.com-mod .p-normal,.spec-mod .p-normal{
+	float: left;
+}
+.com-mod .p-del,.spec-mod .p-del{
+	float: right;
+	line-height: 24px;
+}
+.spec-mod li,.com-mod li{
+	width:240px;
+	height: 340px;
+	margin:5px 5px 0 0;
+	overflow:hidden;
+}
+.spec-mod .com-txt{
+	width: 228px;
+	margin:5px auto 0 auto;
+}
+.spec-mod .com-txt a{
+	width: 228px;
+}
+.spec-mod .com-buy-btn, .spec-mod .com-disabled-btn{
+	width: 228px;
+	height: 37px;
+	line-height: 37px;
+	margin:6px auto;
+}
+.spec-mod .com-box,.com-box{
+	height: auto;
+	padding: 0 6px;
+}
+.spec-mod .com-buy-btn{
+	height: 35px;
+	background:#f00 url(//s1.bbgstatic.com/topic/2014/3/taqing/images/jd-btn.jpg) no-repeat  0 -4px;
+}
+.spec-mod .com-buy-btn:hover{
+	background:#b20000 url(//s1.bbgstatic.com/topic/2014/3/taqing/images/jd-btn.jpg) no-repeat 0 -46px;
+};

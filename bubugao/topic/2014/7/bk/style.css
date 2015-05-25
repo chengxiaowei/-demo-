@@ -1,0 +1,76 @@
+@import url('../../../pub/css/common.css');
+@import url('../../../pub/css/btn.css'); 
+@import url('../../../pub/font/iconfont.css');
+@import url('../../../pub/css/dialog/ui-dialog.css');
+@import url('../../../pub/css/hd/site-nav.css');
+@import url('../../../pub/css/linkage-tab.css');
+@import url('../../../pub/css/hd/search.css');
+@import url('../../../pub/css/hd/nav.css');
+@import url('../../../pub/css/jquery.minSlide.css');
+@import url('../../../pub/css/ft/ft.css');
+@import url('../../../pub/css/min-bar/min-bar.css');
+@import url('../../../app/style.css'); 
+body{
+	 background:#0a4d9b;	
+}
+.bn { 
+	width: 100%; 
+	height: 370px;
+	overflow:hidden;
+	background-position:center top;
+	min-width: 1088px;
+
+}
+.wrapper{
+	position: relative; 
+	min-width: 1088px;
+	padding-bottom:0;
+	margin-top:-10px;
+	padding-top:0;
+	margin-bottom: 60px; 
+}
+.wrapper h2{ 
+	border:none;
+	box-shadow: none;
+}  
+.wrap-cnt{
+	margin-top:0;
+	position: relative;
+	z-index: 2;
+	min-height:1240px; 
+} 
+.com-hd{
+	height: 440px;
+	background-repeat: no-repeat;
+	background-position: center top;
+}
+.com-bd{
+	width:990px;
+	padding-top:10px;
+	margin: 0 auto;	
+	overflow: hidden;  
+}  
+.com-bd ul{
+	position: relative;
+	left: 5px;
+	margin:0 auto;
+	width: 990px;  
+}
+.spec-mod .com-bd li,.spec-mod .com-bd img{
+	width: 323px;
+	height: 390px;
+	border: none;
+}
+.spec-mod .com-bd li{
+	margin-right: 5px;
+}
+.layout{
+	margin: 0 auto;
+	width: 990px;
+}
+.layout .hid{
+	*float:left;
+	display: inline-block;
+	width: 490px;
+	height: 345px;
+} 

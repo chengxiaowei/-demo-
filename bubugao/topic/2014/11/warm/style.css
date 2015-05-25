@@ -1,0 +1,103 @@
+@import url('../../../pub/css/common.css');
+@import url('../../../pub/css/btn.css'); 
+@import url('../../../pub/font/iconfont.css');
+@import url('../../../pub/css/dialog/ui-dialog.css');
+@import url('../../../pub/css/hd/site-nav.css');
+@import url('../../../pub/css/linkage-tab.css');
+@import url('../../../pub/css/hd/search.css');
+@import url('../../../pub/css/hd/nav.css');
+@import url('../../../pub/css/jquery.minSlide.css');
+@import url('../../../pub/css/ft/ft.css');
+@import url('../../../pub/css/min-bar/min-bar.css');
+@import url('../../../app/style.css'); 
+body{
+	background-color:#ffca39;
+}
+.bn{
+	margin: 0 auto 20px;
+	min-width: 1190px;
+}
+.layout{
+	width: 990px;
+}
+.spec-mod,.com-mod{
+	margin: 0 auto 40px;
+	width: 1000px;
+}
+.bg1,.bg2,.bg3,.bg4,.bg5{
+	position: relative;
+	border:1px solid #ccc;
+	border-radius: 5px;
+	z-index: 2;
+}
+.bg1{
+	background-color: #709fd5;
+}
+.bg2{
+	background-color: #ff9b9b;
+}
+.bg3{
+	background-color: #c3d95b;
+}
+.bg4{
+	background-color: #85dbdc;
+}
+.bg5{
+	background-color: #c285dc;
+}
+.com-hd h2{
+	margin:20px auto;
+	text-align: center;
+	height: 63px;
+	text-indent: -9999px;
+	background-position:20px 0;
+	background-repeat: no-repeat; 
+}
+.bg1 .com-hd h2{
+	margin: 10px auto;
+	font-size:36px;
+	color:#fff;
+	font-family: 'Microsoft Yahei';
+	height: 40px;
+	line-height: 40px;
+	text-indent: 0;
+	font-weight: 400;
+}
+.com-bd{
+	padding-left: 9px;
+	*padding-bottom: 10px;
+}
+.com-bd li{
+	margin:0 8px 10px 0;
+	*margin:0 6px 10px 0;
+}
+
+ /*nav*/ 
+.right-nav{
+	position:fixed; 
+	-position:absolute;
+	padding-top: 86px;
+	width: 100px;
+	height: auto;
+	overflow:hidden; 
+	z-index:100; 
+	left:55%; 
+	margin-left:450px;
+	margin-bottom: 40px;
+	bottom:25px; 
+	background:url(//s1.bbgstatic.com/topic/2014/11/warm/img/nav-top.png) no-repeat;
+}	
+.right-nav a{ 
+	height: 25px; 
+	font: 400 14px/25px 'Microsoft Yahei';
+	color:#fff;
+	text-align: center;
+	background:url(//s1.bbgstatic.com/topic/2014/11/warm/img/nav-bg.png) no-repeat;
+	 
+} 
+.right-nav .go-top{ 
+	border:none;  
+	height: 35px;
+	line-height: 30px; 
+	background:url(//s1.bbgstatic.com/topic/2014/11/warm/img/nav-ft.png) no-repeat;
+}	

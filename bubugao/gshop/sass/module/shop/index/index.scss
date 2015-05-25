@@ -1,0 +1,228 @@
+/* common */
+@import "../../../common";
+@import "../../../common/slider/slider";
+@import "../../../common/form/form";
+@import "../../../common/button/button";
+@import "../../../common/scroll-load/scroll-load";
+@import "../../../common/dialog/dialog";
+@import "../../../common/search/search";
+@import "../../../common/menu/_menu";
+@import "../../../common/go-top/mod-top";
+@import "../../../common/add-to-cart/_goods-notice";
+
+/* modules */
+html,body{
+	background: #fff;
+}
+.ui-header {
+	position: fixed;
+	width: 100%;
+	z-index: 9;
+	top: 0px;
+}
+.search-3-empty {
+	.ui-button-gray{
+		  display: block;
+		  margin-right: auto;
+		  margin-left: auto;
+		  width: 3rem;
+		  border: 1px solid #ccc;
+		  background-color: #fff;
+		  color: #666;
+		  font-size: 0.6rem;
+		  &:hover{
+			background-color: #fff;
+			color: #666;
+		  }
+	}
+	text-align:center;
+    img {
+        width: 100%;
+    }
+}
+.shop-index {
+	font-size: rem(30);
+	margin-top: rem(100);
+	.hd {
+		font-size: rem(26);
+		height: rem(75);
+		background: #fff;
+		padding: 0 rem(18) 0 rem(18);
+		.left {
+			float: left;
+			height: rem(75);
+			line-height: rem(75);
+			input {
+				border:solid #d2d2d2 1px;
+				height: rem(50);
+				width: rem(320);
+			}
+		}
+		.right {
+			float: right;
+			height: rem(75);
+			line-height: rem(75);
+			font-size: rem(28);
+			i {
+				margin-right: rem(8);
+				font-size: rem(30);
+				color: #999;
+			}
+			.span {
+				margin-right: rem(38);
+			}
+			.span-color {
+				color: #ff0000;
+				i {
+					color: #ff0000;
+				}
+			}
+		}
+	}
+	.bd {
+		border-top: solid 0.05rem #DFDFDF;
+		font-size: rem(30);
+		padding: 0 rem(18) 0 rem(18);
+		ul {
+			li{
+				position: relative;
+				background: #fff;
+				overflow: hidden;
+				padding: rem(20) 0;
+                border-bottom:1px solid #DFDFDF;
+				a{
+					color: #333;
+				}
+				.left {
+					float: left;
+					width: rem(181);
+					margin-right: rem(19);
+					img {
+						width: rem(181);
+						height: rem(181);
+						border-radius: rem(10);
+					}
+				}
+				.right {
+					font-size: rem(26);
+					margin-left: rem(195);
+					height: rem(181);
+					overflow: hidden;
+					.title {
+						overflow: hidden;
+						height: rem(60);
+						line-height: rem(31);
+						em{
+							 color: #f26321;
+  							font-style: normal;
+						}
+					}
+					.m {
+						overflow: hidden;
+						margin-top: rem(10);
+						line-height: rem(26);
+						span {
+							float: left;
+							color: #f40;
+							font-size: rem(26);
+						}
+						label {
+							float: right;
+							font-size: rem(26);
+							a {
+								color: #fa7739;
+								margin-left: rem(10);
+							}
+						}
+						.channel-pri{
+							display: inline-block;
+							display: none;
+							line-height: rem(26);
+							height: rem(24);
+							width: auto;
+							color: #fff;
+							background:#F16321;
+							padding: 0 rem(8);
+							margin-left: rem(16);
+							font-size: rem(20);
+							border-radius:rem(26);
+						}
+					}
+
+				}
+			}
+			.g {
+				position: absolute;
+				font-size: rem(24);
+				overflow: hidden;
+				height: rem(80);
+				right: 0px;
+				bottom: rem(20);
+				width: rem(80);
+				padding: rem(40) 0 0 rem(40);
+				span, a {
+					float: right;
+					font-size: rem(24);
+					width: rem(140);
+					height: rem(60);
+					background: none;
+					color: #f16320;
+					text-align:center;
+					border-radius: rem(5);
+					line-height: rem(60);
+				}
+				.ui-button-white{
+					text-align: center;
+					color: #666;
+					background-color: #fff;
+					border: 1px solid #ccc;
+				}
+				.gd-buy-btn {
+                    width: rem(72);
+                    height: rem(72);
+                    z-index:8;
+                    &.ui-button-disabled{
+                    	background-color:#fff;
+                    	border:0;
+                    	color:#eee;
+                    	span,a{
+                    		color:#eee;
+                    	}
+                    }
+                    .iconfont{
+                        display: inline-block;
+                        border-radius: 50%;
+                        width: rem(52);
+                        height: rem(52);
+                        line-height: rem(52);
+                        font-size: rem(48);
+                        &.color-gray{
+                        	color:#d9d9d9;
+                        }
+                    }
+                    span,a{
+                        display: inline-block;
+                        border-radius: 50%;
+                        width: rem(52);
+                        height: rem(52);
+                        line-height: rem(24);
+                        font-size: rem(22);
+                        padding:rem(8);
+                    }
+                    &:active{
+                        text-decoration: none;
+                    };
+                }
+			}
+			.tags{
+				display: block;
+				overflow: hidden;
+				font-size: rem(26);
+				span {
+					color: #fa7739;
+					margin-right: rem(10);
+				}
+			}
+		}
+	}
+}

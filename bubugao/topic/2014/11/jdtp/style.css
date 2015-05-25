@@ -1,0 +1,70 @@
+@import url('../../../pub/css/common.css');
+@import url('../../../pub/css/btn.css'); 
+@import url('../../../pub/font/iconfont.css');
+@import url('../../../pub/css/dialog/ui-dialog.css');
+@import url('../../../pub/css/hd/site-nav.css');
+@import url('../../../pub/css/linkage-tab.css');
+@import url('../../../pub/css/hd/search.css');
+@import url('../../../pub/css/hd/nav.css');
+@import url('../../../pub/css/jquery.minSlide.css');
+@import url('../../../pub/css/ft/ft.css');
+@import url('../../../pub/css/min-bar/min-bar.css');
+@import url('../../../app/style.css'); 
+body{
+	background:#fbd1be;
+}
+.bn{
+	width: 100%; 
+	height: 500px; 
+	overflow:hidden;
+} 
+.bn,.layout{
+	background-position:center center; 
+	min-width: 1000px;
+}
+
+.layout,.ads-list,.img-list{
+	margin: 0 auto;
+	width: 990px;
+	background-repeat: no-repeat;
+}
+
+.help{
+	margin-top:0;
+}
+.ads-list{
+	width: 690px;
+	padding-top: 110px;
+	padding-left: 330px;
+}
+.ads-list li,.ads-list li a,.ads-list li img{
+	*float:left;
+	display: block;
+	margin-right: 30px;
+	width: 196px;
+	height: 87px;
+	text-indent: -9999px;
+	overflow: hidden;
+}  
+.img-list{
+	background: #fe1940;
+	padding-left: 10px;
+	padding-top: 10px;
+	*padding-bottom: 10px;
+} 
+.img-list li,.img-list li img,.img-list li a{
+	display: block;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	width: 320px;
+	height: 350px;
+ }
+.img-list li,.ads-list li{
+	float: left;
+}
+
+.link-div a{
+	display: block;
+	width: 100%;
+	height: 100%;
+}

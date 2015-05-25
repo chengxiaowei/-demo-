@@ -1,0 +1,77 @@
+@import url('../../pub/css/common.css');
+@import url('../../pub/css/btn.css'); 
+@import url('../style.css');
+@import url('lightbox.css');
+body{
+	background: url(../img/bg-1.jpg) repeat;
+}
+.nav-list {position:fixed;z-index:9999;left:0px;top:10px;width:100%;background:rgba(0, 0, 0, 0.3);}
+	.nav-list a.logo {float:left;width:300px;height:77px;margin:23px 0 0 10px;color: #f2f2f2;font: 400 24px/30px 'microsoft yahei';}
+	.nav-list ul{width:700px;float:left;padding:0 0 0 30px;}
+		.nav-list ul li {float:left;display:inline;}
+		.nav-list ul li a{float:left;width:90px;height:100px;margin:0 0 0 10px;padding:0 0 0 10px;color:#fff;font:400 20px/150px "Microsoft Yahei",Simsun,Arial;position:relative;display:inline;}
+		.nav-list ul li a:hover {text-decoration:none;filter:alpha(opacity=80);-moz-opacity:0.8;-khtml-opacity:0.8;opacity:0.8}
+		.nav-list ul li a span {display:none;position:absolute;left:40px;top:100px;border-style:solid;border-width:10px 10px 0;height:0;line-height:0;width:0;}
+		.nav-list ul li.on a span{display: block;}
+
+		.nav-list ul li a.t2014 {background:#9eb624;}
+		.nav-list ul li a.t2014 span {border-color:#9eb624 transparent transparent transparent;}
+
+		.nav-list ul li a.t2015 {background:#e9952e;}
+		.nav-list ul li a.t2015 span {border-color:#e9952e transparent transparent transparent;}
+
+		.nav-list ul li a.tMod {background:#ae1111;}
+		.nav-list ul li a.tMod span {border-color:#ae1111 transparent transparent transparent;}
+
+		.nav-list ul li a.wojia {background:#48c6ed;}
+		.nav-list ul li a.wojia span {border-color:#48c6ed transparent transparent transparent;}
+
+		.nav-list ul li a.kehuduan {background:#f975a4;}
+		.nav-list ul li a.kehuduan span {border-color:#f975a4 transparent transparent transparent;}
+
+		.nav-list ul li a.icon {background:#666;}
+		.nav-list ul li a.icon span {border-color:#666 transparent transparent transparent;}
+
+/*布局*/
+.cnt-box {width:100%;padding-top:120px;}
+.cnt-lf {position:fixed;z-index:999;left:0;top:120px;width:120px;}
+.cnt-rt {padding:0px 0px 0px 120px;overflow:hidden;}
+
+	.nav-lf {float:left;display:none;width:120px;}
+	.nav-lf li {list-style:none;float:left;}
+	.nav-lf li a {float:left;width:100px;padding:0 10px;color:#333;font:400 16px/34px "Microsoft Yahei",Simsun,Arial;}
+	.nav-lf li.on a {background:#333;color:#fff;}
+.cnt-lf .on{display: block;}
+	
+	
+/*内容*/	
+.frame-con {background:rgba(255,255,255,0.6);border:1px solid #ddd;padding-left:30px;}
+.frame-con h2{color:#434d57;font:700 28px/90px "Microsoft Yahei"}
+.frame-cnt{width: 100%;}
+.frame-cnt li{float: left;margin:0 5px 10px;}
+.top-box{
+	padding: 10px;
+	width: 200px;
+	font:400 14px/20px 'Microsoft Yahei';
+	color: #333;
+	border:1px solid #f2f2f2;
+	background: #fff;
+}
+.top-box p{
+	margin-top: 5px;
+	white-space:nowrap;
+	width: 200px;
+	overflow: hidden;
+text-overflow:ellipsis;
+-ms-text-overflow: ellipsis;
+-o-text-overflow: ellipsis;
+-moz-binding: url("ellipsis.xml#ellipsis");/*FireFox*/
+}
+.top-box a{
+	color: #3879D9;
+}
+ 
+
+	
+
+ 

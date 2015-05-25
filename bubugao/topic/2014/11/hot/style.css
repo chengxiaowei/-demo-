@@ -1,0 +1,299 @@
+@import url('../../../pub/css/common.css');
+@import url('../../../pub/css/btn.css'); 
+@import url('../../../pub/font/iconfont.css');
+@import url('../../../pub/css/dialog/ui-dialog.css');
+@import url('../../../pub/css/hd/site-nav.css');
+@import url('../../../pub/css/linkage-tab.css');
+@import url('../../../pub/css/hd/search.css');
+@import url('../../../pub/css/hd/nav.css');
+@import url('../../../pub/css/jquery.minSlide.css');
+@import url('../../../pub/css/ft/ft.css');
+@import url('../../../pub/css/min-bar/min-bar.css');
+@import url('../../../app/style.css'); 
+body{
+	background-color: #c90c2c; 
+}
+.bn{
+	margin: 0 auto;
+	min-width: 1190px;
+}
+.layout{
+	width: 990px;
+}
+.spec-mod{
+	margin: 0 auto;
+	width: 1000px;
+}
+.com-hd{
+	margin-bottom: 10px;
+	padding-left: 10px;
+	width: 995px;
+	height: 43px;
+}
+.com-hd a{
+	float: left;
+	margin-left: 3px;
+	width: 106px;
+	height: 43px;
+}
+.com-bd{
+	position: relative;
+	padding-left: 12px;
+}
+.com-bd ul{
+	*margin-bottom: 10px;
+}
+.com-bd li{
+	margin:0 5px 10px 0;
+	*margin:0 3px 10px 0;
+}
+
+.goods-ad{
+	position: absolute;
+	right: 12px;
+	width: 240px;
+	height: 325px;
+}
+.goods-ad a, .goods-ad a img{
+	display: block;
+	width: 240px;
+	height: 325px;
+}
+.goods-mr{
+	margin-right: 390px;
+}
+.com-bd .goods-mr{
+	width: 735px;
+}
+
+/*底部广告链接*/
+.gren-mod{
+	padding-left: 5px;
+	margin: 14px auto 30px;
+	width: 995px;
+}
+.gren-ad{
+	width: 285px;
+	height: 140px;
+	float: left; 
+	margin-right: 2px;
+}
+.gren-ad a, .gren-ad img{
+	width: 285px;
+	height: 140px;
+	display: block;
+}
+.gren-list{
+	width: 704px;
+	height: 140px;
+	overflow: hidden;
+}
+.gren-show{
+	width: 720px;
+}
+.gren-list a{
+	display: block;
+	width: 140px;
+	height: 46px;
+	float: left;
+	margin:0 1px 1px 0;
+	text-align: center;
+	color: #8a0017;
+	text-decoration: none;
+	font:700 16px/46px 'microsoft yahei';
+}
+.gren-list a:hover{
+	text-decoration: underline;
+}
+.gren-list a.col1{
+	background-color: #df9900;
+}
+.gren-list a.col2{
+	background-color: #ffbe31;
+}
+
+.hover-bg{
+	width: 100%;
+	height: 100%; 
+	filter:Alpha(opacity=40);
+	background-color:#730014;
+	background: rgba(115,0,20,.4); 
+
+}
+ /*nav*/ 
+ .left-nav{
+ 	position: fixed;
+ 	right: 50%;
+ 	bottom:50%;
+ 	margin-right: 500px;
+ 	width: 118px;
+ 	padding:5px 0 0 5px;
+ 	*padding-bottom: 10px;
+ 	font-family: 'Microsoft Yahei';
+ 	font-size: 16px;
+ 	text-align: center; 
+ 	background-color: #df9900;
+ 	z-index: 99;
+ 	overflow: hidden;
+ }
+ .left-nav h3{
+ 	line-height: 30px;
+ }
+ .left-nav li,.left-nav a{
+ 	display: block;
+ 	width: 54px;
+ 	height: 30px;
+ 	line-height: 30px; 
+ }
+ .left-nav li{
+ 	float: left;
+ 	margin-bottom: 5px;
+ 	margin-right: 5px;
+ 	background-color: #ab7500;
+ }
+.right-nav{
+	position:fixed; 
+	-position:absolute;
+	padding-top: 77px;
+	width: 120px;
+	height: auto; 
+	overflow:hidden; 
+	z-index:100; 
+	left:55%; 
+	margin-left:450px;
+	margin-bottom: 40px;
+	bottom:25px; 
+	background:url(img/nav-hd.png) no-repeat;
+}	
+.right-nav a{ 
+	height: 44px; 
+	font: 400 18px/44px 'Microsoft Yahei';
+	color:#333;
+	background:url(img/nav-bg.png) no-repeat center bottom;
+}
+.right-nav a.lh{
+	height: 53px;
+	padding-top: 10px;
+	line-height: 21px;
+
+}
+.right-nav .go-top{ 
+	border:none; 
+	margin-top: -1px;
+	height: 95px;
+	line-height: 95px;
+	text-indent: -9999px; 
+	background:url(img/nav-ft.png) no-repeat center top;
+}
+
+/*tiger*/
+.slot-machine
+{ 
+    padding: 0px 10px 10px 0px;
+    margin: 0 auto;
+}
+.slot-machine ul li,.slot-machine .selected-li
+{
+    width: 133px;
+    height: 133px;
+    padding: 11px;
+    background: url(img/bg01.png) no-repeat 8px 8px;
+    position: absolute;
+}
+.slot-machine .selected-li
+{
+    background: url(img/bg02.png) no-repeat 0 0;
+}
+.slot-machine .slot-machine-gift
+{
+    background: url(img/gifts.png) no-repeat;
+    display: block;
+    width: 110px;
+    height: 110px;
+    margin: 8px;
+}
+.slot-machine .middle-box{
+	margin-top: 168px;
+	margin-left: 164px; 
+	width: 150px;
+	height: 150px;
+	background: url(img/tips.png) no-repeat;
+}
+.slot-machine .middle-item
+{
+    color: #333;
+    font-family: "Microsoft yahei";
+    font-size: 14px;
+    height: 50px;
+   	left: 180px;
+	overflow: hidden;
+	padding: 0 15px;
+	position: absolute;
+	right: 180px;
+	text-indent: 6px;
+	top: 214px;
+    width: 88px;
+    
+}
+.slot-machine .btn-wrap
+{
+    text-align: center;
+   	position: absolute;
+   	bottom: -10px;
+   	right: -188px;
+    display: block;
+}
+.slot-machine .btn-wrap a{
+	display: block;
+}
+.sure-btn
+{
+    background: url(img/t-btn1.png) 0 0;
+    height: 77px;
+    width: 136px;
+    cursor: pointer;
+    outline: none;
+}
+.sure-btn-stop
+{
+    background: url(img/t-btn1.png) -146px 0;
+    height: 77px;
+    width: 136px;
+    cursor: pointer;
+    outline: none;
+}
+.sure-btn-disabled {
+    background: transparent url(img/t-btn1.png) -291px 0;
+    height: 77px;
+    width: 136px;
+    cursor: pointer;
+    outline: none;
+}
+.slot-machine .slot-msg {
+    font-family: "Microsoft YaHei";
+    color: #333;
+    font-size: 15px;
+    margin: 10px 10px 10px 10px;
+}
+.slot-machine-out { 
+    width: 521px;
+    height: 527px;
+    padding: 32px 0;
+    margin: 0 auto;
+}
+.left-times{
+	background: none repeat scroll 0 0 rgb(254, 197, 0);
+    border: 1px solid rgb(254, 197, 0);
+    border-radius: 16px;
+    height: 20px;
+    left: 384px;
+    padding: 0 5px;
+    position: absolute;
+    top: 18px;
+    width: 123px;
+}
+.sp-left-time{
+	margin: 0 2px;
+	width: 40px;
+	text-align: center;
+}

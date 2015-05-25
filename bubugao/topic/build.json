@@ -1,0 +1,16 @@
+{
+    "pid": "topic",
+    "appDir": "./",
+    "baseUrl": "./",
+    "dir": "./dist",
+    "appConfig": "app/base.js",
+    "modules": [{
+        "name": "app/base", 
+        "exclude": ["jquery"]
+    }],
+    "dist": {
+        "name": "topic",
+        "version": "0.0.1",
+        "prefix": "//s1.bbgstatic.com/topic"
+    }
+}

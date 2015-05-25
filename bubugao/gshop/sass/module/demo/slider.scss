@@ -1,0 +1,12 @@
+/* common */
+@import "../../common";
+@import "../../common/slider/slider";
+
+@import "./source/common";
+
+.mod-demo-slider {
+    @extend .mod-demo;
+    .bd {
+        padding: .2rem;
+    }
+}

@@ -1,0 +1,261 @@
+@import url('../../../pub/css/common.css');
+@import url('../../../pub/css/btn.css'); 
+@import url('../../../pub/font/iconfont.css');
+@import url('../../../pub/css/dialog/ui-dialog.css');
+@import url('../../../pub/css/hd/site-nav.css');
+@import url('../../../pub/css/linkage-tab.css');
+@import url('../../../pub/css/hd/search.css');
+@import url('../../../pub/css/hd/nav.css');
+@import url('../../../pub/css/jquery.minSlide.css');
+@import url('../../../pub/css/ft/ft.css');
+@import url('../../../pub/css/min-bar/min-bar.css');
+@import url('../../../app/style.css'); 
+body{
+	background:url(images/bg.jpg);
+	
+}
+.bn { 
+	width: 100%;
+	height:549px;
+	overflow:hidden;
+	min-width:1024px;
+	background-repeat: no-repeat;
+	background-position: center top;
+}
+.wrapper{
+	width: 100%;
+	padding-bottom:0;
+	margin-top:0;
+	padding-top:0;
+}
+.wrapper h2{
+	border:none;
+	box-shadow: none;
+	height: 78px;
+	text-indent: -600px;
+	background-repeat: no-repeat;
+	background-position: center top;
+}
+.spec-mod .com1{
+	margin-top: -95px;
+	position: relative;
+	z-index: 2;
+}
+.wrapper h2.hd1{
+	height: 220px;
+	line-height: 90px;
+	left:-1px;
+	text-indent: -342px;
+}
+.wrapper h2.hd2{
+	height: 78px;
+	line-height: 62px;
+}
+#com1,#com2,#com3,#com4,#com5,#com6{
+	position: relative;
+	left:-1px;
+	left: 0px\9;
+}
+
+.com-txt .p-normal{
+	font-size:14px;
+}
+.wrapper h2.hd3{
+	height: 92px;
+	line-height: 90px;
+	position: relative;
+	left:-1px;
+}
+.wrapper h2.hd4{
+	height: 90px;
+	line-height: 60px;
+	position: relative;
+	left:-1px;
+	-left:0;
+}
+.wrapper h2.hd5{
+	height: 79px;
+	line-height: 60px;
+}
+.wrapper h2.hd6{
+	height: 65px;
+	line-height: 50px;
+	position: relative;
+	left:-1px;
+	-left:0;
+}
+.hd1,.hd2,.hd3,.hd4,.hd5{
+	left:-1px\9;
+}
+.com-hd{
+	background-repeat: no-repeat;
+	background-position: center top;
+	min-width: 1024px;
+}
+.spec-bd{
+	height: 325px;
+	background-repeat: no-repeat;
+	background-position: center top;
+	min-width: 1024px;
+}
+.spec-bd .spec-bd-link{
+	display: block;
+	width:920px;
+	margin:0 auto;
+	text-indent: -9999px;
+	height:100%;
+
+}
+
+.f3{
+	height:332px;
+}
+.f4{
+	height:355px;
+}
+.f5{
+	height:341px;
+}
+.f6{
+	height:332px;
+}
+.wrap-cnt{
+	margin-top:0;
+	position: relative;
+	z-index: 2;
+}
+.spec-mod ul,.com-mod ul{
+	margin-left:13px;
+}
+.com-mod ul {
+
+}
+#com6{
+	padding-bottom: 20px;
+}
+#com6 .com-bd{
+	padding-bottom: 0;
+}
+.com-bd{
+	width:1018px;
+	margin: 0 auto;
+	overflow: hidden;
+	padding-bottom:20px;
+}
+.com-mod li, .spec-mod li{
+	box-shadow: none;
+	border:1px solid #3cc;
+	margin:10px 8px 0 0;
+	-margin-right: 6px;
+}
+
+.com-mod li{
+	width:188px;
+}
+.com-box{
+	height: 50px;
+}
+.com-mod .com-txt{
+	width:126px;
+}
+
+.com-mod, .spec-mod{
+	margin-bottom: 0;
+}
+.com-mod, .spec-mod {
+	background:url(images/com-bd.jpg) repeat-y center;
+}
+.hid{
+	display:block;
+	text-indent:-9999em;
+	overflow:hidden;
+}
+/*底部浮层*/
+.ft-nav{
+	background: #553c67;
+	height: 62px;
+	position: fixed;
+	-position:absolute;
+	bottom:0;
+	width: 100%;
+	z-index: 10;
+	box-shadow: 0 -1px 1px #333;
+}
+.ft-nav-bd{
+	width: 1050px;
+	margin: 0 auto;
+}
+.ft-nav-bd a{
+	display: block;
+	float: left;
+	width:190px;
+	height:62px;
+	text-align: center;
+	font: 100 25px/62px 'Microsoft Yahei';
+	color:#fff;
+}
+.ft-link0{
+	width: 202px;
+	background: url(images/ft-nav.jpg) no-repeat;
+	text-indent: -9999px;
+}
+/*右侧浮层*/
+.right-nav{
+	position:fixed;
+	-position:absolute;
+	width:118px;
+	height:356px;
+	padding-top: 8px;
+	overflow:hidden;
+	z-index:100;
+	left:55%;
+	margin-left:450px;
+	margin-bottom: 40px;
+	bottom:25px;
+	background:url(images/nav.png) no-repeat;
+}
+.right-nav a{
+	height:38px;
+	font: 700 16px/45px 'Microsoft Yahei';
+	color: #996600;
+	text-indent: -10px;
+}
+
+.right-nav .go-top{
+	background:none;
+	border:none;
+	height: 40px;
+	line-height: 40px;
+}
+.right-nav-spec{
+	
+}
+.right-nav-spec a{
+	width:75px;
+	height:34px;
+	line-height: 34px;
+	background: #ff3;
+	margin-left:17px;
+	text-indent: 0;
+}
+.right-nav-spec a.odd{
+	background:#efcf0f;
+}
+.help{
+	margin-top:0;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) { /* Webkit内核兼容CSS */
+	#com2,#com3,#com4,#com5,#com6{
+		left:0;
+	}
+	.wrapper h2.hd3,.wrapper h2.hd4,.wrapper h2.hd6{
+		left:0;
+	}
+	.wrapper h2.hd1{
+		left: 0;
+	}
+	#com1{
+		left: 0;
+	}
+}

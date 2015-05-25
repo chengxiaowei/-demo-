@@ -1,0 +1,254 @@
+@import url('../../../pub/css/common.css');
+@import url('../../../pub/css/btn.css'); 
+@import url('../../../pub/font/iconfont.css');
+@import url('../../../pub/css/dialog/ui-dialog.css');
+@import url('../../../pub/css/hd/site-nav.css');
+@import url('../../../pub/css/linkage-tab.css');
+@import url('../../../pub/css/hd/search.css');
+@import url('../../../pub/css/hd/nav.css');
+@import url('../../../pub/css/jquery.minSlide.css');
+@import url('../../../pub/css/ft/ft.css');
+@import url('../../../pub/css/min-bar/min-bar.css');
+@import url('../../../app/style.css'); 
+body{
+	background: #fff9a4;
+}
+.wrapper{
+	padding-top: 0;
+	width: 1001px;
+	overflow: hidden;
+	margin: 0 auto;
+}
+.wrapper .wrap1{
+	padding-top:12px;
+}
+.wrapper h2{
+	height: 70px;
+	background-position: center top;
+	background-repeat: no-repeat;
+	box-shadow: none;
+	position: relative;
+}
+#rel{
+	position: relative;
+}
+.bn{
+	height: 190px;
+	background-position: center top;
+	background-repeat: no-repeat;
+	position: static;
+}
+.bn-1{
+	float: left;
+	z-index: 15;
+	position: relative;
+}
+.tab-mod{
+	width: 990px;
+	margin: 0 auto;
+	position: relative;
+	z-index: 20;
+}
+.tab-mod-cnt{
+	position: absolute;
+	top: -77px;
+	left: 0;
+}
+.tab-mod a, .tab-mod a img{
+	display: block;
+	width: 990px;
+	height: 267px;
+}
+.wrap-cnt{
+	width: 1000px;
+	background-color: #fb6ac1;
+	padding-top: 15px;
+}
+.bg1{
+	background-color: #46d1ff;
+}
+.bg2{
+	background-color: #13e3aa;
+}
+.bg3{
+	background-color: #efcd65;
+}
+.bg4{
+	background-color: #84cec1;
+}
+.bg5{
+	background-color: #fff27d;
+	margin-top: 20px;
+}
+.com-bd{
+	position: relative;
+}
+.com-bd li{
+	margin-right: 5px;
+}
+.goods-ad{
+	position: absolute;
+	left: 10px;
+	width: 385px;
+	height: 254px;
+}
+.goods-ad a, .goods-ad a img{
+	display: block;
+	width: 385px;
+	height: 254px;
+}
+.goods-ml{
+	margin-left: 405px;
+}
+.com-bd .goods-ml{
+	width: 600px;
+}
+.spec-mod{
+	padding-left: 10px;
+}
+.ml{
+	padding-left: 14px;
+}
+.spec-mod, .com-mod{
+	*margin-top: 10px;
+	*margin-bottom: 10px;
+}
+.img-list{
+	width: 978px;
+	height: 411px;
+	margin: 0 auto 20px;
+	overflow: hidden;
+}
+.img-list ul{
+	width: 1100px;
+}
+.img-list ul li{
+	width: 320px;
+	height: 200px;
+	float: left;
+	margin: 0 9px 10px 0;
+}
+.img-list a, .img-list a img{
+	display: block;
+	width: 320px;
+	height: 200px;
+}
+.bg3-ad{
+	width: 990px;
+	height: 260px;
+	margin: 0 auto 10px;
+}
+.bg3-ad a, .bg3-ad a img{
+	display: block;
+	width: 990px;
+	height: 260px;
+}
+.act-list{
+	width: 975px;
+	height: 535px;
+	margin: 10px auto 15px;
+	overflow: hidden;
+}
+.act-list ul{
+	width: 1050px;
+}
+.act-list ul li{
+	float: left;
+}
+.act-list .ul1 li{
+	width: 480px;
+	height: 280px;
+	margin-right: 15px;
+}
+.act-list .ul1 li a, .act-list .ul1 li img{
+	display: block;
+	width: 480px;
+	height: 280px;
+}
+.act-list .ul2{
+	margin-top: 13px;
+}
+.act-list .ul2 li{
+	width: 240px;
+	height: 240px;
+	margin-right: 5px;
+}
+.act-list .ul2 li a, .act-list .ul2 li img{
+	display: block;
+	width: 240px;
+	height: 240px;
+}
+.tab-nav{
+	width: 1000px;
+	height: 61px;
+	position: absolute;
+	margin-top: 135px;
+	left: 0px;
+	z-index: 30;
+	background-repeat: no-repeat;
+	background-position: 5px 0;
+}
+.tab-nav a{
+	display: inline-block;
+	width: 180px;
+	height: 66px;
+}
+.fix{
+	position: fixed;
+	-position:absolute;
+	top: 0;
+	z-index: 20;
+	left:50%;
+	margin: 0 0 0 -501px;
+	background-color: #fff9a4;
+}
+
+.help{
+	margin-top: 0;
+}
+
+.a-mod{
+	position: relative;
+	width: 990px;
+	margin: 0 auto;
+}
+.collect{
+	display: block;
+	width: 106px;
+	height: 40px;
+	position: absolute;
+	top: 60px;
+	right: 0;
+}
+.see-active{
+	display: block;
+	width: 106px;
+	height: 20px;
+	position: absolute;
+	top: 85px;
+	right: 0;
+}
+.more{
+	position: absolute;
+	display: block;
+	top: 16px;
+	right: 7px;
+	width: 75px;
+	height: 52px;
+}
+.a-mod-cnt{
+	margin-top:-72px;
+	z-index: 12;
+	position: relative;
+}
+.a-mod-cnt a, .a-mod-cnt img{
+	display: block;
+	width: 990px;
+	height: 267px;
+}
+
+.go-floor{
+	position: absolute;
+	top: -61px;
+	left: 0;
+}

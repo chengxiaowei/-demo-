@@ -1,0 +1,35 @@
+.mod-links{
+    padding: 0 rem(20);
+    .bd{
+        font-size: rem(30);
+        .link-group{
+            margin:rem(20) 0;
+            border-left:1px solid #CCCCCC;
+            border-right:1px solid #CCCCCC;
+            border-bottom:1px solid #CCCCCC;
+            .link-item{
+                color:#333;
+                display: block;
+                border-radius: rem(2);
+                line-height: rem(92);
+                padding:0 rem(24);
+                background: #fff;
+                border-top:1px solid #CCCCCC;
+                i{
+                    color:#676767;
+                    font-size: rem(34);
+
+                }
+            }
+        }
+    }
+    .ft{
+        .ui-button{
+            height: auto;
+            line-height: rem(80);
+            font-size: rem(36);
+            background: #f16320;
+            border: 0;
+        }
+    }
+}

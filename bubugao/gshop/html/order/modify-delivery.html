@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>更改配送方式</title>
+    <!--#include file="/html/include/common/intro.html"-->
+    <link rel="stylesheet" href="//s1.bbgstatic.com/gshop/css/module/order/modify-delivery.css?v=3.0.13" type="text/css" charset="utf-8"></head>
+<body>
+    <div class="page-view">
+        <head><!--#include file="/html/order/mod/_head-modify-delivery.html"--></head>
+        <div class="page-view-body mod-modify-delivery">
+            <div class="bd">
+                <ul id="jMdInvoice">
+                </ul>
+            </div>
+        </div>
+         <!-- <footer> xx </footer> -->
+    </div>
+    <script id="jMdInvoiceTmpl" type="text/html">
+        <% for(var i = 0;i<list.length;i++){ %>
+        <li>
+            <label>
+                <em class="input"><input type="radio" name="jInType" <% if(list[i]['selected']){ %>checked<% } %> data-shopId="<%=list[i]['shopId']%>" data-id="<%=list[i]['id']%>"/></em>
+                <span class="text"><%=list[i]['title']%></span>
+            </label>
+        </li>
+        <% } %>
+    </script>
+<!--#include file="/html/include/common/outro.html"-->
+<script>require(['conf/order/modify-delivery']);</script>
+
+<!--GTM start-->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-NV2JH3" 
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript> 
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': 
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0], 
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src= 
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f); 
+})(window,document,'script','dataLayer','GTM-NV2JH3');</script> 
+<!--GTM end-->
+<!--bbg start-->
+<script>
+    (function(f,c,d,e,g,a,b){a=c.createElement(d);b=c.getElementsByTagName(d)[0];a.async=1;a.src=e;b.parentNode.insertBefore(a,b)
+    })(window,document,"script","//"+(location.protocol=="http:"?"s1":"ssl")+".bbgstatic.com/tracer/bpm.js","bpm");
+</script>
+<!--bbg end-->
+</body>
+</html>

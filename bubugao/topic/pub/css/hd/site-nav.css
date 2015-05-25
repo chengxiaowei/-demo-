@@ -1,0 +1,315 @@
+/**
+* @des site-nav
+* @author jiangchaoyi update 2014.7.27		
+*/
+.site-nav {
+	position: relative;
+	height: 30px;
+	line-height: 30px;
+	background-color: #f2f2f2;
+	z-index: 90;
+	padding: 1px 0 0 0 \0;
+	font-family: 'SimSun';
+}
+
+/*小三角*/
+.site-nav .arrow {
+	display: block;
+	-webkit-backface-visibility: hidden;
+	position: absolute;
+	right: 8px;
+	top: 12px;
+	width: 0;
+	height: 0;
+	border-width: 5px;
+	border-style: solid dashed dashed;
+	border-color: #ccc transparent transparent;
+	font-size: 0;
+	line-height: 0;
+	-webkit-transition: -webkit-transform .2s ease-in;
+	-moz-transition: -moz-transform .2s ease-in;
+	-o-transition: -o-transform .2s ease-in;
+	transition: transform .2s ease-in;
+	-moz-transform: rotate(0deg);
+	-moz-transform-origin: 50% 30%;
+	-webkit-transform: rotate(0deg);
+	-webkit-transform-origin: 50% 30%;
+	-o-transform: rotate(0deg);
+	-o-transform-origin: 50% 30%;
+	transform: rotate(0deg);
+	transform-origin: 50% 30%;
+}
+
+/*分隔符*/
+.site-nav .split {
+	font-size: 0;
+	display: inline-block;
+	overflow: hidden;
+	height: 10px;
+	width: 0px;
+	border-left: 1px solid #fff;
+	vertical-align: middle;
+	margin: 10px 2px;
+}
+
+.site-nav .sn-login,.site-nav .sn-login a {
+	color: #999;
+}
+
+.site-nav .sn-login li {
+	float: left;
+}
+
+.site-nav .sn-login a:hover {
+	color: #666;
+	text-decoration: none;
+}
+
+.site-nav .sn-login .split {
+	margin: 6px 8px 8px 8px;
+}
+
+.site-nav .sn-login .ic {
+	display: inline-block;
+	width: 16px;
+	height: 30px;
+	line-height: 30px;
+	overflow: hidden;
+	line-height: 1000px;
+	vertical-align: middle;
+	padding: 0 2px;
+}
+
+.site-nav .sn-login .taobao {
+	background-position: 0 5px;
+}
+
+.site-nav .sn-login .alipay {
+	background-position: 0 -20px;
+}
+
+.site-nav .sn-login .qq {
+	background-position: 0 -45px;
+}
+
+.site-nav .sn-login .sina {
+	background-position: 0 -70px;
+}
+
+.site-nav .sn-block {
+	height: 30px;
+	line-height: 30px;
+}
+
+.site-nav .sn-block li {
+	float: left;
+	color: #999;
+	position: relative;
+}
+
+.site-nav .sn-block .block-item {
+	display: inline-block;
+	height: 30px;
+	line-height: 30px;
+	color: #999;
+	border-left: 1px solid #f2f2f2;
+	border-right: 1px solid #f2f2f2;
+	padding: 0 10px;
+	float: left;
+}
+
+.site-nav .sn-block .block-item:hover {
+	color: #666;
+	text-decoration: none;
+}
+
+.site-nav .sn-block .phone .block-item {
+	padding-right: 0;
+}
+
+/*vip*/
+.site-nav .sn-login-vip .icon-vip,.site-nav .sn-login .sn-login-vip .menu-bd .vip-name {
+	display: block;
+	background: url(../../img/vip.png) 0 0 no-repeat transparent;
+}
+
+.site-nav .sn-login-vip .icon-vip {
+	position: absolute;
+	width: 14px;
+	height: 14px;
+	right: 10px;
+	top: 8px;
+}
+
+.site-nav .sn-login .sn-login-vip .menu-bd {
+	width: 200px;
+	padding: 10px;
+	left: 0;
+}
+
+.site-nav .sn-login .sn-login-vip .menu-bd .vip-name {
+	width: 140px;
+	height: 50px;
+	line-height: 50px;
+	padding: 0 0 0 60px;
+	background-color: #f2f2f2;
+	background-position: 0 -30px;
+	color: #630;
+	font-size: 14px;
+	border-radius: 6px;
+}
+
+.site-nav .sn-login .sn-login-vip .menu-bd .vip-des {
+	width: 200px;
+	line-height: 18px;
+	padding: 10px 0 0 0;
+	color: #666;
+}
+
+.site-nav .sn-login .sn-login-vip .menu-hd {
+	padding-right: 30px;
+}
+
+/*配送至*/
+.site-nav .sn-address {
+	padding: 0 0 0 20px;
+	color: #999;
+}
+
+.site-nav .sn-address a,.site-nav .sn-address span{
+	float: left;
+}
+
+.site-nav .sn-address .sn-sel-address {
+	padding: 0 0 0 5px;
+	margin: 4px 0 0 0;
+	height: 20px;
+	line-height: 20px;
+}
+
+.site-nav .sn-address .sn-sel-address:hover {
+	color: #666;
+}
+
+.site-nav .sn-address .linkage-tab {
+	height: 20px;
+}
+
+.site-nav .sn-address .linkage-tab .text {
+	height: 20px;
+	line-height: 20px;
+	border-radius: 3px;
+	border: 1px solid #e4e4e4;
+	border-bottom: 0;
+}
+
+.site-nav .sn-address .linkage-tab .content {
+	top: 20px;
+	border: 1px solid #e4e4e4;
+}
+
+.site-nav .sn-address .sn-sel-address:hover {
+	text-decoration: none;
+}
+
+.site-nav .sn-address .linkage-tab .text b,.site-nav .sn-address .linkage-tab .content .mt .tab li i,.site-nav .sn-address .linkage-tab .content .mt .tab li a:hover i {
+	top: 8px;
+	border-color: #ccc transparent transparent;
+}
+
+/*弹出菜单*/
+.site-nav .sn-block .menu-hd {
+	position: relative;
+	padding-right: 20px;
+	cursor: pointer;
+}
+
+.site-nav .sn-block .menu-hover .menu-hd {
+	background-color: #fff;
+	border-right: 1px solid #e4e4e4;
+	border-left: 1px solid #e4e4e4;
+	z-index: 3;
+	color: #666;
+}
+
+.site-nav .sn-block .menu-hd:hover .arrow,.site-nav .menu-hover .menu-hd .arrow,.site-nav .sn-address .sn-sel-address:hover .arrow {
+	border-color: #ccc transparent transparent;
+	-webkit-transition: -webkit-transform .2s ease-in;
+	-moz-transition: -moz-transform .2s ease-in;
+	-o-transition: -o-transform .2s ease-in;
+	transition: transform .2s ease-in;
+	-moz-transform: rotate(180deg);
+	-moz-transform-origin: 50% 30%;
+	-webkit-transform: rotate(180deg);
+	-webkit-transform-origin: 50% 30%;
+	-o-transform: rotate(180deg);
+	-o-transform-origin: 50% 30%;
+	transform: rotate(180deg);
+	transform-origin: 50% 30%;
+}
+
+.site-nav .sn-block .menu-bd {
+	display: none;
+	background-color: #fff;
+	border: 1px solid #e4e4e4;
+	position: absolute;
+	z-index: 2;
+	top: 29px;
+	width: 100px;
+	overflow: hidden;
+	border-radius: 0 0 3px 3px;
+	padding: 5px 0;
+}
+
+.site-nav .sn-block .menu-bd {
+	right: 0;
+}
+
+.site-nav .sn-block .menu-bd a {
+	display: block;
+	height: 26px;
+	line-height: 26px;
+	color: #999;
+	padding: 0 10px;
+}
+
+.site-nav .sn-block .menu-bd a:hover {
+	color: #666;
+	text-decoration: none;
+}
+
+/*购物车 - 消息*/
+.site-nav .sn-block .sn-cart .sn-cart-count,.site-nav .sn-block .sn-msg .msg-count {
+	margin-left: 4px;
+	color: #F40;
+	font-weight: 700;
+}
+
+/*二维码*/
+.site-nav .sn-block .qr-codes .menu-hd {
+	padding-right: 10px;
+}
+
+.site-nav .sn-block .qr-codes .menu-bd {
+	width: 138px;
+	padding: 12px 0 12px;
+}
+
+.site-nav .sn-block .qr-codes .qr-codes-img {
+	width: 110px;
+	height: 110px;
+	margin: 0 auto;
+}
+
+.site-nav .sn-block .qr-codes .qr-codes-img img {
+	width: 110px;
+	height: 110px;
+}
+
+.site-nav .sn-block .qr-codes .qr-codes-txt {
+	color: #c60;
+	text-align: center;
+	height: 14px;
+	line-height: 14px;
+	padding: 5px 0 0 0;
+}

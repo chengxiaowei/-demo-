@@ -1,0 +1,95 @@
+@import url('../../../pub/css/common.css');
+@import url('../../../pub/css/btn.css'); 
+@import url('../../../pub/font/iconfont.css');
+@import url('../../../pub/css/dialog/ui-dialog.css');
+@import url('../../../pub/css/hd/site-nav.css');
+@import url('../../../pub/css/linkage-tab.css');
+@import url('../../../pub/css/hd/search.css');
+@import url('../../../pub/css/hd/nav.css');
+@import url('../../../pub/css/jquery.minSlide.css');
+@import url('../../../pub/css/ft/ft.css');
+@import url('../../../pub/css/min-bar/min-bar.css');
+@import url('../../../app/style.css'); 
+body{ 
+	background-color: #ff1471;	
+}
+.layout{
+	margin: 0 auto;
+	width: 990px;
+}
+.cnt-box{
+	margin-bottom: 150px;
+	padding-top: 138px;
+	min-width: 1000px;
+	background-repeat: no-repeat;
+	background-position: center top;
+	overflow: hidden;
+}
+.com-bd,#com1 .com-ft{
+	position: relative;
+	margin: 0 auto;
+	width: 1012px;
+}
+#com1 .com-bd{
+	padding-bottom: 10px;
+	margin-bottom: -16px;
+	background: url(img/bg-1.jpg) repeat-y;
+}
+#com1 .com-ft{
+	height: 18px;
+	background: url(img/bg-2.jpg) no-repeat;
+}
+.spec-mod ul,.com-mod ul{
+	position: relative;
+	left: 22px;
+}
+
+.spec-mod li{
+	margin: 0 3px 10px 0;
+}
+.com-mod li{
+	margin: 0 5px 10px 0;
+}
+.com-mod .com-hd{
+	margin: 20px auto;
+}
+.img-hd{
+	margin: 20px 0;
+}
+.img-bd{
+	margin: 0 auto;
+	padding: 10px 10px 0 0;
+	width: 992px;
+	background-color: #fff;
+	*padding-bottom: 10px;
+}
+.img-bd li,.img-bd li a,.img-bd li img{
+	display: block;
+	width: 320px;
+	height: 240px;
+}
+.img-bd li{
+	float: left;
+	margin: 0 0 10px 10px;
+}
+
+.goods-ad{
+	position: absolute;
+	left: 7px;
+	width: 200px;
+	height: 225px;
+}
+.goods-ad a, .goods-ad a img{
+	display: block;
+	width: 200px;
+	height: 255px;
+}
+.com-mod ul.goods-ml{
+	margin-left: 212px;
+	left:0;
+	*margin-bottom: 10px;
+}
+.com-mod ul{
+	left:16px;
+	*margin-bottom: 10px;
+}

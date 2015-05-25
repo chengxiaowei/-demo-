@@ -1,0 +1,71 @@
+@CHARSET "UTF-8";
+/*分页*/
+
+.pager {
+    text-align: right;
+    color: #666;
+}
+
+.pager a,
+.pager b,
+.pager span,
+.pager input {
+    display: inline-block;
+    text-align: center;
+    padding: 0 8px;
+    height: 24px;
+    line-height: 24px;
+    border: 1px solid #ddd;
+    border-radius: 2px;
+    color: #666;
+    font-family: tahoma, SimSun;
+    margin-left: 2px;
+    *vertical-align: middle;
+}
+
+.pager input[type=text] {
+    width: 25px;
+}
+
+.pager b,
+.pager span {
+    border: 1px solid #fff;
+}
+
+.pager b {
+    color: #f00;
+}
+
+.pager a:hover {
+    color: #f00;
+}
+
+.pager input {
+    height: 12px;
+    line-height: 12px;
+    padding: 6px 0;
+    width: 40px;
+    margin: 0 5px;
+}
+
+.pager em {
+    margin: 0 10px;
+}
+
+.pager .pg-btn {
+    color: #333;
+    background-color: #f2f2f2;
+}
+
+.pager .pg-btn:hover {
+    background-color: #fff;
+    color: #333;
+}
+
+.min-pager .pager span,
+.min-pager .pager .pg-btn,
+.min-pager .pager em,
+.min-pager .pager .pager-item,
+.min-pager .pager b {
+    display: none;
+}

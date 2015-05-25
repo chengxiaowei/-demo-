@@ -1,0 +1,128 @@
+/* common */
+@charset "utf-8";
+@import "../common";
+@import "../common/button/button";
+
+/* 为空样式 */
+html{
+	background-color: #f2f2f2;
+}
+.empty{
+	padding: rem(100) rem(60);
+	text-align: center;
+	background-color: #f2f2f2;
+	height: 100%;
+	.error{
+		position: relative;
+		width: rem(450);
+		margin: 0 auto;
+		padding-top: rem(10);
+		.error-img{
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: rem(160);
+			height: rem(160);
+			/*animation: 9.5s linear 0s normal none infinite rotate;
+			-webkit-animation:9.5s linear 0s normal none infinite rotate;*/
+			/*animation: mymove 5s infinite;
+-webkit-animation: mymove 5s infinite;*/
+			.error-img-bj{
+				position: absolute;
+				left: 0;
+				top: 0;
+				z-index: 1;
+				width: rem(160);
+				height: rem(160);
+				background-size: 100%;
+				background-repeat: no-repeat;
+				background-image: url(//s1.bbgstatic.com/gshop/images/404/404-bj.png);
+				/*animation: 9.5s linear 0s normal none infinite rotate;
+				-webkit-animation:9.5s linear 0s normal none infinite rotate;*/
+				-webkit-animation-name: rotate;
+				-webkit-animation-duration: 10s;
+				-webkit-animation-iteration-count: infinite;
+				-webkit-animation-timing-function: linear;
+			}
+			.error-monkey{
+				position: absolute;
+				left: 0;
+				top: 0;
+				z-index: 2;
+				width: rem(160);
+				height: rem(160);
+				background-size: 100%;
+				background-repeat: no-repeat;
+				background-image: url(//s1.bbgstatic.com/gshop/images/404/monkey.png);
+			}
+			.error-tear{
+				position: absolute;
+				left: rem(56);
+				top: rem(74);
+				z-index: 3;
+				width: rem(68);
+				height: rem(58);
+				background-size: 100%;
+				background-repeat: no-repeat;
+				background-image: url(//s1.bbgstatic.com/gshop/images/404/tear.png);
+				animation: mymove 3s infinite;
+				-webkit-animation: mymove 3s infinite;
+			}
+		}
+		.error-txt{
+			margin-left: rem(180);
+			text-align: left;
+			.ico{
+				font-size: rem(68);
+				line-height: rem(68);
+				color: #f16320;
+			}
+			.msg{
+				margin-top: rem(20);
+				font-size: rem(24);
+				line-height: rem(30);
+				color: #666;
+			}
+		}
+	}
+	.mod-btn{
+		margin-top: rem(78);
+		a{
+			display: inline-block;
+			width: rem(138);
+			height: rem(58);
+			text-align: center;
+			line-height: rem(58);
+			font-size: rem(24);
+			border-radius: 3px;
+			&:first-child{
+				margin-right:rem(50);
+			}
+		}
+		a.ui-button-white{
+			border: 1px solid #ccc;
+		}
+	}
+}
+
+@keyframes mymove
+{
+	from {height:0px;}
+	to {height:rem(58);}
+}
+
+@-webkit-keyframes mymove 
+{
+	from {height:0px;}
+	to {height:rem(58);}
+}
+
+
+@-webkit-keyframes rotate{
+	from{-webkit-transform:rotate(0deg)}
+	to{-webkit-transform:rotate(360deg)}
+}
+@keyframes rotate{
+	from{transform:rotate(0deg)}
+	to{transform:rotate(360deg)}
+}

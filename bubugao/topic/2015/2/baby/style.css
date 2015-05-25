@@ -1,0 +1,126 @@
+@import url('../../../pub/css/common.css');
+@import url('../../../pub/css/btn.css'); 
+@import url('../../../pub/font/iconfont.css');
+@import url('../../../pub/css/dialog/ui-dialog.css');
+@import url('../../../pub/css/hd/site-nav.css');
+@import url('../../../pub/css/linkage-tab.css');
+@import url('../../../pub/css/hd/search.css');
+@import url('../../../pub/css/hd/nav.css');
+@import url('../../../pub/css/jquery.minSlide.css');
+@import url('../../../pub/css/ft/ft.css');
+@import url('../../../pub/css/min-bar/min-bar.css');
+@import url('../../../app/style.css');  
+body{
+	background:#de281a url(img/bg.png) repeat;
+}
+.layout{
+	margin: 0 auto;
+	width: 990px;
+}
+.cnt-box{
+	position: relative;
+	margin-top: -20px;
+	z-index: 3;
+}
+.spec-mod,.com-mod{
+	margin: 0 auto 40px;
+	width: 990px;
+	border-radius: 3px;
+}
+.com-hd{ 
+	color: #fff;
+	margin-bottom: 5px;
+	font-size: 38px;
+	line-height: 90px;
+	font-family: 'Microsoft Yahei';
+	height: 90px;
+	text-align: center; 
+	text-indent: -9999px;  
+} 
+.com-hd h2{
+	font-weight: 400;
+}
+.com-bd{
+	position: relative;
+	padding-top: 20px;
+	padding-bottom: 15px;
+	margin: 0 auto;
+	background: #d80127;
+}
+.com-bd ul{
+	position: relative;
+	left: 10px;
+	*margin-bottom: 10px;
+}
+ 
+.com-bd li{
+	margin: 0 3px 10px 0;
+}
+.img-list ul{
+	*width: 977px;
+}
+.img-list-big{
+	padding: 0;
+	background: none;
+}
+.img-list-bigbox .com-hd{
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+.img-list-big ul{
+	width: 820px;
+	margin: 0 auto;
+}
+.spec-mod .img-list-big li,.spec-mod .img-list-big a,.spec-mod .img-list-big img{
+	display: block;
+	margin: 0 10px;
+	width: 375px;
+	height: 545px;
+}
+.spec-mod .img-list-big li{
+	float: left;
+}
+.img-list li,.img-list a,.img-list img{
+	display: block;
+	width: auto;
+	height: auto;
+}
+.img-list li.sm{
+	margin-right: 3px;
+}
+
+.spec-mod  .img-list-mod li,.spec-mod  .img-list-mod a,.spec-mod .img-list-mod img{
+	display: block;
+	width: 240px;
+	height: 310px;
+}
+
+/*nav*/ 
+.right-nav{
+	position:fixed; 
+	padding-top: 140px;
+	width: 140px;
+	height: auto;
+	overflow:hidden; 
+	z-index:100; 
+	left:55%; 
+	margin-left:430px;
+	margin-bottom: 40px;
+	bottom:25px;
+	background:url(img/nav-tp.png) no-repeat; 
+	
+}	
+.right-nav a{  
+	height: 40px; 
+	font: 400 18px/40px 'Microsoft Yahei';
+	color:#ff9cac;
+	text-align: center;
+	background:url(img/nav-bg.png) no-repeat; 
+} 
+.right-nav .go-top{ 
+	height: 134px;
+	line-height: 134px;
+	border:none;
+	text-indent: -999999px; 
+	background:url(img/nav-ft.png) no-repeat; 
+}

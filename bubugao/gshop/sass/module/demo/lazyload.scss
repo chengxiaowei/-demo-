@@ -1,0 +1,35 @@
+/* common */
+@import "../../common";
+@import "../../common/button/button";
+@import "../../common/slider/slider";
+
+@import "./source/common";
+
+.mod-demo-lazyload {
+  @extend .mod-demo;
+  .bd {
+    padding: .2rem;
+    .container img {
+      margin-bottom: 10px;
+    }
+    .pl {
+      width: auto;
+      height: 200px;
+      color: #666;
+      overflow: hidden;
+      border: 1px solid #ccc;
+      margin: 5px 0;
+      padding: 0 6px;
+      font-size: .4rem;
+      line-height: 0.8rem;
+      @include border-radius(6px);
+      @include box-shadow(0px 0px 6px #ededed);
+      .loading {
+        color: #ccc;
+        font-size: .3rem;
+      }
+    }
+  }
+}
+
+//  vim: set fdm=manual ts=2 sw=2 sts=2 tw=0 et :

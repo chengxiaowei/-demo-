@@ -1,0 +1,92 @@
+@import url('../../../pub/css/common.css');
+@import url('../../../pub/css/btn.css'); 
+@import url('../../../pub/font/iconfont.css');
+@import url('../../../pub/css/dialog/ui-dialog.css');
+@import url('../../../pub/css/hd/site-nav.css');
+@import url('../../../pub/css/linkage-tab.css');
+@import url('../../../pub/css/hd/search.css');
+@import url('../../../pub/css/hd/nav.css');
+@import url('../../../pub/css/jquery.minSlide.css');
+@import url('../../../pub/css/ft/ft.css');
+@import url('../../../pub/css/min-bar/min-bar.css');
+@import url('../../../app/style.css'); 
+body{
+	min-width: 1270px;
+    background-color:#6fb2f1;
+}
+.bn{
+	height: 421px;
+}
+.bn,.layout{
+	background-position:center top; 
+	
+}
+
+.layout{
+	margin: 0 auto;
+	width: 990px;
+	background-repeat: no-repeat;
+}
+ 
+.wrapper{
+	position: relative;    
+	margin-top:0; 
+	padding-top:0; 
+	margin-bottom:0; 
+	padding-bottom: 0;
+}	
+.wrapper h2{
+	border:none; 
+	box-shadow: none;
+	height: 55px;
+	line-height: 55px;
+	color: #fff;
+	font-family: 'Microsoft Yahei';
+}	 
+
+.wrap-cnt{ 
+	position: relative; 
+	z-index: 2; 
+	padding-bottom: 0; 
+}
+.com-mod{
+	background-position:center top; 
+}
+.com-hd{
+	position: relative; 
+	left:0; 
+	margin:0 auto;  
+	width: 990px; 
+	height: 96px; 
+	overflow: hidden;
+}
+.com-hd a.more{
+	position: absolute;
+	top: 33px;
+	right: 107px;
+	width: 50px;
+	height: 50px;
+}
+.com-bd{
+	position: relative; 
+	width:990px; 
+	left: 0px;
+	margin: 25px  auto 0; 
+	overflow: hidden;  
+}	
+.com-bd ul{
+	margin:0 auto;
+	width: 1000px; 
+	padding:10px 0px 0px 8px; 
+	*padding-bottom: 10px;
+}
+ 
+.com-bd li{
+	box-shadow: none;  
+	margin:0px 6px 10px 0; 
+	*margin-right: 3px;
+} 	
+.help{
+	margin-top:0;
+}
+ 

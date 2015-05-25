@@ -1,0 +1,130 @@
+@import url('../../../pub/css/common.css');
+@import url('../../../pub/css/btn.css'); 
+@import url('../../../pub/font/iconfont.css');
+@import url('../../../pub/css/dialog/ui-dialog.css');
+@import url('../../../pub/css/hd/site-nav.css');
+@import url('../../../pub/css/linkage-tab.css');
+@import url('../../../pub/css/hd/search.css');
+@import url('../../../pub/css/hd/nav.css');
+@import url('../../../pub/css/jquery.minSlide.css');
+@import url('../../../pub/css/ft/ft.css');
+@import url('../../../pub/css/min-bar/min-bar.css');
+@import url('../../../app/style.css'); 
+.search,.top-nav,.min-bar{
+	display: none;
+}
+body{
+	padding-bottom: 100px;
+	background-color: #f2f2f2;	
+}
+
+.customer-mod{
+	margin: 0 auto;
+	width: 990px;
+	font: 400 14px/20px 'Simsun';
+	color: #666;
+}
+.customer-hd{
+	margin: 25px 0;
+	font:400 22px/24px 'Microsoft YaHei';
+	color: #4e494a;
+}
+.customer-hd h1{
+	font-weight: 400;
+}
+.customer-bd{
+	padding:35px 25px 50px;
+	border: 1px solid #e4e4e4;
+	background-color: #fff;
+}
+.customer-bd .customer-bd-title{
+	padding-bottom:10px;
+	display: block;
+	height: 48px;
+	border-bottom: 1px dashed #e4e4e4;
+	text-indent: 2em;
+}
+.customer-bd-cont{
+	margin-top: 40px;
+}
+.customer-bd-cont input{
+	display: inline-block;
+	margin-right: 10px;
+}
+.customer-box{
+	position: relative;
+	margin-bottom: 60px;
+}
+.customer-box p{
+	margin-bottom: 15px;
+}
+.customer-box label{
+	display: inline-block;
+	width: 100px;
+	text-align: right;
+}
+.customer-box input.txt{
+	width: 250px;
+	height: 40px;
+	line-height: 40px;
+	vertical-align: middle;
+}
+.customer-box .txt-area{
+	width: 520px;
+	height: 150px;
+	border:1px solid #e4e4e4;
+}
+.customer-box .mt20{
+	margin-bottom: 20px;
+}
+.customer-app{
+	margin-bottom: 90px;
+}
+.customer-app-box{
+	display: none;
+	position: absolute;
+	top: -35px;
+	left: 325px;
+	padding: 80px 24px 75px 178px;
+	width: 150px;
+	height: 64px;
+	font:400 16px/32px 'Microsoft YaHei';
+	color: #4e4e4e;
+	background: url(img/yh.jpg) no-repeat;
+}
+.customer-app-box .jClose{
+	position: absolute;
+	display: block;
+	top: 32px;
+	right: 52px;
+	width: 30px;
+	height: 30px;
+}
+.customer-bd-ths{
+	margin: 300px auto;
+	width: 420px;
+}
+.sub-btn{
+	position: relative;
+	left: 50%;
+	margin-left: -120px;
+	width: 200px;
+}
+.customer-bd-ths dt,.customer-bd-ths dd{
+	display: inline-block;
+	vertical-align: middle;
+	font-family: 'Microsoft YaHei';
+	color: #313131;
+	font-size: 14px;
+	line-height: 24px;
+}
+
+.customer-bd-ths dt{
+	font-size: 60px;
+	color: #f00;
+}
+.customer-bd-ths dd strong{
+	font-size: 20px;
+	line-height: 30px;
+	font-weight: 400;
+}

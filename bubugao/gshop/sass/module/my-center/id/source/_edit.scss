@@ -1,0 +1,156 @@
+.mod-id-edit{
+    color:#666;
+    margin: rem(20) rem(20) 0;
+    .bd{
+        background: #fff;
+        padding: rem(20);
+        font-size: rem(28);
+        border-radius:0.1rem;
+        .form-item{
+            font-size: rem(24);
+            border-top:1px solid #ccc;
+            line-height: rem(88);
+            display: block;
+            clear:both;
+            &.no-border{
+                border:0;
+            }
+            label{
+                display: inline-block;
+                line-height: rem(88);
+                width:rem(132);
+            }
+            input{
+                display: inline-block;
+                width:rem(360);
+                line-height:rem(60);
+                height:rem(60);
+                padding-left:rem(4);
+            }
+        }
+        .id-img{
+            display: block;
+            margin-bottom: rem(20);
+            &.edit{
+                .ui-button{
+                    display: none;
+                }
+                .upload-div{
+                    display: inline-block;
+                }
+            }
+            label{
+                float: left;
+                line-height: rem(216);
+                width: rem(132);
+                text-align: center;
+            }
+            .ui-button{
+                float: left;
+                border:rem(2) solid #ddd;
+                height:5.4rem;
+                width: rem(350);
+                position: relative;
+                border-radius:rem(8);
+                line-height: rem(216);
+                text-align: center;
+                background:#fff;
+                color:#666;
+                &.ui-button-upload.file-uploaded{
+                    .upload-file-ctl{
+                        display: none;
+                    }
+                }
+            }
+            .upload-div{
+                display:none;
+                float: left;
+                border:rem(2) solid #ddd;
+                height:rem(216);
+                width: rem(350);
+                position: relative;
+                border-radius:rem(8);
+                 .icon-delete {
+                    background: url("//s1.bbgstatic.com/lib/plugins/uploadify/3.2.1/uploadify-cancel.png") no-repeat scroll center center rgba(0, 0, 0, 0);
+                    background-size:cover;
+                    display: inline-block;
+                    height: rem(32);
+                    position: absolute;
+                    right: 5px;
+                    top: 5px;
+                    width: rem(32);
+                }
+                b, strong {
+                    font-weight: bold;
+                }
+                &.no-img{
+                    .close-img{
+                        display: none;
+                    }
+                    img{
+                        display: none;
+                    }
+                }
+                img{
+                    width: 100%;
+                    height:100%;
+                    top:0;
+                    left:0;
+                    position:absolute;
+                }
+                .ui-button{
+                    position: absolute;
+                    top:50%;
+                    left:50%;
+                    margin: rem(-24) 0 0 rem(-72);
+                }
+                .close-img{
+                    position:absolute;
+                    right: rem(10);
+                    top:rem(10);
+                    height: rem(40);
+                    width: rem(40);
+                    border-radius:50%;
+                    background:#666;
+                    line-height: rem(40);
+                    text-align: center;
+                    cursor: pointer;
+                    .iconfont{
+                        font-size: rem(40);
+                        color:#fff;
+                        cursor: pointer;
+                    }
+                }
+            }
+
+        }
+        .form-ps{
+            border-top:1px solid #ccc;
+            line-height: rem(80);
+            color:#DC0100;
+            font-size: rem(18);
+            text-align: center;
+        }
+    }
+    .ft{
+        padding: rem(40) rem(20);
+        border-top:1px solid #ccc;
+        line-height: rem(80);
+        .ui-button{
+            height: auto;
+            line-height: rem(80);
+            font-size: rem(36);
+            background: #f16320;
+            border: 0;
+        }
+    }
+}
+.ui-button-upload .icon-delete{
+    background-size:cover;
+    height: auto;
+    line-height: rem(32);
+    position: absolute;
+    right: rem(4);
+    top: rem(4);
+    width: rem(32);
+}

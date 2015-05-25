@@ -1,0 +1,149 @@
+@import url('../../../pub/css/common.css');
+@import url('../../../pub/css/btn.css'); 
+@import url('../../../pub/font/iconfont.css');
+@import url('../../../pub/css/dialog/ui-dialog.css');
+@import url('../../../pub/css/hd/site-nav.css');
+@import url('../../../pub/css/linkage-tab.css');
+@import url('../../../pub/css/hd/search.css');
+@import url('../../../pub/css/hd/nav.css');
+@import url('../../../pub/css/jquery.minSlide.css');
+@import url('../../../pub/css/ft/ft.css');
+@import url('../../../pub/css/min-bar/min-bar.css');
+@import url('../../../app/style.css'); 
+body{
+	background:#ffa00d;
+}
+.bn {
+	width: 100%; 
+	height: 620px; 
+	overflow:hidden; 
+	background-position:center top; 
+	min-width: 1088px;
+}	
+.wrapper{
+	position: relative; 
+	left: -1px; 
+	min-width: 1088px; 
+	padding-bottom:0; 
+	margin-top:0; 
+	padding-top:0; 
+	margin-bottom: 60px; 
+	background: url(img/bg.png) repeat;
+}	
+.wrapper h2{
+	border:none; 
+	box-shadow: none;
+}	
+.spec-mod{
+	position: relative; 
+	width: 1100px; 
+	margin: 0 auto 10px;
+}	
+.com-hd{
+	position: relative; 
+	left:0; 
+	margin:0 auto; 
+	width: 1050px; 
+	height:70px; 
+	background: url(img/com-hd.png?123) no-repeat; 
+	overflow: hidden;
+}	
+#com1 .com-hd{
+	height:60px;
+}	
+#com2 .com-hd{
+	background-position: 0 -60px;
+}	
+#com3 .com-hd{
+	background-position: 0 -130px;
+}	
+#com4 .com-hd{
+	background-position: 0 -200px;
+}
+.wrap-cnt{
+	margin-top:0; 
+	position: relative; 
+	z-index: 2; 
+	min-height:1240px;
+}	
+.com-bd{
+	width:1050px; 
+	padding-top:10px; 
+	margin: 0 auto; 
+	overflow: hidden; 
+	background: #ff1a39;
+}	
+.com-mod li{
+	box-shadow: none; 
+	
+	margin:10px 8px 0 0; 
+	-margin-right: 6px;
+}	
+.com-mod li{
+	width:188px;
+}	
+.com-box{
+	height: 50px;
+}	
+.com-mod .com-txt{
+	width:126px;
+}	
+.com-bd ul{
+	margin:0 auto 10px; 
+	width: 1000px; 
+	*width: 1010px; 
+	padding:10px 0px 10px 10px; 
+	background: #9c0016;
+}	
+.hid{
+	display:block; 
+	text-indent:-9999em; 
+	overflow:hidden;
+}	
+.com-ft{
+	margin: 0 auto; 
+	width:1050px; 
+	height: 25px; 
+	background: url(img/com-ft.png) no-repeat;
+}	
+.right-nav{
+	position:fixed; 
+	-position:absolute; 
+	width: 149px;height: 381px;padding-top: 72px; 
+	overflow:hidden; 
+	z-index:100; 
+	left:55%; 
+	margin-left:450px; 
+	margin-bottom: 40px; 
+	bottom:25px; 
+	background:url(img/nav.png) no-repeat;
+}	
+.right-nav a{
+	margin-bottom: 25px; 
+	height: 56px; 
+	font: 400 18px/56px 'Microsoft Yahei';
+}	
+.right-nav .go-top{
+	background:none; 
+	border:none; 
+	height: 51px; 
+	line-height: 40px; 
+	text-indent:-9999em;
+}	
+.help{
+	margin-top:0;
+}	
+
+.allLayout{
+	margin: 10px auto 0;
+	width: 1050px;
+	height: 116px;
+	background:url(img/oil.gif);
+}
+.jYouhuiquan{
+	display: block;
+	width: 100%;
+	height: 100%;
+	text-indent: -9999px;
+	overflow: hidden;
+}

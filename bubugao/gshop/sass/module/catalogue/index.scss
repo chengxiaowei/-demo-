@@ -1,0 +1,49 @@
+/* common */
+@charset "utf-8";
+@import "../../common";
+@import "../../common/dialog/dialog";
+@import "../../common/menu/_menu";
+@import "../../common/search/_search";
+
+
+html {
+    height: 100%;
+}
+body {
+    min-height: 100%;
+    background-color: #f2f2f2;
+}
+
+.ui-showcase {
+    overflow: hidden;
+    margin-top: .4rem;
+    padding-right: .3rem;
+    padding-bottom: .5rem;
+    width: 96.875%;
+    height: auto;
+
+    li {
+        float: left;
+        margin-top: 3.2%;
+        margin-left: 3.3%;
+        width: 46.7%;
+        background-color: #fff;
+        box-shadow: 4px 4px 8px #CCC;
+
+        .thumbnail {
+            margin-right: auto;
+            margin-left: auto;
+            width: 7.25rem;
+            height: 8rem;
+        }
+        a {
+            display: block;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+            vertical-align: middle;
+        }
+    }
+}

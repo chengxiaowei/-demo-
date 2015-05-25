@@ -1,0 +1,91 @@
+@import url('../../../pub/css/common.css');
+@import url('../../../pub/css/btn.css'); 
+@import url('../../../pub/font/iconfont.css');
+@import url('../../../pub/css/dialog/ui-dialog.css');
+@import url('../../../pub/css/hd/site-nav.css');
+@import url('../../../pub/css/linkage-tab.css');
+@import url('../../../pub/css/hd/search.css');
+@import url('../../../pub/css/hd/nav.css');
+@import url('../../../pub/css/jquery.minSlide.css');
+@import url('../../../pub/css/ft/ft.css');
+@import url('../../../pub/css/min-bar/min-bar.css');
+@import url('../../../app/style.css'); 
+body{
+	background-color: #f8c85a;
+}
+.com-mod{
+	margin: 40px auto 0;
+	width: 990px;
+}
+.com-hd{
+	margin-bottom:20px;
+	height: 70px;
+	background-color: #f17e35;
+}
+.com-hd a{
+	position: relative;
+	float: left;
+	display: block;
+	margin: 10px 0;
+	color: #f8c85a;
+	width: 164px;
+	height: 50px;
+	font: 400 32px/50px 'Microsoft YaHei';
+	border-right: 1px dashed #f8c85a;
+	text-align: center;
+	text-decoration: none;
+}
+.com-hd a.last{
+	border-right: none;
+}
+.com-hd .sp-ico{
+	position: absolute;
+	display: none;
+	bottom: -30px;
+	left: 50%;
+	margin-left: -5px;
+	font-size: 0;
+	line-height: 0;
+	border-style: solid;
+	border-width: 10px;
+	border-color: #f17e35 transparent transparent transparent;
+}
+.com-hd a.active .sp-ico{
+	display: block;
+}
+.com-hd a.active{
+	color: #fff;
+}
+.com-bd li{
+	*margin: 0 8px 10px 0;
+}
+/*nav*/ 
+.right-nav{
+	position:fixed; 
+	-position:absolute;
+	padding-top: 86px;
+	width: 100px;
+	height: auto;
+	overflow:hidden; 
+	z-index:100; 
+	left:55%; 
+	margin-left:450px;
+	margin-bottom: 40px;
+	bottom:25px;  
+}	
+.right-nav a{
+	margin-bottom: 5px;
+	height: 30px; 
+	font: 400 14px/30px 'Microsoft Yahei';
+	color:#fff;
+	text-align: center;
+	background-color: #ff9933;
+	 
+} 
+.right-nav .go-top{ 
+	border:none;  
+	height: 35px;
+	line-height: 30px; 
+	background:none;
+	background-color: #ff9933;
+}	

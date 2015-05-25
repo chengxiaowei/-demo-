@@ -1,0 +1,54 @@
+/**
+* @des 店铺头部信息 - 弹窗的店铺信息
+* @author jiangchaoyi update 2014.7.27		
+*/
+/*店铺信息*/
+.dialog-shop-info {
+	width: 250px;
+	position: relative;
+	font-size: 12px;
+	font-family: 'SimSun';
+	color: #999;
+	padding: 10px;
+}
+
+.dialog-shop-info .shop-img {
+	position: absolute;
+	width: 80px;
+	height: 80px;
+	text-align: center;
+	border: 1px solid #e4e4e4;
+	left: 10px;
+	top: 10px;
+	overflow: hidden;
+}
+
+.dialog-shop-info .shop-img img {
+	height: 80px;
+}
+
+.dialog-shop-info .shop-left-cnt {
+	margin: 0 0 0 100px;
+	width: 150px;
+	overflow: hidden;
+}
+
+.dialog-shop-info .shop-name {
+	height: 16px;
+	width: 150px;
+	color: #666;
+}
+
+.dialog-shop-info .shop-grade-list li {
+	height: 18px;
+	line-height: 18px;
+}
+
+.dialog-shop-info .shop-op {
+	height: 24px;
+	padding: 5px 0 0 0;
+}
+
+.dialog-shop-info .shop-op .btn{
+	padding: 0 8px;
+}

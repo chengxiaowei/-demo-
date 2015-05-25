@@ -1,0 +1,275 @@
+﻿$icoColor : #70aff4, #f8596f, #f16320, #f86196;
+//自营色彩标示
+@mixin icoBox(){
+    @for $i from 1 through length($icoColor) {
+        $item : nth($icoColor,$i);
+         .ico-clr-#{$i} {
+            background: $item;
+        }
+    }
+}
+//列表
+.mod-list {
+    margin-top: rem(20);
+    margin-bottom: rem(20);
+    .hd {
+        background: #f7f7f7;
+        border-top: 1px solid #cccccc;
+        border-bottom: 1px solid #cccccc;
+        .inner {
+            margin: rem(20);
+            .h1 {
+                font-size: rem(30);
+                color: #666;
+            }
+            .smart-monkey {
+                font-family: '宋体';
+                border-radius: rem(10);
+                background: #2CBAC0;
+                color: #fff;
+                padding: rem(2) rem(6);
+                font-size: rem(26);
+                vertical-align: middle;
+                display: inline-block;
+                max-width: rem(200);
+            }
+        }
+    }
+    .bd {
+        background: #fff;
+        .inner {
+            border-left: 1px solid #ccc;
+            border-right: 1px solid #ccc;
+            margin-bottom: rem(20);
+            .box {
+                .shop-icon {
+                    text-align: center;
+                    color: #323232;
+                    border-left: 1px solid #d7d7d7;
+                    width: rem(134);
+                }
+                .info-th {
+                    color: #999999;
+                    .total-price {
+                        color: #676767;
+                    }
+                }
+                .market-tips {
+                    font-size: rem(24);
+                    color: red;
+                    padding: 0px rem(10);
+                }
+                th {
+                    font-weight: normal;
+                    font-size: rem(30);
+                    vertical-align: middle;
+                    padding: rem(16) 0px rem(16) rem(0);
+                    /* background: #F1F3F5; */
+                    padding: rem(14) 0px; 
+                    text-align: left;
+                    border-top:1px solid #cccccc;
+                    border-bottom:1px solid #cccccc; 
+                    .tit {
+                        padding-left: rem(16);
+                        .h1 {
+                            display: inline-block;
+                            vertical-align: middle;
+                            // max-width: rem(340);
+                        }
+                        a {
+                            color: #666;
+                        }
+                        .smart-monkey {
+                            font-family: '宋体';
+                            border-radius: rem(10);
+                            background: #2CBAC0;
+                            color: #fff;
+                            padding: rem(2) rem(6);
+                            font-size: rem(26);
+                            vertical-align: middle;
+                            display: inline-block;
+                            max-width: rem(200);
+                        }
+                    }
+                    .tips {
+                        font-size: rem(24);
+                        color: #da0000;
+                        padding-left: rem(16);
+                        padding-top: rem(10);
+                        .icon {
+                            font-size: rem(26);
+                        }
+                    }
+                    .tips-cnt {
+                        padding-left: rem(16);
+                        font-size: rem(22);
+                    }
+                }
+                th.chk,td.chk {
+                    width: rem(74);
+                    text-align: center;
+                    padding: 0px;
+                }
+                td.chk {
+                    .icon {
+                        width: rem(34);
+                        height: rem(34);
+                        line-height: rem(34);
+                        font-size: rem(34);
+                        color: #D84550;
+                    }
+                }
+                td {
+                    vertical-align: middle;
+                    font-size: rem(26);
+                    line-height: rem(30);
+                    padding: rem(22);
+                    padding-left: 0px;
+                    border-bottom: 1px solid #CCCDCC;
+                    .detail {
+                        position: relative;
+                        .box {
+                            li {
+                                line-height: rem(32);
+                                position: relative;
+                                .img {
+                                    width :rem(132);
+                                    height :rem(132);
+                                    padding-top: rem(4);
+                                    border: 1px solid #CCCDCC;
+                                    text-align: center;
+                                    position: absolute;
+                                    top: 0px;
+                                    left: rem(20);
+                                    .pro-img {
+                                        width :rem(126);
+                                        height :rem(126);
+                                        vertical-align: middle;
+                                        display: inline-block;
+                                        img {
+                                            width :rem(126);
+                                            height :rem(126);
+                                            display: block; 
+                                        }
+                                    }
+                                }
+                                .info {
+                                    margin-top: rem(-4);
+                                    height: rem(100);
+                                    .des {//描述
+                                        display: block;
+                                        float: left;
+                                        width: rem(230);
+                                        .product-flag {
+                                            background: #f16320;
+                                            color: white;
+                                            padding: 0px rem(2);
+                                            display: inline-block;
+                                            height: rem(30);
+                                            line-height: rem(30);
+                                        }
+                                        .flag-gray {
+                                            background: #999;
+                                            color: #fff;
+                                        }
+                                        a {
+                                            color: #333;
+                                        }
+                                    }
+                                    .pri {
+                                        float: right;
+                                        display: block;
+                                        @extend .ui-pri;
+                                    }
+                                }
+                                .pro {//属性
+                                    font-size: rem(26);
+                                    color: #999999;
+                                    .pri {//价格
+                                        display: block;
+                                        float: left;
+                                        width: rem(270);
+                                        i {
+                                            font-size: rem(22);
+                                        }
+                                    }
+                                    .prefer {
+                                        display: inline-block;
+                                        float: left;
+                                        color: #ee641e;
+                                        font-size: rem(24);
+                                        margin-left: rem(22);
+                                    }
+                                    .quty {
+                                        display: inline-block;
+                                        float: right;
+                                    }
+                                    .spec {
+                                        font-size: rem(22);
+                                    }
+                                }
+                            }
+                            .tit {//内容
+                                min-height :rem(128);
+                                padding-left: rem(174);
+                            }
+                            .item-opr {//操作
+                                line-height: auto;
+                                .opr-l{
+                                    float: left;
+                                    margin-left: rem(22);
+                                    .ui-button {
+                                        height: rem(60);
+                                        line-height: rem(60);
+                                        width: auto;
+                                        background: transparent;
+                                        color: #949494;
+                                        border: 1px solid #ccc;
+                                        box-shadow : none;
+                                        padding: 0px rem(30);
+                                        color: #666666;
+                                    }
+                                    .icon {
+                                        font-size: rem(62);
+                                        width: rem(62);
+                                        height: rem(62);
+                                        line-height: rem(62);
+                                        color: #FF6260;
+                                    }
+                                }
+                                .opr-r {
+                                    float: right;
+                                }
+                            }
+                        }
+                    }
+                }
+                .info-box {
+                    padding: 0px!important;
+                    margin-bottom: 0px;
+                    .mod-invoice,.mod-coupon {
+                        margin-bottom: 0px!important;
+                        .hd {
+                            border: 0px;
+                            border-radius: 0px;
+                            background: #F6F7F6;
+                            border-bottom: 1px solid #CCCDCC;
+                        }
+                        .bd {
+                            border: 0px;
+                            margin-bottom: 0px!important;
+                            .cnt {
+                                border: 0px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .pre-info {
+            display: inline-block;
+            vertical-align: middle;
+            width: rem(560);
+        }
+    }
+}

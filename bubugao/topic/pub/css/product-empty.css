@@ -1,0 +1,47 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    font-size: 12px;
+    /*min-width : 970px;*/
+    /*direction: rtl;*/
+}
+
+ul,
+li,
+p,
+div {
+    margin: 0px;
+    padding: 0px;
+}
+/* product empty */
+
+.product-empty {
+    width: 900px;
+    margin: 100px auto;
+    text-align: center;
+    height: 213px;
+}
+
+.product-empty .main-content {
+    font-weight: bold;
+    font-family: "microsoft yahei";
+    font-size: 22px;
+    padding: 20px 0px 50px 0px;
+}
+
+.product-empty .btm-txt {
+    font-family: "microsoft yahei";
+}
+
+.product-empty .btm-txt span {
+    color: red;
+}
+
+.product-empty .btm-txt a {
+    font-family: "microsoft yahei";
+    color: blue;
+}
+
+.product-empty .btm-txt a:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,115 @@
+@import url('../../../pub/css/common.css');
+@import url('../../../pub/css/btn.css'); 
+@import url('../../../pub/font/iconfont.css');
+@import url('../../../pub/css/dialog/ui-dialog.css');
+@import url('../../../pub/css/hd/site-nav.css');
+@import url('../../../pub/css/linkage-tab.css');
+@import url('../../../pub/css/hd/search.css');
+@import url('../../../pub/css/hd/nav.css');
+@import url('../../../pub/css/jquery.minSlide.css');
+@import url('../../../pub/css/ft/ft.css');
+@import url('../../../pub/css/min-bar/min-bar.css');
+@import url('../../../app/style.css'); 
+body{
+	background:#95100f;
+}
+.bn {
+	width: 100%; 
+	height: 506px; 
+	overflow:hidden; 
+	
+} 
+.bn,.allYaout{
+	background-position:center top; 
+	min-width: 1100px;
+}
+ 
+.layout{
+	margin: 0 auto;
+	width: 990px;
+}
+.bn .layout .hid {
+	width: 115px;
+	height: 30px;
+	right: 274px;
+	bottom: 34px;
+}
+.wrapper{
+	position: relative; 
+	left: -7px; 
+	min-width: 1100px;  
+	margin-top:0; 
+	padding-top:0; 
+	margin-bottom:0; 
+	padding-bottom: 0;
+}	
+.wrapper h2{
+	border:none; 
+	box-shadow: none;
+	height: 55px;
+	line-height: 55px;
+	color: #fff;
+	font-family: 'Microsoft Yahei';
+}	 
+
+.wrap-cnt{ 
+	position: relative; 
+	z-index: 2; 
+	padding-bottom: 40px; 
+}
+.spec-mod{
+	margin-bottom: 10px; 
+}
+.com-hd{ 
+	margin:0 auto;  
+	padding-left: 50px;
+	width: 1050px; 
+	height: 130px; 
+	overflow: hidden;
+}
+.com-hd a{
+	*float: left;
+	display: inline-block;
+	width: 121px;
+	height: 125px;
+}
+.com-bd{
+	position: relative;
+	margin: 0 auto;
+	width:1100px;  
+	overflow: hidden; 
+	background: url(img/bg.jpg) repeat; 
+}
+.com-ft{
+	margin:0 auto;
+	width: 1100px;
+	height: 68px;
+	background-repeat: no-repeat;
+}
+.com-bd ul{
+	margin: 0 auto; 
+	*margin-bottom: 10px;
+	width: 1000px;  
+	padding:10px 0px 0px 26px; 
+}
+.com-bd ul.third-ul{
+	margin-bottom: -10px;
+	*margin-bottom: 0px;
+
+}
+.com-bd ul.third-ul li{
+	width: 322px;
+	height: 378px;
+}
+.com-bd ul.third-ul .com-img,.com-bd ul.third-ul .com-img img{
+	width: 302px;
+	height: 288px;
+}
+.com-bd li{
+	box-shadow: none;  
+	margin:0px 6px 10px 0; 
+	*margin-right: 3px;
+} 	
+.help{
+	margin-top:0;
+}

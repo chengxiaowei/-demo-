@@ -1,0 +1,6 @@
+@import url('../../pub/css/common.css');
+@import url('../../pub/css/btn.css'); 
+@import url('../../app/style.css');
+@import url('../../app/mod/toplist.css');
+
+ .canvas-tanmu{position:fixed;top:0;left:0;pointer-events:none}

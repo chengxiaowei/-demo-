@@ -1,0 +1,59 @@
+@import url('../../pub/css/common.css');
+@import url('../../pub/css/btn.css'); 
+@import url('../../app/style.css');
+@import url('../../app/mod/toplist.css');
+@import url('../../app/mod/eggs.css');
+.eggs {
+    width: 1181px;
+    margin: 0 auto;
+}
+
+.eggs .eggs-title {
+    height: 114px;
+    text-align: right;
+    color: #333;
+    font-family: 'Microsoft Yahei';
+    font-weight: bold;
+    font-size: 14px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.eggs .eggs-title p {
+    text-align: right;
+    padding: 30px 140px 0px 0px;
+}
+
+.eggs .eggs-title em {
+    border-bottom: 1px solid #333;
+    padding: 0px 7px;
+    display: inline-block;
+    height: 17px;
+}
+
+.eggs .eggs-notes {
+    height: 214px;
+    background-repeat: no-repeat;
+    background-position: center top;
+    width: 923px;
+    margin: 0 auto;
+    margin-top: 10px;
+    font-family: 'Microsoft Yahei';
+    font-size: 14px;
+    color: #333;
+    line-height: 18px;
+    background-repeat: no-repeat;
+}
+
+.eggs .eggs-notes h1 {
+    color: #ffe700;
+}
+
+.eggs .eggs-notes em {
+    background: #fdf167;
+    color: #e93b3a;
+    line-height: 15px;
+    margin-top: 2px;
+    display: inline-block;
+    vertical-align: top;
+}

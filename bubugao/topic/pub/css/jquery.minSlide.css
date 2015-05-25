@@ -1,0 +1,22 @@
+@CHARSET "UTF-8";
+.min-slide {
+    width: 150px;
+    height: 54px;
+    position: relative;
+    overflow: hidden;
+}
+
+.min-slide .min-slide-cnt {
+    position: absolute;
+}
+
+.min-slide .min-slide-cnt li {
+    float: left;
+    width: 150px;
+    height: 54px;
+}
+
+.min-slide .min-slide-cnt li img {
+    width: 150px;
+    height: 54px;
+}

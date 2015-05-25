@@ -1,0 +1,122 @@
+@CHARSET "UTF-8";
+/*面包屑导航*/
+.bed-nav {
+	width: 1190px;
+	margin: 0 auto;
+	height: 44px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.bed-nav a,.bed-nav span,.bed-nav b {
+	font: 400 12px/44px SimSun;
+	color: #666;
+}
+
+.bed-nav span {
+	padding: 0 5px;
+}
+
+.bed-nav b {
+	font-weight: 700;
+}
+
+.mod-crumbs-nav{
+    width: 1190px;
+    margin: 0 auto;
+    height: 24px;
+    line-height: 24px;
+    padding: 10px 0;
+}
+.mod-crumbs-nav .crumbs-nav-item{
+    display: inline-block;
+    zoom:1;
+    *display: inline;
+    height: 24px;
+    padding: 0 4px 0 0;
+}
+.mod-crumbs-nav .crumbs-nav-item span{
+    padding: 0 0 0 4px;
+    font:400 12px/24px SimSun
+}
+.mod-crumbs-nav .crumbs-nav-item.one-level{
+}
+.mod-crumbs-nav .crumbs-nav-item.one-level a{
+    color: #666;
+}
+.mod-crumbs-nav .crumbs-nav-item a:hover{
+    color:#f40;
+    cursor: pointer;
+}
+.mod-crumbs-nav .crumbs-nav-item .menu-drop{
+    display: inline-block;
+    zoom:1;
+    *display: inline;
+    height: 24px;
+    position: relative;
+    z-index: 1;
+}
+.mod-crumbs-nav .crumbs-nav-item .menu-drop .menu-drop-main{
+    display: none;
+    position: absolute;
+    left: 0;
+    top:23px;
+    width: 360px;
+    padding: 10px 0 10px 8px;
+    border: 1px solid #F16320;
+    background: #fff;
+}
+.mod-crumbs-nav .crumbs-nav-item .menu-drop .trigger{
+    position: relative;
+    display: inline-block;
+    zoom:1;
+    *display: inline;
+    height: 22px;
+    padding: 0 4px 0 8px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    line-height: 22px;
+}
+.mod-crumbs-nav .crumbs-nav-item .menu-drop:hover{
+    z-index: 71;
+}
+.mod-crumbs-nav .crumbs-nav-item .menu-drop:hover .trigger{
+    border-color:#F16320 #F16320 #fff #F16320;
+    z-index: 72;
+}
+.mod-crumbs-nav .crumbs-nav-item .menu-drop:hover .menu-drop-main{
+    display: block;
+}
+
+.mod-crumbs-nav .crumbs-nav-item .menu-drop .menu-drop-main .menu-drop-list li{
+    float: left;
+    width: 66px;
+    height: 24px;
+    overflow: hidden;
+    line-height: 24px;
+    margin-right: 5px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.mod-crumbs-nav .crumbs-nav-item .menu-drop .trigger .menu-drop-open{
+    display: block;
+    position: absolute;
+    width: auto;
+    right: 4px;
+    top:1px;
+    background:#fff;
+    color: #f40;
+    height: 0px;
+    -webkit-transition: height .4s linear;
+    -moz-transition: height .4s linear;
+    -ms-transition: height .4s linear;
+    -o-transition: height .4s linear;
+    transition: height .4s linear;
+    overflow: hidden;
+}
+.mod-crumbs-nav .crumbs-nav-item .menu-drop:hover .trigger .menu-drop-open{
+    height: 20px;
+    width: auto;
+}

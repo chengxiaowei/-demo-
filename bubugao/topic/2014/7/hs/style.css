@@ -1,0 +1,57 @@
+@import url('../../../pub/css/common.css');
+@import url('../../../pub/css/btn.css'); 
+@import url('../../../pub/font/iconfont.css');
+@import url('../../../pub/css/dialog/ui-dialog.css');
+@import url('../../../pub/css/hd/site-nav.css');
+@import url('../../../pub/css/linkage-tab.css');
+@import url('../../../pub/css/hd/search.css');
+@import url('../../../pub/css/hd/nav.css');
+@import url('../../../pub/css/jquery.minSlide.css');
+@import url('../../../pub/css/ft/ft.css');
+@import url('../../../pub/css/min-bar/min-bar.css');
+@import url('../../../app/style.css'); 
+body{
+	background: #fff;
+}
+.wrapper{
+	padding-top: 0;
+	width: 1080px;
+	overflow: hidden;
+	margin: -32px auto 40px;
+}
+.wrapper h2{
+	height: 70px;
+	background-position: center top;
+	background-repeat: no-repeat;
+	box-shadow: none;
+	position: relative; 
+}
+.layout{
+	margin: 0 auto;
+	width: 990px;
+} 
+.bn{
+	min-width: 1080px;
+	height: 500px;
+	background-position: center top;
+	background-repeat: no-repeat;
+	position: static;
+}
+.h400{
+	height: 400px;
+}
+.h500{
+	height: 500px;
+}
+.h600{
+	height: 600px;
+} 
+.layout a{
+	width: 450px;
+	height: 400px;
+}
+.h750 a{
+	margin: 0 auto;
+	width: 700px;
+	height: 700px;
+}

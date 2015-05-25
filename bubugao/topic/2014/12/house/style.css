@@ -1,0 +1,118 @@
+@import url('../../../pub/css/common.css');
+@import url('../../../pub/css/btn.css'); 
+@import url('../../../pub/font/iconfont.css');
+@import url('../../../pub/css/dialog/ui-dialog.css');
+@import url('../../../pub/css/hd/site-nav.css');
+@import url('../../../pub/css/linkage-tab.css');
+@import url('../../../pub/css/hd/search.css');
+@import url('../../../pub/css/hd/nav.css');
+@import url('../../../pub/css/jquery.minSlide.css');
+@import url('../../../pub/css/ft/ft.css');
+@import url('../../../pub/css/min-bar/min-bar.css');
+@import url('../../../app/style.css'); 
+body{
+	background-color:#f2f2f2;
+}
+.header,header{
+	font-family: "Microsoft Yahei";
+	font-size:16px;
+	font-weight: 400;
+}
+.nav-box{
+	height: 60px;
+	border-bottom: 2px solid #9c5eba;
+	background-color: #fff; 
+}
+.nav-box .logo{
+	height: 60px;
+	overflow: hidden;
+}
+.nav-list li{
+	position: relative;
+	float: left;
+	margin-left: 40px;
+	line-height: 60px;
+	color: #666;
+}
+.nav-list li .nav-list-ico{
+	position: absolute;
+	display: none;
+	width: 21px;
+	height: 11px;
+	margin-left: -10px;
+	left: 50%;
+	bottom: -2px;
+	background: url(img/nav-ico.png) no-repeat;
+
+}
+.nav-list li a{
+	display: block;
+	width: 100%;
+	height: 100%;
+	text-decoration: none;
+}
+.nav-list li.active a{
+	color: #904db1;
+} 
+.form-box{
+	height: 65px;
+	border-bottom: 1px solid #e7e7e7;
+	background: url(img/nav-bg.png) repeat;
+}
+.title-list{
+	color: #999;
+	line-height: 65px;
+	font-style: oblique;
+}
+.title-list span{
+	float: left;
+	display: block;
+	padding-left: 30px;
+	margin: 12px 30px 0 0;
+	line-height: 40px;
+	background: url(img/nav-num.png) no-repeat;
+}
+.title-list span.t2{
+	background-position: 0 -40px;
+}
+.title-list span.t3{
+	background-position: 0 -80px;	
+}
+.form-cnt p{
+	*float: left;
+	display: inline-block;
+	margin-left: 20px;
+	line-height: 65px; 
+}
+.form-cnt p,.form-cnt label,.form-cnt input{
+	vertical-align: middle;
+}
+.form-cnt a.btn{
+	*margin-top: 10px;
+}
+.txt-l{
+	margin-left: 10px;
+	height: 24px;
+	line-height: 24px;
+}
+.cnt-box{
+	margin:20px auto;
+	padding: 20px 0;
+	background-color: #fff;
+}
+.cnt-box img{
+	display: block;
+	margin:0 auto 20px;
+}
+.tab-cnt{
+	display: none;
+}
+.nav-list li.active .nav-list-ico,.cnt-box .active{
+	display: block;
+}
+.fixed{
+	position: fixed; 
+	top:0;
+	left: 0;	 
+	width: 100%;
+}

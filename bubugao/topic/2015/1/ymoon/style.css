@@ -1,0 +1,48 @@
+@import url('../../../pub/css/common.css');
+@import url('../../../pub/css/btn.css'); 
+@import url('../../../pub/font/iconfont.css');
+@import url('../../../pub/css/dialog/ui-dialog.css');
+@import url('../../../pub/css/hd/site-nav.css');
+@import url('../../../pub/css/linkage-tab.css');
+@import url('../../../pub/css/hd/search.css');
+@import url('../../../pub/css/hd/nav.css');
+@import url('../../../pub/css/jquery.minSlide.css');
+@import url('../../../pub/css/ft/ft.css');
+@import url('../../../pub/css/min-bar/min-bar.css');
+@import url('../../../app/style.css'); 
+body{
+	background: url(img/bg.jpg) repeat;
+}
+.cnt-box{
+	margin: 0 auto 100px;
+	background: url(img/cnt-bg.jpg) repeat center center;
+}
+.com-hd{
+	position: relative; 
+	height: 70px;
+	font: 400 40px/60px '黑体';
+	color: #fff;
+	text-indent: 0;
+	text-align: center;
+	background: url(img/bn-5.jpg) no-repeat center center;
+	z-index: 9;
+}
+.com-bd,.com-ft,.layout{
+	margin: 0 auto; 
+	width: 990px; 
+}
+.com-bd{
+	position: relative;
+	padding-top: 10px;
+	padding-bottom: 20px; 
+}
+.com-bd ul{
+	position: relative;
+	left: 10px;
+}
+.com-bd li{
+	margin: 0 5px 10px 0;
+}
+.com-ft a,.com-ft img{
+	display: block;
+}

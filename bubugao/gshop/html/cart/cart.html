@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta content="3.6" name="pageid"/>
+    <title>购物车</title>
+    <!--#include file="/html/include/common/intro.html"-->
+    <link rel="stylesheet" href="//s1.bbgstatic.com/gshop/css/module/cart/cart.css?v=3.0.15" type="text/css" charset="utf-8"></head>
+<body>
+    <div class="page-view">
+        <!--#include file="mod/_head.html"-->
+        <div class="page-view-body mod-cart" id="jModCart">
+            <div class="bd">
+                <div class="inner">
+                    <!-- 地址 begin -->
+                    <!--#include file="mod/_addr.html"-->
+                    <!-- 地址 end -->
+                    <div id="jCart">
+                        <div class="no-data" id="jNoData">
+                            <div class="page-view">
+                                <div class="empty">
+                                    <p><img src="//s1.bbgstatic.com/gshop/images/public/loading.gif"/></p>
+                                    <p class="emt-txt loading-txt">拼命加载中...</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 购物车模板 begin -->
+    <script id="jCartTmpl" type="text/html">
+        <% include('jListTmpl') %>
+        <% include('jtotalTmpl') %>
+    </script>
+    <!-- 列表 begin -->
+    <!--#include file="mod/_list.html"-->
+    <!-- 列表 end -->
+    <!-- 总计 begin -->
+    <!--#include file="mod/_total.html"-->
+    <!-- 总计 end -->
+
+    <!--#include file="/html/include/common/outro.html"-->
+
+    <script>require(['conf/cart/cart']);</script>
+
+    <script>
+    (function(f,c,d,e,g,a,b){a=c.createElement(d);b=c.getElementsByTagName(d)[0];a.async=1;a.src=e;b.parentNode.insertBefore(a,b)
+    })(window,document,"script","//"+(location.protocol=="http:"?"s1":"ssl")+".bbgstatic.com/tracer/bpm.js","bpm");
+    </script>
+
+
+    <!--GTM start-->
+    <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-NV2JH3" 
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript> 
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': 
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0], 
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src= 
+    '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f); 
+    })(window,document,'script','dataLayer','GTM-NV2JH3');</script> 
+    <!--GTM end-->
+    
+    <!--bbg start-->
+    <script>
+        (function(f,c,d,e,g,a,b){a=c.createElement(d);b=c.getElementsByTagName(d)[0];a.async=1;a.src=e;b.parentNode.insertBefore(a,b)
+        })(window,document,"script","//"+(location.protocol=="http:"?"s1":"ssl")+".bbgstatic.com/tracer/bpm.js","bpm");
+    </script>
+    <!--bbg end-->
+</body>
+</html>
+<!-- vim: set ft=html ff=unix et sw=4 ts=4 sts=4 tw=150: -->

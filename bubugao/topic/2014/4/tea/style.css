@@ -1,0 +1,142 @@
+@import url('../../../pub/css/common.css');
+@import url('../../../pub/css/btn.css'); 
+@import url('../../../pub/font/iconfont.css');
+@import url('../../../pub/css/dialog/ui-dialog.css');
+@import url('../../../pub/css/hd/site-nav.css');
+@import url('../../../pub/css/linkage-tab.css');
+@import url('../../../pub/css/hd/search.css');
+@import url('../../../pub/css/hd/nav.css');
+@import url('../../../pub/css/jquery.minSlide.css');
+@import url('../../../pub/css/ft/ft.css');
+@import url('../../../pub/css/min-bar/min-bar.css');
+@import url('../../../app/style.css'); 
+body{
+	background: #efe4ce;
+	
+}
+.bn { 
+	width: 100%;
+	overflow:hidden;
+	background-repeat: no-repeat;
+	background-position: center top;
+	min-width: 1024px; 
+}
+.bn-t{
+	height: 300px;
+}
+.bn-b{
+	height: 267px;
+}
+.wrapper{
+	overflow:visible;
+	padding-bottom:60px;
+	margin-top:0;
+	padding-top:0;
+}
+.wrapper h2{
+	border:none;
+	box-shadow: none;
+	text-align: left;
+	height: 48px;
+	line-height: 48px;
+	font-size: 24px;
+	padding:15px 0;
+	text-align: center;
+	background: url(//s1.bbgstatic.com/topic/2014/4/tea/img/title.png) no-repeat center;
+}
+
+#com1{
+	height:393px;
+}
+#com2{
+	padding:15px 0;
+}
+#com2 .link-box{
+	margin-bottom: 24px;
+}
+#com3{
+	margin-top: -30px;
+}
+.floor{
+	background: url(//s1.bbgstatic.com/topic/2014/4/tea/img/fbg.jpg);
+}
+.com-hd-t{
+	padding-top:8px;
+	text-indent: 70px;
+	width:1034px;
+	margin: 0 auto;
+}
+.spec-mod{
+	background-repeat: no-repeat;
+	background-position: center top; 
+	margin-bottom: 0;
+}
+.spec-mod ul{
+	margin:0 5px;
+}
+.wrap-cnt{
+	margin-top:0;
+	position: relative;
+	z-index: 2;
+}
+#com5 .com-bd{
+	padding-bottom: 20px;
+}
+.com-bd{
+	width:1000px;
+	margin: 0 auto;
+	overflow: hidden;
+	background: #7c5302;
+	padding-bottom:15px;
+
+}
+.link-box{
+	width:990px;
+	margin:0 auto;
+	border-radius: 2px;
+	overflow: hidden;
+}
+.link-box a,.link-box img{
+	float: left;
+	display: block;
+	height:auto;
+	margin:0;
+	padding:0;
+	border:0;
+}
+/*右侧浮层*/
+.right-nav{
+	position:fixed;
+	-position:absolute;
+	width:93px;
+	height:225px;
+	display: none;
+	padding-top: 100px;
+	z-index:100;
+	left:55%;
+	margin-bottom: 100px;
+	margin-left:450px;
+	bottom:35px;
+	overflow: hidden;
+	background:url(//s1.bbgstatic.com/topic/2014/4/tea/img/nav.png) no-repeat;
+}
+.right-nav a{
+	height: 32px;
+	font: 100 14px/32px 'Microsoft Yahei';
+	color:#fff;
+	text-decoration: none;
+}
+.right-nav a:hover{
+	text-decoration: underline;
+}
+
+.right-nav .go-top{
+	background:none;
+	border:none;
+	height: 24px;
+	line-height: 24px;
+	text-align: center;
+}
+.help{
+	margin-top: 0;
+}

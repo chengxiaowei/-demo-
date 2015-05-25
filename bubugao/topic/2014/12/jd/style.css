@@ -1,0 +1,138 @@
+@import url('../../../pub/css/common.css');
+@import url('../../../pub/css/btn.css'); 
+@import url('../../../pub/font/iconfont.css');
+@import url('../../../pub/css/dialog/ui-dialog.css');
+@import url('../../../pub/css/hd/site-nav.css');
+@import url('../../../pub/css/linkage-tab.css');
+@import url('../../../pub/css/hd/search.css');
+@import url('../../../pub/css/hd/nav.css');
+@import url('../../../pub/css/jquery.minSlide.css');
+@import url('../../../pub/css/ft/ft.css');
+@import url('../../../pub/css/min-bar/min-bar.css');
+@import url('../../../app/style.css'); 
+body{
+	background-color: #d31d2d;
+}
+.layout,.txt-mod{
+	margin: 0 auto;
+	width: 990px;
+}
+.cnt-box{
+	margin-bottom: 100px;
+	padding-top: 205px;
+	background-repeat: no-repeat;
+	background-position: center top;
+}
+.spec-mod{
+	margin: 0 auto 30px;
+	*padding-bottom: 10px;
+	width: 990px;
+}
+.com-hd{
+	margin-bottom: 10px;
+	height: 43px;
+	font:700 26px/43px 'Microsoft YaHei';
+	color: #d31d2d;
+	text-align: center;
+}
+#com1 .com-hd{
+	text-indent: -9999px;
+	overflow: hidden;
+}
+.com-bd{
+	position: relative;
+	padding:10px 0 0 10px;
+	background-color: #ffb725;
+	*padding-bottom: 10px;
+}
+.com-bd li{
+	margin: 0 3px 10px 0;
+}
+#com1 .com-bd{
+	padding:20px 0 10px 10px;
+}
+.goods-ad{
+	position: absolute;
+	top:10px;
+	left:10px;
+	width: 490px;
+	height: 314px;
+}
+ 
+.bg1{
+	padding-top: 45px;
+	background: #8637aa url(img/hd-1.jpg) no-repeat center top;
+}
+.bg1 .com-bd{
+	background-color: #8637aa;
+}
+.bg2{
+	padding-top: 45px;
+	background: #1a81e0 url(img/hd-2.jpg) no-repeat center top;
+}
+.bg2 .com-bd{
+	background-color: #1a81e0;
+}
+.bg3{
+	padding-top: 45px;
+	background: #99b93e url(img/hd-3.jpg) no-repeat center top;
+}
+.bg3 .com-bd{
+	background-color: #99b93e;
+}
+.bg4{
+	padding-top: 45px;
+	background: #10a19c url(img/hd-4.jpg) no-repeat center top;
+}
+.bg4 .com-bd{
+	background-color: #10a19c;
+}
+.txt-mod{
+	padding:10px;
+	width: 970px;
+	background-color: #ffb725;
+}
+.txt-cnt{ 
+	padding: 10px 20px;
+	border-radius: 10px;
+	font:400 14px/24px '黑体';
+	color: #9f6306;
+	background-color: #fdce6f;
+	overflow: hidden;
+}
+.txt-cnt .txt-hd{
+	font: 400 36px/70px 'Microsoft YaHei';
+}
+ 
+/*nav*/ 
+.right-nav{
+	position:fixed; 
+	-position:absolute;
+	padding-top: 94px;
+	width: 100px;
+	height: auto;
+	overflow:hidden; 
+	z-index:100; 
+	left:55%; 
+	margin-left:450px;
+	margin-bottom: 40px;
+	bottom:25px; 
+	background:url(img/nav.png) no-repeat;
+}	
+.right-nav a{
+	width: 99px;
+	height: 30px; 
+	font: 400 14px/30px 'Microsoft Yahei';
+	color:#d3840a;
+	text-align: center;
+	background-color: #ffd672; 
+}
+.right-nav a.bg{
+	background-color: #ffb725; 
+}
+.right-nav .go-top{ 
+	height: 40px;
+	line-height: 40px;
+	border:none;  
+	background: none; 
+}

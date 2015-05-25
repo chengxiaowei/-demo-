@@ -1,0 +1,91 @@
+@import url('../../../pub/css/common.css');
+@import url('../../../pub/css/btn.css'); 
+@import url('../../../pub/font/iconfont.css');
+@import url('../../../pub/css/dialog/ui-dialog.css');
+@import url('../../../pub/css/hd/site-nav.css');
+@import url('../../../pub/css/linkage-tab.css');
+@import url('../../../pub/css/hd/search.css');
+@import url('../../../pub/css/hd/nav.css');
+@import url('../../../pub/css/jquery.minSlide.css');
+@import url('../../../pub/css/ft/ft.css');
+@import url('../../../pub/css/min-bar/min-bar.css');
+@import url('../../../app/style.css'); 
+body{
+	background-color: #a92417;
+}
+.layout{
+	margin: 0 auto;
+	width: 990px;
+}
+.bn-time{
+	font-size: 14px;
+	font-family: 'Microsoft Yahei';
+	color: #464646;
+	top: 300px;
+	line-height: 20px;
+	left: 430px;
+}
+.spec-mod{
+	margin: 0 auto 40px;
+	width: 990px; 
+	overflow: hidden;
+	background-position: center top;
+	background-repeat: no-repeat;
+}
+.com-hd{
+	margin-bottom: 10px;
+	color: #fff;
+	height: 110px;
+	text-align: center; 
+	text-indent: -99999px;
+}
+.com-hd .more{
+	width: 45px;
+	height: 40px;
+	bottom: 5px;
+	right: 22px;
+}
+.com-hd h2{
+	font-weight: 400;
+}
+.com-bd{
+	position: relative;
+	width: 990px; 
+	padding-bottom: 10px;
+}
+.com-bd ul{
+	position: relative;
+	left: 5px;
+	*margin-bottom: 10px;
+}
+.com-bd li{
+	margin: 0 3px 10px 0;
+}
+/*nav*/ 
+.right-nav{
+	position:fixed; 
+	padding-top: 85px;
+	width: 132px;
+	height: auto;
+	overflow:hidden; 
+	z-index:100; 
+	left:55%; 
+	margin-left:430px;
+	margin-bottom: 40px;
+	bottom:25px; 
+	background:url(img/nav.png) no-repeat;
+}	
+.right-nav a{  
+	height: 40px; 
+	font: 400 18px/40px 'Microsoft Yahei';
+	color:#fff;
+	text-align: center;
+	text-indent: -99999px;
+	background:none;
+} 
+.right-nav .go-top{ 
+	height: 50px;
+	line-height: 30px;
+	border:none;  
+	background:none; 
+}

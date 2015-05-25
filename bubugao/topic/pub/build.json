@@ -1,0 +1,16 @@
+﻿{
+    "pid": "pub",
+    "appDir": "./",
+    "baseUrl": "js",
+    "dir": "./dist",
+	"modules" : [
+    ],
+    "dist": {
+        "name": "pub",
+        "version": "0.0.1",
+        "prefix": "//s1.bbgstatic.com/pub/",
+        "css": {
+            "rootUrl": "//s3.bbgstatic.com/pub/"
+        }
+    }
+}

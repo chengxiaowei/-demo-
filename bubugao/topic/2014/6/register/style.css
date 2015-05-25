@@ -1,0 +1,150 @@
+@import url('../../../pub/css/common.css');
+@import url('../../../pub/css/btn.css'); 
+@import url('../../../pub/font/iconfont.css');
+@import url('../../../pub/css/dialog/ui-dialog.css');
+@import url('../../../pub/css/hd/site-nav.css');
+@import url('../../../pub/css/linkage-tab.css');
+@import url('../../../pub/css/hd/search.css');
+@import url('../../../pub/css/hd/nav.css');
+@import url('../../../pub/css/jquery.minSlide.css');
+@import url('../../../pub/css/ft/ft.css');
+@import url('../../../pub/css/min-bar/min-bar.css');
+@import url('../../../app/style.css'); 
+body{
+	background:#cc0033;
+	
+}  
+.bn { 
+	width: 100%;
+	height: 985px;
+	overflow:hidden;
+	background:url(img/banner.jpg?v=11) no-repeat top center;
+	
+
+}
+.pro-goods,.group-buying,.bn{
+	min-width: 1030px;
+}
+.layout{
+	margin:0 auto;
+	width: 990px;
+}
+.bn .layout{
+	height: 465px;
+}
+.bn .btn{
+	top: 326px;
+	left: 402px;
+	width: 185px;
+	height: 75px;
+}
+.new-share{
+	margin: 0 auto;
+	width: 992px;
+	height:502px;
+	background:url(img/share-bg.jpg?v=11) no-repeat;
+	overflow: hidden;
+}
+.new-share ul.share-hd{
+	margin:70px 0 0 20px
+}
+.new-share .share-hd li{
+	float: left;
+	margin: 0 10px;
+	width: 300px;
+	height: 107px;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+.new-share .share-hd img{
+	width: 298px;
+	height: 107px;
+}
+.new-share ul li a{
+	display: block;
+	width: 100%;
+	height: 100%;
+	text-indent:-9999px;
+	overflow: hidden;
+} 
+.share-info{
+	width: 925px;
+	height: 210px;
+	padding: 30px 10px 0;
+	overflow: hidden;
+	margin: 70px auto 0;
+	position: relative;
+}
+.share-info ul li{ 
+	width: 100%;
+	float: left;
+	font-size: 18px;
+	color: #fff;
+	font-weight: 400;
+	font-family: 'Microsoft Yahei';
+	line-height: 34px;
+} 
+
+.group-buying{
+	padding: 20px 0;
+	background: url(img/bg1.jpg) repeat;
+}
+.group-buying .layout{
+	padding: 20px 0 10px;
+	border: 1px solid #c6c861;
+	box-shadow: 0 0 3px #c6c861;
+	background: #fff;
+	border-radius: 3px;
+}
+.spec-mod ul{
+	margin-left: 8px;
+}
+.com-hd{
+	position: relative; 
+	height: 52px;
+	background:url(img/com-hd.jpg) no-repeat center 0;
+}
+.spec-mod .com-hd .more{
+	position: absolute;
+	top:0;
+	right: 0;
+	width: 90px;
+	height: 40px;
+
+}
+.spec-mod .com-bd li{
+	margin:0 5px 20px 0;
+	*margin:0 3px 20px 0;
+	overflow: hidden;
+}
+.pro-goods{
+	padding:20px 0 80px;
+	background: url(img/bg2.jpg) repeat;
+}
+.pro-goods .layout{
+	border: 1px solid #aa132f;
+	box-shadow: 0 0 3px #aa132f;
+	background: #fff;
+	border-radius: 3px;
+}
+.com-mod .com-hd {
+	margin: 20px auto;
+	height: 30px;
+	background-position: center -52px;
+}
+.com-mod .com-bd ul{
+	margin-bottom: 10px;
+	margin-left: 6px;
+}
+.com-mod .com-bd li,.com-mod .com-bd img{
+	width: 485px;
+	height: 250px;
+}
+.com-mod .com-bd li{
+	margin-right: 8px;
+	*margin-right: 5px;
+} 
+.com-bd ul{
+	width: 1000px;
+	overflow: hidden;
+}

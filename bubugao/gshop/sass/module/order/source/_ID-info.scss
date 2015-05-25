@@ -1,0 +1,59 @@
+﻿//收货地址
+.mod-ID {
+    border: 1px solid #cccccc;
+    border-bottom: 0px;
+    background: #fff;
+    overflow: hidden;
+    .inner {
+        margin: rem(20);
+        overflow: hidden;
+        position: relative;
+    }
+    .hd {
+        .icon {
+            color: #ef6824;
+            font-size: rem(34);
+            margin-right: rem(10);
+        }
+        .txt-span {
+            font-size: rem(30);
+            color: #252525;
+        }
+        .txt-tips {
+            color: #f59f11;
+            font-size: rem(24);
+            margin-left: rem(10);
+            vertical-align: middle;
+            display: inline-block;
+        }
+    }
+    .bd {
+        margin-top: rem(10); 
+        position: relative;
+        .item {
+            color: #999999;
+            font-size: rem(28);
+            .i-l {
+                float: left;
+                .name {
+                    vertical-align: middle;
+                }
+                .phone {
+                    display: inline-block;
+                    vertical-align: middle;
+                    margin-left: rem(30);
+                }
+            }   
+            .i-r {
+                float: right;
+            }
+        }
+    }
+    .arrow {
+        position: absolute;
+        right: 0px;
+        top: rem(36);
+        font-size: rem(36);
+        color: #999;
+    }
+}

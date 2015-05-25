@@ -1,0 +1,73 @@
+.realname-table {
+	width: 420px;
+	color: #333;
+}
+.realname-table td {
+	height: 30px;
+	vertical-align: top;
+	line-height: 35px;
+}
+.realname-table .td1 {
+	width: 140px;
+	padding: 5px 15px 0 0;
+	font-size: 12px;
+	text-align: right;
+	line-height: 28px;
+}
+.realname-table .td1 span {
+	color: #ff0000;
+	margin-right: 5px;
+	font-size: 12px;
+	font-family: "宋体";
+}
+.realname-table .text {
+	width: 205px;
+	border: #ccc solid 1px;
+	height: 25px;
+	border-radius: 3px;
+	padding-left: 3px;
+}
+.realname-table .bttome {
+	border:solid #f60 1px;
+	padding: 3px 9px 3px 9px;
+	color: #666;
+	margin-right: 30px;
+	border-radius: 3px;
+	cursor: pointer;
+	background: #f60;
+	color: #fff;
+}
+.ui-dialog {
+	font-size: 12px;
+}
+.uploadify-queue {
+	margin: 15px 0 20px 0;
+	max-height: 165px;
+	text-align: center;
+}
+.jUploadImg {
+	max-width: 210px;
+	max-height: 165px;
+}
+.fileName {
+	display: none;
+}
+.cancel {
+	position: absolute;
+}
+.obtainimg {
+	max-width: 209px;
+	max-height: 135px;
+}
+.ui-dialog-header {
+	background: #fc5215;
+	height: 35px;
+}
+.ui-dialog-header .ui-dialog-title {
+	color: #fff;
+}
+.ui-dialog-header .ui-dialog-close {
+	color: #fff;
+	font-weight: 100;
+	opacity: 0.5;
+}

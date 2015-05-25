@@ -1,0 +1,72 @@
+@import url('../../../pub/css/common.css');
+@import url('../../../pub/css/btn.css'); 
+@import url('../../../pub/font/iconfont.css');
+@import url('../../../pub/css/dialog/ui-dialog.css');
+@import url('../../../pub/css/hd/site-nav.css');
+@import url('../../../pub/css/linkage-tab.css');
+@import url('../../../pub/css/hd/search.css');
+@import url('../../../pub/css/hd/nav.css');
+@import url('../../../pub/css/jquery.minSlide.css');
+@import url('../../../pub/css/ft/ft.css');
+@import url('../../../pub/css/min-bar/min-bar.css');
+@import url('../../../app/style.css'); 
+body{
+	background-color: #e90003;
+}
+.layout{
+	margin: 0 auto;
+	width: 990px;
+}
+.cnt-box{
+	margin-bottom: 100px;
+}
+.com-hd{
+	height: 200px;
+	background-position: center center;
+}
+.com-bd{
+	position: relative;
+	margin: 0 auto;
+	left: -1px;
+	width: 1001px;
+	background-color: #b80104;
+}
+.com-bd ul{
+	position: relative;
+	left: 10px;
+}
+.com-bd li{
+	margin: 0 8px 10px 0;
+}
+.com-ft{
+	margin: 0 auto;
+	height: 60px;
+	background: url(img/bn-6.jpg) no-repeat center center;
+}
+
+/*nav*/ 
+.right-nav{
+	position:fixed; 
+	-position:absolute; 
+	width: 128px;
+	height: 280px;
+	overflow:hidden; 
+	z-index:100; 
+	left:55%; 
+	margin-left:450px;
+	margin-bottom: 40px;
+	bottom:25px; 
+	background:url(img/nav.png) no-repeat;
+}	
+.right-nav a{ 
+	height: 52px; 
+	font: 400 14px/52px 'Microsoft Yahei';
+	color:#fff;
+	text-align: center; 
+	text-indent: -9999px;
+} 
+.right-nav .go-top{ 
+	height: 115px;
+	border:none;  
+	background: none; 
+}	

@@ -1,0 +1,99 @@
+    <div class="page-view">
+        <head><!--#include file="/html/order/mod/_head.html"--></head>
+        <div class="page-view-body mod-order">
+            <div id="jOrder">
+                <div class="inner no-data" id="jNoData">
+                    <div class="page-view">
+                        <div class="empty">
+                            <p><img src="//s1.bbgstatic.com/gshop/images/public/loading.gif"/></p>
+                            <p class="emt-txt loading-txt">拼命加载中...</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+         <!-- <footer> xx </footer> -->
+    </div>
+    <!-- 结算模板 begin -->
+    <script id="jOrderTmpl" type="text/html">
+        <div class="wrap">
+            <div class="inner">
+                <div id="jAddress">
+                    <% include('jAddressTmpl') %>
+                </div>
+                <div id="jIdInfo">
+                    <% include('jIdInfoTmpl') %>
+                </div>
+                <div id="jPayment">
+                </div>
+                <div id="jInvoice">
+                    <% include('jInvoiceTmpl') %>
+                </div>
+                <div id="jList">
+                    <% include('jListTmpl') %>
+                </div>
+                <div id="jListNoDel">
+                    <% include('jListNoDelTmpl') %>                    
+                </div>
+            </div>
+        </div>
+        <div id="jPrice">
+            <% include('jPriceTmpl') %>
+        </div>
+        <div id="jSubmit">
+            <% include('jSubmitTmpl') %>                
+        </div>
+    </script>
+    <!-- 结算模板 end -->
+
+    <!-- 收货地址 begin -->
+    <!--#include file="/html/order/mod/_address.html"-->
+    <!-- 收货地址 end -->
+    <!-- 身份证信息 begin -->
+    <!--#include file="/html/order/mod/_ID-info.html"-->
+    <!-- 身份证信息 end -->
+    <!-- 支付方式 begin -->
+    <!--#include file="/html/order/mod/_payment.html"-->
+    <!-- 支付方式 end -->
+    <!-- 发票信息 begin -->
+    <!--#include file="/html/order/mod/_invoice.html"-->
+    <!-- 发票信息 end -->
+    <!-- 列表信息 begin -->
+    <!--#include file="/html/order/mod/_list.html"-->
+    <!-- 列表信息 end -->
+    
+    <!-- 不在配送范围 begin -->
+    <!--#include file="/html/order/mod/_list_no_del.html"-->
+    <!-- 不在配送范围 end -->
+
+    <!-- 价格 begin -->
+    <!--#include file="/html/order/mod/_price.html"-->
+    <!-- 价格 end -->
+    <!-- 提交 begin -->
+    <!--#include file="/html/order/mod/_submit.html"-->
+    <!-- 提交 end -->
+
+    <!--#include file="/html/include/common/outro.html"-->
+    <script>require(['conf/order/order']);</script>
+
+     <script>
+    (function(f,c,d,e,g,a,b){a=c.createElement(d);b=c.getElementsByTagName(d)[0];a.async=1;a.src=e;b.parentNode.insertBefore(a,b)
+    })(window,document,"script","//"+(location.protocol=="http:"?"s1":"ssl")+".bbgstatic.com/tracer/bpm.js","bpm");
+    </script>
+    
+    <!--GTM start-->
+    <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-NV2JH3" 
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript> 
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': 
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0], 
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src= 
+    '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f); 
+    })(window,document,'script','dataLayer','GTM-NV2JH3');</script> 
+    <!--GTM end-->
+    <!--bbg start-->
+    <script>
+        (function(f,c,d,e,g,a,b){a=c.createElement(d);b=c.getElementsByTagName(d)[0];a.async=1;a.src=e;b.parentNode.insertBefore(a,b)
+        })(window,document,"script","//"+(location.protocol=="http:"?"s1":"ssl")+".bbgstatic.com/tracer/bpm.js","bpm");
+    </script>
+    <!--bbg end-->
+<!-- vim: set ft=html ff=unix et sw=4 ts=4 sts=4 tw=150: -->

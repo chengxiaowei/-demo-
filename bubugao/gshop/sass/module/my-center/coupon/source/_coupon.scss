@@ -1,0 +1,90 @@
+.mod-coupon {
+    .hd {
+        height: rem(60);
+        background: #fff;
+        a{
+            display: inline-block;
+            width: 33%;
+            height: 100%;
+            line-height: rem(60);
+            float: left;
+            text-align: center;
+            font-size: rem(26);
+            color: #333;
+            text-decoration: none;
+            span{
+                display: inline-block;
+                -webkit-box-sizing:border-box;
+                height: 100%;
+                padding: 0 rem(5);
+            }
+        }
+        a.active{
+            span{
+                border-bottom: rem(3) solid #f16320;
+                color: #f16320;
+            }
+        }
+    }
+
+    .bd {
+        padding-bottom: rem(20);
+        .coupon-item {
+            padding: rem(20) rem(20) 0 rem(20);
+            .cp-item-tp {
+                background-color: #ff9f72;
+                border-top-left-radius: rem(4);
+                border-top-right-radius: rem(4);
+            }
+            .cp-name, .cp-code, .cp-source, .cp-date {
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+            }
+            .cp-name {
+                font-size: rem(26);
+                color: #fff;
+                line-height: 1rem;
+                text-indent: rem(20);
+                padding-top: 0.4rem;
+            }
+            .cp-code {
+                font-size: rem(26);
+                text-indent: rem(20);
+                color: #fff;
+                line-height: 1.6em;
+                width: 100%;
+                padding-bottom: 0.3rem;
+            }
+            .cp-gray {
+                background: #cfcfcf !important;
+            }
+            .cp-source {
+                font-size: 0.6rem;
+                color: #999;
+                background: #fff;
+                line-height: 1.2rem;
+                width: 100%;
+                text-indent: rem(20);
+                border-right: 1px solid #ddd;
+                padding-top: 0.3rem
+            }
+            .cp-date {
+                font-size: 0.6rem;
+                color: #999;
+                background: #fff;
+                line-height: 0.8rem;
+                width: 100%;
+                text-indent: rem(20);
+                border-color: #ddd;
+                border-bottom: 1px solid #ddd;
+                border-right: 1px solid #ddd;
+                border-bottom-left-radius: rem(4);
+                border-bottom-right-radius: rem(4);
+                padding-bottom: 0.5rem;
+            }
+        }
+    }
+}
+
+

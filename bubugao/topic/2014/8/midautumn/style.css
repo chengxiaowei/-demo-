@@ -1,0 +1,269 @@
+@import url('../../../pub/css/common.css');
+@import url('../../../pub/css/btn.css'); 
+@import url('../../../pub/font/iconfont.css');
+@import url('../../../pub/css/dialog/ui-dialog.css');
+@import url('../../../pub/css/hd/site-nav.css');
+@import url('../../../pub/css/linkage-tab.css');
+@import url('../../../pub/css/hd/search.css');
+@import url('../../../pub/css/hd/nav.css');
+@import url('../../../pub/css/jquery.minSlide.css');
+@import url('../../../pub/css/ft/ft.css');
+@import url('../../../pub/css/min-bar/min-bar.css');
+@import url('../../../app/style.css'); 
+body{
+	background: #c2ddba;
+}
+.wrapper{
+	padding: 0;
+	width: 990px;
+	overflow: hidden;
+	margin: -32px auto 0;
+}
+.wrapper h2{
+	height: 70px;
+	background-position: center top;
+	background-repeat: no-repeat;
+	box-shadow: none;
+	position: relative; 
+}
+.bn{
+	min-width: 1080px;
+	background-position: center top;
+	background-repeat: no-repeat;
+	position: static;
+}
+.bn a{
+	display: block;
+	width: 900px;
+	height: 100%;
+	margin: 0 auto;
+}
+.bn .show-mod li a{
+	display: block;
+	width: 248px;
+	height: 147px;
+	text-indent: -9999999px;
+}
+.bn1{
+	height: 471px;
+}
+.bn2{
+	height: 159px;
+}
+.bn3{
+	height: 433px;
+}
+.bn4{
+	height: 387px;
+}
+.bn5{
+	height: 368px;
+}
+.bn6{
+	height: 443px;
+}
+.show-mod{
+	width: 1000px;
+	padding-top: 7px;
+	margin: 0 auto;
+}
+.show-mod ul{
+	width: 1100px;
+}
+.show-mod ul li{
+	width: 248px;
+	height: 147px;
+	float: left;
+	margin-right: 2px;
+	position: relative;
+}
+.show-mod ul li a{
+	display: block;
+}
+.wrapper{
+	margin-top: 0;
+	width: 100%;
+}
+.channel-list{
+	margin: 0 auto;
+	min-width: 1034px;
+	padding-top: 93px;
+	background-position: center 31px;
+	background-repeat: no-repeat;
+	background-color: #e3e0ad;
+	padding-bottom: 30px;
+}
+.channel-list .list{
+	background-position: center top;
+	background-repeat: no-repeat;
+	width: 985px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.channel-list .c-list1{
+	height: 235px;
+}
+.channel-list .c-list2{
+	height: 233px;
+}
+.channel-list .c-list3{
+	height: 240px;
+}
+.list a{
+	display: block;
+	float: left;
+	width: 270px;
+	height: 233px;
+}
+.list a.w1{
+	width: 243px;
+}
+.list a.w2{
+	width: 243px;
+}
+.list a.w3{
+	width: 215px;
+}
+.list a.w4{
+	width: 270px;
+}
+.list a.w5{
+	width: 249px;
+}
+.list a.w6{
+	width: 226px;
+}
+.list a.w7{
+	width: 226px;
+}
+.list a.w8{
+	width: 226px;
+}
+.list-show{
+	width: 1090px;
+}
+.title-box{
+	background-position: center 31px;
+	background-repeat: no-repeat;
+	padding-top: 100px;
+}
+.spec-mod{
+	background-color: #c2ddba;
+}
+.spec-mod .com-bd{
+	width: 975px;
+	margin: 0 auto;
+	padding: 14px;
+	background-color: #84a078;
+	position: relative;
+	z-index: 2;
+}
+.com-mod .com-bd {
+	width: 970px;
+	margin: 0 auto;
+	padding: 14px;
+	background-color: #84a078;
+	position: relative;
+	z-index: 2;
+}
+.com-bd li{
+	margin-right: 5px;
+}
+.title-mod{
+	min-width: 1034px;
+	height: 141px;
+	background-color: #c2ddba;
+	background-position: center top;
+	background-repeat: no-repeat;
+	margin: -20px 0;
+	position: relative;
+	z-index: 1;
+}
+.nt{
+	height: 77px;
+	margin-bottom: 30px;
+}
+@media screen and (-webkit-min-device-pixel-ratio:0) { 
+	.nt {height:72px;}
+}
+.tab-title{
+	width: 940px;
+	margin:0 auto;
+}
+.tab-title li{
+	float: left;
+	width: 134px;
+	height: 41px;
+	text-align: center;
+	position: relative;
+}
+.tab-title li .ico{
+	background-repeat: no-repeat;
+	background-position: center top;
+	position: absolute;
+	display: block;
+}
+.tab-title li a{
+	display: block;
+	font:100 25px/41px '隶书';
+	color: #73663f;
+}
+.tab-title li.tab-title-hover a{
+	color: #fff;
+	text-decoration: none;
+}
+.tab-title li.tab-title-hover{
+	background-color: #84a078;
+	color: #fff;
+}
+.dialog{
+	position: absolute;
+	right: 0;
+	top: -1px;
+	z-index: 2;
+	width: 401px;
+	height: 220px;
+	opacity: 0;
+	cursor: pointer;
+}
+/*右侧浮层*/
+.right-nav{
+	position:fixed;
+	-position:absolute;
+	width: 120px;
+	height: 320px;
+	padding-top: 50px;
+	overflow:hidden; 
+	z-index:100;
+	left:55%;
+	margin-left:460px;
+	margin-bottom: 40px;
+	bottom:25px;
+	background:url(img/nav.jpg) no-repeat;
+}
+
+.right-nav a{
+	height: 52px;
+	font: 700 20px/52px 'Microsoft Yahei';
+}
+.right-nav a.top{
+	color:#ff0000;
+	height: 86px;
+	line-height: 56px;
+}
+ 
+.right-nav .go-top{ 
+	background:none;
+	border:none;
+	height: 51px;
+	line-height: 40px; 
+}
+.help{
+	margin-top:0;
+}
+.item-bg{
+	background-repeat:  no-repeat;
+	background-position: center top;
+	margin-top: 20px;
+	padding-top: 34px;
+} 

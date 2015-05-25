@@ -1,0 +1,32 @@
+.mod-delivery {
+    overflow: hidden;
+    .bd {
+        .wrap-a {
+            display: block;
+        }
+       .inner-box {
+            margin: rem(20);
+            overflow: hidden;
+            .i-l {
+                float: left;
+                .delType {
+                    color: #333333;
+                    vertical-align: middle;
+                    display: inline-block;
+                }
+                .delTxt {
+                    vertical-align: middle;
+                    display: inline-block;
+                    color: #666;
+                }
+            }
+            .i-r {
+                float: right;
+            }
+            .arrow {
+                font-size: rem(30);
+                margin-left: rem(20);
+            }
+       } 
+    }
+}

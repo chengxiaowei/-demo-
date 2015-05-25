@@ -1,0 +1,188 @@
+@import url('../../../pub/css/common.css');
+@import url('../../../pub/css/btn.css'); 
+@import url('../../../pub/font/iconfont.css');
+@import url('../../../pub/css/dialog/ui-dialog.css');
+@import url('../../../pub/css/hd/site-nav.css');
+@import url('../../../pub/css/linkage-tab.css');
+@import url('../../../pub/css/hd/search.css');
+@import url('../../../pub/css/hd/nav.css');
+@import url('../../../pub/css/jquery.minSlide.css');
+@import url('../../../pub/css/ft/ft.css');
+@import url('../../../pub/css/min-bar/min-bar.css');
+@import url('../../../app/style.css'); 
+body{
+	background: #000;
+	
+}
+.bn { 
+	width: 100%;
+	height: 457px;
+	overflow:hidden;
+	background-repeat: no-repeat;
+	background-position: center top;
+	min-width: 1024px; 
+}
+.ad-mod{
+	height: 204px;
+	padding-top: 12px;
+}
+.ad{
+	width: 995px;
+	margin:0 auto;
+	overflow: hidden;
+}
+.ad-list{
+	width: 1000px;
+}
+.ad-list a img{
+	display: block;
+	width: 495px;
+	height: 190px;
+	margin-right: 4px;
+	float: left;
+}
+.wrapper{
+	overflow:visible;
+	padding-bottom:0;
+	margin-top:0;
+	padding-top:0;
+}
+.wrapper h2{
+	width: 992px;
+	margin: 15px auto;
+	height: 95px;
+	border:none;
+	box-shadow: none;
+	background-repeat: no-repeat;
+	background-position: center top;
+	font: 100 42px/56px 'Microsoft Yahei'
+}
+.wrapper h2 .festival{
+	font-weight: 700;
+	margin-right: 15px;
+}
+.hd-txt{
+	width: 214px;
+	text-align: right;
+	font-size: 24px;
+	color: #916c0d;
+	line-height: 30px;
+	margin: 20px 30px 0 0;
+}
+.com-hd-t{
+	padding-top:8px;
+	text-indent: 70px;
+	width:1034px;
+	margin: 0 auto;
+}
+.spec-mod,.com-mod{
+	background-repeat: no-repeat;
+	background-position: center top;
+	min-width: 975px; 
+	margin-bottom: 30px;
+	background-color: #201f1f;
+	border: 1px solid #4e4e4e
+	min-width: 976px;
+    padding: 5px 9px 15px;
+}
+.spec-mod ul li{
+	margin-right: 5px;
+}
+.wrap-cnt{
+	width: 989px;
+	margin:0 auto;
+	position: relative;
+	z-index: 2;
+}
+
+.com-bd{
+	width:1034px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.ft-ad-mod{
+	widows: 100%;
+	height: 369px;
+	display: block;
+	background-repeat: no-repeat;
+	background-position: center top;
+}
+.ft-ad-mod img{
+	widows: 100%;
+	height: 369px;
+}
+.ft-mod{
+	width: 100%;
+	height: 636px;
+	margin-top: 5px;
+	overflow: hidden;
+}
+.ft-mod div{
+	height: 220px;
+	background-repeat: no-repeat;
+	background-position: center top;
+}
+/*右侧浮层*/
+.right-nav{
+	position:fixed;
+	-position:absolute;
+	width:105px;
+	height:268px;
+	padding-top: 60px;
+	z-index:100;
+	left:55%;
+	margin-bottom: 100px;
+	margin-left:450px;
+	bottom:35px;
+	overflow: hidden;
+	background:url(img/nav.png) no-repeat;
+}
+.right-nav a{
+	height: 32px;
+	font: 100 18px/28px 'Microsoft Yahei';
+	color:#fff;
+	text-decoration: none;
+	margin-top: 5px;
+	text-align: left;
+}
+.right-nav a:hover{
+	text-decoration: underline;
+}
+
+.right-nav .go-top{
+	background:none;
+	border:none;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+}
+.lin1{
+	padding-left: 20px;
+}
+.lin2{
+	padding-left: 22px;
+}
+.lin3{
+	padding-left: 31px;
+}
+.lin4{
+	padding-left: 38px;
+}
+.lin5{
+	padding-left: 5px;
+}
+.right-nav a.lin6{
+	padding-left: 17px;
+	font-size: 12px;
+}
+.lin7{
+	padding-left: 13px;
+}
+.help{
+	margin-top: 0;
+}
+#com2 .com-hd-t,#com3 .com-hd-t{
+	text-align: right;
+	padding-right: 60px;
+	width:974px;
+}

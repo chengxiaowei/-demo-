@@ -1,0 +1,69 @@
+@import url('../../../pub/css/common.css');
+@import url('../../../pub/css/btn.css'); 
+@import url('../../../pub/font/iconfont.css');
+@import url('../../../pub/css/dialog/ui-dialog.css');
+@import url('../../../pub/css/hd/site-nav.css');
+@import url('../../../pub/css/linkage-tab.css');
+@import url('../../../pub/css/hd/search.css');
+@import url('../../../pub/css/hd/nav.css');
+@import url('../../../pub/css/jquery.minSlide.css');
+@import url('../../../pub/css/ft/ft.css');
+@import url('../../../pub/css/min-bar/min-bar.css');
+@import url('../../../app/style.css'); 
+body{
+	background-color:#fff;
+}
+.bn{
+	margin: 0 auto;
+	min-width: 1190px;
+	height: auto;
+}
+.layout{
+	width: 990px;
+}
+
+.cnt-box{
+	position: relative;
+	margin-top: -50px;
+	padding-bottom: 200px;
+	background: url(img/ft.jpg) no-repeat center bottom;
+	z-index: 3;
+	*overflow: hidden;
+}
+.com-mod{
+	margin: 0 auto 60px; 
+	width: 1000px;
+}
+.com-bd{
+	margin: 0 auto;
+	padding-top:45px;
+	position: relative;
+}
+
+.goods-ad{
+	position: absolute;
+	top:0;
+	left: -165px;
+	width: 370px;
+	height: 340px;
+	z-index: 3;
+}
+.goods-ad a, .goods-ad a img{
+	display: block;
+ 
+}
+.goods-ml{
+	margin-left: 212px;
+}
+.com-bd ul{
+	position: relative;
+	left: 16px;
+	*margin-bottom: 10px;
+}
+.com-bd ul.goods-ml{
+	left: 0;
+	width: 800px;
+}
+.com-bd li{
+	margin:0 6px 10px 0;
+}

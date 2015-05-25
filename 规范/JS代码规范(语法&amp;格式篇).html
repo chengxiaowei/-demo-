@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<!-- saved from url=(0037)http://fe.bubugao-inc.com/specs/js.md -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>JS代码规范(语法&amp;amp;格式篇)</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="author" content="Allex Wang">
+<link href="./JS代码规范(语法&amp;格式篇)_files/specs-base.css" rel="stylesheet" type="text/css">
+<link href="./JS代码规范(语法&amp;格式篇)_files/github.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div class="md-body">
+<h1 id="js">JS代码规范(语法&amp;格式篇)</h1>
+<h2>基本原则</h2>
+<ol>
+<li><p>所有的代码都要符合可维护性原则 —— 简单、便于阅读。</p>
+</li>
+<li><p>部分编码原则是与性能原则相悖的, 如果遇到这种情况, 请优先遵守语法规范。 (注: 如果确实有不确定的
+情况或者性能影响很大, 请联系你的主管或者我, 我们共同来商量最佳的解决方案)</p>
+</li>
+</ol>
+<h2>文件属性</h2>
+<ol>
+<li><p>所有 js 文件均以 UTF-8 作为默认编码, 不能含有 BOM(Byte Order Mark, 是 UTF 编码方案里用于标识编
+码的标准标记)头。</p>
+</li>
+<li><p>文件命名, 必须是有意义的文件名; 建议使用英文或数字组合; 文件名中严禁出现中文; 多个英文单词请用驼峰
+命名法，如：historyManager.js</p>
+</li>
+<li><p>请不要在文件名后加数字, 来实现相同功能的多个版本, 如:drag1.js、drag2.js、drag3.js是禁止的。</p>
+</li>
+<li><p>上线到公网的文件名及文件路径, 避免一些特殊字符, 如:ad、64, 免被某些浏览器或者防火墙屏蔽。</p>
+</li>
+<li><p>所有上线代码及源代码必须纳入到 git 管理, 避免离职或者变动岗位, 造成代码丢失后期不可维护。</p>
+</li>
+<li><p>(建议) 不使用(汉语拼音/拼音英文数字组合/不规范的英文缩写)作为文件名。例如: jubao.js, MseEvtHdlr.js, mendian-address.js。</p>
+</li>
+<li><p>(建议) 尽量使用英文小写作为文件名, 免某些系统不区分文件名大小写。</p>
+</li>
+<li><p>(建议) 文件的目录规划及归属, 遵守各项目的具体规定。如果是新项目, 请参照主站的目录结构管理办法。</p>
+</li>
+</ol>
+<h2>代码格式化</h2>
+<h3>换行原则</h3>
+<ol>
+<li><p>(建议)每行代码不要超过 80 字符。当一条语句一行写不下时, 折行。</p>
+</li>
+<li><p>折行位置:在运算符号后面换行。在运算符后换行可以减少因为复制粘贴产生的错误被分号掩盖的几率。</p>
+</li>
+<li><p>每行代码只允许一个有效语句, 止为了减少代码行数, 多个语句放在一行代码中。</p>
+</li>
+<li><p>多行字符串使用 + 拼接形式换行(打包工具会优化它, 用担心性能问题), 不要使用 \ 拼接(它不是 ECMA 的
+标准规范)。 例如, 下面的代码是错误的(在编译时, 不能忽略行起始位置的空白字符):</p>
+<pre><code class="lang-js cs"><span class="keyword">var</span> wrongString = <span class="string">'The string is so long, \
+                  we need split \
+                  in multi-line.'</span>;
+</code></pre>
+<p>正解处理长串:</p>
+<pre><code class="lang-js xml">var wrongString = '<span class="tag">&lt;<span class="title">div</span>&gt;</span>' +
+                     '<span class="tag">&lt;<span class="title">header</span>&gt;</span>title text<span class="tag">&lt;/<span class="title">header</span>&gt;</span>' +
+                     '<span class="tag">&lt;<span class="title">p</span>&gt;</span>some description text<span class="tag">&lt;/<span class="title">p</span>&gt;</span>' +
+                  '<span class="tag">&lt;/<span class="title">div</span>&gt;</span>';
+</code></pre>
+</li>
+<li><p>"{}" (大括号)前面不需要换行, 例如函数定义、if 语句、while 语句、switch 等。</p>
+</li>
+</ol>
+<h3>缩进原则</h3>
+<ol>
+<li><p>代码需要保持适当的缩进。</p>
+</li>
+<li><p>缩进请使用Tab缩进（1 tab = 4 spaces，可以在编辑器设置）空格缩进显示以兼容不同IDE, 不同操作平台的差异。</p>
+</li>
+<li><p>复合语句(被包含在 “{}”(大括号)的语句序列, 包括函数定义)需要保持缩进。</p>
+</li>
+<li><p>初始化数组和 JSON 对象时, 如果初始值较长, 需要换行并保持缩进。</p>
+</li>
+<li><p>函数调用时, 如果传递的是匿名函数, 匿名函数的内容需要换行并保持缩进, 让匿名函数更加易读。</p>
+</li>
+</ol>
+<h3>空格</h3>
+<p>  需要保留空格的情况:</p>
+<ol>
+<li><p>各种运算符, 包括数值操作符(例如:+、-、*、/、%等)、位运算符、比较运算符、三元运算符、复合赋值运算
+符、赋值运算符前后, 保留一个空格。 “.”(点) 和“(”(左括号)和 “[”(左方括号)例外。</p>
+</li>
+<li><p>for 循环条件中, 分号后保留一个空格。</p>
+</li>
+<li><p>所有的逗号后保留一个空格, 例如: 变量声明语句、数组值、JSON 对象值、函数参数值等等。</p>
+</li>
+<li><p>冒号前后都加空格。</p>
+<p>不需要保留空格的情况:</p>
+</li>
+<li><p>一元操作符与其操作数之间不应有空格, 如: i++。除非操作符是个单词, 例如: typeof window。</p>
+</li>
+<li><p>点号前后不要出现空格。</p>
+</li>
+<li><p>空行不要有空格, 尾不要有空格。</p>
+</li>
+<li><p>空对象和数组不需要填入空格。[], {}</p>
+</li>
+<li><p>函数调用的括号“(”前, 要出现空格。</p>
+</li>
+<li><p>注释符前后要有空格。</p>
+</li>
+</ol>
+<h3>空行</h3>
+<ol>
+<li><p>逻辑上独立的代码块, 对象方法，函数前后使用空行分隔。尽量使用空行将逻辑相关的代码块分割开, 以提高程序的可读性。</p>
+</li>
+<li><p>连续空行数控制在 1 ~ 3 行（根据代码块层次来控制空行数）。</p>
+</li>
+<li><p>(建议) 文件末尾留 1 ~ 2 个空行。</p>
+</li>
+</ol>
+<h3>语句行</h3>
+<ol>
+<li><p>语句必须以分号作为结束符, 不能忽略分号。除了 for, function, if, switch, try, while 结束的花括号后无需分号。</p>
+<blockquote>
+<p>js 的语句以分号作为结束符, 除非可以非常准确推断某结束位置才会省略分号。上面的几个例子产出错误,
+均是在语句中声明了函数/对象/数组直接量, 但闭括号 ( '}' 或 ']' ) 并不足以表示该语句的结束。
+<strong>在js 中, 只有当语句后的下一个符号是后缀或括号运算符时, 才会认为该语句的结束</strong></p>
+</blockquote>
+<p>有的情况下, 漏掉分号会有大麻烦, 例如：</p>
+<p># 情况一: 语句会解释成, 一个函数带一匿名函数作为参数而被调用, 返回 42 后, 又一次被调用, 这就导致了错误</p>
+<pre><code class="lang-js javascript">MyClass.prototype.myMethod = <span class="keyword">function</span>() {
+    <span class="keyword">return</span> <span class="number">42</span>;
+} <span class="comment">// 缺分号</span>
+
+(<span class="keyword">function</span>() {
+    <span class="comment">// Some initialization code wrapped in a function to create a scope for locals.</span>
+})();
+</code></pre>
+<p># 情况二: 在运行时遇到 'no such property in undefined' 错误, 原因是代码试图这样 <code>x[ffVersion][isIE]()</code> 执行</p>
+<pre><code class="lang-js cpp">var x = {
+    <span class="string">'i'</span>: <span class="number">1</span>,
+    <span class="string">'j'</span>: <span class="number">2</span>
+} <span class="comment">// 缺分号</span>
+[ffVersion][isIE]();
+</code></pre>
+<p># 情况三: 当 resultOfOperation() 返回非 0 时, 就会调用 die, 其结果也会赋给 arrResult</p>
+<pre><code class="lang-js cpp">var arrResult = [<span class="string">'1'</span>, <span class="string">'2'</span>, <span class="string">'3'</span>] <span class="comment">// 缺分号</span>
+
+<span class="comment">// conditional execution a la bash</span>
+-<span class="number">1</span> === resultOfOperation() || die();
+</code></pre>
+</li>
+<li><p>对于复合语句, if, for, while, do, switch, try ... catch 等代码体, 数定义的函数体, 对象的定义等
+都需要放在花括号 “{}” 里面。</p>
+<ul>
+<li>“{” 应在行末, 标志代码块的开始。</li>
+<li>“}” 应在一行开头, 标志代码块的结束, 同时需和“{”所在行的开始对齐, 以表明是一个完整的复合语句。这
+ 样可极大地提高代码的可阅读性, 控制逻辑能清晰地表现出来。</li>
+<li>被包含的代码段应该保持缩进。</li>
+<li>即使被包含的代码段只有一句, 也应该用“{}”包含。尽管不用花括号代码也不会错, 但如若需要增加语句的
+ 话, 则较容易因花括号遗漏而引起的编译错误或逻辑错误。</li>
+</ul>
+</li>
+<li><p>return 语句在使用时也需慎重, 如果用表达式的执行作为返回值, 请把表达式和 return 放在同一行中, 以
+免换行符被误解析为语句的结束而引起返回错误。 例如:</p>
+<pre><code class="lang-js javascript"><span class="function"><span class="keyword">function</span> <span class="title">unexpectedReturn</span><span class="params">()</span> {</span>
+    <span class="keyword">var</span> valueA = <span class="number">1</span>, valueB = <span class="number">2</span>;
+    <span class="keyword">return</span>
+        valueA + valueB;
+}
+console.log(unexpectedReturn()); <span class="comment">// ouput: undefined</span>
+</code></pre>
+</li>
+</ol>
+<h3>代码格式示例</h3>
+<pre><code class="lang-js cs">  function walk(holder, key) {
+
+      <span class="comment">// The walk method is used to recursively walk the resulting structure so</span>
+      <span class="comment">// that modifications can be made.</span>
+
+      <span class="keyword">var</span> k, v, <span class="keyword">value</span> = holder[key];
+      <span class="keyword">if</span> (<span class="keyword">value</span> &amp;&amp; <span class="keyword">typeof</span> <span class="keyword">value</span> === <span class="string">'object'</span>) {
+          <span class="keyword">for</span> (k <span class="keyword">in</span> <span class="keyword">value</span>) {
+              <span class="keyword">if</span> (Object.prototype.hasOwnProperty.call(<span class="keyword">value</span>, k)) {
+                  v = walk(<span class="keyword">value</span>, k);
+                  <span class="keyword">if</span> (v !== undefined) {
+                      <span class="keyword">value</span>[k] = v;
+                  } <span class="keyword">else</span> {
+                      delete <span class="keyword">value</span>[k];
+                  }
+              }
+          }
+      }
+
+      <span class="keyword">return</span> reviver.call(holder, key, <span class="keyword">value</span>);
+  }
+</code></pre>
+<h2>代码注释</h2>
+<blockquote>
+<p>注释，给以后需要理解你的代码的人(或许就是你自己)留下信息是非常有用的。注释应该和它们所注释的代
+码一样是书写良好且清晰明了。 避免冗长或者情绪化的注释。</p>
+</blockquote>
+<h3>文件头部注释</h3>
+<ol>
+<li><p>所有 js, css 文件头部, 必须有文件注释, 用于简要说明:
+文件的主要功能(含模块信息)、作者(含作者邮箱)、版权等信息。 文件头注释格式如下:</p>
+<pre><code class="lang-js java"> <span class="javadoc">/**
+  * Basic lang utilities functions ...
+  *
+  * <span class="javadoctag">@author</span> Allex Wang
+  * <span class="javadoctag">@module</span> clib/lang
+  */</span>
+ define(<span class="string">'lang'</span>, function(require, exports, module) {
+   ...
+ });
+</code></pre>
+</li>
+<li><p>注释需要简洁明了, 从已解决的方案到未开发的功能, 注释必须与代码相关。</p>
+</li>
+<li><p><strong>及时地更新注释, 错误的注释会让程序更加难以阅读和理解。</strong></p>
+</li>
+<li><p>(建议) 公用模块文件，请添加范例代码。</p>
+</li>
+<li><p>(建议) 所有的注释请尽量使用英文(跨平台编辑)。</p>
+</li>
+<li><p>(建议) // 用作代码行注释, /<em> ... </em>/ 形式用作对整个代码段的注销,或较正式的声明中,
+如函数参数、功能、文件功能等的描述中。</p>
+</li>
+<li><p>(建议) 如果可能, 文件头部的注释, 还要包含文件依赖关系、版本号、第三方代码来源url信息等。</p>
+</li>
+</ol>
+<h3>代码内部注释</h3>
+<ol>
+<li><p>大量的变量声明后面须添加注释, 说明变量用途。</p>
+</li>
+<li><p>每个对外暴露的 API 方法, 需要加注释说明其用途。注释需要包括: 函数的用途、参数、返回值等, 此三项为强制要求。</p>
+</li>
+<li><p>生涩的代码就没有必要添加注释了, 首先您需要重写它们。</p>
+</li>
+<li><p>注释没有必要每行都添加, 只在重要的逻辑、或者较复杂的逻辑处, 增加必要的注释。</p>
+</li>
+<li><p>通俗易懂的语句压根儿不需要添加注释，合理的变量命名其实是最直接的注释。</p>
+</li>
+<li><p>删除注释掉的代码块, 只要提交了 git, 代码可以随时找回, 无需保留被注释的废弃代码。</p>
+</li>
+</ol>
+<h3>模块注释规范</h3>
+<ol>
+<li><p>类注释</p>
+<p>每个类的定义都要附带一份注释, 描述类的功能和用法. 也需要说明构造器参数. 如果该类继承自其它类,
+应该使用 @extends 标记.  如果该类是对接口的实现, 应该使用 @implements 标记.</p>
+<pre><code class="lang-js java"> <span class="javadoc">/**
+  * Class making something fun and easy.
+  * <span class="javadoctag">@param</span> {String} arg1 An argument that makes this more interesting.
+  * <span class="javadoctag">@param</span> {Array} arg2 List of numbers to be processed.
+  * <span class="javadoctag">@constructor</span>
+  * <span class="javadoctag">@extends</span> {goog.Disposable}
+  */</span>
+ project.MyClass = function(arg1, arg2) {
+     <span class="comment">// ...</span>
+ };
+ goog.inherits(project.MyClass, goog.Disposable);
+</code></pre>
+</li>
+<li><p>方法与函数的注释</p>
+<p>提供参数的说明. 使用完整的句子, 并用第三人称来书写方法说明.</p>
+<pre><code class="lang-js java"> <span class="javadoc">/**
+  * Converts text to some completely different text.
+  * <span class="javadoctag">@param</span> {String} arg1 An argument that makes this more interesting.
+  * <span class="javadoctag">@return</span> {String} Some return value.
+  */</span>
+ MyClass.prototype.someMethod = function(arg1) {
+     <span class="comment">// ...</span>
+ };
+
+ <span class="javadoc">/**
+  * Operates on an instance of MyClass and returns something.
+  * <span class="javadoctag">@param</span> {project.MyClass} obj Instance of MyClass which leads to a long
+  *     comment that needs to be wrapped to two lines.
+  * <span class="javadoctag">@return</span> {boolean} Whether something occured.
+  */</span>
+ function PR_someMethod(obj) {
+     <span class="comment">// ...</span>
+ }
+</code></pre>
+<p>对于一些简单的, 不带参数的 getters, 说明可以忽略.</p>
+<pre><code class="lang-js java"> <span class="javadoc">/**
+  * <span class="javadoctag">@return</span> {Element} The element for the component.
+  */</span>
+ Component.prototype.getElement = function() {
+     <span class="keyword">return</span> <span class="keyword">this</span>._element;
+ };
+</code></pre>
+</li>
+<li><p>属性注释</p>
+<pre><code class="lang-js java"> <span class="javadoc">/**
+  * Maximum number of things per pane.
+  * <span class="javadoctag">@type</span> {Number}
+  */</span>
+ project.MyClass.prototype.someProperty = <span class="number">4</span>;
+</code></pre>
+</li>
+<li><p>类型转换的注释</p>
+<p>有时, 类型检查不能很准确地推断出表达式的类型,
+所以应该给它添加类型标记注释来明确之, 并且必须在表达式和类型标签外面包裹括号.</p>
+<pre><code class="lang-js javascript"> <span class="function"><span class="keyword">function</span> <span class="title">setFoo</span><span class="params">(x)</span> <span class="params">(<span class="comment">/* @type {Number} */</span> x)</span> {</span> ... }
+</code></pre>
+</li>
+<li><p>枚举</p>
+<pre><code class="lang-js java"> <span class="javadoc">/**
+  * Enum for tri-state values.
+  * <span class="javadoctag">@enum</span> {Number}
+  */</span>
+ project.TriState = {
+     TRUE: <span class="number">1</span>,
+     FALSE: -<span class="number">1</span>,
+     MAYBE: <span class="number">0</span>
+ };
+</code></pre>
+<p>注意一下, 枚举也具有有效类型, 所以可以当成参数类型来用.</p>
+<pre><code class="lang-js java"> <span class="javadoc">/**
+  * Sets project state.
+  * <span class="javadoctag">@param</span> {project.TriState} state New project state.
+  */</span>
+ project.setState = function(state) {
+     <span class="comment">// ...</span>
+ };
+</code></pre>
+</li>
+<li><p>JSDoc 缩进</p>
+<p>如果你在 @param, @return, @supported, @this 或 @deprecated 中断行, 需要像在代码中一样,
+使用4个空格作为一个缩进层次.</p>
+<pre><code class="lang-js java"> <span class="javadoc">/**
+  * Illustrates line wrapping for long param/return descriptions.
+  * <span class="javadoctag">@param</span> {String} foo This is a param with a description too long to fit in
+  *     one line.
+  * <span class="javadoctag">@return</span> {Number} This returns something that has a description too long to
+  *     fit in one line.
+  */</span>
+ project.MyClass.prototype.method = function(foo) {
+     <span class="keyword">return</span> <span class="number">5</span>;
+ };
+</code></pre>
+</li>
+<li><p>模块使用范例注释:</p>
+<pre><code class="lang-js java"> <span class="javadoc">/**
+  * <span class="javadoctag">@example</span>
+  *  var bleeper = makeBleep(3);
+  *  bleeper.flop();
+  */</span>
+</code></pre>
+</li>
+<li><p>Typedefs:</p>
+<p>有时类型会很复杂. 比如下面的函数, 接收 Element 参数</p>
+<pre><code class="lang-js java"> <span class="javadoc">/**
+  * <span class="javadoctag">@param</span> {String} tagName
+  * <span class="javadoctag">@param</span> {String|Element|Text|Array} contents
+  * <span class="javadoctag">@return</span> {Element}
+  */</span>
+ goog.createElement = function(tagName, contents) {
+     ...
+ };
+</code></pre>
+<p>你可以使用 @typedef 标记来定义个常用的类型表达式</p>
+<pre><code class="lang-js java"> <span class="javadoc">/** <span class="javadoctag">@typedef</span> {String|Element|Text|Array} */</span>
+ goog.ElementContent;
+
+ <span class="javadoc">/**
+  * <span class="javadoctag">@param</span> {String} tagName
+  * <span class="javadoctag">@param</span> {goog.ElementContent} contents
+  * <span class="javadoctag">@return</span> {Element}
+  */</span>
+ goog.createElement = function(tagName, contents) {
+     ...
+ };
+</code></pre>
+</li>
+</ol>
+<h2>命名规范</h2>
+<h3>变量命名</h3>
+<ol>
+<li><p>声明变量必须加上关键字 var, 避免使用未声明的变量。</p>
+<p>当你没有写 var, 变量就会暴露在全局上下文中, 这样很可能会和现有变量冲突。另外, 如果没有加上,
+很难明确该变量的作用域是什么, 变量也很可能看起来像在局部作用域中, 但实际上,
+已经泄漏到 window 中, 所以务必用var 去声明变量 (批量定义变量一定要注意结束符逗号 "," 不能漏掉)。</p>
+</li>
+<li><p>精简短小, 见名知意。变量名使用英文大小写和数字命名, 使用<strong>驼峰命名</strong>规则, 例如: getStyle、addEvent。</p>
+</li>
+<li><p>变量的命名, 不得使用 js 保留字。 js 保留字列表:</p>
+<pre><code class="java"><span class="keyword">abstract</span> <span class="keyword">boolean</span> <span class="keyword">break</span> <span class="keyword">byte</span> <span class="keyword">case</span> <span class="keyword">catch</span> <span class="keyword">char</span> <span class="class"><span class="keyword">class</span> <span class="title">const</span> <span class="title">continue</span> <span class="title">default</span> <span class="title">do</span>
+<span class="title">double</span> <span class="title">else</span> <span class="keyword">extends</span> <span class="title">false</span> <span class="title">final</span> <span class="title">finally</span> <span class="title">float</span> <span class="title">for</span> <span class="title">function</span> <span class="title">goto</span> <span class="title">if</span> <span class="keyword">implements</span>
+<span class="title">import</span> <span class="title">in</span> <span class="title">instanceof</span> <span class="title">int</span> <span class="title">interface</span> <span class="title">long</span> <span class="title">native</span> <span class="title">new</span> <span class="title">null</span> <span class="title">package</span> <span class="title">private</span>
+<span class="title">protected</span> <span class="title">public</span> <span class="title">return</span> <span class="title">short</span> <span class="title">static</span> <span class="title">super</span> <span class="title">switch</span> <span class="title">synchronized</span> <span class="title">this</span> <span class="title">throw</span> <span class="title">throws</span>
+<span class="title">transient</span> <span class="title">true</span> <span class="title">try</span> <span class="title">var</span> <span class="title">void</span> <span class="title">while</span> <span class="title">with</span>
+</span></code></pre></li>
+<li><p>不能使用没有任何意义的变量名 (循环的指针变量除外, 见下文 15), 例如: var a = 1; var xx = true;
+避免无意义的简写, 例如: MouseEventHandler 写作 MseEvtHdlr。</p>
+</li>
+<li><p>常量、枚举量使用全大写作为变量名, 多个单词之间用下划线(_)分隔。例如: NAME_LIKE_THIS。</p>
+</li>
+<li><p>除非必要, 请不要使用全局变量, 避免出现全局变量污染。(特殊情况需要经项目前端技术负责人审批)</p>
+</li>
+<li><p>函数内部的变量, 请在函数定义的头部声明。出于避免造成不必要消耗的考虑,
+复杂类型的变量可以只声明不赋值。唯一特殊的情况, 是 for 循环的下标变量,
+可以使用的时候实时声明。</p>
+</li>
+<li><p>函数内保存 DOM 引用和定时器的变量, 使用完后必须显式销毁,
+从而可以及时的执行内存回收。例如设置该变量为 null; 定时器变量销毁, 请执行 clearInterval 或者 clearTimeout。</p>
+</li>
+<li><p>函数内两次以上使用到的同一全局变量或者外部对象, 定义为一个局部变量,
+以保证程序性能最优, 例如: var doc = document, win = window;</p>
+</li>
+<li><p>私有化变量和方法名应该以下划线 <code>_</code> 开头 (仅限有跨作用域的变量或方法等).</p>
+</li>
+<li><p>(建议) 不在变量名前加下划线 <code>_</code> 表示私有变量。</p>
+</li>
+<li><p>(建议) <code>this</code> 命名, 尽量以能表达当前实例意义的名称, 通用命名为 <code>self</code>;</p>
+<pre><code class="lang-js php">Pager.protoype.<span class="keyword">goto</span> = function() {
+  <span class="keyword">var</span> pager = <span class="keyword">this</span>, index = page.currentIndex + <span class="number">1</span>;
+  setTimeout(function() { page.doRequest(index); });
+};
+<span class="function"><span class="keyword">function</span> <span class="title">foo1</span><span class="params">()</span>{</span>
+  <span class="keyword">var</span> <span class="keyword">self</span> = <span class="keyword">this</span>;
+  setTimeout(function() { console.log(<span class="keyword">self</span>.name); }, <span class="number">1</span>);
+}
+<span class="function"><span class="keyword">function</span> <span class="title">foo2</span><span class="params">(name)</span>{</span>
+  <span class="keyword">var</span> <span class="keyword">self</span> = <span class="keyword">this</span>;
+  <span class="keyword">self</span>.name = name;
+  foo1.call(<span class="keyword">self</span>);
+}
+</code></pre>
+</li>
+<li><p>(建议) 布尔变量、返回值为 boolean 的函数/方法前可以添加前缀 is/has/can/should。</p>
+</li>
+<li><p>(建议) 避免产生歧义的命名, 例如: isNotError, isNotFound。</p>
+</li>
+<li><p>(建议) 表示错误的变量, 建 for 循环中的临时重复变量建议以 i, j, k, m, n ... 命名。</p>
+</li>
+<li><p>(建议) 多个变量声明时, 适当换行表示, 参照 var 关键字位置保持缩进。</p>
+</li>
+</ol>
+<h3>自定义对象(类)命名</h3>
+<ol>
+<li><p>自定义对象(类)</p>
+<p>命名, 每个单词首字母均需要大写, 例如: ModuleDialog。
+内部对象  (不会导出的构造器或静态对象), 使用 _ 开头来定义, 例如: _BaseTab;</p>
+</li>
+<li><p>对象的方法</p>
+<p>驼峰命名方式, 必须是动词或者动词短语, 例如: obj.getSomeValue()。
+函数的参数个数不固定时, 应该添加最后一个取名为 <code>args</code> 的参数.
+可选和可变参数应该在 @param (Optional) 标记中说明清楚.</p>
+</li>
+</ol>
+<h2>变量赋值及定义</h2>
+<ol>
+<li><p>下面类型的对象不建议用 new 构造,而是使用直接量赋值:
+new Number, new String, new Boolean, new Object (用{}代替), new Array(用[]代替)。</p>
+</li>
+<li><p>禁止数组或者 JSON 中出现冗余的逗号, IE 下会抛出语法错误。
+例如: var testArray = [1,2,3,]; 或者 var jsonExample = { 'key1': value1, 'key2': value2,};</p>
+</li>
+<li><p>禁止污染内置对象的原型, 例如 Object.prototye、Array.prototype、Function.prototype。</p>
+</li>
+<li><p>不要使用连等进行赋值。例如:</p>
+<pre><code class="lang-js javascript">(<span class="function"><span class="keyword">function</span> <span class="params">()</span> {</span>
+   <span class="keyword">var</span> numberA = numberB = <span class="number">3</span>; <span class="comment">// 这里产生的 numberB 是全局变量</span>
+})();
+alert(numberB); <span class="comment">// return 3</span>
+</code></pre>
+</li>
+<li><p>如果一个赋值语句是用函数和对象来赋值, 可能需要跨多行, 一定切记要在赋值语句末加上分号。</p>
+</li>
+<li><p>(建议) 数组和对象初始化时, 如果初始值不是很长, 尽量保持写在单行上; JSON
+对象中, 比较长的 key/value, 不必为了美观以冒号对齐。</p>
+</li>
+<li><p>(建议) 没必要在每次声明变量时就将其初始化, 但使用变量之前一定要确保变量已经初始化。</p>
+</li>
+<li><p>(建议) 字符串变量赋值的时候, 优先使用单引号, 而不是双引号, 尤其是你创建的是 HTML 字符串。</p>
+<pre><code class="lang-js xml">var s = 'hello world';
+var html = '<span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"header"</span>&gt;</span><span class="tag">&lt;/<span class="title">div</span>&gt;</span>';
+console.log(s + ', my name is cat');
+console.log(html);
+</code></pre>
+</li>
+</ol>
+<h2>条件语句/循环</h2>
+<h3>条件语句</h3>
+<ol>
+<li><p>if 语句, 即使只有单行, 也要用花括号括起来, 例如:</p>
+<pre><code class="lang-js cs"><span class="comment">// (错误)</span>
+<span class="keyword">if</span> (condition) statement;
+
+<span class="comment">// (正确)</span>
+<span class="keyword">if</span> (condition) {
+ statement;
+}
+</code></pre>
+</li>
+<li><p>使用三元运算符, 替代单一的 if else 语句。例如:</p>
+<pre><code class="lang-js cs"><span class="keyword">if</span> (val != <span class="number">0</span>) {
+    <span class="keyword">return</span> foo();
+} <span class="keyword">else</span> {
+   <span class="keyword">return</span> bar();
+}
+
+<span class="comment">// 可以写作:</span>
+<span class="keyword">return</span> val ? foo() : bar();
+</code></pre>
+</li>
+<li><p>if/else/while/for 条件表达式必须有小括号, 且自占一行。</p>
+</li>
+<li><p>(建议) 利用 &amp;&amp; 和 || 短路来简化代码:</p>
+<pre><code class="lang-js javascript"><span class="function"><span class="keyword">function</span> <span class="title">foo</span><span class="params">(opt_win)</span> {</span>
+   <span class="keyword">var</span> win;
+   <span class="keyword">if</span> (opt_win) {
+       win = opt_win;
+   } <span class="keyword">else</span> {
+       win = window;
+   }
+   <span class="comment">// ...</span>
+}
+
+<span class="comment">// 可以写作:</span>
+<span class="function"><span class="keyword">function</span> <span class="title">foo</span><span class="params">(opt_win)</span> {</span>
+   <span class="keyword">var</span> win = opt_win || window;
+   <span class="comment">// ...</span>
+}
+</code></pre>
+<p>&amp;&amp; 短路:</p>
+<pre><code class="lang-js cs"><span class="keyword">if</span> (node) {
+   <span class="keyword">if</span> (node.kids) {
+       <span class="keyword">if</span> (node.kids[index]) {
+           foo(node.kids[index]);
+       }
+   }
+}
+
+<span class="comment">// 可以写作:</span>
+<span class="keyword">if</span> (node &amp;&amp; node.kids &amp;&amp; node.kids[index]) {
+   foo(node.kids[index]);
+}
+
+<span class="comment">// 或者</span>
+<span class="keyword">var</span> kid = node &amp;&amp; node.kids &amp;&amp; node.kids[index];
+<span class="keyword">if</span> (kid) {
+   foo(kid);
+}
+</code></pre>
+</li>
+<li><p>(建议) 使用严格的条件判断符。用 === 代替 ==, 用!== 代替 !=。</p>
+</li>
+</ol>
+<h3>循环</h3>
+<ol>
+<li><p>尽量避免 for-in 循环, 只用于 object/hash 的遍历, 数组的遍历使用 for 循环。</p>
+</li>
+<li><p>for-in 循环体中必须用 hasOwnProperty 方法检查成员是否为自身成员, 避免来自原型链上的污染。</p>
+</li>
+<li><p>避免在 if 和 while 语句的条件部分进行赋值。例如:</p>
+<pre><code class="lang-js cs"><span class="comment">// (错误)</span>
+<span class="keyword">var</span> i = <span class="number">10</span>;
+<span class="keyword">while</span> (i = i - <span class="number">2</span>) {
+   statement;
+}
+<span class="comment">// 应该写作: (正确)</span>
+<span class="keyword">var</span> i = <span class="number">10</span>;
+<span class="keyword">while</span> (i &gt; <span class="number">0</span>) {
+   statement;
+   i = i - <span class="number">2</span>;
+}
+</code></pre>
+</li>
+</ol>
+<h2>函数/闭包</h2>
+<h3>函数</h3>
+<ol>
+<li><p>一个函数的内容不宜太长, 较复杂的逻辑, 需拆分成多个函数来实现, 使代码逻辑清晰。</p>
+</li>
+<li><p>对外暴露的 API 型函数, 尽量保持输入输出的稳定, 减小调用者修改代码的成本和风险。</p>
+</li>
+<li><p>可以嵌套函数, 用于减少重复代码, 隐藏一些局部函数等, 但不要在块内声明一个函数。因为 JS
+并不支持块级作用域, 虽然很多 js 引擎都支持块内声明函数, 但它不属于 ECMAScript 规范 (见 ECMA-262, 第
+13 和 14 条)。各个浏览器糟糕的实现相互不兼容, 有些也与未来 ECMAScript 草案相违背。ECMAScript 只允
+许在脚本的根语句或函数中声明函数. 如果确实需要在块中定义函数, 建议使用函数表达式来初始化变量。例如:</p>
+<pre><code class="lang-js javascript"><span class="comment">// (错误)</span>
+<span class="keyword">if</span> (x){
+   <span class="function"><span class="keyword">function</span> <span class="title">foo</span> <span class="params">()</span> {</span>}
+}
+<span class="comment">// 应该写作: (正确)</span>
+<span class="keyword">if</span> (x) {
+   <span class="keyword">var</span> foo = <span class="function"><span class="keyword">function</span> <span class="params">()</span> {</span>};
+}
+</code></pre>
+</li>
+<li><p>有很多方法可以给构造器添加方法或成员, 我们更倾向于使用如下的形式:</p>
+<pre><code class="lang-js javascript">Foo.prototype.bar = <span class="keyword">function</span>() {
+   <span class="comment">/* ... */</span>
+};
+</code></pre>
+</li>
+<li><p>仅在对象构造器、方法、闭包中使用 <code>this</code> 对象, 避免 this 乱用出现的指代不明。 <code>this</code>
+的语义很特别。有时它引用一个全局对象(大多数情况下), 调用者的作用域(使用 eval 时), DOM
+树中的节点(添加事件处理函数时), 新创建的对象(使用一个构造器), 或者其他对象(如果函数被 call() 或
+apply())。</p>
+</li>
+<li><p>引用对象成员用 obj.propName 代替 obj['propName'], 除非属性名是变量或是接口数据的引用。</p>
+</li>
+</ol>
+<h3>函数参数</h3>
+<ol>
+<li><p>函数的必选参数, 必须检查是否传递了合法的参数, 避免参数类型不对带来的异常。</p>
+</li>
+<li><p>函数参数写在同一行上。如果一行超过 80 字符, 请按照缩进原则进行换行, 并保持适当缩进。</p>
+</li>
+</ol>
+<h3>闭包</h3>
+<ol>
+<li><p>由于闭包保留了一个指向它封闭作用于的指针, 所以在给 DOM 元素附加闭包时候, 要避免产生循环引用, 从而导致内存泄露。例如:</p>
+<pre><code class="lang-js javascript"><span class="comment">// (错误)</span>
+<span class="function"><span class="keyword">function</span> <span class="title">foo</span><span class="params">(element, a, b)</span> {</span>
+   element.onclick = <span class="function"><span class="keyword">function</span> <span class="params">()</span> {</span> <span class="comment">/* 使用变量 a 和 b */</span> }
+}
+</code></pre>
+<p>这里, 即使没有使用 element, 闭包也保留了 element, a 和 b 的引用, 由于 element
+也保留了对闭包的引用, 这就产生了循环引用, 这就不能被 GC 回收. 这种情况下, 可将代码重构为:</p>
+<pre><code class="lang-js javascript"><span class="function"><span class="keyword">function</span> <span class="title">foo</span><span class="params">(element, a, b)</span> {</span>
+   element.onclick = handle(a, b);
+}
+<span class="function"><span class="keyword">function</span> <span class="title">handle</span><span class="params">(a, b)</span> {</span>
+   <span class="keyword">return</span> <span class="keyword">function</span>() { <span class="comment">/* 使用变量 a 和 b */</span> };
+}
+</code></pre>
+</li>
+<li><p>通常我们需要给模块提供 destroy 接口方法，在这个方法做好模块的善后工作，防止内存开销过大, 如。</p>
+<pre><code class="lang-js java"><span class="javadoc">/**
+* var loader = ImageLoader(...);
+* loader.load();
+* loader.destroy();
+*/</span>
+var ImageLoader = functiono(images) {
+ <span class="comment">// binding onload event etc,.</span>
+ ...
+
+ <span class="keyword">return</span> {
+   load: function() {
+     ...
+   },
+   destory: function() {
+     images.forEach(functiono() {
+       img.onload = <span class="keyword">null</span>;
+       img = <span class="keyword">null</span>;
+     });
+     images = <span class="keyword">null</span>;
+   }
+ };
+};
+</code></pre>
+</li>
+</ol>
+<h2>其他</h2>
+<ol>
+<li><p>禁止使用 void、eval, with, 只在将 ajax 响应的文本解析为 json 时使用 eval()。</p>
+</li>
+<li><p>不要使用 function 构造器。</p>
+</li>
+<li><p>不要滥用括号, 在必要的时候使用它。</p>
+<p>对于一元操作符(如 delete, typeof 和 void ), 或是在某些关键词(如 return, throw, case, new )之后, 不要使用括号。</p>
+</li>
+<li><p>代码中调试用的 alert、console.log、console.dir、debugger 等代码, 在提交到 git 之前, 必须完全清理掉。</p>
+</li>
+<li><p>尽量使用严格模式</p>
+<pre><code class="lang-js undefined">'use strict';
+</code></pre>
+</li>
+<li><p>模块代码AMD方式组织。define(), 模块依赖用 commonjs require()</p>
+<pre><code class="lang-js javascript">define(<span class="keyword">function</span>(require, exports, module) {
+   <span class="string">'use strict'</span>;
+
+   <span class="keyword">var</span> _ = require(<span class="string">'underscore'</span>);
+
+   <span class="keyword">var</span> queue = [];
+
+   <span class="keyword">var</span> initModule = <span class="keyword">function</span>() {
+       _.each(queue, <span class="keyword">function</span>(v, i) {
+           <span class="comment">// do something</span>
+       });
+   };
+
+   module.exports = {
+       init: initModule
+   };
+});
+</code></pre>
+</li>
+</ol>
+<h2>参考</h2>
+<ol>
+<li><a href="http://fe.bubugao-inc.com/specs/js-base.md">js代码规范(base)</a></li>
+<li><a href="http://google-styleguide.googlecode.com/svn/trunk/javascriptguide.xml" target="_blank">Google JavaScript Style Guide</a></li>
+</ol>
+
+</div>
+<script src="./JS代码规范(语法&amp;格式篇)_files/jquery-1.8.1.min.js"></script>
+<script src="./JS代码规范(语法&amp;格式篇)_files/highlight.pack.js"></script>
+<script>
+jQuery(function($) {
+    // sync document title
+    var title = $('h1').html();
+    if (title) { document.title = title; }
+    // rebuild links to enable open in new window.
+    var HOST_NAME = window.location.hostname;
+    $(document.links).filter(function(i, a) { return a.hostname !== HOST_NAME; }).attr('target', '_blank');
+    // highlight source code
+    hljs.initHighlightingOnLoad();
+});
+</script> 
+
+</body></html>

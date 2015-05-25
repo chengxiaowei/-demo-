@@ -1,0 +1,113 @@
+@CHARSET "UTF-8";
+/*按钮*/
+.btn {
+	display: inline-block;
+	border-radius: 2px;
+	text-align: center;
+	padding: 0 10px;
+	height: 22px;
+	font: 400 12px/22px SimSun;
+	border: 1px solid #f40;
+	background-color: #f40;
+	color: #fff;
+	cursor: pointer;
+}
+
+.btn:hover {
+	text-decoration: none;
+	border: 1px solid #fc6822;
+	background-color: #fc6822;
+}
+
+/*按钮-次要按钮*/
+.btn-sec {
+	color: #666;
+	border: 1px solid #ddd;
+	background-color: #f2f2f2;
+}
+
+.btn-sec:hover {
+	border: 1px solid #ddd;
+	background-color: #fafafa;
+}
+
+/*按钮-yellow*/
+.btn-yellow {
+	border: 1px solid #f90;
+	background-color: #f90;
+}
+
+.btn-yellow:hover {
+	border: 1px solid #ffa800;
+	background-color: #ffa800;
+}
+
+/*按钮-图标*/
+.btn .iconfont {
+	margin-right: 5px;
+	font-size: 15px;
+	line-height: 15px;
+	-webkit-text-stroke-width: 0;
+}
+
+/*按钮-大按钮*/
+.btn-l {
+	height: 46px;
+	padding: 0 20px;
+	font: 400 18px/46px 'microsoft yahei';
+}
+
+.btn-l .iconfont {
+	font-size: 20px;
+}
+
+/*按钮-中按钮*/
+.btn-m {
+	height: 26px;
+	padding: 0 15px;
+	font: 400 16px/26px 'microsoft yahei';
+}
+
+.btn-m .iconfont {
+	font-size: 16px;
+}
+
+/*按钮-disabled*/
+.btn-disabled {
+	cursor: text;
+	border: 1px solid #ddd;
+	background-color: #f2f2f2;
+	color: #ccc;
+}
+
+.btn-disabled:hover {
+	border: 1px solid #ddd;
+	background-color: #f2f2f2;
+}
+/* 提交-绿色按钮 */
+.btn-sub-app
+{
+	border: 1px solid #009900;
+	background-color: #009900;
+}
+.btn-sub-app:hover
+{
+	border: 1px solid #007c00;
+	background-color: #007c00;
+}
+
+/* 安全中心按钮  */
+.bet-aq
+{
+   color: #666;
+   border: 1px solid #ddd;
+   background-color: #f2f2f2;
+   border-radius: 2px;
+   cursor: pointer;
+   padding: 0 10px;
+   height:22px;
+}
+.bet-aq:hover
+{
+	background:#f9f9f9;
+}

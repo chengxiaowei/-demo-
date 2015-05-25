@@ -1,0 +1,137 @@
+@import url('../../../pub/css/common.css');
+@import url('../../../pub/css/btn.css'); 
+@import url('../../../pub/font/iconfont.css');
+@import url('../../../pub/css/dialog/ui-dialog.css');
+@import url('../../../pub/css/hd/site-nav.css');
+@import url('../../../pub/css/linkage-tab.css');
+@import url('../../../pub/css/hd/search.css');
+@import url('../../../pub/css/hd/nav.css');
+@import url('../../../pub/css/jquery.minSlide.css');
+@import url('../../../pub/css/ft/ft.css');
+@import url('../../../pub/css/min-bar/min-bar.css');
+@import url('../../../app/style.css'); 	
+body{
+	background:#900a0c;
+}
+.bn {
+	width: 100%; 
+	height: 636px; 
+	overflow:hidden; 
+	background-position:center top; 
+	min-width: 1050px;
+}
+.layout{
+	width: 1050px;
+}
+.bn .layout{
+	height:636px;
+}
+.wrapper{
+	position: relative; 
+	left: -1px; 
+	min-width: 1088px; 
+	padding-bottom:0; 
+	margin-top:0; 
+	padding-top:0; 
+	margin-bottom:0; 
+	background: url(img/bg.png) repeat;
+}	
+.wrapper h2{
+	border:none; 
+	box-shadow: none;
+	height: 63px;
+	line-height: 63px;
+	color:#ffd02a;
+	font-family: 'Microsoft Yahei';
+}	
+.spec-mod,.com-hd{
+	position: relative; 
+	width: 1050px; 
+	margin: 0 auto 10px;
+}	
+.com-hd{
+	position: relative; 
+	left:0; 
+	margin:0 auto; 
+	width: 1050px; 
+	height:65px;   
+	overflow: hidden;
+}	
+ 
+.wrap-cnt{
+	margin-top:0; 
+	position: relative; 
+	z-index: 2; 
+	padding-bottom: 40px;
+	background-color: #bd131a;
+}	
+.com-bd{
+	width:1050px; 
+	padding-top:10px; 
+	margin: 0 auto; 
+	overflow: hidden;  
+}	
+.com-mod li{
+	box-shadow: none;  
+	margin:10px 12px 0 0; 
+	-margin-right: 10px;
+}	
+.com-mod li{
+	width:188px;
+}	
+.com-box{
+	height: 50px;
+}	
+.com-mod .com-txt{
+	width:126px;
+}
+.com-mod .com-txt .clearfix{
+	width: 175px;
+}
+
+.com-bd ul{
+	margin:0 auto 10px; 
+	width: 1000px; 
+	*width: 1010px; 
+	padding:10px 0px 10px 10px; 
+	background: #881b20;
+}
+.com-mod .com-hd{
+	background: url(img/com-hd.jpg) no-repeat;
+}	
+.hid{
+	display:block; 
+	text-indent:-9999em; 
+	overflow:hidden;
+}	
+ 
+.right-nav{
+	position:fixed; 
+	-position:absolute; 
+	width: 149px;
+	height: 310px;
+	padding-top: 72px; 
+	overflow:hidden; 
+	z-index:100; 
+	left:55%; 
+	margin-left:450px; 
+	margin-bottom: 40px; 
+	bottom:25px; 
+	background:url(img/nav.png) no-repeat;
+}	
+.right-nav a{
+	margin-bottom: 16px; 
+	height: 56px; 
+	font: 400 18px/56px 'Microsoft Yahei';
+	color:#e35e01;
+}	
+.right-nav .go-top{
+	background:none; 
+	border:none; 
+	height: 51px; 
+	line-height: 40px;  
+}	
+.help{
+	margin-top:0;
+}	
+	

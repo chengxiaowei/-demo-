@@ -1,0 +1,60 @@
+/* common */
+@charset "utf-8";
+@import "../../common";
+@import "../../common/button/button";
+@import "../../common/form/form";
+@import "../../common/slider/slider";
+.gift {
+	width: rem(600);
+	margin: 0 auto;
+	margin-top: rem(20);
+	font-size: rem(24);
+	background: #fff;
+	border: solid #dfdfdf 1px;
+	border-bottom: 0;
+	.hd {
+		font-size: rem(30);
+		height: rem(80);
+		line-height: rem(80);
+		border-bottom: solid #dfdfdf 1px;
+		color: #666;
+		text-align: center;
+	}
+	.bd {
+		position: relative;
+		border-bottom: solid #dfdfdf 1px;
+		padding: rem(10);
+		height: rem(130);
+		.left {
+			position: absolute;
+			top: rem(10);
+			img {
+				width: rem(130);
+				height: rem(130);
+			}
+		}
+		.right {
+			margin-left: rem(140);
+			.top {
+				font-size: rem(30);
+				color: #666;
+				padding-top: rem(8);
+				a {
+					color: #666;
+				}
+			}
+			.bottom {
+				color: #999999;
+				font-size: rem(22);
+				padding-top: rem(8);
+				overflow: hidden;
+				span {
+					float: left;
+				}
+				label {
+					float: right;
+				}
+			}
+		}
+	}
+}

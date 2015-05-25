@@ -1,0 +1,107 @@
+@import url('../../../pub/css/common.css');
+@import url('../../../pub/css/btn.css'); 
+@import url('../../../pub/font/iconfont.css');
+@import url('../../../pub/css/dialog/ui-dialog.css');
+@import url('../../../pub/css/hd/site-nav.css');
+@import url('../../../pub/css/linkage-tab.css');
+@import url('../../../pub/css/hd/search.css');
+@import url('../../../pub/css/hd/nav.css');
+@import url('../../../pub/css/jquery.minSlide.css');
+@import url('../../../pub/css/ft/ft.css');
+@import url('../../../pub/css/min-bar/min-bar.css');
+@import url('../../../app/style.css'); 
+body{
+	background-color: #ee6678;
+}
+.layout{
+	margin: 0 auto;
+	width: 990px;
+}
+.spec-mod{
+	margin: 0 auto 40px;
+	width: 988px; 
+	overflow: hidden;
+}
+.com-hd{
+	margin-bottom: 20px;
+	font:400 50px/60px 'Microsoft Yahei';
+	color: #fff;
+	height: 50px;
+	text-align: center;
+}
+.com-hd h2{
+	font-weight: 400;
+}
+.com-bd{
+	position: relative;
+	width: 990px;
+	padding-top: 15px;
+	padding-bottom: 10px;
+}
+.com-bd ul{
+	position: relative;
+	left: 5px;
+	*margin-bottom: 10px;
+}
+.com-bd li{
+	margin: 0 3px 10px 0;
+}
+.goods-ad{
+	position: absolute;
+	top:15px;
+	left:5px;
+	width: 240px;
+	height: 314px;
+	z-index: 99;
+}
+.goods-ad a,.goods-ad img{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.bg1{
+	background-color: #df1749;
+}
+.bg2{
+	background-color: #0c9bd0;
+}
+.bg3{
+	background-color: #b10ad5;
+}
+.bg4{
+	background-color: #298409;
+}
+.bg5{
+	background-color: #e513a7;
+}
+.bg6{
+	background-color: #f5c918;
+}
+/*nav*/ 
+.right-nav{
+	position:fixed; 
+	padding-top: 85px;
+	width: 124px;
+	height: auto;
+	overflow:hidden; 
+	z-index:100; 
+	left:55%; 
+	margin-left:430px;
+	margin-bottom: 40px;
+	bottom:25px; 
+	background:url(img/nav.png) no-repeat;
+}	
+.right-nav a{ 
+	margin-bottom: -4px;
+	height: 45px; 
+	font: 400 18px/34px 'Microsoft Yahei';
+	color:#fff;
+	text-align: center;  
+	background:url(img/nav-bg.png) no-repeat;
+} 
+.right-nav .go-top{ 
+	height: 50px;
+	line-height: 30px;
+	border:none;  
+	background:url(img/nav-ft.png) no-repeat; 
+}

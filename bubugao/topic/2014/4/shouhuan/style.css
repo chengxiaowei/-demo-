@@ -1,0 +1,156 @@
+@import url('../../../pub/css/common.css');
+@import url('../../../pub/css/btn.css'); 
+@import url('../../../pub/font/iconfont.css');
+@import url('../../../pub/css/dialog/ui-dialog.css');
+@import url('../../../pub/css/hd/site-nav.css');
+@import url('../../../pub/css/linkage-tab.css');
+@import url('../../../pub/css/hd/search.css');
+@import url('../../../pub/css/hd/nav.css');
+@import url('../../../pub/css/jquery.minSlide.css');
+@import url('../../../pub/css/ft/ft.css');
+@import url('../../../pub/css/min-bar/min-bar.css');
+@import url('../../../app/style.css'); 
+body{
+	background:url(img/bj.jpg) repeat;
+	
+}
+.bn { 
+	width: 100%;
+	overflow:hidden;
+	background-repeat: no-repeat;
+	background-position: center top;
+	min-width: 1024px;
+	height:426px;
+}
+
+.wrapper{
+	margin:0;
+	padding:0;
+}
+
+.wrap-cnt{
+	width:1024px;
+	margin:0 auto 50px;
+}
+
+.com-md{
+	position:relative;
+	text-indent:-9999px;
+}
+
+.com-md h2{
+	box-shadow:none;
+}
+
+.com-md .good-link{
+	position:absolute;
+	display:block;
+	width:228px;
+	height:70px;
+}
+
+.fl-1{
+	height:470px;
+}
+
+.fl-2{
+	height:424px;
+}
+
+.fl-3{
+	height:436px;
+}
+
+.fl-4{
+	height:436px;
+}
+
+.fl-5{
+	height:530px;
+}
+
+.fl-6{
+	height:540px;
+}
+
+.fl-7{
+	height:452px;
+}
+
+.fl-8{
+	height:475px;
+}
+
+.fl-2 .good-link{
+	top:280px;
+	left:479px;
+}
+
+.fl-3 .good-link{
+	top:287px;
+	left:154px;
+}
+
+.fl-4 .good-link{
+	top:294px;
+	left:480px;
+}
+
+.fl-5 .good-link{
+	top:387px;
+	left:470px;
+}
+
+.fl-6 .good-link{
+	top:365px;
+	left:87px;
+}
+
+.fl-7 .good-link{
+	top:290px;
+	left:480px;
+}
+
+.fl-8 .good-link{
+	top:277px;
+	left:85px;
+}
+
+/*右侧浮层*/
+.right-nav{
+	position:fixed;
+	-position:absolute;
+	width:144px;
+	height:189px;
+	z-index:10;
+	left:55%;
+	margin-bottom: 100px;
+	margin-left:450px;
+	bottom:35px;
+	overflow: visible;
+	background:url(img/nav-t.jpg) no-repeat;
+}
+
+.right-nav a{
+	height:39px;
+	margin-bottom:11px;
+	font-size:18px;
+	color:#6e707d;
+	font-family:'microsoft yahei';
+	line-height:39px;
+}
+
+.right-nav a:hover{
+	text-decoration: underline;
+}
+
+.right-nav .go-top{
+	background:none;
+	border:none;
+	height: 38px;
+	line-height: 38px;
+	text-align: center;
+}
+.help{
+	margin-top: 0;
+}

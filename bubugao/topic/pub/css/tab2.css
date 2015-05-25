@@ -1,0 +1,45 @@
+@CHARSET "UTF-8";
+
+/*tab样式*/
+.tab2 {
+	position: relative;
+	height: 34px;
+	border-bottom: 2px solid #d2293e;
+	margin: 0 0 0 170px;
+	overflow: hidden;
+}
+
+.tab2 .tab2-title {
+	position: absolute;
+	left: 0;
+	bottom: -1px;
+}
+
+.tab2 a {
+	display: block;
+	float: left;
+	margin-right: 10px;
+	height: 33px;
+	line-height: 33px;
+	padding: 0 20px;
+	border-radius: 2px 2px 0 0;
+	text-align: center;
+	min-width: 80px;
+	color: #666;
+	background-color: #fff;
+	border-bottom: 1px solid #fff;
+	font-family: 'microsoft yahei';
+}
+
+.tab2 a:hover {
+	color: #d2293e;
+	text-decoration: none;
+	background-color: #fff;
+	border-bottom: 1px solid #fff;
+}
+
+.tab2 .hover,.tab2 .hover:hover {
+	color: #fff;
+	background-color: #d2293e;
+	border-bottom: 1px solid #d2293e;
+}

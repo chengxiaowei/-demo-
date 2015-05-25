@@ -1,0 +1,81 @@
+@import url('../../../pub/css/common.css');
+@import url('../../../pub/css/btn.css'); 
+@import url('../../../pub/font/iconfont.css');
+@import url('../../../pub/css/dialog/ui-dialog.css');
+@import url('../../../pub/css/hd/site-nav.css');
+@import url('../../../pub/css/linkage-tab.css');
+@import url('../../../pub/css/hd/search.css');
+@import url('../../../pub/css/hd/nav.css');
+@import url('../../../pub/css/jquery.minSlide.css');
+@import url('../../../pub/css/ft/ft.css');
+@import url('../../../pub/css/min-bar/min-bar.css');
+@import url('../../../app/style.css'); 
+body{
+	background:url(images/bj.jpg) repeat;
+}
+.bn { 
+	height:500px;
+	overflow:hidden;
+}
+
+.bn-foot{
+	height:446px;
+	background-position: 50% 0;
+}
+
+.p-indent{
+	text-indent:-9999px;
+}
+
+.com-txt .p-normal{
+	font-size:12px;
+}
+
+.wrapper{
+	overflow:visible;
+	padding-bottom:20px;
+	margin-top:0;
+	padding-top:0;
+}
+.wrapper h2{
+	background: url(images/com-title.jpg) no-repeat center top;
+	height:87px;
+	line-height: 75px;
+	border:none;
+	box-shadow: none;
+	margin:0;
+	color:#361901;
+	padding-top:12px;
+}
+
+.com-link{
+	display:block;
+	width:285px;
+	height:135px;
+	margin:240px auto 0;
+}
+
+.help{
+	margin-top:0;
+}
+
+.com-mod{
+	width:1048px;
+	margin:0 auto;
+}
+
+.com-bd{
+	width:990px;
+	margin-left:20px;
+	overflow: hidden;
+	padding:0 10px 45px;
+	background-color:#f5a15c;
+}
+
+.com-bottom{
+	background:  url(images/com-bottom.jpg) no-repeat center bottom;
+	padding:0 10px 0;
+	width:1010px;
+	height:50px;
+	margin:0 auto;
+}

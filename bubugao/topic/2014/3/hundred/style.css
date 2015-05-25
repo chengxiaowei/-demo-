@@ -1,0 +1,146 @@
+@import url('../../../pub/css/common.css');
+@import url('../../../pub/css/btn.css'); 
+@import url('../../../pub/font/iconfont.css');
+@import url('../../../pub/css/dialog/ui-dialog.css');
+@import url('../../../pub/css/hd/site-nav.css');
+@import url('../../../pub/css/linkage-tab.css');
+@import url('../../../pub/css/hd/search.css');
+@import url('../../../pub/css/hd/nav.css');
+@import url('../../../pub/css/jquery.minSlide.css');
+@import url('../../../pub/css/ft/ft.css');
+@import url('../../../pub/css/min-bar/min-bar.css');
+@import url('../../../app/style.css'); 
+body{
+	background:url(images/bg.jpg);
+	
+}
+.hid{
+	display:block;
+	text-indent:-9999em;
+	overflow:hidden;
+}
+.bn { 
+	width: 100%;
+	height:524px;
+	overflow:hidden;
+	background:url(images/banner.jpg) no-repeat center center;
+	min-width:1024px;
+
+}
+.wrapper{
+	overflow:visible;
+	padding-bottom:0;
+	margin-top:0;
+	padding-top:0;
+} 
+.wrap-cnt{
+	margin-top:0;
+	position: relative;
+	z-index: 2;
+	padding-bottom:30px;
+}
+.com-mod ,.spec-mod{
+	margin:0 auto 40px;
+	width:990px; 
+}
+h2.com-hd{ 
+	height:90px;
+	font-size:16px;
+	font-weight:700;
+	box-shadow:none;
+	background:url(images/com-hd.png) no-repeat;
+}
+.com-bd{
+	width:990px; 
+	overflow: hidden; 
+}
+.spec-mod li{
+	border:1px solid #1FBB86;
+	margin:10px 8px 0 0;
+	-margin-right: 6px; 
+}
+.spec-mod .com-txt .p-normal{
+	font-size: 18px;
+}
+.com-mod li{ 
+	width:188px;
+	border:1px solid #1FBB86;
+	margin:10px 8px 0 0;
+	-margin-right: 6px; 
+}
+.com-mod li .com-div{
+	border:1px solid #900714;
+}
+.com-box{
+	height: 50px;
+}
+.com-mod .com-txt{
+	width:126px;
+}
+/*底部浮层*/
+.ft-nav{
+	background-color:#FFCC33;
+	height: 62px;
+	position: fixed;
+	-position:absolute;
+	bottom:0;
+	width: 100%;
+	z-index: 10;
+}
+.ft-nav-bd{
+	width: 1050px;
+	margin: 0 auto;
+}
+.ft-nav-bd a{
+	display: block;
+	float: left;
+	width:204px;
+	height:62px;
+	text-align: center;
+	font: 100 25px/62px 'Microsoft Yahei';
+	color:#4d0c07;
+}
+.ft-link0{
+	width: 202px;
+	background: url(images/ft-nav.jpg) no-repeat;
+	text-indent: -9999px;
+}
+/*右侧浮层*/
+.right-nav{
+	position:fixed;
+	-position:absolute;
+	width:98px;
+	height:auto;
+	display: none;
+	padding-top: 52px;
+	overflow:hidden;
+	z-index:100;
+	left:55%;
+	margin-left:450px;
+	margin-bottom: 40px;
+	bottom:25px;
+	background:url(images/nav-hd.png) no-repeat center top;
+}
+
+.right-nav a{
+	height:36px;
+	font: 700 12px/45px 'Microsoft Yahei';
+	color: #094a34; 
+	text-align:center;
+	background:url(images/nav-hd.png) no-repeat 0 -90px;
+	overflow:hidden;
+}
+.right-nav a.sl{
+	background-position:0 -54px;
+}
+
+.right-nav .go-top{
+	background:none;
+	border:none;
+	height: 40px;
+	line-height: 40px;
+	background:url(images/nav-ft.png) no-repeat;
+}
+.help{
+	margin-top:0;
+} 

@@ -1,0 +1,81 @@
+@import url('../../../pub/css/common.css');
+@import url('../../../pub/css/btn.css'); 
+@import url('../../../pub/font/iconfont.css');
+@import url('../../../pub/css/dialog/ui-dialog.css');
+@import url('../../../pub/css/hd/site-nav.css');
+@import url('../../../pub/css/linkage-tab.css');
+@import url('../../../pub/css/hd/search.css');
+@import url('../../../pub/css/hd/nav.css');
+@import url('../../../pub/css/jquery.minSlide.css');
+@import url('../../../pub/css/ft/ft.css');
+@import url('../../../pub/css/min-bar/min-bar.css');
+@import url('../../../app/style.css'); 
+body{
+	min-height: 900px;
+	background:#dbe9f3 url(img/bg-1.jpg) no-repeat center center;
+	background-attachment: fixed;
+}
+.layout{
+	margin: 0 auto;
+	width: 990px;
+}
+.cnt-box{
+	position: relative;
+	padding-bottom: 60px;
+	z-index: 3;  
+	
+} 
+.com-hd,.com-ft{
+	position: relative; 
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+.com-hd{
+	height: 120px;
+	text-indent: -999999px;
+}
+.spec-mod{
+	padding-bottom: 40px;
+}
+.com-bd{
+	position: relative; 
+	padding-bottom: 10px;
+	margin: 15px auto 0;
+	width: 990px;
+	background: #4989db;
+}
+.com-bd ul{
+	position: relative;
+	padding-top: 15px;
+	left:10px;
+	*margin-bottom: 10px;
+} 
+.com-bd li{
+	margin:0 3px 10px 0;
+}
+
+/*nav*/ 
+.right-nav{
+	position:fixed;  
+	width: 115px;
+	height: auto;
+	overflow:hidden; 
+	z-index:100; 
+	left:55%; 
+	margin-left:430px;
+	margin-bottom: 40px;
+	bottom:25px;
+	background:url(img/nav.png) no-repeat; 
+	
+}	
+.right-nav a{  
+	height: 76px;
+	line-height: 76px;
+	text-indent: -99999px;
+	background:none; 
+} 
+.right-nav .go-top{  
+	line-height: 50px;
+	border:none;
+	background:none; 
+}

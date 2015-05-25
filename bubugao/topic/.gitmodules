@@ -1,0 +1,6 @@
+[submodule "pub"]
+	path = pub
+	url = git@10.200.51.105:f2e-projects/pub.git
+[submodule "lib"]
+	path = lib
+	url = git@10.200.51.105:f2e-projects/lib.git

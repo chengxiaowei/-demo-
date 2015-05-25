@@ -1,0 +1,34 @@
+<script id="jInvoiceTmpl" type="text/html">
+    <%  
+        var flag = false;//判断是否为空;
+        var txtAr = ['不要发票','个人发票','公司发票'];//
+        var url = '';
+        if(tax){
+            for(k in tax){
+                flag = true;
+                break;
+            }
+        }
+    %>
+    <% if(taxTag==1){ %>
+    <div class="mod-invoice" data-query="">
+        <div class="inner">
+            <div class="hd"><i class="icon iconfont">&#xe611;</i><span class="txt-span">发票信息</span></div>
+            <div class="bd">
+                <% if(flag){ %>
+                <div class="item">
+                    <span class="text" id="jTaxType" data-type=<%=tax['taxType']%>><%= txtAr[tax['taxType']]%></span>
+                    <span class="title" id="jTaxContent"><%= tax['taxContent']%></span>
+                </div>
+                <div class="item" id="jTaxTitle">
+                    <%= tax['taxTitle']%>
+                </div>
+                <% }else{ %>
+                <div class="item">请选择</div>
+                <% } %>
+            </div>
+            <i class="icon iconfont arrow">&#xe60e;</i>
+        </div>
+    </div>
+    <% } %>
+</script>

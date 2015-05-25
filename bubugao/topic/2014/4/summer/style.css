@@ -1,0 +1,197 @@
+@import url('../../../pub/css/common.css');
+@import url('../../../pub/css/btn.css'); 
+@import url('../../../pub/font/iconfont.css');
+@import url('../../../pub/css/dialog/ui-dialog.css');
+@import url('../../../pub/css/hd/site-nav.css');
+@import url('../../../pub/css/linkage-tab.css');
+@import url('../../../pub/css/hd/search.css');
+@import url('../../../pub/css/hd/nav.css');
+@import url('../../../pub/css/jquery.minSlide.css');
+@import url('../../../pub/css/ft/ft.css');
+@import url('../../../pub/css/min-bar/min-bar.css');
+@import url('../../../app/style.css'); 
+body{
+	background: #a8effb;
+	
+}
+.bn { 
+	width: 100%;
+	overflow:hidden;
+	background-repeat: no-repeat;
+	min-width: 1024px;
+	height:677px;
+	background:url(img/bn.jpg) no-repeat center top;
+}
+
+.bn .com-hd{
+	margin:548px auto 0;
+	font-size:22px;
+	color:#5b4504;
+	font-family:"microsoft yahei";
+	font-size:700;
+	width:1004px;
+	padding-left:20px;
+}
+
+.bn-t{
+	height: 513px;
+}
+.bn-b{
+	height: 239px;
+}
+.wrapper{
+	overflow:visible;
+	padding:0;
+	margin-top:0;
+	background-color:#56c6eb;
+	position:static;
+}
+
+.wrap-cnt{
+	margin-top:-75px;
+	position: relative;
+	z-index: 2;
+	*+margin-bottom:-10px;
+}
+
+.wrapper h2{
+	background:url(img/title-bj.jpg) no-repeat;
+	height:64px;
+	border:none;
+	box-shadow:none;
+	text-align:left;
+	font-size:22px;
+	color:#5b4504;
+	font-family:"microsoft yahei";
+	font-weight:700;
+	padding:10px 14px;
+}
+
+.com-bd{
+	width:1004px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+.spec-mod{
+	width:987px;
+	background-color:#a8effb;
+	border:1px solid #0585ac;
+	box-shadow:0px 3px 4px #188DB4;
+	margin:0 auto;
+	padding:0 10px 10px;
+	border-radius:3px;
+}
+
+.spec-mod li{
+	width:321px;
+	height:381px;
+	margin-right:12px;
+	box-shadow:1px 1px 2px #cdf6fd;
+}
+
+.spec-mod .com-img{
+	width:300px;
+	height:300px;	
+}
+
+.spec-mod .com-img img{
+	width:300px;
+	height:300px;
+}
+
+.com-mod{
+    margin: 7px auto;
+    width: 1007px;
+}
+
+.com-mod .com-bd{
+	background-color: #56c6eb;
+    border: 1px solid #0585AC;
+    box-shadow: 0 3px 4px #188DB4;	
+    padding: 0 10px 10px;
+    width:987px;
+    border-radius:3px;
+}
+
+.goods-area{
+	background-color:#a8effb;
+	margin-top:10px;
+	padding-bottom:30px;
+}
+
+/*右侧浮层*/
+.right-nav{
+	position:fixed;
+	-position:absolute;
+	width:84px;
+	height:208px;
+	z-index:100;
+	left:55%;
+	margin-bottom: 100px;
+	margin-left:450px;
+	bottom:35px;
+	overflow: visible;
+	background:url(img/right-nav.png) no-repeat;
+}
+.right-nav-bg{
+	position:relative;
+	display: block;
+	width:90px;
+	height:182px;
+	left:144px;
+	bottom:182px;
+	z-index:100;
+	background: url(//s1.bbgstatic.com/topic/2014/4/bingxi/img/nav-b.png) no-repeat;
+}
+.right-nav a{
+	height:28px;
+	font: 100 14px/28px 'Microsoft Yahei';
+	color:#fff;
+	text-decoration: none;
+	margin-bottom:2px;
+}
+.right-nav a:hover{
+	text-decoration: underline;
+}
+
+.right-nav .go-top{
+	background:none;
+	border:none;
+	height: 30px;
+	line-height: 30px;
+	color:#fff;
+	text-align: center;
+}
+.help{
+	margin-top: 0;
+}
+/*底部浮层*/
+.ft-nav{
+	background: #f90;
+	height: 62px;
+	position: fixed;
+	-position:absolute;
+	bottom:0;
+	width: 100%;
+	z-index: 10;
+	box-shadow: 0 -1px 1px #333;
+}
+.ft-nav-bd{
+	width: 1050px;
+	margin: 0 auto;
+}
+.ft-nav-bd a{
+	display: block;
+	float: left;
+	width:190px;
+	height:62px;
+	text-align: center;
+	font: 100 25px/62px 'Microsoft Yahei';
+	color:#fff;
+}
+.ft-link0{
+	width: 202px;
+	background: url(//s1.bbgstatic.com/topic/2014/3/wash/images/ft-nav.jpg) no-repeat;
+	text-indent: -9999px;
+}

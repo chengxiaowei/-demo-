@@ -1,0 +1,91 @@
+@import url('../../../pub/css/common.css');
+@import url('../../../pub/css/btn.css'); 
+@import url('../../../pub/font/iconfont.css');
+@import url('../../../pub/css/dialog/ui-dialog.css');
+@import url('../../../pub/css/hd/site-nav.css');
+@import url('../../../pub/css/linkage-tab.css');
+@import url('../../../pub/css/hd/search.css');
+@import url('../../../pub/css/hd/nav.css');
+@import url('../../../pub/css/jquery.minSlide.css');
+@import url('../../../pub/css/ft/ft.css');
+@import url('../../../pub/css/min-bar/min-bar.css');
+@import url('../../../app/style.css'); 
+body{
+	background:url(img/bg.jpg) repeat;
+}
+.layout{
+	margin: 0 auto;
+	width: 990px;
+}
+.spec-mod{
+	margin: 0 auto 40px;
+	width: 1010px; 
+	overflow: hidden;
+}
+.com-hd{ 
+	font: 400 32px/100px 'Microsoft Yahei';
+	color: #fff;
+	height: 92px;
+	text-align: center;
+	background: url(img/com-hd.png) no-repeat;
+}
+.com-hd h2{
+	font-weight: 400;
+}
+.com-bd{
+	position: relative;
+	width: 1005px;
+	padding-top: 0px;
+	left: 5px;	
+	padding-bottom: 10px;
+	background: #cb2823;
+}
+.com-bd ul{
+	position: relative;
+	left: 10px;
+	*margin-bottom: 10px;
+}
+.com-bd li{
+	margin: 0 8px 10px 0;
+}
+.com-ft{
+	margin: 0 auto;
+	height: 9px;
+	background: url(img/com-ft.png) no-repeat center center;
+}
+
+/*nav*/ 
+.right-nav{
+	position:fixed; 
+	-position:absolute;
+	padding-top: 90px;
+	width: 121px;
+	height: auto; 
+	overflow:hidden; 
+	z-index:100; 
+	left:55%; 
+	margin-left:450px;
+	margin-bottom: 40px;
+	bottom:25px; 
+	background:url(img/nav.png) no-repeat;
+}	
+.right-nav a{ 
+	height: 46px; 
+	font: 400 18px/46px 'Microsoft Yahei';
+	color:#fff;
+	background:url(img/nav-bg.png) no-repeat center top;
+}
+.right-nav a.lh{
+	height: 53px;
+	padding-top: 10px;
+	line-height: 21px;
+
+}
+.right-nav .go-top{ 
+	border:none; 
+	margin-top: -2px;
+	height: 125px;
+	line-height: 125px;
+	text-indent: -9999px; 
+	background:url(img/nav-top.png) no-repeat center bottom;
+}

@@ -1,0 +1,20 @@
+/* common */
+@import "../../common";
+@import "../../common/button/button";
+
+@import "./source/common";
+
+.mod-demo-upload {
+    @extend .mod-demo;
+    .bd {
+        .ui-button {
+            margin: 5px 0;
+            height: 8rem;
+            line-height: 8rem;
+            background: #ddd;
+            color: #6088be;
+            text-shadow: 0px 0px 3px #FFF;
+            box-shadow: 0px 0px 2px #939aa5;
+        }
+    }
+}

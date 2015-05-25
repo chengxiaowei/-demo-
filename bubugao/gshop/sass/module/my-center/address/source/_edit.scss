@@ -1,0 +1,107 @@
+.mod-address-edit{
+    .address-form{
+        background: #fff;
+        border-top:1px solid #ccc;
+        border-bottom:1px solid #ccc;
+        color:#333;
+        border-radius:rem(4);
+        margin: rem(20) 0;
+        :first-child{
+            &.form-item {
+                border-top:0;
+            }
+        }
+        .form-item{
+            margin: 0 rem(20);
+            font-size: rem(28);
+            border-top:1px solid #ccc;
+            line-height: rem(88);
+            display: block;
+            clear:both;
+            position:relative;
+            &.no-border{
+                border:0;
+            }
+            label{
+                display: inline-block;
+                line-height: rem(88);
+                width:rem(142);
+            }
+            input,select,button{
+                display: inline-block;
+                width:rem(416);
+                line-height:rem(60);
+                height:rem(60);
+                padding-left:rem(4);
+                border:1px solid #c1c1c1;
+                border-color:#c1c1c1;
+                border-radius:rem(4);
+            }
+            button{
+                background:#fff;
+                border:1px solid #eee;
+                height:auto;
+                text-align: left;
+            }
+            .adr-sel {
+                position:absolute;
+                display: inline-block;
+                background-color: #fff;
+                border: 1px solid #c1c1c1;
+                border-radius:rem(4);
+                font-size: rem(24);
+                line-height:rem(60);
+                height:rem(60);
+                width:rem(416);
+                top:rem(16);
+                left: rem(148);
+                .adr-msg {
+                    height: rem(56);
+                    overflow: hidden;
+                    padding: 0 rem(60) 0 rem(10);
+                    position: relative;
+                    z-index: 2;
+                    display: inline-block;
+                    width: rem(340);
+                    white-space:nowrap;
+                    overflow:hidden;
+                    text-overflow:ellipsis;
+                }
+                .icon {
+                    border-left: 1px solid #c1c1c1;
+                    font-size: rem(40);
+                    height: rem(60);
+                    line-height: rem(60);
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                    text-align: center;
+                    width: rem(56);
+                    z-index: 1;
+                }
+            }
+        }
+        .zitidian-div{
+            display: none;
+            background:#ECECEC;
+            .zitidian-item{
+                display: block;
+                margin: 0 rem(20);
+                font-size: rem(20);
+                line-height: rem(88);
+                clear:both;
+                input{
+                    display: inline;
+                    font-size: rem(22);
+                }
+                label{
+                    display: inline;
+                    font-size: rem(22);
+                }
+            }
+
+            .form-item{                 border-top:0;             }         }
+}     .buttons{         margin: 0 rem(20);         .ui-button{
+height: auto;             line-height: rem(80);             font-size:
+rem(24);             background: #f16320;             border: 0;         }
+} }

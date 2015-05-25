@@ -1,0 +1,113 @@
+@import url('../../../pub/css/common.css');
+@import url('../../../pub/css/btn.css'); 
+@import url('../../../pub/font/iconfont.css');
+@import url('../../../pub/css/dialog/ui-dialog.css');
+@import url('../../../pub/css/hd/site-nav.css');
+@import url('../../../pub/css/linkage-tab.css');
+@import url('../../../pub/css/hd/search.css');
+@import url('../../../pub/css/hd/nav.css');
+@import url('../../../pub/css/jquery.minSlide.css');
+@import url('../../../pub/css/ft/ft.css');
+@import url('../../../pub/css/min-bar/min-bar.css');
+@import url('../../../app/style.css'); 
+body{
+	background-color:#feac00;
+}
+.bn{
+	margin: 0 auto;
+	min-width: 1050px;
+}
+.layout{
+	width: 990px;
+}
+.spec-mod,.com-mod{
+	margin: 0 auto 20px;
+	width: 1050px;
+}
+ 
+ 
+.com-hd{
+	padding-left: 105px;
+	height: 78px;
+	text-indent: -9999px;
+	background-position:0 0;
+	background-repeat: no-repeat; 
+}
+.com-hd a{
+	float:left;
+	display: block;
+	width: 102px;
+	height: 77px;
+	text-indent: -9999px;
+	overflow: hidden;
+}
+.com-bd{
+	margin-top: -1px;
+	padding-bottom:10px; 
+	background:url(img/com-ft.jpg) no-repeat center bottom;
+	overflow: hidden;
+}
+.com-bd ul{
+	padding:10px 10px 10px 30px;
+	background: #a10000 ;
+	border-radius: 5px;
+	width: 1010px;
+	overflow: hidden;
+}
+
+ /*nav*/ 
+.right-nav{
+	position:fixed; 
+	-position:absolute;
+	padding-top: 115px;
+	width: 125px;
+	height: auto;
+	overflow:hidden; 
+	z-index:100; 
+	left:55%; 
+	margin-left:450px;
+	margin-bottom: 40px;
+	bottom:25px; 
+	background:url(img/nav-top.png) no-repeat;
+}
+.right-nav ul{
+	width: 125px; 
+	background: url(img/nav-bg.png) repeat;
+	overflow: hidden;
+}
+.right-nav a{
+	display: inline-block;
+	margin-right: 9px;
+	margin-bottom: 5px;
+	padding:3px 5px;
+	height: 25px; 
+	font: 400 18px/25px 'Microsoft Yahei';
+	color:#fff;
+	text-align: center;
+	background:  #e70014;
+	 
+}
+.right-nav li{
+	padding-left: 10px;
+}
+.right-nav .rnav-t{
+	padding:0;
+	text-align: center;
+}
+.right-nav .rnav-t a{
+	display: inline-block;
+	padding:10px 5px;
+	width: 100px;
+	margin: 0 auto 5px;
+	border-bottom:1px dashed #333;
+	background-color: #ff3000;
+}
+.right-nav .go-top{ 
+	border:none;
+	margin: 0;
+	display: block;
+	height: 67px;
+	line-height: 67px; 
+	text-indent: -99999px;
+	background:url(img/nav-ft.png) no-repeat;
+}	

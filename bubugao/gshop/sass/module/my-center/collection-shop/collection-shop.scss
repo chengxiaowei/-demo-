@@ -1,0 +1,112 @@
+/* common */
+@import "../../../common";
+@import "../../../common/slider/slider";
+@import "../../../common/form/form";
+@import "../../../common/button/button";
+@import "../../../common/scroll-load/scroll-load";
+@import "../../../common/dialog/dialog";
+@import "../../../common/nav/_nav";
+
+/* modules */
+html,body{
+	background: #f2f2f2;
+}
+.collection-shop {
+	font-size: rem(30);
+	.hd {
+		font-size: rem(26);
+		height: rem(60);
+		background: #fff;
+		div {
+			width: 50%;
+			float: left;
+			text-align:center;
+		}
+		a {
+			color: #333;
+			border-bottom:solid  #fff rem(3);
+			line-height: rem(57);
+			padding: 0 rem(10) 0 rem(10);
+		}
+		.hover {
+			border-bottom:solid  #f16320 rem(3);
+			color: #f16320;
+		}
+	}
+	.bd {
+		font-size: rem(30);
+		padding: 0 rem(18) 0 rem(18);
+		ul {
+			li{
+				position: relative;
+				background: #fff;
+				margin-top: 20px;
+				overflow: hidden;
+				padding: rem(20);
+				box-shadow: 2px 0px 5px #eee;
+				.left {
+					float: left;
+					width: rem(154);
+					margin-right: rem(19);
+					img {
+						width: rem(154);
+						height: rem(154);
+						border-radius: rem(10);
+					}
+				}
+				.right {
+					margin-top: rem(5);
+					font-size: rem(26);
+					color: #999;
+					.title {
+						font-size: rem(28);
+						color: #333;
+					}
+				}
+				.rome {
+					position:absolute;
+					background: #333;
+					width: 100%;
+					height: 100%;
+					left: 0px;
+					top: 0px;
+					opacity:0.8;
+					text-align:center;
+					display: none;
+					i {
+						color: #fff;
+						font-size: rem(50);
+						position:absolute;
+						top: 35%;
+					}
+				}
+				.coll-hide-shop {
+					position:absolute;
+					bottom: rem(20);
+					right: rem(20);
+					height: rem(60);
+					border: solid #ddd 1px;
+					line-height: rem(60);
+					width: rem(130);
+					text-align:center;
+					border-radius: 3px;
+				}
+			}
+		}
+	}
+}
+.no-content {
+	font-size: rem(26);
+	text-align: center;
+	padding-top: rem(200);
+	color: #999;
+	.icon {
+		i{
+			font-size: rem(150);
+		}
+		
+	}
+	.content {
+		padding-top: rem(50);
+	}
+}

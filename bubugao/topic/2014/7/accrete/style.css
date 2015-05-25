@@ -1,0 +1,133 @@
+@import url('../../../pub/css/common.css');
+@import url('../../../pub/css/btn.css'); 
+@import url('../../../pub/font/iconfont.css');
+@import url('../../../pub/css/dialog/ui-dialog.css');
+@import url('../../../pub/css/hd/site-nav.css');
+@import url('../../../pub/css/linkage-tab.css');
+@import url('../../../pub/css/hd/search.css');
+@import url('../../../pub/css/hd/nav.css');
+@import url('../../../pub/css/jquery.minSlide.css');
+@import url('../../../pub/css/ft/ft.css');
+@import url('../../../pub/css/min-bar/min-bar.css');
+@import url('../../../app/style.css'); 
+body{
+	 background:#f1f1f1 url(img/bg.jpg) repeat;
+}
+.bn { 
+	width: 100%; 
+	height: 511px;
+	overflow:hidden;
+	background-position:center top;
+	min-width: 1088px;
+
+}
+.wrapper{
+	position: relative;
+	left: -1px;
+	min-width: 1088px;
+	padding-bottom:0;
+	margin-top:10px;
+	padding-top:0;
+	margin-bottom: 20px; 
+}
+.wrapper h2{ 
+	border:none;
+	box-shadow: none;
+}
+.spec-mod{
+	position: relative;
+	width: 1100px;
+	margin: 0 auto 10px; 
+}
+.com-hd{
+	position: relative;
+	left:0;
+	margin:0 auto;
+	width: 1002px;
+	height:88px;
+	overflow: hidden;
+} 
+.wrap-cnt{
+	margin-top:0;
+	position: relative;
+	z-index: 2;
+}
+.layout{
+	margin: 0 auto;
+	width: 990px;
+}
+.com-bd{
+	position: relative;
+	left: 2px;
+	width: 990px;
+	padding-top:10px;
+	padding-bottom: 50px;
+	*padding-bottom: 60px;
+	margin: 0 auto;	
+	overflow: hidden;
+	box-shadow: 0px 2px 4px #ccc;  
+	background: #bde35f url(img/ft2.jpg) no-repeat center bottom;
+}
+.spec-mod .com-bd {
+	background:#ffe94b url(img/ft1.jpg) no-repeat center bottom;
+}
+.spec-mod .com-bd li ,.ads-mod .com-bd li{
+	margin:0 5px 10px 0;
+	*margin:0 2px 10px 0; 
+}
+.com-bd ul{
+	position: relative;
+	left:5px;
+	margin:0 auto;
+	width: 1000px;
+	*width: 1010px;
+} 
+.hid{
+	display:block;
+	text-indent:-9999em;
+	overflow:hidden;
+} 
+.third-mod .com-bd li{
+	width: 322px;
+	height: 378px;
+}
+.third-mod .com-bd .com-img,.third-mod .com-bd .com-img img{
+	width: 302px;
+	height: 288px;
+}
+.ads-mod .com-bd li,.ads-mod .com-bd img{
+	width: 191px;
+	height: 240px;
+}
+.bn .hid{
+	margin-top: 50px;
+	width: 445px; 
+	height: 300px;
+}
+/*右侧浮层*/
+.right-nav{
+	position:fixed;
+	-position:absolute;
+	width: 96px; 
+	overflow:hidden; 
+	z-index:100;
+	left:55%;
+	margin-left:450px;
+	margin-bottom: 40px;
+	bottom:25px; 
+}
+
+.right-nav a{
+	margin-bottom: 5px;
+	height: 28px;
+	font: 400 14px/28px 'Microsoft Yahei';
+	background:url(img/nav-a.png) no-repeat;
+}
+ 
+.right-nav .go-top{ 
+	background:none;
+	border:none;
+	height: 51px;
+	line-height: 40px;
+	text-indent:-9999em; 
+}

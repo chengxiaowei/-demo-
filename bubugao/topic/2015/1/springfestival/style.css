@@ -1,0 +1,111 @@
+@import url('../../../pub/css/common.css');
+@import url('../../../pub/css/btn.css'); 
+@import url('../../../pub/font/iconfont.css');
+@import url('../../../pub/css/dialog/ui-dialog.css');
+@import url('../../../pub/css/hd/site-nav.css');
+@import url('../../../pub/css/linkage-tab.css');
+@import url('../../../pub/css/hd/search.css');
+@import url('../../../pub/css/hd/nav.css');
+@import url('../../../pub/css/jquery.minSlide.css');
+@import url('../../../pub/css/ft/ft.css');
+@import url('../../../pub/css/min-bar/min-bar.css');
+@import url('../../../app/style.css'); 
+body{
+	background: #fa3121 url(img/bg.jpg) repeat;
+}
+.cnt-box{
+    margin-top: 0px;
+    margin-bottom: 100px;
+    font: 400 20px/24px 'Microsoft Yahei';
+}
+.pro-info{
+    color: #fff;
+    text-indent: 0;
+    text-align: center;
+}
+.pro-info h2{
+    height: 100px;
+    font: 48px/50px 'Microsoft Yahei';
+}
+.spec-mod{
+    margin: 0 auto 40px;
+    width: 1002px;
+    overflow: hidden;
+}
+.spec-mod .com-bd{
+    background: #fa3121;
+}
+.com-hd .com-desc{
+    width: 237px;
+    height:57px;
+    top:0;
+    right:0;
+    margin-right:100px;
+    color: #fa3121;
+    text-align: left;
+    line-height: 60px;
+    padding: 6px 0 0 40px;
+    background-repeat: no-repeat;
+}
+.com-mod{
+	margin: 0 auto 40px;
+	width: 988px;
+	overflow: hidden;
+}
+.com-hd h2{
+    font: 48px/50px 'Microsoft Yahei';
+}
+.com-hd{
+	height: 63px;
+	color: #fff;
+	text-indent: 0;
+	text-align: center;
+    position: relative;
+}
+.com-bd{
+	padding-top: 20px;
+    background: #222744;
+}
+.com-bd ul{
+	position: relative;
+	left: 10px;
+	*margin-bottom: 10px;
+}
+.com-bd li{
+	margin: 0 5px 10px 0;
+}
+/*nav*/ 
+.right-nav{
+	position:fixed; 
+	-position:absolute; 
+	width: 119px;
+	height: auto;
+	overflow:hidden; 
+	z-index:100; 
+	left:55%; 
+	margin-left:450px;
+	margin-bottom: 40px;
+	bottom:25px;
+}
+.right-nav .nav-cnt{
+    background:url(img/rnav1.png) no-repeat center top;
+    padding-top: 167px;
+}
+.right-nav a{
+	height: 43px;
+	line-height: 43px;
+	font: 400 20px/43px 'Microsoft Yahei';
+	color:#ffd697;
+	text-align: center;
+	 background:url(img/rnav2.jpg) no-repeat center top;
+}
+.right-nav a:hover{
+    text-decoration: none;
+    font-weight: bold;
+}
+.right-nav .go-top{
+	height: 71px;
+	line-height: 40px;
+	border:none;
+	background:url(img/rnavtop.jpg) no-repeat center center;
+}

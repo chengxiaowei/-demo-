@@ -1,0 +1,111 @@
+@import url('../../../pub/css/common.css');
+@import url('../../../pub/css/btn.css'); 
+@import url('../../../pub/font/iconfont.css');
+@import url('../../../pub/css/dialog/ui-dialog.css');
+@import url('../../../pub/css/hd/site-nav.css');
+@import url('../../../pub/css/linkage-tab.css');
+@import url('../../../pub/css/hd/search.css');
+@import url('../../../pub/css/hd/nav.css');
+@import url('../../../pub/css/jquery.minSlide.css');
+@import url('../../../pub/css/ft/ft.css');
+@import url('../../../pub/css/min-bar/min-bar.css');
+@import url('../../../app/style.css'); 
+body{
+	 background:#f8f9fa;
+}
+
+.bn { 
+	width: 100%; 
+	overflow:hidden;
+	background-repeat: no-repeat;
+	background-position: center top;
+	min-width: 1090px;
+}
+ 
+.layout{
+	margin: 0 auto;
+	width: 990px;
+}
+.btn-mod a{
+	margin-bottom: 10px;
+	width: 196px;
+	height: 44px;
+	background: url(img/btn.png) no-repeat;
+}
+.btn-mod a.btn-and{
+	background-position: 0 -45px;
+}
+.btn-mod a.btn-ap:hover{
+	background-position: 0 -90px;
+}
+.btn-mod a.btn-and:hover{
+	background-position: 0 -135px;
+}
+
+.help{
+	margin-top:0;
+} 
+
+.go-top{
+	width: 50px;
+	height: 50px;
+	bottom: 0;
+	left: 50%;
+	margin-left: -25px;
+	background: url(img/top.png) no-repeat;
+}
+.right-nav{
+	position: fixed;
+	top: 320px;
+	float: left;
+	-position:absolute; 
+	width: 59px;
+	height: 473px;
+	overflow:hidden; 
+	z-index:100; 
+	left:55%; 
+	margin-left:450px; 
+	margin-bottom: 40px;  
+	z-index: 999;
+}
+.right-nav a{
+	display: block;
+	width: 59px;
+	height: 59px;
+	text-indent: -999999px;
+	background: url(img/nav-bg.png) no-repeat;
+	overflow: hidden;
+}
+.btn-go{
+	position: fixed;
+	top:320px;
+	left:20px;
+	width: 166px;
+	height: 37px;
+	background: url(img/btn-go.png) no-repeat;
+}
+
+.right-nav a.nav-1:hover,.right-nav .select a.nav-1{
+	background-image:url(img/nav-btn-1.png);
+}
+.right-nav a.nav-2:hover,.right-nav .select a.nav-2{
+	background-image:url(img/nav-btn-7.png);
+}
+.right-nav a.nav-3:hover,.right-nav .select a.nav-3{
+	background-image:url(img/nav-btn-8.png);
+}
+.right-nav a.nav-4:hover,.right-nav .select a.nav-4{
+	background-image:url(img/nav-btn-2.png);
+}
+.right-nav a.nav-5:hover,.right-nav .select a.nav-5{
+	background-image:url(img/nav-btn-3.png);
+}
+.right-nav a.nav-6:hover,.right-nav .select a.nav-6{
+	background-image:url(img/nav-btn-4.png);
+}
+.right-nav a.nav-7:hover,.right-nav .select a.nav-7{
+	background-image:url(img/nav-btn-5.png);
+}
+.right-nav a.nav-8:hover,.right-nav .select a.nav-8{
+	background-image:url(img/nav-btn-6.png);
+}

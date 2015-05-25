@@ -1,0 +1,161 @@
+@import url('../../../pub/css/common.css');
+@import url('../../../pub/css/btn.css'); 
+@import url('../../../pub/font/iconfont.css');
+@import url('../../../pub/css/dialog/ui-dialog.css');
+@import url('../../../pub/css/hd/site-nav.css');
+@import url('../../../pub/css/linkage-tab.css');
+@import url('../../../pub/css/hd/search.css');
+@import url('../../../pub/css/hd/nav.css');
+@import url('../../../pub/css/jquery.minSlide.css');
+@import url('../../../pub/css/ft/ft.css');
+@import url('../../../pub/css/min-bar/min-bar.css');
+@import url('../../../app/style.css'); 
+body{
+	background-color: #012a2c;
+    min-width: 1270px;
+}
+
+#com1 .goods-ml{
+    margin-left: 34px;
+}
+.three-mod{
+    margin: 0 auto 40px;
+    width: 1000px;
+
+}
+.three-mod .com-bd ul.goods-ml{
+width: 976px;
+}
+.three-mod .com-bd li {
+    height: 374px;
+    width: 320px;
+}
+.three-mod .com-bd .com-img{
+    height: 290px;
+    padding: 10px 15px;
+    width: 290px;
+}
+
+.three-mod .com-bd .com-img img{
+    width: 290px;
+    height: 290px;
+}
+
+.bn{
+	margin: 0 auto;
+	min-width: 1190px;
+}
+.layout{
+	width: 990px;
+}
+.spec-mod{
+	margin: 0 auto 40px;
+	width: 1000px;
+}
+.com-bd{
+	position: relative;
+	padding-left: 12px;
+    margin: 0 auto;
+    width: 1000px;
+}
+.com-bd ul{
+    margin-left: 11px;
+	*margin-bottom: 10px;
+}
+.com-bd li{
+	margin:0 5px 10px 0;
+	*margin:0 3px 10px 0;
+}
+
+.goods-ad{
+	position: absolute;
+	left: 12px;
+    top:0;
+}
+.goods-ad a, .goods-ad a img{
+	display: block;
+}
+.com-bd ul.goods-ml{
+	width: 780px;
+    margin-left: 206px;
+}
+
+.img-list li, .img-list a {
+	display: block;
+	width: 235px;
+	height: 195px;
+}
+.img-list-2 li, .img-list-2 a {
+	display: block;
+	width: 190px;
+	height: 150px;
+}
+.img-list li{
+	float: left;
+	margin:0 0 10px 10px;
+	overflow: hidden;
+}
+ 
+ /*nav*/ 
+.right-nav{
+	position:fixed; 
+	-position:absolute;
+	width: 144px;
+	height: 600px;
+	overflow:hidden; 
+	z-index:100; 
+	left:55%; 
+	margin-left:427px;
+	margin-bottom: 0px;
+	bottom:25px; 
+	background:url(//s1.bbgstatic.com/topic/2014/12/christmas/img/christmas-right2.png) no-repeat;
+}	
+.right-nav a{
+	margin-bottom: 17px;
+	height: 54px; 
+	font: 400 18px/44px 'Microsoft Yahei';
+	color:#333;
+	text-indent: -9999px;
+	 
+} 
+.right-nav .go-top{ 
+	border:none; 
+	margin-top: -1px;
+	height: 95px;
+	line-height: 95px;
+	text-indent: -9999px;
+	background: none; 
+}
+#com9{
+    margin: 0 auto;
+    padding: 0;
+    width: 1040px;
+    height: auto;
+}
+#com9 .floot-bd{
+    margin: 0;
+    padding: 142px 0 0 35px;
+}
+#com9 .floot-bd li{
+     float: left;
+     overflow: hidden;
+     height:300px;
+     width: 300px;
+     margin:0 35px 0 0;
+}
+.christmas-btm{
+    margin-bottom:30px;
+    position: relative;
+    z-index: 1;
+}
+canvas.snow {
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: fixed;
+  opacity: 0.9;
+  pointer-events: none;
+  z-index: 2147483647;
+}

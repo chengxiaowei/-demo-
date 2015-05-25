@@ -1,0 +1,130 @@
+@import url('../../../pub/css/common.css');
+@import url('../../../pub/css/btn.css'); 
+@import url('../../../pub/font/iconfont.css');
+@import url('../../../pub/css/dialog/ui-dialog.css');
+@import url('../../../pub/css/hd/site-nav.css');
+@import url('../../../pub/css/linkage-tab.css');
+@import url('../../../pub/css/hd/search.css');
+@import url('../../../pub/css/hd/nav.css');
+@import url('../../../pub/css/jquery.minSlide.css');
+@import url('../../../pub/css/ft/ft.css');
+@import url('../../../pub/css/min-bar/min-bar.css');
+@import url('../../../app/style.css'); 
+body{
+	background: url(img/bg.jpg) repeat;
+}
+.bn{
+	margin: 0 auto 20px;
+	min-width: 1190px;
+}
+.layout{
+	width: 990px;
+}
+.spec-mod,.com-mod{
+	margin: 0 auto 40px;
+	width: 1000px;
+}
+.com-mod{
+	width: 990px;
+}
+.com-bd{
+	position: relative;
+	left:6px;
+	width: 990px;
+	padding-top: 10px;
+	margin-bottom: 10px;
+	background: #c51d3e;
+	overflow: hidden;
+}
+.com-bd ul{
+	padding-left: 8px;
+	*margin-bottom: 10px;
+}
+.com-mod .com-bd ul{
+	padding-left: 10px;
+}
+.com-bd li{
+	margin:0 5px 10px 0;
+	*margin:0 3px 10px 0;
+}
+
+.goods-ad{
+	position: absolute;
+	left: 8px;
+	width: 240px;
+	height: 310px;
+}
+.goods-ad a, .goods-ad a img{
+	display: block;
+	width: 240px;
+	height: 310px;
+}
+.goods-ml{
+	margin-left: 245px;
+}
+.com-bd ul.goods-ml{
+	width: 735px;
+}
+
+.img-list li, .img-list a {
+	display: block;
+	width: 235px;
+	height: 195px;
+}
+.img-list-2 li, .img-list-2 a {
+	display: block;
+	width: 190px;
+	height: 150px;
+}
+.img-list li{
+	float: left;
+	margin:0 0 10px 10px;
+}
+.com-hd{
+	margin: 0 auto 10px;
+	width: 990px;
+	height: 58px;
+	text-align: center;
+	color: #c51d3e;
+	font:700 32px/40px 'Microsoft Yahei';
+}
+.goods-list{
+	padding-left:2px;
+}
+.goods-list .goods-ad{
+	position:relative;
+	float:left;
+	margin-right:5px;
+	*margin-right:3px;
+	margin-bottom:10px;
+}
+ /*nav*/ 
+.right-nav{
+	position:fixed; 
+	-position:absolute;
+	padding-top: 14px;
+	width: 105px;
+	height: auto;
+	overflow:hidden; 
+	z-index:100; 
+	left:55%; 
+	margin-left:450px;
+	margin-bottom: 40px;
+	bottom:25px; 
+	background:url(img/nav-top.jpg) no-repeat;
+}	
+.right-nav a{ 
+	height: 44px; 
+	font: 400 18px/44px 'Microsoft Yahei';
+	color:#fff; 
+	background:url(img/nav-bg.jpg) no-repeat;
+	 
+} 
+.right-nav .go-top{ 
+	border:none; 
+	margin-top: -1px;
+	height: 95px;
+	line-height: 95px;
+	text-indent: -9999px;
+	background:url(img/nav-ft.jpg) no-repeat;
+}	

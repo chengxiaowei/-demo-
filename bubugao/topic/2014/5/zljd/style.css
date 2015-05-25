@@ -1,0 +1,555 @@
+@import url('../../../pub/css/common.css');
+@import url('../../../pub/css/btn.css'); 
+@import url('../../../pub/font/iconfont.css');
+@import url('../../../pub/css/dialog/ui-dialog.css');
+@import url('../../../pub/css/hd/site-nav.css');
+@import url('../../../pub/css/linkage-tab.css');
+@import url('../../../pub/css/hd/search.css');
+@import url('../../../pub/css/hd/nav.css');
+@import url('../../../pub/css/jquery.minSlide.css');
+@import url('../../../pub/css/ft/ft.css');
+@import url('../../../pub/css/min-bar/min-bar.css');
+@import url('../../../app/style.css'); 
+body {
+    background: #E0F3FE; 
+}
+.h-30
+{
+    height: 30px;
+}
+.icbc-list { 
+    overflow: hidden;
+}
+.icbc-gift {
+    width: 953px;
+    height: 243px;
+    margin: 0 auto;
+}
+.icbc-gift a {
+    width: 459px;
+    height: 235px;
+    display: block;
+    float: left;
+}
+.icbc-gift .t {
+    margin-left: 35px;
+}
+.more-favorable {
+    width: 1022px;
+    height: 347px;
+    background: url(img/more-favorable.jpg) no-repeat center;
+    margin:0 auto;
+    margin-top: 13px;
+    padding-left: 55px;
+    padding-top: 50px;
+}
+.more-favorable .ctn {
+    position: relative;
+    width: 975px;
+    height: 318px;
+}
+.more-favorable .show-img {
+    position: absolute;
+    display: block;
+}
+.more-favorable a img {
+    border: 0px;
+}
+.more-favorable .one {
+    width: 352px;
+    height: 317px;
+    top: 2px;
+    left: 3px;
+}
+.more-favorable .one img {
+    width: 353px;
+    height: 318px;
+}
+.more-favorable .two {
+    width: 350px;
+    height: 189px;
+    top: 2px;
+    left: 358px;
+}
+.more-favorable .two img {
+    width: 352px;
+    height: 190px;
+}
+.more-favorable .three {
+    width: 262px;
+    height: 189px;
+    top: 2px;
+    left: 712px;
+}
+.more-favorable .three img {
+    width: 264px;
+    height: 190px;
+}
+.more-favorable .four {
+    width: 353px;
+    height: 124px;
+    top: 194px;
+    left: 358px;
+}
+.more-favorable .four img {
+    width: 352px;
+    height: 126px;
+}
+.more-favorable .five {
+    width: 263px;
+    height: 125px;
+    top: 194px;
+    left: 712px;
+}
+.more-favorable .five img {
+    width: 264px;
+    height: 126px;
+}
+.bn {
+    width: 100%;
+    overflow:hidden;
+    background-repeat: no-repeat;
+    background-position: center top;
+    min-width: 1024px;
+}
+.bn-t {
+    height: 429px;
+}
+.bn-t-2 {
+    height: 293px;
+}
+.bn-t-2 img
+{
+    margin: 0 auto;
+    display: block;
+}
+.bn-t .inner-box {
+    width: 1042px;
+    margin: 0 auto;
+    position: relative;
+}
+.bn-t .inner-box .tips-info {
+    width: 407px;
+    height: 100px;
+    position: absolute;
+    top: 440px;
+    right: 83px;
+    font-size: 13px;
+    font-family:'Microsoft YaHei';
+    line-height:20px;
+    color: #43010b;
+}
+.bn-b {
+    height: 239px;
+}
+.wrapper {
+    overflow:visible;
+    padding-bottom:0px;
+    margin-top:0;
+    padding-top:0; 
+}
+.wrapper h2 {
+    border:none;
+    box-shadow: none;
+    text-align: left;
+    height: 75px;
+    font-size: 32px;
+    vertical-align: bottom;
+}
+.com-hd-t {
+    padding-top:8px;
+    text-indent: 70px;
+    width:1034px;
+    margin: 0 auto;
+}
+ 
+.spec-mod h2
+{
+    height: 70px;
+}
+.spec-mod, .com-mod {
+    background-repeat: no-repeat;
+    background-position: center top;
+    min-width: 1024px;
+    margin-bottom: 0; 
+    overflow: hidden;
+    margin-top: 15px;
+}
+.spec-mod .com-txt
+{
+    width: 125px;
+}
+.spec-mod .com-txt a
+{
+    width: 122px;
+    font-size: 14px;
+}
+.spec-mod .com-buy-btn{
+    width: 56px;
+    height: 52px;
+    background-position: 0 -641px;
+}
+.wrap-cnt {
+    margin-top:0;
+    position: relative;
+    z-index: 2;
+}
+.spec-mod ul, .com-mod ul {
+    margin-left:30px;
+}
+.com-mod ul {
+    margin-top: -20px;
+}
+#com5 .com-bd {
+    padding-bottom: 20px;
+}
+.com-bd {
+    width:1007px;
+    margin: 0 auto;
+    overflow: hidden;
+    background: #bff0fc;
+    border-left: 1px solid #07c5ee;
+    border-right: 1px solid #07c5ee;
+}
+.ad-link {
+    width:999px;
+    margin:15px auto 0 auto;
+}
+.right-nav {
+    position:fixed;
+    -position:absolute;
+    width:112px;
+    height:196px;
+    padding-top: 79px;
+    z-index:100;
+    left:53%;
+    margin-bottom: 100px;
+    margin-left:450px;
+    bottom:35px;
+    overflow: hidden;
+    background:url(img/nav.png) no-repeat;
+}
+.right-nav a {
+    height: 46px;
+    font: 100 18px/46px'Microsoft Yahei';
+    color:#fff;
+    text-decoration: none;
+}
+.right-nav a:hover {
+    text-decoration: underline;
+}
+.right-nav .go-top {
+    background:none;
+    border:none;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+}
+.help {
+    margin-top: 0;
+}
+#com2 .com-hd-t, #com3 .com-hd-t {
+    text-align: right;
+    padding-right: 60px;
+    width:974px;
+}
+.spec-mod li {
+    width: 190px;
+    height: 242px;
+}
+.spec-mod .com-box
+{
+    height: 51px;
+}
+.spec-mod .com-img {
+    width: 170px;
+    height: 170px;
+    text-align: center;
+}
+.spec-mod .com-img img {
+    width: 165px;
+    height: 165px;
+}
+.spec-mod .com-txt .p-normal {
+    font-size: 13px;
+}
+.spec-mod .com-txt .p-del {
+    font-size: 12px;
+}
+.com-mod li {
+    width: 240px;
+    height: 320px;
+}
+.com-mod .com-img {
+    width: 220px;
+    text-align: center;
+    height: 238px;
+}
+.com-mod .com-img img {
+    width: 214px;
+    height: 214px;
+    margin-top: 14px;
+}
+.com-mod .com-txt .p-normal {
+    font-size: 20px;
+}
+.com-mod .com-txt .p-del {
+    font-size: 13px;
+}
+.com-txt a {
+    font-size: 16px;
+    width: 144px;
+    line-height: 30px;
+    height: 30px;
+    font-family:'Microsoft YaHei';
+}
+.com-mod-bottom {
+    height: 15px;
+    overflow: hidden; 
+    width: 1009px;
+    margin: 0 auto;
+}
+/**/
+.ico-gift, .spec-buy-btn, .com-buy-btn, .com-disabled-btn, .go-top{
+    background:url(img/ico_sprite.png) no-repeat;
+}
+.com-buy-btn, .com-disabled-btn {
+    display: block;
+    width: 66px;
+    height: 62px;
+    background-position: 0 -577px;
+    margin-top: -1px;
+}
+.rules-gift {
+    background: #5fa5de;
+    position: relative;
+    min-height: 321px;
+}
+.rules-gift .ctt {
+    padding-top: 22px;
+}
+.rules-2-bg {
+    width: 100%;
+    height: 1268px;
+    margin-top: 9px;
+    position: relative;
+    background: url(img/rules-bg.png) no-repeat;
+    background-position: center bottom;
+}
+.rules-gift-item {
+    background: url(img/rules-1.jpg) no-repeat;
+}
+.rules-gift-item .icbc-help {
+    position: absolute;
+    height: 58px;
+    width: 223px;
+    top: 100px;
+    left: 611px;
+}
+.rules-gift-item .icbc-help:hover {
+    border-bottom: 1px solid red;
+}
+.rules-gift-item, .rules-gift-item-2, .rules-gift-item-3 {
+    width: 1089px;
+    height: 567px;
+    margin: 0 auto;
+    position: relative;
+    background-repeat: no-repeat;
+}
+.rules-gift-item-3 .flag
+{
+    position: absolute;
+    width: 228px;
+    height: 72px;
+    background: url(img/flag.png) no-repeat;
+    bottom: 96px;
+    right: -141px;
+}
+.rules-2 {
+    width: 100%;
+}
+.rules-gift-item-2 {
+    height: 628px;
+    background-position: -10px 0px;
+}
+.rules-3 {
+    width: 100%;
+}
+.rules-gift-item-3 {
+    height: 639px;
+    background-position: -10px 0px;
+}
+.rules-gift-item-3 .ctt {
+    width: 820px;
+    height: 350px;
+    margin: 0 auto;
+    position: relative;
+}
+.rules-gift-item-3 .ctt a {
+    display: block;
+    height: 30px;
+    width: 300px;
+    position: absolute;
+    top: 167px;
+    left: 176px;
+}
+.rules-gift-item-3 .ctt a:hover {
+    border-bottom: 1px solid red;
+}
+.rules-gift .r-box {
+    display: block;
+    position: absolute;
+    width: 43px;
+    height: 139px;
+    top: 136px;
+    right: 75px;
+    _right:73px;
+}
+.rules-gift .r-box2 {
+    right : 73px;
+    right:73px\9;
+    _right:72px;
+}
+.rules-gift .r-box {
+}
+.rules-gift .r-box span {
+    display: none;
+}
+.rules-gift .r-box:hover {
+}
+.rules-gift .r-box:hover span {
+    display: block;
+}
+.rules-gift .detail-1 {
+    width: 598px;
+    height: 321px;
+    position: absolute;
+    top: 0px;
+    right: 1px;
+    background: url(img/detail-1.gif) no-repeat center;
+}
+.rules-gift .detail-2 {
+    width: 598px;
+    height: 349px;
+    position: absolute;
+    top: 0px;
+    right: 1px;
+    background: url(img/detail-2.gif) no-repeat center;
+}
+.r-menu {
+    width: 32px;
+    height: 120px;
+    position: fixed;
+    right: 0px;
+    top: 100px;
+    _position:absolute;
+    _top:expression(eval(document.documentElement.scrollTop+100));
+    background: url(img/r-menu.gif) no-repeat center;
+    z-index: 1000;
+}
+.r-menu .r-menu-detail {
+    display: none;
+    position: absolute;
+    background: url(img/r-menu-detail-bg.gif) no-repeat center;
+    width: 827px;
+    height: 442px;
+    right: 0px;
+    top: 0px;
+    padding: 10px;
+    padding-left: 30px;
+}
+.r-menu .r-menu-detail i {
+    padding: 10px;
+    display: block;
+    width: 807px;
+    height: 422px;
+    overflow: auto;
+}
+.r-menu:hover {
+}
+.r-menu:hover span {
+    display: block;
+}
+.com-mod .com-txt {
+    width:165px;
+}
+/* more start */
+.more
+{
+    width: 1050px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+.more-top
+{
+    height: 31px;
+}
+.more-ct
+{
+    background: #084F3C;
+    height: 410px;
+}
+.more-ct ul
+{
+    display: block;
+    width: 970px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.more-ct ul.two
+{
+    margin-top: 10px;
+}
+.more-ct ul li
+{
+    float: left;
+    display: block;
+    margin-left: 10px;
+}
+.more-ct ul li img
+{
+    display: block;
+}
+.more-ct ul li p
+{
+    display: block;
+}
+.more-ct ul li p.two
+{
+    margin-top: 10px;
+}
+.more-ct ul li.first img
+{
+    width: 130px;
+    height: 270px;
+}
+.more-ct ul .first,.more-ct ul li.six
+{
+    margin-left: 0px;
+}
+.more-bottom
+{
+    height: 29px;
+}
+/* 更多图片大小限制 */
+.more .img-1 img
+{
+    width: 130px;   
+    height: 270px;   
+}
+.more .img-2 img
+{
+    width: 270px;   
+    height: 130px;     
+}
+.more .img-3 img
+{
+    width: 270px;   
+    height: 270px;      
+}
+.more .img-4 img
+{
+    width: 130px;   
+    height: 130px;      
+}
+/* more end */

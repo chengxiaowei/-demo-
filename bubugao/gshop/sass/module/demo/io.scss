@@ -1,0 +1,14 @@
+/* common */
+@import "../../common";
+@import "../../common/button/button";
+
+@import "./source/common";
+
+.mod-demo-io {
+    @extend .mod-demo;
+    .bd {
+        .ui-button {
+            margin: 5px 0;
+        }
+    }
+}

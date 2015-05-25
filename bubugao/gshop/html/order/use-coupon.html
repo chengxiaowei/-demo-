@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>使用优惠券</title>
+    <!--#include file="/html/include/common/intro.html"-->
+    <link rel="stylesheet" href="//s1.bbgstatic.com/gshop/css/module/order/use-coupon.css?v=3.0.13" type="text/css" charset="utf-8"></head>
+<body>
+    <div class="page-view">
+        <head><!--#include file="/html/order/mod/_head-use-coupon.html"--></head>
+        <div class="page-view-body mod-use-coupon" id="jUseCoupon" >
+            <div class="hd">
+                 提示：云猴暗号，请直接在输入框中输入，再点击确认按钮即可
+            </div>
+            <div class="bd">
+                <div class="cnt">
+                    <div class="inner">
+                        <div class="item">
+                            <div class="text">可使用优惠券:</div>
+                            <div class="input"><select class="select" id="jCouponsList">
+                            <option value="null">请选择优惠券</option>
+                            </select></div>
+                        </div>
+                        <div class="item">
+                            <div>
+                                <div class="text">输入优惠券码:</div>
+                                <div class="input"><input type="text" class="input-txt" placeholder="请输入优惠券码" id="jCouponInput"/></div>
+                                <div class="btn-box"><button class="ui-button ui-button-red" id="jSubBtn">使用</button></div>
+                            </div>
+                            <div class="msg" id="msg">不能为空</div>
+                        </div>
+                        <div class="tips">
+                            如您有通过站外方式获得的优惠券,请直接输入优惠券号码 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+         <!-- <footer> xx </footer> -->
+    </div>
+<!--#include file="/html/include/common/outro.html"-->
+<script>require(['conf/order/use-coupon']);</script>
+
+<!--GTM start-->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-NV2JH3" 
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript> 
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': 
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0], 
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src= 
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f); 
+})(window,document,'script','dataLayer','GTM-NV2JH3');</script> 
+<!--GTM end-->
+<!--bbg start-->
+<script>
+    (function(f,c,d,e,g,a,b){a=c.createElement(d);b=c.getElementsByTagName(d)[0];a.async=1;a.src=e;b.parentNode.insertBefore(a,b)
+    })(window,document,"script","//"+(location.protocol=="http:"?"s1":"ssl")+".bbgstatic.com/tracer/bpm.js","bpm");
+</script>
+<!--bbg end-->
+</body>
+</html>

@@ -1,0 +1,130 @@
+@import url('../../../pub/css/common.css');
+@import url('../../../pub/css/btn.css'); 
+@import url('../../../pub/font/iconfont.css');
+@import url('../../../pub/css/dialog/ui-dialog.css');
+@import url('../../../pub/css/hd/site-nav.css');
+@import url('../../../pub/css/linkage-tab.css');
+@import url('../../../pub/css/hd/search.css');
+@import url('../../../pub/css/hd/nav.css');
+@import url('../../../pub/css/jquery.minSlide.css');
+@import url('../../../pub/css/ft/ft.css');
+@import url('../../../pub/css/min-bar/min-bar.css');
+@import url('../../../app/style.css'); 
+body{
+	background:url(images/bj.jpg) repeat;
+}
+.bn { 
+	width: 100%;
+	height:476px;
+	overflow:hidden;
+	
+}
+.wrapper{
+	overflow:visible;
+	padding-bottom:20px;
+	margin-top:0;
+	padding-top:0;
+}
+.wrapper h2{
+	border:none;
+	box-shadow: none;
+	margin:0;
+	text-indent: -9999px;
+}
+.spec-mod{
+	margin-bottom: 0;
+}
+
+.layout{
+	width:auto;
+}
+/*调整com-mod li 上下间距适应背景大小*/
+.com-mod li{
+	margin-top:7px;
+}
+
+#com1, #com2, #com3, .bn{
+	background-repeat:no-repeat;
+	background-position:center;
+	min-width:1024px;
+}
+
+#com1{
+	height:440px;
+}
+#com2{
+	height:640px;
+	padding-right:7px;
+}
+
+#com3{
+	padding-top:307px;
+	background-position:center top;	
+}
+
+#com3 .com-bd{
+	background-color:#ffffcc;
+	width: 990px;
+	padding:0 2px 20px;
+	margin-top:-253px;
+	overflow:hidden;
+	zoom:1;
+	position:relative;
+}
+
+.com3-box{
+	background:#ffffcc;
+	width:1000px;
+	margin:0 auto;
+}
+
+/*
+
+*/
+
+/*右侧浮层*/
+.right-nav {
+	position: fixed;
+	width:100px;
+	height:137px;
+	padding-top:42px;
+	_position:absolute;
+	overflow: hidden;
+	z-index: 100;
+	left: 50%;
+	margin-left: 500px;
+	bottom: 35px;
+	background:url(images/right-nav.png) no-repeat;
+}
+.right-nav a {
+	height: 30px;
+	color:#cc6600;
+	font-size: 14px;
+	font-weight:700;
+	line-height:35px;
+	font-family:'microsoft yahei';
+}
+.right-nav .go-top{
+	background: none;
+	border: none;
+	margin-top: 0;
+	height: 38px;
+	line-height: 26px;
+	font-family: Simsun;
+	font-size: 14px;
+	color: #fff;
+}
+
+.indent{
+	text-indent:-9999;
+}
+
+#com1 .com-bd{
+	margin-top:53px;
+}
+
+.com-bd{
+	width:990px;
+	margin:63px auto 0;
+	overflow:hidden;
+}

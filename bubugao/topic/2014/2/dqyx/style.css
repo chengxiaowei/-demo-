@@ -1,0 +1,100 @@
+@import url('../../../pub/css/common.css');
+@import url('../../../pub/css/btn.css'); 
+@import url('../../../pub/font/iconfont.css');
+@import url('../../../pub/css/dialog/ui-dialog.css');
+@import url('../../../pub/css/hd/site-nav.css');
+@import url('../../../pub/css/linkage-tab.css');
+@import url('../../../pub/css/hd/search.css');
+@import url('../../../pub/css/hd/nav.css');
+@import url('../../../pub/css/jquery.minSlide.css');
+@import url('../../../pub/css/ft/ft.css');
+@import url('../../../pub/css/min-bar/min-bar.css');
+@import url('../../../app/style.css'); 
+body{
+	background:#f9dcb5;
+}
+.bn { 
+	min-width:1000px;
+	width: 100%;
+	height:412px;
+	overflow:hidden;
+}
+.color-r{
+	color:#fcc8da;
+}
+.hidden{
+	display:none;
+	width:0;
+	height:0;
+	font-size:0;
+	border:none 0;
+}
+.hid{
+	display:block;
+	text-indent:-9999em;
+	overflow:hidden;
+}
+.f-l{
+	float:left;
+}
+.f-r{
+	float:right;
+} 
+.rel{
+	position:relative;
+}
+.abs{
+	position:absolute;
+}
+.layout{
+	margin:0 auto;
+	width:1000px;
+}
+img{
+	display:block;
+	margin:0 auto;
+	border:0;
+}
+
+.header{
+	min-width:1000px;
+	height:416px;
+	background:#f9dcb5 url(//s1.bbgstatic.com/topic/2014/2/dqyx/images/hd.png) no-repeat center center;
+	overflow:hidden;
+}
+ 
+.wrapper{
+	clear:both;
+	overflow:hidden;
+	min-width:1000px;
+}
+/*商品块*/
+ 
+
+.com-mod {
+	margin-bottom: 10px;
+	z-index: 2;
+	position: relative;
+	overflow:hidden;
+}
+h2.com-hd{
+	margin:15px 0;
+	width:990px;
+	height:112px;
+	box-shadow:none;
+	background:url(//s1.bbgstatic.com/topic/2014/2/dqyx/images/menu.png) no-repeat;
+}
+.com-mod ul {
+	margin:0 auto;
+	width: 1000px;
+	overflow:hidden;
+}
+#com2 .com-hd{
+	background-position:0 -112px;
+}
+#com3 .com-hd{
+	background-position:0 -224px;
+}
+
+ 
+  

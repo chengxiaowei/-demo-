@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>更改发票信息</title>
+    <!--#include file="/html/include/common/intro.html"-->
+    <link rel="stylesheet" href="//s1.bbgstatic.com/gshop/css/module/order/modify-invoice.css?v=3.0.13" type="text/css" charset="utf-8"></head>
+<body>
+    <div class="page-view">
+        <head><!--#include file="/html/order/mod/_head-modify-invoice.html"--></head>
+        <div class="page-view-body mod-modify-invoice" id="jMdInvoice">
+            
+        </div>
+         <!-- <footer> xx </footer> -->
+    </div>
+    <script id="jMdInvoiceTmpl" type="text/html">
+        <% if(tab && tab.length!=0){ 
+            var taxType = taxType?taxType:0;
+            var taxTitle = taxTitle?taxTitle:'';
+        %>
+        <div class="hd">
+            <ul id="jTab">
+                <% for(var i=0;i<tab.length;i++){ %>
+                    <li data-index="<%=i%>" <% if(i==taxType){ %> class="hover"<% } %> id="jTab-<%=i%>"><span><%=tab[i]%></span></li>
+                <% } %>
+            </ul>
+        </div>
+        <% } %>
+        <div class="bd" id="jCtn" style="display:none;">
+            <div class="cnt">
+                <div class="inner">
+                    <div class="item">
+                        <div class="clearfix">
+                            <div class="text">发票抬头:</div>
+                            <div class="input"><input type="text" class="input-txt" placeholder="限50个字" maxlength="50" id="jInvoiceText" value="<%=taxTitle%>"/></div>
+                        </div>
+                        <div class="clearfix msg" id="msg"></div>
+                    </div>
+                    <div class="item">
+                        <div class="text">发票内容:</div>
+                        <div class="input"><select class="select" id="jInvoiceCtn"></select></div>
+                    </div>
+                </div>
+            </div>
+            <div class="tips">
+                <h1>温馨提示：</h1>
+                <p>1. 订单中入驻商家销售商品，发票内容由商家决定（如需修改，请
+联系商家），发票由商家开具寄出。</p>
+                <p>2. 发票金额为实际支付金额（不含云猴网优惠券、高币等），云猴
+全球购商品不支持开发票</p>
+            </div>
+            <div class="btn"><button class="ui-button ui-button-red" id="jSaveInvoiceinfo">保存</button></div>
+        </div>
+    </script>
+<!--#include file="/html/include/common/outro.html"-->
+<script>require(['conf/order/modify-invoice']);</script>
+
+<!--GTM start-->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-NV2JH3" 
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript> 
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': 
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0], 
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src= 
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f); 
+})(window,document,'script','dataLayer','GTM-NV2JH3');</script> 
+<!--GTM end-->
+<!--bbg start-->
+<script>
+    (function(f,c,d,e,g,a,b){a=c.createElement(d);b=c.getElementsByTagName(d)[0];a.async=1;a.src=e;b.parentNode.insertBefore(a,b)
+    })(window,document,"script","//"+(location.protocol=="http:"?"s1":"ssl")+".bbgstatic.com/tracer/bpm.js","bpm");
+</script>
+<!--bbg end-->
+</body>
+</html>

@@ -1,0 +1,95 @@
+@import url('../../../pub/css/common.css');
+@import url('../../../pub/css/btn.css'); 
+@import url('../../../pub/font/iconfont.css');
+@import url('../../../pub/css/dialog/ui-dialog.css');
+@import url('../../../pub/css/hd/site-nav.css');
+@import url('../../../pub/css/linkage-tab.css');
+@import url('../../../pub/css/hd/search.css');
+@import url('../../../pub/css/hd/nav.css');
+@import url('../../../pub/css/jquery.minSlide.css');
+@import url('../../../pub/css/ft/ft.css');
+@import url('../../../pub/css/min-bar/min-bar.css');
+@import url('../../../app/style.css'); 
+body{
+	 background:#eeeeee;
+}
+.bn { 
+	width: 100%; 
+	overflow:hidden;
+	background-repeat: no-repeat;
+	background-position: center top;
+	min-width: 1090px;
+}
+ 
+.layout{
+	margin: 0 auto;
+	width: 990px;
+}
+.ccb-ads{
+	top:430px;
+}
+.ccb-ads li{
+	margin: 14px auto;
+	width: 240px;
+	text-align: center;
+}
+.ccb-ads li a{
+	display: block;
+	margin:0 auto;
+}
+.spec-mod{
+	padding-top: 40px;
+	padding-bottom: 80px;
+	background: #f34819 url(img/bg1.png) no-repeat;
+	overflow: hidden;
+}
+.spec-mod li{
+	box-shadow: none; 
+	margin:10px 5px 0 0;
+	*margin-right: 3px;
+}
+.com-hd{
+	width: 100%;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	color: #fff;
+	font-size: 30px;
+	font-family: 'Microsoft YaHei'; 
+}
+.com-bd ul{
+	position: relative;
+	left: 7px;
+	margin:0 auto;
+	padding-bottom: 10px;
+	width: 1000px;
+	overflow: hidden;
+}
+ 
+.help{
+	margin-top:0;
+} 
+
+.shop{
+	position: relative;
+	top: 300px;
+	float: left;
+	-position:absolute; 
+	width: 100px;
+	height: 205px;
+	padding-top: 40px; 
+	overflow:hidden; 
+	z-index:100; 
+	left:55%; 
+	margin-left:450px; 
+	margin-bottom: 40px; 
+	background: url(img/nav.png) no-repeat;
+	z-index: 999;
+}
+.shop a{
+	display: block;
+	width: 100%;
+	height: 68px;
+	text-indent: -999999px;
+	overflow: hidden;
+}

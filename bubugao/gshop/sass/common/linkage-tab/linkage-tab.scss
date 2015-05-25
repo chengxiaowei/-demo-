@@ -1,0 +1,103 @@
+@import '../../common';
+.linkage-tab {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	left: 0px;
+	right: 0px;
+	top: 0px;
+	bottom: 0px;
+	font-size: rem(26);
+	color: #666666;
+	font-family: 'microsoft yahei';
+	display: none;
+	z-index: 12;
+	background: #fff;
+	.linkage-tab-body {
+
+	}
+	.linkage-tab-input {
+		display: none;
+	}
+	.close {
+		position: fixed;
+		width: rem(70);
+		text-align: center;
+		height: rem(70);
+		line-height: rem(70);
+		background: #B2B2B2;
+		right: rem(30);
+		bottom: rem(120);
+		color: #fff;
+		opacity: .9; 
+		border-radius: rem(70);
+		font-size: rem(56);
+		z-index: 11;
+	}
+	.tab {
+		width: rem(216);
+		position: fixed;
+		top: rem(88);
+		left: 0px;
+		bottom: 0px;
+		height: 100%;
+		overflow: auto;
+		background: #F2F2F2;
+		ul {
+			li {
+				height: rem(86);
+				line-height: rem(86);
+				padding-left: rem(34);
+			}
+			.hover {
+				height: rem(84);
+				line-height: rem(84);
+				width: rem(182);
+				border-bottom: rem(2) solid #E4E4E4;
+				background: #fff;
+			}
+		}
+	}
+	.content {
+		background: #fff;
+		padding-left: rem(284);
+		overflow: auto;
+		height: 300px;
+		.inner {
+			width: rem(354);
+			ul {
+				li {
+					height: rem(84);
+					line-height: rem(84);
+					border-bottom: 1px solid #DFDFDF;
+					a {
+						color: #666666;
+					}
+				}
+				.hover {
+					a {
+						background: #005ea7;
+						color: #fff;
+						padding: 0px rem(2);
+					}
+				}
+			}
+		}
+	}
+}
+.linkage-tab-hover {
+	display: block;
+}
+.linkage-tab-hidden {
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+	.body {
+		height: 100%;
+		width: 100%;
+		overflow: hidden;
+	}
+	.linkage-tab-hover {
+		z-index: 11;
+	}
+}

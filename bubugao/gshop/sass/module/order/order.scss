@@ -1,0 +1,72 @@
+﻿@import "../../common";
+@import "../../common/button/button";
+@import "../trade/_trade";
+html {
+    color: #666666;
+    background: #f2f2f2;
+    font-size: rem(26);
+}
+//
+.mod-order {
+    .wrap {
+
+    }
+}
+//数据加载中...
+.no-data {
+    font-size: rem(26);
+    padding: rem(20);
+    text-align: center;
+}
+//生成公用的盒子样式
+@mixin orderBox(){ 
+    font-size: rem(28);
+    margin-bottom: rem(20);
+    .hd {
+        border: 1px solid #cccccc;
+        border-radius: rem(4) rem(4) 0px 0px;
+        padding: rem(20);
+        color: #666666;
+        position: relative;
+        .icon {
+            font-size: rem(32);
+            line-height: rem(32);
+            position: absolute;
+            top: rem(20);
+            right: rem(10);
+        }
+    }
+    .bd {
+        background: #fff;
+        color: #333333;
+        border: 1px solid #cccccc;
+        border-top :0px;
+        // border-radius: 0px 0px rem(4) rem(4);
+    }
+}
+//item 样式
+@mixin orderItem(){
+    .item {
+        padding: rem(20);
+        border-bottom: 1px solid #dad9d9;
+        .txt {
+            margin-top: rem(2);
+            display: inline-block;
+            vertical-align: middle;
+        }
+    }
+}
+@import 'source/_address';//地址
+@import 'source/_ID-info';//身份证
+@import 'source/_payment';//支付方式
+@import 'source/_invoice';//发票
+@import 'source/_list';//列表
+@import 'source/_delivery';//配送方式
+@import 'source/_list_no_del';//不配送列表
+@import 'source/_discount-list';//已享受优惠券
+@import 'source/_coupon';//优惠券
+@import 'source/_price';//价格
+@import 'source/_submit';//提交
+
+
+

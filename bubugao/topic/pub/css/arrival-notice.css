@@ -1,0 +1,49 @@
+/**
+* 到货通知
+*/
+.arrivalnotice {
+	
+}
+
+.arrivalnotice .form-horizontal {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.form-horizontal {
+	
+}
+
+.form-horizontal .form-group {
+	clear: both;
+	padding-top: 10px;
+	min-height: 30px;
+}
+
+.form-horizontal .form-group .control-label {
+	float: left;
+	width: 130px;
+	text-align: right;
+}
+
+.form-horizontal .form-group .form-control {
+	float: left;
+}
+
+.form-horizontal .form-group .form-control .input-text {
+	padding: 2px 5px;
+	width: 190px;
+	border: 1px solid #cbcbcb;
+}
+
+.form-horizontal .form-btn {
+	padding-left: 130px;
+	padding-top: 10px;
+}
+
+/* 错误提示样式 */
+.form-horizontal .form-group .form-control label.error {
+	font-size: 13px !important;
+	color: red;
+	padding-left: 5px;
+}

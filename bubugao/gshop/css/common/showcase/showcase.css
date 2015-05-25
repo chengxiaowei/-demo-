@@ -1,0 +1,56 @@
+/* line 6, ../../../sass/common/showcase/showcase.scss */
+.ui-showcase-list a {
+  text-decoration: none;
+  display: block;
+  color: #000;
+}
+/* line 11, ../../../sass/common/showcase/showcase.scss */
+.ui-showcase-list ul {
+  padding-left: 0;
+}
+/* line 15, ../../../sass/common/showcase/showcase.scss */
+.ui-showcase-list li {
+  float: none;
+  overflow: hidden;
+  margin-top: 4px;
+  border-bottom: 1px #ccc solid;
+  width: auto;
+}
+/* line 22, ../../../sass/common/showcase/showcase.scss */
+.ui-showcase-list li .thumbnail {
+  float: left;
+}
+/* line 25, ../../../sass/common/showcase/showcase.scss */
+.ui-showcase-list li .thumbnail img {
+  width: 45px;
+  height: 45px;
+  vertical-align: middle;
+}
+/* line 32, ../../../sass/common/showcase/showcase.scss */
+.ui-showcase-list li .intro {
+  margin-left: 65px;
+  height: 110px;
+}
+/* line 36, ../../../sass/common/showcase/showcase.scss */
+.ui-showcase-list li .intro .title {
+  overflow: hidden;
+  height: 1.5em;
+  font-size: 14px;
+  line-height: 1.5em;
+}
+/* line 43, ../../../sass/common/showcase/showcase.scss */
+.ui-showcase-list li .intro .one-line {
+  overflow: hidden;
+  height: 1.8em;
+  color: #666666;
+  font-size: 12px;
+  line-height: 1.8em;
+}
+/* line 51, ../../../sass/common/showcase/showcase.scss */
+.ui-showcase-list li .intro .multi-lines {
+  overflow: hidden;
+  color: #666666;
+  font-size: 12px;
+  height: 1.8em;
+  line-height: 1.8em;
+}

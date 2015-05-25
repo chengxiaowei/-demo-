@@ -1,0 +1,38 @@
+/* line 2, ../../../sass/common/nav/bottom.scss */
+body {
+  padding-bottom: 2.4rem;
+}
+
+/* line 6, ../../../sass/common/nav/bottom.scss */
+#nav-bottom {
+  position: fixed;
+  bottom: 0;
+  height: 2.4rem;
+  width: 100%;
+  background-color: #222729;
+}
+/* line 13, ../../../sass/common/nav/bottom.scss */
+#nav-bottom ul li {
+  float: left;
+  width: 20%;
+  text-align: center;
+}
+/* line 18, ../../../sass/common/nav/bottom.scss */
+#nav-bottom ul li a {
+  color: #FFF;
+}
+/* line 22, ../../../sass/common/nav/bottom.scss */
+#nav-bottom ul li .iconfont {
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+}
+/* line 27, ../../../sass/common/nav/bottom.scss */
+#nav-bottom ul li .text {
+  font-size: 0.6rem;
+  color: #f7f7f7;
+}
+/* line 34, ../../../sass/common/nav/bottom.scss */
+#nav-bottom .current .iconfont,
+#nav-bottom .current .text {
+  color: #81c878;
+}

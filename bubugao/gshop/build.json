@@ -1,0 +1,25 @@
+{
+    "appDir": "./",
+    "baseUrl": "js",
+    "dir": "./dist",
+    "commonModules": [ "app" ],
+    "modules": [
+        {
+            "name": "app",
+            "include": [ "jquery" ],
+            "exclude": [ "lib/es5-shim/4.0.3/es5-shim" ]
+        }
+    ],
+    "dist": {
+        "name": "gshop",
+        "version": "0.0.1",
+        "prefix": "//s1.bbgstatic.com/gshop",
+        "css": {
+            "rootUrl": "//s3.bbgstatic.com/gshop/",
+            "paths": {
+                "js/lib": "/lib",
+                "pub": "/pub"
+            }
+        }
+    }
+}

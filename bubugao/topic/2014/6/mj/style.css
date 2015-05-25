@@ -1,0 +1,84 @@
+@import url('../../../pub/css/common.css');
+@import url('../../../pub/css/btn.css'); 
+@import url('../../../pub/font/iconfont.css');
+@import url('../../../pub/css/dialog/ui-dialog.css');
+@import url('../../../pub/css/hd/site-nav.css');
+@import url('../../../pub/css/linkage-tab.css');
+@import url('../../../pub/css/hd/search.css');
+@import url('../../../pub/css/hd/nav.css');
+@import url('../../../pub/css/jquery.minSlide.css');
+@import url('../../../pub/css/ft/ft.css');
+@import url('../../../pub/css/min-bar/min-bar.css');
+@import url('../../../app/style.css'); 
+body{
+	background: #8abed8;
+	
+}
+.bn { 
+	width: 100%;
+	overflow:hidden;
+	background-repeat: no-repeat;
+	background-position: center top; 
+	height: 413px;
+	min-width: 1024px; 
+} 
+.wrapper{
+	padding-top:0;
+	padding-bottom: 20px;
+	margin:0 auto;
+	min-height: 1000px;
+	min-width: 1100px;
+}
+ 
+
+.layout {
+	width:990px;
+	overflow: hidden;
+ }
+
+ .jImg a{
+ 	width: 100%;
+ 	height: 100%;
+ }
+ .layout .jImg{
+ 	margin:0 auto;
+ }
+
+ .com-list li,.com-list li img{
+ 	width: 325px;
+ 	height: 305px;
+ }
+ .com-list li{
+ 	float: left;
+ 	margin-bottom: 20px;
+ 	margin-right: 10px;
+ }
+ .com-list ul{
+ 	margin-right: -15px;
+ 	*width: 1010px;
+ }
+
+.help{
+	margin-top: 0;
+}
+.a-mod{
+	position: relative;
+	width: 990px;
+	margin: 0 auto;
+}
+.jImg .a-mod .collect{
+	display: block;
+	width: 106px;
+	height: 40px;
+	position: absolute;
+	top: 60px;
+	right: 0;
+}
+.jImg .a-mod .see-active{
+	display: block;
+	width: 106px;
+	height: 20px;
+	position: absolute;
+	top: 270px;
+	right: 0;
+}

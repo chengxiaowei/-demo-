@@ -1,0 +1,50 @@
+@import url('../../../pub/css/common.css');
+@import url('../../../pub/css/btn.css'); 
+@import url('../../../pub/font/iconfont.css');
+@import url('../../../pub/css/dialog/ui-dialog.css');
+@import url('../../../pub/css/hd/site-nav.css');
+@import url('../../../pub/css/linkage-tab.css');
+@import url('../../../pub/css/hd/search.css');
+@import url('../../../pub/css/hd/nav.css');
+@import url('../../../pub/css/jquery.minSlide.css');
+@import url('../../../pub/css/ft/ft.css');
+@import url('../../../pub/css/min-bar/min-bar.css');
+@import url('../../../app/style.css'); 
+body{
+	background:url(img/bg.jpg) repeat;
+}
+
+
+.bn{
+	height: 700px;
+}
+
+.layout{
+	margin:0 auto;
+	width: 990px;
+}
+.bn-sec li,.bn-sec a{
+	display: block;
+	margin-top: 20px;
+	width: 495px;
+	height: 250px;
+	text-indent: -99999px;
+	overflow: hidden;
+}
+ 
+
+.com-hd{
+	height:75px;
+}
+.com-img-list{
+	background-color:#f2c400;
+	padding-bottom: 15px;
+ }
+.com-img-list li,.com-img-list a{ 
+	width: 240px;
+	height: 310px;
+}
+.com-img-list li{
+	float: left;
+	margin: 10px 0 0px 6px;
+}

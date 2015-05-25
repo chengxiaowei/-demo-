@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<!-- saved from url=(0039)http://fe.bubugao-inc.com/specs/html.md -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>HTML代码规范</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="author" content="Allex Wang">
+<link href="./HTML代码规范_files/specs-base.css" rel="stylesheet" type="text/css">
+<link href="./HTML代码规范_files/github.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div class="md-body">
+<h1 id="html">HTML代码规范</h1>
+<h2>语言规范</h2>
+<ol>
+<li><p>doctype 声明使用 html5。</p>
+<pre><code class="lang-html xml"><span class="doctype">&lt;!doctype html&gt;</span>
+</code></pre>
+</li>
+<li><p>统一页面编码格式为 utf-8 , meta 标签 charset 设置为 utf-8;</p>
+<pre><code class="lang-html xml"><span class="tag">&lt;<span class="title">meta</span> <span class="attribute">charset</span>=<span class="value">"utf-8"</span> /&gt;</span>
+</code></pre>
+</li>
+<li><p>标签、标签属性全部小写。</p>
+<p><strong>(√)</strong></p>
+<pre><code class="lang-html xml"><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"/"</span> <span class="attribute">data-attr</span>=<span class="value">"attr"</span>&gt;</span>Home<span class="tag">&lt;/<span class="title">a</span>&gt;</span>
+</code></pre>
+<p><strong>(╳)</strong></p>
+<pre><code class="lang-html xml"><span class="tag">&lt;<span class="title">A</span> <span class="attribute">HREF</span>=<span class="value">"/"</span> <span class="attribute">attr</span>=<span class="value">"attr"</span>&gt;</span>Home<span class="tag">&lt;/<span class="title">A</span>&gt;</span>
+</code></pre>
+</li>
+<li><p>所有html标签必须有结束符，&lt;img /&gt;, &lt;col /&gt;, &lt;base /&gt;, &lt;link /&gt;, &lt;meta /&gt;, &lt;input /&gt; 除外。</p>
+</li>
+<li><p>标签自定义属性使用 data-name="value" 的形式来写, 如果自定义属性特别多, 可以考虑使用标准 json 的方式去写: data-json='{"a":"a", "b":"b"}'。</p>
+<p><strong>(√)</strong></p>
+<pre><code class="lang-html ini"><span class="setting">data-json=<span class="value">'<span class="string">"a"</span>:<span class="number">1</span>, <span class="string">"b"</span>:<span class="keyword">true</span>, <span class="string">"c"</span>:[<span class="number">1</span>, <span class="number">2</span>]'</span></span>
+</code></pre>
+<p><strong>(╳)</strong></p>
+<pre><code class="lang-html ini"><span class="setting">data-json=<span class="value"><span class="string">"a:1, b:true, c:[1, 2]"</span> // 对于这样的写法, 在解析的时候很难搞清楚 value 值的类型（例如：boolean、数组、对象）</span></span>
+</code></pre>
+</li>
+<li><p>对于 JS 钩子, 以 jCamelCase 的驼峰形式来命名。</p>
+</li>
+<li><p>对于普通 class 或者 id 命名（此处id仅做样式，不做js钩子）, 统一使用小写字母, 第一个字符必须为字母, 连接符用中划线 '-'。</p>
+<p><strong>(√)</strong></p>
+<pre><code class="lang-html ini"><span class="setting">class=<span class="value"><span class="string">"sns-box"</span>   </span></span>
+<span class="setting">class=<span class="value"><span class="string">"box"</span></span></span>
+</code></pre>
+<p><strong>(╳)</strong></p>
+<pre><code class="lang-html ini"><span class="setting">class=<span class="value"><span class="string">"Sns-box"</span>  </span></span>
+<span class="setting">class=<span class="value"><span class="string">"snsBox"</span>  </span></span>
+<span class="setting">class=<span class="value"><span class="string">"Box"</span></span></span>
+</code></pre>
+</li>
+<li><p>css 引用置于头部&lt;head&gt; 标签内。</p>
+</li>
+<li><p>js 引用置于底部 &lt;/body&gt; 标签前。</p>
+</li>
+</ol>
+<h2>标签使用</h2>
+<ol>
+<li><p>&lt;base&gt; 标签必须放在 &lt;head&gt; 内 (注: 否则在某些浏览器下可能会失效)。</p>
+</li>
+<li><p>&lt;strong&gt; 标签用于强调重要性, &lt;em&gt; 标签用于表示内容的着重点。<a href="http://www.css88.com/archives/644" target="_blank">[参考]</a></p>
+</li>
+<li><p>当 link 元素用于引用CSS文档时, 默认 media 是 screen, 如为特殊终端提供样式, 请指定 media 属性, 如 media=“print”;</p>
+</li>
+<li><p>img标签必须加alt，尤其是商品图片。</p>
+</li>
+</ol>
+<h2>注释规范</h2>
+<ol>
+<li><p>主要的 html 模块需加注释</p>
+</li>
+<li><p>修改别人代码时, 加入修改信息。至少加入修改者大名和修改时间。</p>
+<pre><code class="lang-html xml"><span class="comment">&lt;!--@author djune--&gt;</span><span class="comment">&lt;!--@last-modified 2013-09-26 13:21--&gt;</span>
+</code></pre>
+</li>
+</ol>
+<h2>其他注意</h2>
+<ol>
+<li><p>页面不内嵌style、script代码，如特殊情况请标明并注释。</p>
+</li>
+<li><p>缩进以4个空格为基本单位，为每个块级元素或表格元素标签新起一行，并且对每个子元素进行缩进。<a href="http://www.cnblogs.com/kungfupanda/archive/2012/09/05/2671597.html" target="_blank">[参考]</a></p>
+</li>
+</ol>
+<h2>参考文档</h2>
+
+</div>
+<script src="./HTML代码规范_files/jquery-1.8.1.min.js"></script>
+<script src="./HTML代码规范_files/highlight.pack.js"></script>
+<script>
+jQuery(function($) {
+    // sync document title
+    var title = $('h1').html();
+    if (title) { document.title = title; }
+    // rebuild links to enable open in new window.
+    var HOST_NAME = window.location.hostname;
+    $(document.links).filter(function(i, a) { return a.hostname !== HOST_NAME; }).attr('target', '_blank');
+    // highlight source code
+    hljs.initHighlightingOnLoad();
+});
+</script> 
+
+</body></html>

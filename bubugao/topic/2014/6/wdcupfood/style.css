@@ -1,0 +1,122 @@
+@import url('../../../pub/css/common.css');
+@import url('../../../pub/css/btn.css'); 
+@import url('../../../pub/font/iconfont.css');
+@import url('../../../pub/css/dialog/ui-dialog.css');
+@import url('../../../pub/css/hd/site-nav.css');
+@import url('../../../pub/css/linkage-tab.css');
+@import url('../../../pub/css/hd/search.css');
+@import url('../../../pub/css/hd/nav.css');
+@import url('../../../pub/css/jquery.minSlide.css');
+@import url('../../../pub/css/ft/ft.css');
+@import url('../../../pub/css/min-bar/min-bar.css');
+@import url('../../../app/style.css'); 
+body{
+	background:#10153e;
+	
+}
+.bn { 
+	width: 100%;
+	height:168px;
+	overflow:hidden;
+	min-width:1024px;
+	background-repeat: no-repeat;
+	background-position: center top;
+}
+.bn-1{
+	height: 170px;
+}
+.wrapper{
+	overflow:visible;
+	padding-bottom:0;
+	margin-top:0;
+	padding-top:0;
+}
+.wrapper h2.hd{
+	width: 1030px;
+	height: 129px;
+	margin: 0 auto;
+	box-shadow: none;
+	background-repeat: no-repeat;
+	background-position: center top;
+}
+.com-mod{
+	padding: 0 0 29px;
+}
+.com-mod-1{
+	background-color: #ffe107;
+}
+.com-mod-2{
+	background-color: #ff8604;
+}
+.com-mod-3{
+	background-color: #8fc642;
+}
+.com-mod-4{
+	background-color: #4eebeb;
+}
+.com-bd{
+	width: 984px;
+	margin: 0 auto;
+	padding: 10px 22px 19px;
+	background-color: #8fc642;
+	border:1px solid #fff2a7;
+}
+.com-mod-2 .com-bd{
+	border:1px solid #f9b864;
+	background-color: #f66e6e;
+}
+.com-mod-3 .com-bd{
+	border:1px solid #9ceba0;
+	background-color: #f3d404;
+}
+.com-mod-4 .com-bd{
+	border:1px solid #b6ffff;
+	background-color: #a87ab8;
+}
+.ft-mod{
+	background-color: #fff;
+	height: 341px; 
+	padding-top: 30px;
+}
+.ft-mod a{
+	display: block;
+	margin: 0 auto;
+	width: 1030px;
+	height: 293px;
+}
+.ft-mod a img{
+	width: 1030px;
+	height: 293px;
+}
+
+
+/*右侧浮层*/
+.right-nav{
+	position:fixed;
+	-position:absolute;
+	width:100px;
+	height:160px;
+	padding-top: 45px;
+	overflow:hidden; 
+	z-index:100;
+	left:55%;
+	margin-left:450px;
+	margin-bottom: 40px;
+	bottom:25px;
+	background:url(img/nav.png) no-repeat;
+}
+
+.right-nav a{
+	height:30px;
+	font:700 14px/30px 'Microsoft Yahei';
+	color: #cc6600;
+}
+
+.right-nav .go-top{
+	background:none;
+	border:none;
+	height: 32px;
+	line-height: 32px;
+	font-size: 14px;
+	color: #fff;
+}

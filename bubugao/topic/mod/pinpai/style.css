@@ -1,0 +1,78 @@
+@import url('../../pub/css/common.css');
+@import url('../../pub/css/btn.css'); 
+@import url('../../app/style.css');
+@import url('../../app/mod/toplist.css');
+
+
+
+.brand{
+    width:1000px;
+    border:1px solid #dddddd;
+    box-shadow:0px 0px 5px #dddddd;
+    margin:30px auto;
+    background: #fff;
+}
+/*品牌区1 start*/
+.brand .bd-box{
+    padding:0px 24px;
+}
+.brand .bd-box ul{
+    clear: both;
+    overflow:hidden;
+    *zoom:1;
+}
+.brand .bd-box li{
+    float:left;
+    width:122px;
+    height:77px;
+    overflow:hidden;
+    position:relative;
+    margin:10px 10px 0px 10px;
+}
+.brand .bd-box li img{
+    width:120px;
+    height:75px;
+    border:1px solid #e9e8e8;
+    position:absolute;
+    left:0px;
+    top:0px;
+    z-index:2;
+    overflow:hidden;
+}
+.brand .bd-box li span{
+    width:120px;
+    height:0px;
+    border:1px solid #e9e8e8;
+    position:absolute;
+    left:0px;
+    top:38px;
+    z-index:1;
+    text-align:center;
+    line-height:75px;
+    font-size:14px;
+    color:#FFF;
+    background:#ffa340;
+    font-weight:bold;
+    overflow:hidden;
+    display:none;
+}
+.brand .bd-box li a{
+    width:120px;
+    height:75px;
+    position:absolute;
+    left:0px;
+    top:0px;
+    z-index:3;
+}
+/*品牌区1 end*/
+/*品牌区2 start*/
+.brand .bd{ width:300px; height:350px; overflow:hidden; float:left; margin:10px; border:#CCC solid 1px; padding:5px;}
+.brand .view img{-webkit-transition:all .2s ease-in; -moz-transition:all .2s ease-in; -o-transition:all .2s ease-in; -ms-transition:all .2s ease-in; transition:all .2s ease-in;}
+.brand div.mask-hover img,.brand .view:hover img{width:200px; height:200px;}
+.brand div.mask-hover .text,.brand .view:hover .text{display: inline-block;}
+.brand .view{text-align:center; cursor:default; width:300px; height:335px; overflow:hidden;}
+.brand .view .mask{width:200px; overflow:hidden; margin:0 auto;}
+.brand .view .title{text-align:center;  font-size:12px;  height:15px; line-height:15px;}
+.brand .view .title a{ color:#666; text-decoration:none;}
+.brand .view .text{display: none;text-align:left; font:normal 12px/16px '宋体'; color:#999; line-height:25px;}
+/*品牌区2 end*/

@@ -1,0 +1,35 @@
+@import url('../../../pub/css/common.css');
+@import url('../../../pub/css/btn.css'); 
+@import url('../../../pub/font/iconfont.css');
+@import url('../../../pub/css/dialog/ui-dialog.css');
+@import url('../../../pub/css/hd/site-nav.css');
+@import url('../../../pub/css/linkage-tab.css');
+@import url('../../../pub/css/hd/search.css');
+@import url('../../../pub/css/hd/nav.css');
+@import url('../../../pub/css/jquery.minSlide.css');
+@import url('../../../pub/css/ft/ft.css');
+@import url('../../../pub/css/min-bar/min-bar.css');
+@import url('../../../app/style.css');  
+body{
+	background:#fff;
+}
+.layout{
+	margin: 0 auto;
+	width: 990px;
+}
+.iphone,.and{
+	width: 196px;
+	height: 44px;
+}
+.iphone{
+	background: url(img/an-0.png) no-repeat;
+}
+.iphone:hover{
+	background: url(img/an-01.png) no-repeat;
+}
+.and{
+	background: url(img/an-1.png) no-repeat;
+}
+.and:hover{
+	background: url(img/an-11.png) no-repeat;
+}
