@@ -41,6 +41,7 @@ define(function(require, exports, module) {
         	    });
         	    $($(slide+" .slider_content"+" .lazy")[index]).animate({opacity: 1}, 300);
         	    $($(slide+" .slider_content"+" .lazy")[index]).css('display','block');
+        	    $($(slide+" .slider_content"+" .lazy")[index]).lazyload();
         	},
         	this.swichBigtitle = function(index){
         		$(slide+" .slider_content"+" .slider_content_title"+" .slider_content_smalltitle").each(function(index){
