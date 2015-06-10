@@ -13,8 +13,9 @@
 .slider_content{
 	width:900px;height:480px;background: #666;margin-top:8px;margin-left: 50px;position: relative;overflow: hidden;
 }
-.slider_content .jImg{
-	position: absolute;top: 0px;
+.slider_content .lazy {
+  position: absolute;
+  top: 0px;
 }
 .slider_content_title{
 	width: 900px;

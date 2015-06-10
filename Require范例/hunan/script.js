@@ -1,7 +1,7 @@
 define(function(require, exports, module) {
     'use strict';
-     var $ = require("jquery");
-//   var _ = require('pub/plugins/min-bar');
+//   var $ = require("jquery");
+     var _ = require('js/jquery/jquery.lazyload');
 //      _ = require('pub/plugins/hd/category');
 //      _ = require('pub/plugins/site-nav');
 //      _ = require('pub/plugins/hd/auto-search');
@@ -36,11 +36,11 @@ define(function(require, exports, module) {
         		}
         	},
         	this.swichBigimg = function(index){
-        		$(slide+" .slider_content"+" .jImg").each(function(index){
+        		$(slide+" .slider_content"+" .lazy").each(function(index){
         			$(this).animate({opacity: 0}, 300);
         	    });
-        	    $($(slide+" .slider_content"+" .jImg")[index]).animate({opacity: 1}, 300);
-        	    $($(slide+" .slider_content"+" .jImg")[index]).css('display','block');
+        	    $($(slide+" .slider_content"+" .lazy")[index]).animate({opacity: 1}, 300);
+        	    $($(slide+" .slider_content"+" .lazy")[index]).css('display','block');
         	},
         	this.swichBigtitle = function(index){
         		$(slide+" .slider_content"+" .slider_content_title"+" .slider_content_smalltitle").each(function(index){
@@ -55,4 +55,7 @@ define(function(require, exports, module) {
         	that.swichBigtitle(0);
         }
         var slider1 = new slider(".slider1",".slider1 .slider_nav .btnUP",".slider1 .slider_nav .btnDN");
+        $("div.lazy").lazyload({
+         effect : "fadeIn"
+         });
 });
